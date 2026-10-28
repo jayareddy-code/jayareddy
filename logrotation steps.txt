@@ -1,0 +1,89 @@
+mkdir -p /usr/admin/log_rotation_logs/$(uname -n)/
+cp -pr /etc/rsyslog.conf /etc/rsyslog.conf.$(date +%F)
+cp -pr /etc/profile /etc/profile.$(date +%F)
+cp -pr /etc/audit/auditd.conf /etc/audit/auditd.conf.$(date +%F)
+cp -pr /etc/logrotate.d/cmdline /usr/admin/log_rotation_logs/$(uname -n)/
+cp -pr /etc/logrotate.d/btmp /usr/admin/log_rotation_logs/$(uname -n)/
+cp -pr /etc/logrotate.d/wtmp /usr/admin/log_rotation_logs/$(uname -n)/
+cp -pr /etc/logrotate.d/syslog /usr/admin/log_rotation_logs/$(uname -n)/ 
+
+cp /usr/admin/log_rotation_logs/original_files/rsyslog.conf /etc/rsyslog.conf
+cp /usr/admin/log_rotation_logs/original_files/btmp /etc/logrotate.d/btmp
+cp /usr/admin/log_rotation_logs/original_files/wtmp /etc/logrotate.d/wtmp
+cp /usr/admin/log_rotation_logs/original_files/cmdline /etc/logrotate.d/cmdline
+cp /usr/admin/log_rotation_logs/original_files/sudo /etc/logrotate.d/sudo
+cp /usr/admin/log_rotation_logs/original_files/syslog /etc/logrotate.d/syslog 
+
+ls -l /var/log/sudo.log
+
+cat /etc/sudoers | egrep "/var/log/sudo.log"
+
+cat /etc/audit/auditd.conf
+
+service auditd restart
+auditctl -s
+
+vi /etc/profile
+
+# ===============================
+# Global History Enhancement
+# ===============================
+HISTTIMEFORMAT="%F %T : "
+HISTFILESIZE=10000
+HISTSIZE=10000
+PROMPT_COMMAND="history -a; history -n; $PROMPT_COMMAND"
+
+# ===============================
+# Command Logging to Syslog
+# ===============================
+
+# Global variable to track last logged command
+function log2syslog_custom {
+    local COMMAND TERMINAL
+
+    case "$BASH_COMMAND" in
+        history*|logger*|"trap"*|"") return ;;
+    esac
+
+    COMMAND=$(fc -ln -0 2>/dev/null)
+    TERMINAL=$(tty 2>/dev/null)
+    [[ $TERMINAL == "not a tty" || -z $TERMINAL ]] && TERMINAL=${SSH_TTY:-unknown}
+    TERMINAL=$(echo "$TERMINAL" | awk -F/ '{print $(NF-1) "/" $NF}')
+
+    [ -n "$COMMAND" ] && logger -p local1.notice -t bash -- "${TERMINAL}:${USER}:${COMMAND}"
+}
+
+trap 'log2syslog_custom' DEBUG
+
+source /etc/profile
+
+grep -R "log2syslog" /etc/* /root 2>/dev/null
+
+trap -p DEBUG
+
+logrotate -d /etc/logrotate.d/btmp
+logrotate -d /etc/logrotate.d/wtmp
+logrotate -d /etc/logrotate.d/cmdline
+logrotate -d /etc/logrotate.d/sudo
+logrotate -d /etc/logrotate.d/syslog 
+
+logrotate -v /etc/logrotate.d/btmp
+logrotate -v /etc/logrotate.d/wtmp
+logrotate -v /etc/logrotate.d/cmdline
+logrotate -v /etc/logrotate.d/sudo
+logrotate -v /etc/logrotate.d/syslog 
+
+systemctl restart rsyslog.service
+systemctl status rsyslog.service
+
+ls -lrt /var/log/wtmp*
+ls -lrt /var/log/btmp*
+ls -lrt /var/log/cmdline*
+ls -lrt /var/log/messages*
+ls -lrt /var/log/spooler*
+ls -lrt /var/log/secure*
+ls -lrt /var/log/maillog*
+ls -lrt /var/log/cron*
+
+cd /usr/admin/jay/scripts
+./logrotation_after.sh
