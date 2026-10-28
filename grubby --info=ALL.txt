@@ -1,0 +1,18 @@
+grubby --info=ALL
+grubby --info=ALL | grep ^kernel
+grubby --info="/boot/vmlinuz-$(uname -r)"
+grubby --info=ALL | grep -E "^kernel|^index"
+
+grubby --remove-args="ro resume=/dev/mapper/rootvg-swap rd.lvm.lv=rootvg/root rd.lvm.lv=rootvg/swap rd.lvm.lv=rootvg/usr rhgb quiet rashkernel="root="/dev/mapper/rootvg-root" --update-kernel /boot/vmlinuz-5.14.0-687.20.1.el9_8.x86_64
+grubby --args="ro rd.lvm.lv=rootvg/root rd.lvm.lv=rootvg/usr rhgb quiet" --update-kernel /boot/vmlinuz-5.14.0-687.20.1.el9_8.x86_64
+dracut -f /boot/initramfs-5.14.0-687.20.1.el9_8.x86_64.img 5.14.0-687.20.1.el9_8.x86_64
+grub2-mkconfig -o /boot/grub2/grub.cfg
+
+
+
+Hi Jaya. I report to Mark Roth. Mark has advised me that he and Maika Merriman will cover Infrastructure CHGs for Global QA, given my high-volume global workload for multiple global systems (TrackWise, D2, Veeva RIM, GQDP, MTC, MyUniversity, docuBridge, etc.) and their related project activities. Some systems have multiple modules and teams running concurrently that require my Global QA support.
+ 
+I added Mark Roth to the "Run Related CR - QA Review" Chat, which is communication board for IT Run teams to post CHGs that have a legitimate prioritization (such as your text to me) so that Mark or Maika can pick up the CHG for QA review/approval.
+ 
+I recommend you post your text on the communication board Chat for visibility to Maika and Mark. If no response, text them directly for your CHG given your short time window. Hope this guidance helps. Let me know if you do not get a response for QA approval in the time you need. Thanks.
+ 

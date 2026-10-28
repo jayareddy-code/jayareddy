@@ -1,0 +1,2120 @@
+
+RITM5041343
+RITM5044247--DB jump server
+XSWxsw@123
+
+VGYzaq@123
+RE: Dell Technologies service request:166000424, Case Summary: PSU2 || 3JVD613 || Prosupport  plus||R940, Asset: 3JVD613 /    [ ref:_00D0bGaMp._5006P6APHB:ref ]
+u0bvd216ixp02
+4 Brewery Street
+Isando
+Kempton Park
+Gauteng
+South-Africa
+
+u0bvd216ixp02
+CHG0091458
+RITM2517731
+lspci | grep -i fibre
+lspci -v -s x.x.x.x
+modinfo 'module' | grep version
+grep "Bonding Mode" /proc/net/bonding/bond0
+Priority	RCA SLA
+P1	5 Business Days
+P2	7 Business Days
+P3	15 Business days
+P4	15 Business days
+
+yum install xorg-x11-*
+yum install rng-tools
+
+
+Calculation : RCA SLA = “RCA submitted for approval time  -  Problem ticket created time”
+UJMik,@123
+nmcli connection add type team con-name team0 ifname team0 team.runner lacp 
+nmcli connection modify team0 team.link-watchers "name=ethtool delay-up=2500"
+nmcli connection show
+nmcli connection add type ethernet slave-type team con-name team0-port1 ifname eno5 master team0
+nmcli connection add type ethernet slave-type team con-name team0-port2 ifname eno7 master team0
+nmcli connection show
+nmcli device show ens192
+nmcli connection modify team0 ipv4.addresses "10.200.6.47/24"
+nmcli connection modify team0 ipv4.gateway "10.200.6.1"
+nmcli connection modify team0 ipv4.dns "10.200.6.42 10.200.6.48 172.20.31.102 172.25.1.19 172.25.1.119"
+nmcli connection modify team0 ipv4.dns-search "myl.com"
+nmcli connection modify team0 ipv4.method manual
+nmcli connection up team0
+nmcli connection show
+systemctl status NetworkManager
+systemctl start NetworkManager
+systemctl restart NetworkManager
+systemctl enable NetworkManager
+systemctl status NetworkManager
+nmcli device show
+nmcli connection show
+systemctl status NetworkManager
+nmcli device status
+nmcli connection show
+nmcli connection add type team con-name team0 ifname team0 team.runner lacp
+nmcli connection modify team0 team.link-watchers "name=ethtool delay-up=2500"
+nmcli connection show
+nmcli connection add type ethernet slave-type team con-name team0-port1 ifname em1 master team0
+nmcli connection add type ethernet slave-type team con-name team0-port2 ifname em2 master team0
+nmcli connection show
+nmcli connection modify team0 ipv4.addresses "172.25.238.19/23"
+nmcli connection modify team0 ipv4.gateway "172.25.238.1"
+nmcli connection modify team0 ipv4.dns "172.25.205.86 172.25.208.30 172.25.1.119"
+nmcli connection modify team0 ipv4.dns-search "myl.com"
+nmcli connection modify team0 ipv4.method manual
+nmcli connection up team0
+nmcli connection show
+
+nmcli connection up ens224
+  846  nmcli connection show
+  847  nmcli con modify ens224 ipv4.gateway '172.26.3.2/25'
+  848  nmcli connection add ens224 ipv4.gateway '172.26.3.2/25'
+  849  nmcli connection modify ens224
+  850  nmcli connection modify ens224 +ipv4.gateway '172.26.3.2/25'
+  853  nmcli connection modify ens224 +ipv4.gateway '172.26.3.2'
+  855  nmcli connection modify ens192 -ipv4.gateway '172.26.82.1'
+  859  nmcli connection up ens224
+  861  nmcli connection modify ens192 ipv4.never-default yes--remove gateway
+  862  nmcli connection up ens192
+ 1001  history |grep -i nmcli
+
+ nmcli connection modify ens256 +ipv4.routes "172.17.36.246 172.17.66.1"
+ nmcli connection up ens256
+ route -n
+ telnet W0BVCARKPOC002 443
+ telnet W0BVCARKPOC002 42
+ telnet u0bvcarkpoc01 443
+ nmcli connection modify ens256 +ipv4.routes "172.17.36.42 172.17.66.1"
+
+
+nmcli connection show
+nmcli connection delete team0_slave_1
+nmcli connection delete team0\ slave\ 1
+teamdctl team0 state
+nmcli connection add type ethernet slave-type team con-name team0\ slave\ 1 ifname ens1f0np0 master team0
+teamdctl team0 state
+nmcli connection up
+nmcli connection up team0
+ip addr
+teamdctl team0 state
+nmcli connection show
+nmcli connection delete team0\ slave\ 1
+nmcli connection add type ethernet slave-type team con-name team0\ slave\ 1 ifname ens1f1np1 master team0
+nmcli connection up team0
+teamdctl team0 state
+ip addr
+nmcli connection delete team0\ slave\ 1
+nmcli connection add type ethernet slave-type team con-name team0\ slave\ 1 ifname ens1f1np1 master team0
+nmcli connection up team0
+teamdctl team0 state
+teamdctl team0 state
+
+lacp--grep "Bonding Mode" /proc/net/bonding/bond0
+[root@ue7pnbmep001 fc_host]# grep "Bonding Mode" /proc/net/bonding/bond0
+Bonding Mode: IEEE 802.3ad Dynamic link aggregation
+[root@ue7pnbmep001 fc_host]#
+
+cat /etc/rsyslog.conf | grep -E "authpriv|local1" | grep -E -v "^#|info"
+grep "audit logging" -A 8 /etc/profile
+grep "audit logging" -A 8 /etc/bashrc
+grep "audit logging" -A 8 /root/.bashrc
+fdisk -l|grep '^Disk' | egrep -v '/dev/(loop|mapper)' | egrep 'Disk.*bytes' | awk '{print $5}' > /tmp/file.txt ; cat /tmp/file.txt | awk '{ sum+=$1/1024^3} END {print sum}'--total space for physical 
+yum groupinstall "Server with GUI"--gnome
+/usr/lpp/EMC/Symmetrix/bin
+rpm -qai --last
+ps -lA | egrep '^. D|^F'
+rpm -qa --last | grep  '2022' |egrep 'Jun|Jul|Aug|Sep|Oct|Nov'
+Hi Team
+
+Please follow the below mentioned steps for all cluster related alerts in the future.
+1.	If multiple incidents received then keep one incident in our queue for reference and close the remaining incidents
+2.	One RedHat case has to be active all the time relating to cluster fence alerts. Do not close the RedHat case
+3.	Clear the resource related alerts in the cluster nodes and make sure that all the resource are in started state
+4.	Inform the SME regarding the cluster events and if any business impact (via Teams / Whatsapp)
+
+Hi Team,
+
+Please acknowledge everyone. 
+
+FYI.. Wintel team enabled the logs in all the Esxi hosts where the Unix OS Clusters (VM) servers were running. As per the VMware vendor suggestions this logs were enabled specifically to capture the cause of the Fencing alerts. 
+
+If any Fencing alerts  received for any of the cluster servers please engage the Wintel team and ask them to upload the logs with VMware for the findings. 
+
+Note: Logs rotation was enabled for every 1 hour.  We need to act immediately. If any delay in the action will end up with the no root cause of the issue.  If Wintel team  having any concern ask them to check with Wintel SME .  Also raise case with Redhat for Fencing Alerts.
+
+u0bvsapgeq001
+
+https://cdn.redhat.com
+https://subscription.rhsm.redhat.com
+
+suse : chr makestep 
+
+[3:40 PM] Ashok Kumar R K
+lvs -a -o +seg_pe_ranges --segments
+
+[3:42 PM] Ashok Kumar R K
+/usr/openv/netbackup
+
+[3:43 PM] Ashok Kumar R K
+/usr/admin
+
+
+874895410
+RITM3856113--CARK
+dd if=/dev/sdc1 of=/os_backup/sdc1_boot-efi_imgbkp_09Nov2022.img status=progress
+dd if=/dev/sdc2 of=/os_backup/sdc2_boot_imgbkp_09Nov2022.img status=progress
+dd if=/dev/sdc3 of=/os_backup/sdc3_rootlvm_imgbkp_09Nov2022.img status=progress
+
+dd if=/dev/
+/mpathb-part1 of=/os_backup/mpathb-part1_boot_imgbkp_$(date +%F).img status=progress bs=4096
+dd if=/dev/mapper/mpathb-part2 of=/os_backup/mpathb-part2_boot-efi_imgbkp_$(date +%F).img status=progress bs=4096
+dd if=/dev/mapper/mpathb-part3 of=/os_backup/mpathb-part3_rootlvm_imgbkp_$(date +%F).img status=progress bs=4096
+
+dd if=/dev/sda1 of=/os_backup/sda1_boot_imgbkp_07june2024.img status=progress bs=4096
+dd if=/dev/sda2 of=/os_backup/sda2_rootlvm_imgbkp_07june2024.img status=progress bs=4096
+
+dd if=/dev/mapper/mpathb-part3 of=/os_backup/mpathb-part3_rootlvm_imgbkp_$(date +%F).img status=progress bs=4096
+
+
+yum downgrade redhat-release 
+curl -v subscription.rhsm.redhat.com
+curl -v cdn.redhat.com
+# yum clean all
+# yum repolist -v
+# env | grep -i proxy
+# curl -v https://cdn.redhat.com --cacert /etc/rhsm/ca/redhat-uep.pem
+Name of the DC / IBC
+Visitor Details
+Given Name
+Company Name
+Email
+Mobile Number (QR Code will be sent to the Number)
+Duration of Work Visit
+Start Date and time (IBX local time)
+End Date and time (IBX local time)
+Reason / Comments of Work Visit (share RITM / INC reference where ever possible)
+u0bpargsdbe01
+mpstat -P ALL 5
+$ iotop -b -o -d 5 -t  -qqq  ( run as root) 
+$ vmstat -d -w 5 -t
+$ vmstat -a -w 5 -t
+$ vmstat -w 5 -t
+
+CHG0117587
+CHG0117627
+
+152474246 
+22234765144
+Incidents | Mylan (service-now.com)
+https://mylan.service-now.com/nav_to.do?uri=%2Fincident_list.do%3Fsysparm_query%3Dcmdb_ci.u_level_1_support_group%253Dea739fcd37450200d657d5a643990e4a%5Esys_created_onBETWEENjavascript:gs.dateGenerate(%25272022-12-14%2527%252C%252714:00:00%2527)@javascript:gs.dateGenerate(%25272022-12-15%2527%252C%252714:00:00%2527)%5Ereassignment_count%253E%253D1%5Eu_issue_categoryINNetwork%2520connectivity%2520alerts%252COEM%2520Alerts%252COthers%252CUnix%2520Alerts%252CVmware%2520Alerts%252CBackUp%2520Alerts%252CCPU%2520Utilization%2520Alert%252CDisk%2520Space%2520Alerts%252CHardware%2520Alert%252CStorage%2520Alerts%5ENQassignment_group%253Dea739fcd37450200d657d5a643990e4a%5EstateNOT%2520IN6%252C7%5EORresolved_atBETWEENjavascript:gs.dateGenerate(%25272022-12-14%2527%252C%252714:00:00%2527)@javascript:gs.dateGenerate(%25272022-12-15%2527%252C%252714:00:00%2527)%26sysparm_first_row%3D1%26sysparm_view%3D
+RITM3648329--new jump server
+ln -sf /usr/openv/netbackup/bin/hdbbackint_script /usr/sap/HDB/SYS/global/hdb/opt/hdbbackint
+ZSExsq@123
+SUSE
+==========================
+cat /proc/net/bonding/bond0
+ ip r
+SUSEConnect -s--subscription
+
+
+04067596600--help desk
+groupadd -g 6080 zenvtm;gpasswd -d m558065 zensar;gpasswd -d m549542 zensar;gpasswd -d m560219 zensar;gpasswd -a m558065 zenvtm;gpasswd -a m549542 zenvtm;gpasswd -a m560219 zenvtm
+
+This is a single environment change and due to the technical limitations of the existing SNOW workflow, the "Authorize" phase shall not be applicable to this change. Approvals will be applied to progress this change to CAB Approval (if necessary)
+RITM2565453--CI form
+RITM2548176--jump--w6ejumpt001 
+9845314394
+RITM2527128--need to check sudo access after 3 days
+CTASK0278771
+RITM2497915
+Migrate servers to Host 0bps101 using LPM--raise a change to discover change in snow
+1800-425-1234
+CHG0086297
+UC0575
+MJU&mju7@123
+198205
+https://signup.zerodha.com/
+https://kite.zerodha.com/dashboard
+https://172.25.100.172/kvm.jnlp?cimcAddr=172.20.8.63&tkn1=admin&tkn2=T!tin2sQ
+02835577
+CTASK0269335
+duerokiya
+    INCASE OF CPU INCREASE
+1. Login into Hardware Management Console (HMC) with the relevant username and password.
+2. Expand ‘Systems Management’ option from the HMC and select the ‘Servers’ option.    
+3. Expand the ‘Servers’ option and select the Frame as referenced in the Work Notes.
+5. Select the affected CI as referenced in the Work Notes that can be seen linked to the Frame on the console.
+6. Under the ‘Tasks’ option in the HMC, select ‘Dynamic partitioning’
+7. Expand ‘Dynamic Partitioning’ to select ‘Processor’
+8. Expand the ‘Processor’ option and click on ‘Add and remove’
+9. From the window that will open, change the existing value under the ‘Assigned’ field to the expected value as referenced in the Work Notes and click on OK button.
+10. Under the ‘Tasks’ option in the HMC, expand the ‘Configuration’ option and select ‘Save Current Configuration’
+11. A pop-up will open, select ‘Overwrite existing profile’ and click on OK.
+
+    like this i had sent to someone...i dont remember who
+
+172.18.230.152 
+172.18.241.151 
+10.1.40.60 
+call to franklin 9:30 AM
+LPM
+service account
+need to work on application
+root@u01sap116 /> df -sm /tmp
+Filesystem    MB blocks     Free* %Used    Iused %Iused Mounted on
+/dev/hd3        2176.00   1368.41   38%     1438     1% /tmp
+root@u01sap116 />
+
+chfs -a size=2176M /tmp
+424--fiber--vio1
+252--scsc--vio1
+253--vio2--scsi
+425--fiber--vio2
+CTASK0248659
+Proof not submitted
+https://myl.sharepoint.com/:x:/t/UnixRUN/EVIRdB7cQDtLlBXcnu4yR00Bck6cIp8Hrh9tOiaQ7zfhFA?e=Afuf7u
+
+https://myl.sharepoint.com/:x:/r/sites/GlobalUnix/_layouts/15/doc2.aspx?sourcedoc=%7BF90BBF30-6D61-4DC5-BBAB-4ACED1A412D8%7D&file=Transition%20Task%20Tracker.xlsx&action=default&mobileredirect=true&CID=7B93F558-3717-44A6-91F9-3C8441167B01&wdLOR=c0F33923F-A2CC-4FD9-8648-AD85D3E22D87
+
+hm.... I will be primary for backup and Storage, Shafi and Ankur for OS, Amit for Network, Sunil and Alexson for DB
+CHG0077634
+CHG0077174
+u0bvsapgep001	CHG0071370	CTASK0230557---done---jaya
+u0bvsapgep002	CHG0071373	CTASK0230585---done--jayanarasimha
+u0bvsapgep003	CHG0071374	CTASK0230590---done--jayanarasimha
+u0bvsapgep004	CHG0071375	CTASK0230591---done--jayanarasimha
+u0bvsapgep005	CHG0071376	CTASK0230593---done--jayanarasimha
+u0bvsapgep006	CHG0071379	CTASK0230595---done--jayanarasimha
+u0bvsapgep007	CHG0071380	CTASK0230621--done--jaya
+u0bvsapgep008	CHG0071381	CTASK0230629--done--jaya
+u0bvsapgep009	CHG0071382	CTASK0230615--done--shaik
+u0bvsapgep010	CHG0071384	CTASK0230620--done--shaik
+u0bvsapgep011	CHG0071385	CTASK0230613--done---shaik
+
+
+CTASK0230621---done
+CTASK0230629--done 
+CTASK0230615--shaik
+CTASK0230620--shaik
+CTASK0230613---shaik
+
+ITASK0831689
+
+cat /etc/ssh/sshd_config |grep -i MaxAuthTries
+
+cat /etc/pam.d/system-auth;cat /etc/pam.d/password-auth
+cat /etc/security/pwquality.conf
+cat /etc/security/faillock.conf
+systemctl status firewalld
+systemctl status libvirtd
+systemctl status ntpd
+
+
+systemctl status sshd
+systemctl status sysstat
+systemctl status rsyslog
+cat /etc/ntp.conf
+
+
+ systemctl mask ctrl-alt-del.target
+ systemctl daemon-reload
+
+
+last |grep -i reboot
+
+firewalld	off
+libvirtd	off
+ntpd	off
+chronyd on
+sshd	on
+sysstat	on
+syslog	on
+auditd	on
+CHG0077241
+systemctl stop chronyd
+systemctl status chronyd
+systemctl start chronyd
+systemctl status ntpd 
+[root@u07plabdgp001 mail]# 
+cat /etc/mail/sendmail.cf | grep -i DShub
+grep -i dshub /etc/mail/submit.cf
+DShub.myl.com
+[root@u07plabdgp001 mail]#
+service rsyslog status
+chrond--7.4
+hub servers
+
+u0bhypbip4t01
+
+syslog 
+===============================================================
+ User creation check point
+ NTP configuration
+ Hub mail configuration
+ Syslog configurtaion
+monitoring script
+User activity tracker script
+ License registration 
+/usr/admin
+Pre and post script change
+
+
+cat /etc/audit/rules.d/audit.rules
+cd /etc/sysconfig/network-scripts/
+cat /etc/ssh/sshd_config
+cat /etc/rsyslog.conf |grep w0bsec002
+cat /etc/aliases
+
+/etc/init.d/rsyslog restart
+
+cat /etc/sysctl.conf
+
+
+CHG0071732 
+=======================
+
+
+EU-IT-EUS-ServiceCenter
+RITM2050830
+
+9030200206
+
+hostnamectl
+date
+cat /etc/redhat-release
+hostname
+uptime
+ip a
+ifconfig
+netstat -nr
+df -h
+df -hT
+df -h | wc -l
+cat /etc/fstab
+cat /etc/fstab | wc -l
+pvs
+vgs
+lvs
+pvdisplay
+lvdisplay
+vgdisplay
+cat /proc/meminfo
+cat /proc/cpuinfo
+lscpu
+free -g
+dmidecode -t system
+modinfo fnic
+modinfo enic
+cat /etc/resolv.conf
+multipath -ll
+multipath -ll |wc -l
+ntpq -p
+cat /etc/chrony.conf
+chronyc sourcestats
+chronyc sources
+cat /etc/hosts
+chronyc tracking
+date
+
+https://access.redhat.com/solutions/6984143
+leapp preupgrade --target <target_os_version>
+
+
+attaching post screenshot for prod server after change transparent_hugepage on PROD servers
+
+
+CHG0081946
+RITM2271960
+RITM2271959
+RITM2271957
+
+e0bbd4c2s8
+e0bbd4c3s6
+e0bbd4c4s2
+
+During the vcenter upgrade activity there was an issue with heart bit between the cluster servers and the vcenter. Now we have cleaned up all the alerts. Hence we are closing the case
+
+SAP Quarterly-1 Maintenance activity server got rebooted ,so that there was an issue with heart bit between the cluster servers and the vcenter. Now we have cleaned up all the alerts. Hence we are closing the incident
+
+Pre-Checks:
+---------------
+LPAR:
+- AIX version must be AIX 6.1 or above
+- Working RMC connection between HMC and LPAR
+- LPAR has a unique name (cannot be migrate if LPAR name is already exist on destination Hardware)
+- No physical adapters may be used by the mobile partition during the migration
+- No logical host Ethernet adapters
+- LPAR should have a virtual Ethernet adapter or vNIC
+- The LPAR we want to migrate cannot be a VIO Server
+- The mobile partition's network and disk access must be virtualized by using one or more Virtual I/O Servers
+- All virtual networks of the LPAR (VLANs), must be available on destination server
+– The disks used by the mobile partition must be accessed through virtual SCSI, virtual Fibre Channel-based mapping, or both.
+- If NPIV is used, each VFC client adapter must have a mapping to a VFC server adapter on VIOS
+- If NPIV is used, at least one LUN should be mapped to the LPAR`s VFC adapter.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Implementation Plan:
+
+before implementation
+=====================================================
+1. Login in to the HMC
+On Resources Tab > All Partitions > Select Partition > Actions >Mobility -> Validate -> Validation Starts
+Validation information –> next
+2. Profile name –> next
+3. Remote HMC –> here same HMC so no need to change anything next
+4. destination –> here u need to select destination frame name SNOXXXXX
+
+5. Validation Error / warnings –> if u get errors check properly … if u get warnings neglect
+6. Mover service partitions –> ( this should be enable on both sides of the frame vio's –> go to the frame , select vio , right click , check mark in move partitions )
+7. Vlan configuration –> next
+8.Virtual storage adapters -> next
+
+9. shared processor pools
+10.wait time –> change wait  time as 20 or 30 mins
+11. summary –> it will  show the summary  ( check properly , if it everything ok ) -> next
+
+Process starts 0 t0 100%
+12. After that Login in to the server & check the serial number , processing units , memory …
+
+
+After pre implementation success
+======================================================
+1.Login into HMC console with username and password .
+2. Validating the LPAR one frame to another frame.
+  On Resources Tab	>	All Partitions > Select Partition > Actions -->Mobility-->Validate -->open Validation window
+3. validation is successful then migrate the LPAR from source to destination frame.  
+On Resources Tab	>	All Partitions > Select Partition > Actions -->Mobility-->Migrate -->open Validation window  
+4. validate the server serial number.
+#prtconf|grep -i Machine  
+
+=============================================================================================================
+This change is to Move LPAR (the virtual AIX server) from one Frame to another Frame upon request by the user(s). 
+  
+Activity Type: Refer to the Work Notes.  
+Server Frame Name: Refer to the Work Notes.  
+  
+Source Frame: Refer to the Work Notes [From] 
+Source VIO server Names: Refer to the Work Notes [From] 
+Source Frame Serial Number: Refer to the Work Notes. [From] 
+Destination Frame: Refer to the Work Notes [To] 
+Destination VIO server Names: Refer to the Work Notes [To] 
+Destination Frame Serial Number: Refer to the Work Notes [To] 
+   
+Location: Refer to the Work Notes 
+Environment: Refer to the Work Notes 
+Application Impacted? : No, as this change is only moving the LPAR one Frame to another Frame. 
+Any downtime needed?:  No [expect server’s OS (Operating System) version 5.3 TL11 and below] 
+Was this change performed in Dev/Test? : Not Applicable, as this change is based on business request [Refer RITM number in Work Notes]. 
+  
+Technical Approver: Refer to the Work Notes. 
+Primary Implementer: Refer to the Work Notes [Implementer and Approver cannot be the same person] 
+Implementation Group: GIDC.Unix_Run  
+Teams Involved: GIDC.Storage_Run, GIDC.Unix_Run 
+Business Approver: Not Applicable, as there is no functionality change. 
+===================================================================================
+Hi Team,
+
+Request all to strictly follow on resource increase request.
+
+1.	300GB above request has to be validate by L3 to proceed further do not create change before validation.
+2.	Acknowledge the request on time and update the relevant details properly.
+3.	Get the business justification properly based on that approach storage team for new LUN to fulfil the requirement (Open task to storage team in same request).
+        If requirement is less which we are maintaining 4TB / 8TB can approach remaining will keep for buffer and future requirement
+4.	Site which we are running storage crunch do not accept until unless critical.
+5.	Ask questionnaire like
+•	Why sudden increase of the CPU (and/or) RAM, Disk ?
+•	Any changes in the application or server level?
+•	If the server is build last one year? why the projection was not informed in the initial build?
+
+======================
+
+Action Item by Unix End,
+
+ Validate no of backup channel initiated by DBA team during the window 
+		
+ Instruct them to reduce the channel count or 
+		 Increase the CPU count.
+
+	 Validate the backup workload in the media servers
+	
+
+ Increase the CPU count.
+	
+	 Validate all Cron jobs.
+	
+	
+ instruct respective team/owner to change the schedule window
+
+
+    
+MSX-EMPDR01
+
+    
+RITM1730427
+
+    
+
+Location: colin fery
+
+Env: DR
+
+Console IP:https://172.26.201.25/iPages/suntab.asp
+
+root/changeme
+
+Product Name:        T5140
+
+Part/Serial Number:        602-3927-04 / BEL0821JU8
+
+SysFW Version:        Sun System Firmware 7.4.10.a 2016/03/11 07:45
+
+SP Hostname:        ORACLESP-BEL0821JU8
+
+Uptime:        0 days, 03:15:13
+
+IP Address:        172.26.201.25
+
+ILOM Version:        v3.0.12.8.a r108523
+
+
+CHG0085890
+
+RITM2383988
+
+
+
+
+date
+hostname -n
+cat /etc/resolv.conf
+cat /etc/hosts
+lslpp -l
+lsvg
+lspv
+lspv -u
+odmget -qattribute=unique_id CuAt|grep -ip emc |egrep 'name|value'
+odmget -qattribute=unique_id CuAt |egrep 'name|value'
+lsvg -o |lsvg -li
+lparstat -i
+prtconf
+cat /etc/exports
+showmount -e
+showmount -a
+ipl_varyon -i
+cp -pr  /etc/filesytems /etc/filesytems-bkp
+cat /etc/filesytems
+df -gt
+df -gt |wc -l
+ifconfig -a
+https://www.ibm.com/support/pages/configuring-ntp-aix-5l
+https://www.ibm.com/support/pages/ibm-aix-how-check-if-network-time-protocol-ntp-aix-sync
+
+
+
+
+
+u0bpargsdbd01
+
+Hi Team,
+Important Update. Every one acknowledge it.
+
+1.	Every day Unix team will receive EMAIL from access management“mylan@myworkday.com”. Email having the attachment named “Terminated Users - <YYYYMMDD>.txt”
+2.	Unix team need copy the MIDs from the attachment and update it to file “/usr/admin/franklin/TerminatedUser/users2lock”.
+Note: All MIDs should be lower case 
+3.	The automated script will run from Cronjob in all the server at 12:10AM will execute the script “/usr/admin/franklin/TerminatedUser/terminated_user_account_lock.sh”. 
+4.	The script “/usr/admin/franklin/TerminatedUser/terminated_user_account_lock.sh” reads all the MID and Lock the account in the server and remove sudo privilege to the respective MIDs.
+5.	Unix Team will receive locked user report from “terminatedusers@myl.com” , at 7:45AM daily. This report will generated from u0bvwho001 server
+
+Responsibility: 
+1.	Morning shift engineer having responsibility to update the File at 10AM every day.
+2.	L3 should validate the logs and ensure all accounts are locked on the previous day. 
+
+
+=======================================================================
+Hi Arun,Siva,
+
+Kindly find the below ,that need to be modified.
+
+Suse need to discuss and confirm later.
+
+RHEL 7.x ({password,system}-auth,pwquality.conf and login.defs)
+==========
+
+#%PAM-1.0
+# This file is auto-generated.
+# User changes will be destroyed the next time authconfig is run.
+auth        required      pam_env.so
+auth        required      pam_faildelay.so delay=2000000
+auth        required      pam_faillock.so preauth silent audit deny=5 even_deny_root  unlock_time=900 root_unlock_time=1800
+auth        sufficient    pam_fprintd.so
+auth        sufficient    pam_unix.so nullok try_first_pass
+auth        [default=die]      pam_faillock.so authfail audit deny=5 even_deny_root  unlock_time=900 root_unlock_time=1800
+auth        requisite     pam_succeed_if.so uid >= 1000 quiet_success
+auth        required      pam_deny.so
+
+account     required      pam_faillock.so
+account     required      pam_unix.so
+account     sufficient    pam_localuser.so
+account     sufficient    pam_succeed_if.so uid < 1000 quiet
+account     required      pam_permit.so
+
+password    requisite     pam_pwquality.so try_first_pass retry=3 dcredit=-1 ucredit=-1 lcredit=-1 ocredit=-1 difok=5 maxrepeat=2
+password    requisite     pam_pwhistory.so remember=20 use_authtok
+password    sufficient    pam_unix.so sha512 shadow nullok try_first_pass use_authtok
+password    required      pam_deny.so
+
+session     optional      pam_keyinit.so revoke
+session     required      pam_limits.so
+-session     optional      pam_systemd.so
+session     [success=1 default=ignore] pam_succeed_if.so service in crond quiet use_uid
+session     required      pam_unix.so
+
+
+
+
+And append the below lines to /etc/security/pwquality.conf file 
+
+difok = 5
+lcredit = -1
+ucredit = -1
+dcredit = -1
+ocredit = -1
+maxrepeat = 2
+minlen = 8
+
+
+And change PASS_MAX_DAYS  /etc/login.defs
+
+PASS_MAX_DAYS 90
+
+
+
+RHEL 6.x(password,system}-auth and login.defs)
+=======
+/etc/pam.d/{system,password}-auth
+
+#%PAM-1.0
+auth        required      pam_env.so
+auth        required      pam_tally2.so silent deny=5 even_deny_root  unlock_time=900 root_unlock_time=1800 
+auth        sufficient    pam_unix.so nullok try_first_pass
+auth        requisite     pam_succeed_if.so uid >= 500 quiet
+auth        required      pam_deny.so
+
+account     required      pam_tally2.so
+account     required      pam_unix.so
+account     sufficient    pam_localuser.so
+account     sufficient    pam_succeed_if.so uid < 500 quiet
+account     required      pam_permit.so
+
+password requisite pam_cracklib.so try_first_pass retry=3 minlen=8 dcredit=-1 ucredit=-1 lcredit=-1 ocredit=-1 maxrepeat=2 difok=5
+password sufficient pam_unix.so md5 shadow nullok try_first_pass use_authtok remember=20
+password    required      pam_deny.so
+
+
+session     optional      pam_keyinit.so revoke
+session     required      pam_limits.so
+session     [success=1 default=ignore] pam_succeed_if.so service in crond quiet use_uid
+session     required      pam_unix.so
+
+
+And  PASS_MAX_DAYS    /etc/login.defs
+PASS_MAX_DAYS   90
+================================================================================================================
+Hi Siva/Arun,
+
+Kindly suggest and approve to raise change for the below
+
+RHEL 7.x ,RHEL 6.x password-auth & System-auth,Login.defs file 
+
+Suse - /etc/pam.d/common-password, /etc/pam.d/common-account, /etc/pam.d/common-auth
+
+
+RHEL 7.x
+==========
+
+#%PAM-1.0
+# This file is auto-generated.
+# User changes will be destroyed the next time authconfig is run.
+auth        required      pam_env.so
+auth        required      pam_faildelay.so delay=2000000
+auth        required      pam_faillock.so preauth silent deny=5 even_deny_root  unlock_time=900 root_unlock_time=1800
+auth        sufficient    pam_fprintd.so
+auth        sufficient    pam_unix.so nullok try_first_pass
+auth        requisite     pam_succeed_if.so uid >= 1000 quiet_success
+auth        required      pam_faillock.so authfail deny=5 even_deny_root  unlock_time=900 root_unlock_time=1800
+auth        required      pam_deny.so
+
+account     required      pam_faillock.so
+account     required      pam_unix.so
+account     sufficient    pam_localuser.so
+account     sufficient    pam_succeed_if.so uid < 1000 quiet
+account     required      pam_permit.so
+
+password    requisite     pam_pwquality.so try_first_pass dcredit=-1 ucredit=-1 lcredit=-1 ocredit=-1 difok=5 maxrepeat=2
+password    requisite     pam_pwhistory.so remember=20 use_authtok
+password    sufficient    pam_unix.so sha512 shadow nullok try_first_pass use_authtok
+password    required      pam_deny.so
+
+session     optional      pam_keyinit.so revoke
+session     required      pam_limits.so
+-session     optional      pam_systemd.so
+session     [success=1 default=ignore] pam_succeed_if.so service in crond quiet use_uid
+session     required      pam_unix.so
+
+
+
+
+And append the below lines to /etc/security/pwquality.conf file 
+
+
+lcredit = -1
+ucredit = -1
+dcredit = -1
+ocredit = -1
+
+
+And change PASS_MAX_DAYS  /etc/login.defs
+
+PASS_MAX_DAYS 90
+
+
+
+RHEL 6.x
+=======
+/etc/pam.d/{system,password}-auth
+
+#%PAM-1.0
+auth        required      pam_env.so
+auth        required      pam_tally2.so silent deny=5 even_deny_root  unlock_time=900 root_unlock_time=1800 
+auth        sufficient    pam_unix.so nullok try_first_pass
+auth        requisite     pam_succeed_if.so uid >= 500 quiet
+auth        required      pam_deny.so
+
+account     required      pam_tally2.so
+account     required      pam_unix.so
+account     sufficient    pam_localuser.so
+account     sufficient    pam_succeed_if.so uid < 500 quiet
+account     required      pam_permit.so
+
+password requisite pam_cracklib.so try_first_pass retry=7 minlen=8 dcredit=-1 ucredit=-1 lcredit=-1 ocredit=-1 maxrepeat=2 difok=3
+password sufficient pam_unix.so md5 shadow nullok try_first_pass use_authtok remember=20
+password    required      pam_deny.so
+
+
+session     optional      pam_keyinit.so revoke
+session     required      pam_limits.so
+session     [success=1 default=ignore] pam_succeed_if.so service in crond quiet use_uid
+session     required      pam_unix.so
+
+
+And  PASS_MAX_DAYS    /etc/login.defs
+PASS_MAX_DAYS   90
+
+
+Suse
+=====
+
+File as below lines /etc/pam.d/common-password file
+
+password  requisite      pam_cracklib.so dcredit=-1 ucredit=-1 lcredit=-1 ocredit=-1 difok=5 minlen=8 maxrepeat=2
+password  required       pam_unix2.so    nullok use_authtok md5
+password  required      pam_pwcheck.so nullok use_authtok remember=20
+
+
+File /etc/pam.d/common-auth append/modify below line as
+
+auth    required      pam_tally2.so deny=5 even_deny_root  unlock_time=900 root_unlock_time=1800
+
+File /etc/pam.d/common-account as below
+
+account required pam_tally2.so
+account requisite pam_unix2.so
+account sufficient pam_localuser.so
+auth required pam_tally2.so
+
+Modify PASS_MAX_DAYS    as below in /etc/login.defs
+
+PASS_MAX_DAYS   90
+==============================================================================================================
+#%PAM-1.0
+# This file is auto-generated.
+# User changes will be destroyed the next time authselect is run.
+auth        required      pam_env.so
+auth        required      pam_faillock.so preauth silent audit deny=5 even_deny_root unlock_time=1200 root_unlock_time=900
+auth        sufficient    pam_unix.so try_first_pass nullok
+auth        [default=die] pam_faillock.so authfail audit deny=5 even_deny_root unlock_time=1200 root_unlock_time=900
+auth        requisite     pam_succeed_if.so uid >= 1000 quiet_success
+auth        required      pam_deny.so
+
+account     required      pam_faillock.so
+account     required      pam_unix.so
+account     sufficient    pam_localuser.so
+account     sufficient    pam_succeed_if.so uid < 1000 quiet
+account     required      pam_permit.so
+
+password    requisite     pam_pwquality.so try_first_pass local_users_only retry=3 authtok_type= minlen=8 dcredit=-1 ucredit=-1 lcredit=-1 ocredit=-1 difok=5 maxrepeat=2
+password    requisite     pam_pwhistory.so remember=20 use_authtok
+password    sufficient    pam_unix.so try_first_pass use_authtok nullok sha512 shadow
+password    required      pam_deny.so
+
+session     optional      pam_keyinit.so revoke
+session     required      pam_limits.so
+-session     optional      pam_systemd.so
+session     [success=1 default=ignore] pam_succeed_if.so service in crond quiet use_uid
+session     required      pam_unix.so
+==================================================================================================================================
+Hi Kundan,
+
+Please append the below lines for suse server in respective files for password policy. 
+
+
+vim /etc/pam.d/common-auth 
+...
+auth required pam_tally2.so deny=3 even_deny_root unlock_time=900 root_unlock_time=1800
+
+vim /etc/pam.d/common-account
+...
+account required pam_tally2.so
+
+
+vim /etc/pam.d/common-password
+...
+password required pam_cracklib.so minlen=8 dcredit=-1 ucredit=-1 lcredit=-1 ocredit=-1 difok=5 maxrepeat=2 retry=3
+password required pam_pwhistory.so remember=20
+=======================================================================================================
+Question
+
+Why is the LRUD process using large amounts of CPU? Additionally, poor backup performance is seen on the AIX client when this is running.
+
+Cause
+
+The LRUD (least recently used daemon) is a process that is invoked when memory is low and more is needed, the daemon scans cached file pages (the buffer cache) in memory and freeing those that have not been recently accessed. When this occurs, overall performance on the host machine may be degraded.
+
+Answer
+
+To alleviate the problem, consider adding additional real memory and evaluating the paging space set for the host. AIX best practices recommends that there be multiple paging spaces, all equal in size and located on different, non-busy hard drives (hdisks).
+
+
+Product Synonym
+
+TSM
+
+there are  17 production servers are there on frame
+
+below servers under decommission so changes are not required ( if changes required need to create canges)
+==============================================
+max-sap52
+max-sap53
+max-sap60
+max-sap61(5.3)
+
+LPM changes created for below servers
+===============================
+max-dom01
+max-fin11
+max-fin18
+max-sap74
+maxsp203
+u01fin032
+u01sap114
+u0bdcm008
+u0bsap184
+u0bsap185
+u0bsiedb012
+
+for below server already DB decommissioned not raised decomission change from UNIX end
+=========================================================================
+maxsp233(5.3)--change not yet raised
+
+for below server need to get downtime to do offline migration
+================================================
+max-aers1(5.3)--change not yet raised
+
+DIMM Replacement 
+=============================
+1)once migration compleated for all servers we have to inform IBM support Team for the replacement activtiy(2 days prior to get the part  )
+2)need to get the field Engineer details and arrange gatepass
+3)before activty we need to shutdown all lpars, vio and frame
+4)first lpars need to shutdown
+5)then need to power off vio2 then vio1 then frame
+6)once DIMM replacement done engineer will power of the frame , once frame power on need to get evidence from engineer frame online and DIMM replacement 
+7)once Frame come operating we have power on vio1 then vio1 then LPARS
+8)check sanitary checks for all lpars
+
+route del -net 172.20.36.13 gw 172.20.5.4 netmask 255.255.255.255 dev net1
+
+iproute del  172.20.36.13 gw 172.20.5.4 dev net1
+
+ip route add 172.20.36.13 via 172.20.5.4 dev net1
+
+
+==================================================================================
+Hi Team
+
+Please acknowledge everyone .. 
+
+If any request received for the Unix User Management password reset of service account, and if it is failed with below message. Please follow the below process and let me know if any clarification . 
+
+1) Write an  email to the service account owner stating that we have received the request from the (person name) to reset the password of the service account (service account name) . Please confirm if he is authorized to reset the service account password or do we need to reject the request . 
+
+2) Requester has mentioned the service account owner name is (person name). Whether are you the owner of the service account or do we need to change the owner name of the account to (person name) ? 
+
+3) Based on the confirmation on the 2nd point. Please modify the  /etc/passwd  GECOS field  for the service account owner name.  – Action owner Unix. 
+
+Automation failed with below error:
+
+Requested account name and service account owner are not matcing
+Request is rejected.
+perform the action manually
+
+
+[root@u0bvsaphlq001 network-scripts]# cat ifcfg-ens192
+TYPE=Ethernet
+#PROXY_METHOD=none
+#BROWSER_ONLY=no
+#DEFROUTE=yes
+#IPV4_FAILURE_FATAL=no
+#IPV6INIT=yes
+#IPV6_AUTOCONF=yes
+#IPV6_DEFROUTE=yes
+#IPV6_FAILURE_FATAL=no##IPV6_ADDR_GEN_MODE=stable-privacy
+NAME=ens192
+#UUID=33940274-242e-471d-b414-04d1daa61029
+DEVICE=ens192
+ONBOOT=yes
+IPADDR=172.17.36.131
+NETMASK=255.255.255.0
+GATEWAY=172.17.36.1
+PROXY_METHOD=none
+BROWSER_ONLY=no
+PREFIX=24
+IPADDR1=172.17.36.41
+PREFIX1=24
+NETMASK1=255.255.255.0
+DEFROUTE=yes
+IPV4_FAILURE_FATAL=no
+IPV6INIT=no
+UUID=03da7500-2101-c722-2438-d0d006c28c73
+
+[root@u0bvsaphld001 network-scripts]# cat ifcfg-ens192
+TYPE=Ethernet
+#PROXY_METHOD=none
+#BROWSER_ONLY=no
+BOOTPROTO=static
+#DEFROUTE=yes
+#IPV4_FAILURE_FATAL=no
+#IPV6INIT=yes
+#IPV6_AUTOCONF=yes
+#IPV6_DEFROUTE=yes
+#IPV6_FAILURE_FATAL=no##IPV6_ADDR_GEN_MODE=stable-privacy
+NAME=ens192
+#UUID=33940274-242e-471d-b414-04d1daa61029
+DEVICE=ens192
+ONBOOT=yes
+IPADDR1=172.17.36.133
+NETMASK=255.255.255.0
+IPADDR2=172.17.36.40
+NETMASK=255.255.255.0
+GATEWAY=172.17.36.1
+=================================================================
+925  umount /storage/
+  926  vgs
+  927  vgchange -an storagevg
+  928  lvremove /dev/storagevg/storagelv
+  929  vgremove storagevg
+  930  pvs
+  931  pvremove /dev/mapper/mpatha1 /dev/mapper/mpathb1 /dev/mapper/mpathc1 /dev/mapper/mpathd1 /dev/mapper/mpathe1 /dev/mapper/mpathf1 /dev/mapper/mpathg1 /dev/mapper/mpathh1 /dev/mapper/mpathi1 /dev/mapper/mpathj1 /dev/mapper/mpathk1 /dev/mapper/mpathl1 /dev/mapper/mpathm1 /dev/mapper/mpathn1
+  932  pvs
+  933  multipath -f mpatha
+  934  multipath -f mpathb
+  935  multipath -f mpathc
+  936  multipath -f mpathd
+  937  multipath -f mpathe
+  938  multipath -f mpathf
+  939  multipath -f mpathg
+  940  multipath -f mpathh
+  941  multipath -f mpathi
+  942  multipath -f mpathj
+  943  multipath -f mpathk
+  944  multipath -f mpathl
+  945  multipath -f mpathm
+  946  multipath -f mpathn
+  947  ls
+  948  vi servers_list
+  949  wc -l servers_list
+  950  lsblk
+  951  for i in `cat servers_list`; do echo 1 > /sys/block/$i/device/delete; done
+  952  lsblk
+  953  clear
+  954  hostname; date
+  955  pvs
+  956  vgs
+  957  df -h /storage
+
+yum remove leap
+yum remove leapp
+yum update
+yum remove python2-leapp
+yum remove leapp-repository-deps leapp-deps
+yum remove leapp-deps
+yum remove leapp-deps
+yum remove leapp
+yum update
+yum update
+
+Address : Plot No 284- B/1, Bommasandra Jigani link Road Industrial Area,
+Jigani Hobli, Anekal Taluk, Bengaluru  – 560105.
+
+City : Banglore
+State : Karnataka
+Zip :560105
+Country : INDIA
+SITE CONTACT
+Contact Person :Nandhish Ganesan
+Telephone : 7338178259,0866354996
+Email : Nandhish.ganesan1@viatris.com
+
+1.Do you prefer for parts to be delivered at a particular time or date?
+
+9:00 AM to 5:00 PM
+
+2.Is the site Manned or Unmanned?
+
+Manned
+
+3.Is the site accessible after 5:00 PM?
+
+No
+
+4.Is it OK to leave the part with the security?
+
+Ok
+
+5.If you are entitled for FE do you required FE to install the part?
+
+Yes
+
+6.Is it a Data center?
+
+Yes
+
+This change is for Decreasing the CPU and Memory on u0bvsapghp001 server. There is an application impact, and the end-user will not be able to access the application during the time of activity. If any issues arise, we will revert the system to its original state.  There is Low identified impact on data integrity, product quality, regulatory compliance, and/or patient safety.
+
+Total download size: 737 k
+Is this ok [y/d/N]: y
+Downloading packages:
+Delta RPMs disabled because /usr/bin/applydeltarpm not installed.
+warning: /var/cache/yum/x86_64/7Server/rhel-7-server-rpms/packages/sendmail-8.14.7-6.el7.x86_64.rpm: Header V3 RSA/SHA256 Signature, key ID fd431d51: NOKEY-:--:-- ETA
+Public key for sendmail-8.14.7-6.el7.x86_64.rpm is not installed
+sendmail-8.14.7-6.el7.x86_64.rpm                                                                                                                | 737 kB  00:00:00
+Retrieving key from file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+Importing GPG key 0xFD431D51:
+ Userid     : "Red Hat, Inc. (release key 2) <security@redhat.com>"
+ Fingerprint: 567e 347a d004 4ade 55ba 8a5f 199e 2f91 fd43 1d51
+ Package    : redhat-release-server-7.4-18.el7.x86_64 (@RHEL7.3)
+ From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+Is this ok [y/N]: y
+Importing GPG key 0x2FA658E0:
+ Userid     : "Red Hat, Inc. (auxiliary key) <security@redhat.com>"
+ Fingerprint: 43a6 e49c 4a38 f4be 9abf 2a53 4568 9c88 2fa6 58e0
+ Package    : redhat-release-server-7.4-18.el7.x86_64 (@RHEL7.3)
+ From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+Is this ok [y/N]:
+
+CISCO
+Return to Address:
+CISCO SYSTEMS
+C/O RVI INC
+308 INDUSTRIAL DRIVE
+REDWOOD FALLS, MN, 56283 US
+
+
+entstat -all ent23 | grep -e "(ent" -e "Type:" -e "Address:" -e "Link Status" -e "Link State:" -e "Switch "
+entstat -all ent23 | grep -e "  Priority" -e "Virtual Adapter" -e "  State:" -e "High Availability Mode" -e "  ent"
+chdev -dev ent23 -attr ha_mode=sharing
+entstat -all ent23 | grep -e "  Priority" -e "Virtual Adapter" -e "  State:" -e "High Availability Mode" -e "  ent"
+entstat -all ent23 | grep -e "(ent" -e "Type:" -e "Address:" -e "Link Status" -e "Link State:" -e "Switch "
+oem_setup_env
+errpt|head
+errpt -a|pg
+entstat -all ent23 | grep -e "(ent" -e "Type:" -e "Address:" -e "Link Status" -e "Link State:" -e "Switch "
+entstat -all ent23 | grep -e "(ent" -e "Type:" -e "Address:" -e "Link Status" -e "Link State:" -e "Switch "
+entstat -all ent23 | grep -e "  Priority" -e "Virtual Adapter" -e "  State:" -e "High Availability Mode" -e "  ent"
+chdev -dev ent23 -attr ha_mode=standby
+hostname
+entstat -all ent23 | grep -e "(ent" -e "Type:" -e "Address:" -e "Link Status" -e "Link State:" -e "Switch "
+entstat -all ent23 | grep -e "  Priority" -e "Virtual Adapter" -e "  State:" -e "High Availability Mode" -e "  ent"
+~>
+oem_setup_env
+entstat -all ent23 | grep -e "  Priority" -e "Virtual Adapter" -e "  State:" -e "High Availability Mode" -e "  ent"
+exit
+entstat -all ent23 | grep -e "  Priority" -e "Virtual Adapter" -e "  State:" -e "High Availability Mode" -e "  ent"
+oem_setup_env
+shutdown -Fr
+oem_setup_env
+exit
+entstat -all ent23 | grep -e "(ent" -e "Type:" -e "Address:" -e "Link Status" -e "Link State:" -e "Switch "
+entstat -all ent23 | grep -e "  Priority" -e "Virtual Adapter" -e "  State:" -e "High Availability Mode" -e "  ent"
+hostname
+entstat -all ent23 | grep -e "  Priority" -e "Virtual Adapter" -e "  State:" -e "High Availability Mode" -e "  ent"
+chdev -dev ent23 -attr ha_mode=sharing
+set -o vi
+entstat -all ent23 | grep -e "  Priority" -e "Virtual Adapter" -e "  State:" -e "High Availability Mode" -e "  ent"
+entstat -all ent23 | grep -e "  Priority" -e "Virtual Adapter" -e "  State:" -e "High Availability Mode" -e "  ent"
+entstat -all ent23 | grep -e "(ent" -e "Type:" -e "Address:" -e "Link Status" -e "Link State:" -e "Switch "
+df -gt
+
+Dear Team,
+Thank you so much for the call.
+Well, it is indeed great that we could spot out the issue with LandscapeHostConfiguration running with status warning.
+
+As agreed, please make sure that LandscapeHostConfiguration issue is fixed, and that the return code is 4.
+
+After all is fixed, please follow the steps provided in the chat, or here below.(This are exactly the same steps)
+1. Put the cluster into maintenance mode (crm maintenance on)
+2. Start HANA manually on both nodes and ensure replication is working (As HANA is running and replication is active, then this step must be skipped)
+2.1 Check that processes are the same on both nodes and in status running using GetProcessList function
+2.2 Check landscapeHostConfiguration.py and make sure return code is 4 (Could be checked by echo $?)
+3. Place the HANA master/slave resource in unmanaged mode (crm resource unmanage <resource name>/ crm resource unmanage SAP_HDB_ATP_clone)
+4. Take the cluster out of maintenance mode (crm maintenance off)
+5. Give it a few minutes (~3-5 minutes should be fine)
+6. Put the cluster back into maintenance (crm maintenance on)
+7. Restart the cluster on the primary and the scondary node (crm cluster restart) ---
+8. Remove cluster from maintenance mode (crm maintenance off)
+9. Cleanup resource failures (crm resource cleanup)
+10. Resource <rsc_SAPHana_***_**** (resource name)> is started on both nodes, and the roles are respectively 4:P for master and 4:S for secondary. 
+Only now it is safe to remove the saphana master/slave resource from unmanged mode (crm resource manage <resource name> /  crm resource manage SAP_HDB_ATP_clone)
+
+Further, if there might be any issues, please make sure to put the cluster back into maintenance, and start HANA and replication manually.
+1. Put the cluster into maintenance mode (crm maintenance on)
+2. Start HANA on both nodes, and make sure to activate the replication.
+3. Install supportutils-plugin-ha-sap on both nodes (This plugin allows to gather more HANA and Cluster related logs)
+# zypper in supportutils-plugin-ha-sap
+4. Generate a fresh hb_report
+5. Generate a fresh supportconfig from both nodes
+6. The time the issue is noticed or the time of the activity
+
+dd if=/dev/sda1 of=/os_backup/sda1_boot-efi_imgbkp_22Feb2023.img status=progress
+dd if=/dev/sda2 of=/os_backup/sda2_boot_imgbkp_22Feb2023.img status=progress
+dd if=/dev/sda3 of=/os_backup/sda3_rootlvm_imgbkp_22Feb2023.img status=progress
+
+
+svc account owner
+password policy
+AD team latest DNS
+
+
+svc_zen:x:4798:100:Monitoring tool account:/home/svc_zen:/bin/bash---gidc.itmonitoring_run@viatris.com
+svc_nc:x:4307:100: security accunt:/home/svc_nc:/bin/bash--leslie.miller@viatris.com
+svc_itom:x:5550:5550:ITOM User:/home/svc_itom:/bin/bash---GIDC.ServiceNow_Run@viatris.com
+svc_unixadm:x:5747:100:Unix Administrator Account:/home/svc_unixadm:/bin/bash
+svc_unix:x:5556:100:SNOW Service Account:/home/svc_unix:/bin/bash---GIDC.ServiceNow_Run@viatris.com
+svc_atmn:x:5909:100:svc_automation:/home/svc_atmn:/bin/bash---GIDC_SMART_Automation@viatris.com
+
+
+Please acknowledge everyone. 
+
+FYI.. Wintel team enabled the logs in all the Esxi hosts where the Unix OS Clusters (VM) servers were running. As per the VMware vendor suggestions this logs were enabled specifically to capture the cause of the Fencing alerts. 
+
+If any Fencing alerts  received for any of the cluster servers please engage the Wintel team and ask them to upload the logs with VMware for the findings. 
+
+Note: Logs rotation was enabled for every 1 hour.  We need to act immediately. If any delay in the action will end up with the no root cause of the issue.  If Wintel team  having any concern ask them to check with Wintel SME .  Also raise case with Redhat for Fencing Alerts.
+
+cd /usr/admin/UNIX_Validation/
+ls
+./UNIX_Pre_Post_script_v1.1.sh
+vi UNIX_Pre_Post_script_v1.1.sh
+./UNIX_Pre_Post_script_v1.1.sh
+vi UNIX_Pre_Post_script_v1.1.sh
+
+===================================================================================================================================
+                            X11
+====================================================================================================================================
+yum install xorg-x11-*
+---> need to install the rpm "xorg-x11-xauth"
+#rpm -qa |grep -i xorg-x11-xauth
+xorg-x11-xauth-1.0.9-1.el7.x86_64
+#yum install xorg-x11-xauth xorg-x11-fonts-* xorg-x11-font-utils xorg-x11-fonts-Type1
+--->need to enable below options 
+#cp -p /etc/ssh/sshd_config /etc/ssh/sshd_config-bkp-01aug2019
+[root@ua1meccd001 m526494]# grep -i x11 /etc/ssh/sshd_config
+X11Forwarding yes
+X11DisplayOffset 10
+#X11UseLocalhost yes
+X11Forwarding yes
+root@u0bmeccp001 ~]# grep -i AddressFamily /etc/ssh/sshd_config
+AddressFamily inet
+--->restart the ssh services
+#systemctl restart sshd.service
+
+===============================================================================================================================
+2.	Get the network interface up and working enough to access another working system. 
+1.	Mount the needed filesystems at /mnt in the rescue environment. 
+1.	
+2.	# mount /dev/rootvg/rootlv /mnt
+3.	# mount /dev/rootvg/usrlv /mnt/usr
+4.	
+2.	Copy over the network config 
+1.	
+2.	# cp /mnt/etc/sysconfig/network/ifcfg-eth0 /etc/sysconfig/network/
+3.	Bring up the interface 
+1.	
+2.	# wicked ifup eth0
+4.	Add a default route 
+1.	
+2.	# ip route add default via <gateway_IP> dev eth0
+5.	At this point, we had an IP and working routes, but DNS was not set up, and access to outside sites was not working correctly. This was good enough though to access a working system and copy some files.
+3.	Copy the needed files, making sure to copy symlinks without following them to the destination. 
+1.	
+2.	# mkdir /mnt/usr/bin
+3.	# rsync --progress -avh -e ssh <working_server_IP>:/usr/bin/ /mnt/usr/bin/
+
+Chroot the broken system. 
+1.	Mount pseudo-filesystems in the mounted system. 
+1.	
+2.	# for i in proc sys dev run; do mount --rbind /$i /mnt/$i; done
+2.	Change root to the mounted system. 
+1.	
+2.	# chroot /mnt/
+3.	Mount the remaining unmounted filesystems according to the entries in /etc/fstab. 
+1.	
+2.	# mount -a
+
+Use the rpmdb on the broken server to compile a list of packages broken by the changes to /usr/bin. 
+1.	Get a list of files that are missing from installed packages (these are packages that are installed on the broken server, but not on the working server). 
+1.	
+2.	# for i in $(rpm -Va | grep "missing" | awk '{print $2}'); do rpm -qf $i; done | uniq | tee /root/packages-with-missing-files.txt
+2.	Get a list of binaries in /usr/bin that are not the same was what the installed package provides (these are binaries belonging to packages that have different versions between the working and broken servers). 
+1.	
+2.	# for i in $(rpm -Va | grep -E '(^S)|(^..5)' | awk '{print $3}'); do rpm -qf $i; done | uniq | tee /root/packages-with-modified-binaries.txt
+3.	Re-install all of the above packages to fix what we can. 
+1.	
+2.	# zypper in --force --oldpackage $(cat /root/packages-with-modified-binaries.txt /root/packages-with-modified-binaries.txt)
+3.	
+
+Once that was done, we went ahead and rebooted and the server came back up. There still may be some residual effects of our slightly desperate procedure to fix the server, but those can be resolved as they come up by deleting conflicting files and working with update-alternatives.
+
+I am going to schedule the case to close at the end of the day tomorrow since we got the problem resolved. Let me know before then if you have any questions
+
+
+1	Enable MM for all the server part of the activity from 28th Apr 0500 AM IST to 0400PM IST
+2	Enable MM for all the physical server imm console and chassis  (if applicable)
+3	Raise RITM with storage team to  Enable MM for storage port group for all the physical server (If applicable)
+4	Backup the fstab and shadow file on all the servers
+5	Collect the pre-script for all the servers
+6	Collect the cluster configuration backup in cluster servers
+7	Hardware case to be logged for the physical servers part of the activity  (If applicable)
+
+pcs config backup /usr/admin/franklin/OS_cluster_backup/hdbpoc_backup_19oct23
+
+# hostname 
+
+# date 
+
+# ip address show 
+
+# for i in `ip netconf | grep -i -E "team" |awk '{print $2}' | sort -u`; do echo ; echo "======================================================="; echo $i ; teamdctl $i state; done
+
+# for i in `ip netconf | grep -i -E "bond" |awk '{print $2}' | sort -u`; do echo ; echo "======================================================="; echo $i ; cat /proc/net/bonding/$i; done
+
+Hi Team,
+
+Please find the standard IP information below
+
+If the mentioned server is built for public facing (behind Public Load balancer). Find the interfaces that needs to be configured as below.
+DMZ Management:              172.26.19.0/25 – gateway - 172.26.19.1  for management and administering.
+DMZ Data interface:             172.26.82.0/24 – gateway - 172.26.82.1
+DMZ LB backend interface: 172.26.8.0/24 – gateway -   172.26.8.1  for public access through LB
+
+Reverse access to this server through Viatris Network should be through Public and the IP address needs to be gathered from @GIDC.Network_RUN & @GIDC.NetworkSecurity_RUN that will be in the range of 204.128.2.x
+
+If the mentioned Server is not meant for public access(not behind Public Load balancer), then the below mentioned IP Schema needs to be used. Find the interfaces that needs to be configured as below.
+DMZ Management: 172.26.19.0/25 – gateway- 172.26.19.1
+DMZ Data interface: 172.26.82.0/24 - gateway- 172.26.82.1
+
+You can ignore DMZ LB backend interface and should ignore configuring Public IP, which in this case which is 204.128.2.21/25. 
+
+We need to understand whether this application will be directly accessed as we can see the public IP configured which is not a Viatris Standard and goes against Security guidelines. 
+
+Let us know if this server is not meant for public access? What serves the purpose of this server built?
+
+Kindly schedule a call for further clarity.
+
+Username : admin
+              Password: NJI(nji9%
+
+Server Name	IMM IP
+u07media001	172.26.241.18
+u07sapwdpp001	172.26.3.40
+u07syncgi001	172.26.3.125
+u0bpnbume04	172.20.26.244
+u0bpnbume05	172.20.26.245
+u0bpnbume06	172.20.26.246
+u0bsyncgi003	172.20.8.90
+u0bsyncgi004	172.20.8.91
+u0bsyncgi005	172.20.8.92
+u56pnbuma01	172.22.236.42
+u6gmedia001	172.25.9.11
+u75media001	172.22.232.40
+u77media001	10.240.128.28
+u7lmedia001	10.240.177.22
+u7wmedia001	10.240.5.22
+u7xmedia001	10.240.21.22
+u84media001	10.240.161.24
+u87media001	10.240.33.28
+u8amedia001	10.240.29.24
+
+
+Hi Team,
+            If any Unix team-managed applications experience performance issues or if we observe high CPU/load average/ slow performance on the server. please check whether carbon black agent is running on the server . if b9daemon is running Please follow the below steps.
+
+                        # ps -ef | grep -i b9daemon
+
+ 
+1.	Please inform the carbon black team to disable the services on the carbon black tool. Once stopped then stop and disable the carbon agent services
+
+Note: if we stop the service in server end . it wont stop . Make sure service need to disable in carbon black tool first. 
+
+2.	Please form the below steps in RHEL 7.x /8.x / 9.x
+
+# systemctl status b9daemon.service
+# systemctl stop b9daemon.service
+# systemctl disable b9daemon.service
+
+Please form the below steps in RHEL 6.x 
+
+# service b9daemon status
+# service b9daemon stop
+# chkconfig b9daemon off
+
+3.	once the service is stopped, monitor the server's load average and other resource usage. It should start reducing the usage. If the load or other resource usage is not reduced within 10 minutes, inform the Carbon Black team and uninstall the agent using the following commands:
+# cd /opt/bit9/bin/
+# ./b9uninstall.sh
+
+Above script will take approx 5 mins to uninstall the agent from the server. 
+
+1)Is that the same path “/srv/bit9/data” still consuming more disk space ? What is the size of this path now ?
+2)Provide the screenshot of files and its size in path “/srv/bit9/data” .
+3) Provide the high debug logs from agents with resetting the counters following below steps :
+1)Open Terminal and issue the following commands:
+cd /opt/bit9/bin
+./b9cli --password GlobalCLIPassword
+./b9cli --resetcounters
+./b9cli --flushlogs
+./b9cli --debuglevel 4
+./b9cli --kerneltrace 4
+./b9cli --nettrace 1
+2) Collect 5-10 minutes of data during the ongoing issue.
+ 
+3) Capture and stop debug logging:
+
+sudo ./b9cli --capture /var/tmp/$HOSTNAME-Logs.zip
+./b9cli --password GlobalCLIPassword
+./b9cli --debuglevel 0
+./b9cli --kerneltrace 2
+./b9cli --nettrace 0
+
+4) Collect the System Logs.
+sudo tar cvfz /var/tmp/$HOSTNAME-SystemLogs.tgz /var/log
+5)Collect the Top command output:
+top -c -n 10 -d 5 >> /var/tmp/$HOSTNAME-top_output.txt
+Feel free to let me know if you have any queries or concerns, I am glad to support you!
+
+Upjohn_1234
+
+top -c -n 10 -d 5 >> /var/crash/$HOSTNAME-top_output.txt
+
+EOSL - Linux Versions
+ 
+Linux upto V7.9 = EOSL
+Linux V8  - Below 8.8 only Is EOSL
+Linux V9  - 9.0 only is EOSL
+
+
+cat /etc/sudoers | grep -i includedir -B1;yes | cp -pr /usr/admin/customized_sudo/zenvtm /etc/sudoers.d/zenvtm;clear;cat /etc/sudoers.d/zenvtm;chmod 644  /etc/sudoers.d/zenvtm;ls -l /etc/sudoers.d/zenvtm
+
+gpasswd -d m552219 zensar;gpasswd -d m549542 zensar;gpasswd -d m558065 zensar;gpasswd -d m660040 zensar;gpasswd -d m560219 zensar;gpasswd -d m563463 zensar;gpasswd -d m669068 zensar;gpasswd -d m671728 zensar;gpasswd -d m552219 zenvtm;gpasswd -d m549542 zenvtm;gpasswd -d m558065 zenvtm;gpasswd -d m660040 zenvtm;gpasswd -a m560219 zenvtm;gpasswd -a m563463 zenvtm;gpasswd -a m669068 zenvtm;gpasswd -a m671728 zenvtm
+============================================================================================================================================================
+Hi Team,
+Please follow below procedure to disable transparent huge pages (THP) on Red Hat Enterprise Linux 7, 8 and 9 servers.
+Follow the steps below: 
+1.	Add the transparent_hugepage=never to kernel command line.
+# grubby --args="transparent_hu
+
+
+age=never" --update-kernel ALL
+2.	System needs to be rebooted to apply the changes.
+# reboot
+3.	Below output should be checked post reboot to confirm the change:
+# cat /proc/cmdline
+Sample output:
+# cat /proc/cmdline
+BOOT_IMAGE=(hd0,gpt2)/vmlinuz-5.14.0-427.20.1.el9_4.x86_64 root=/dev/mapper/rootvg-root ro crashkernel=1G-4G:192M,4G-64G:256M,64G-:512M resume=/dev/mapper/rootvg-swap rd.lvm.lv=rootvg/root rd.lvm.lv=rootvg/swap rd.lvm.lv=rootvg/usr rhgb quiet transparent_hugepage=never
+4.	Validate the status of the THP after server reboot.
+#cat /sys/kernel/mm/transparent_hugepage/enabled
+always madvise [never]
+Note : The old procedure which we followed to disable the THP in RHEL 8 servers also will give an entry in “/proc/cmdline” file.
+============================================================================================================================================================
+nmtui
+
+u0bvsness001    172.20.32.144
+u0bvsness002    172.20.33.164
+u0bvsapatq001	172.17.36.117
+u0bvsapatq002	172.17.36.129
+u0bphdbatq001	172.17.81.80
+u0bphdbatq002	172.17.81.81
+u0bvhdbgiq001	172.17.81.75
+u0bvhdbgiq002	172.17.81.76
+u0bvsapfgq001	172.17.36.189
+u0bvsapfgq002	172.17.36.188
+u0bvsapgeq001	172.20.33.243
+u0bvsapgeq002	172.20.33.244
+u0bvsapgiq001	172.20.34.36
+u0bvsapgiq002	172.20.34.37
+u0bvsapgyq001	172.17.36.16
+u0bvsapgyq002	172.17.36.166
+u0bvsapscq001	172.17.36.137
+u0bvsapscq002	172.17.36.136
+u0bvsapseq001	172.20.34.13
+u0bvsapseq002	172.20.34.14
+u0bvsapatp001	172.17.37.116
+u0bvsapatp002	172.17.37.119
+
+u0bphdbatp001	172.17.80.57
+u0bphdbatpn02	172.17.80.59
+u0bvhdbgip001	172.17.80.51
+u0bvhdbgip002	172.17.80.52
+u0bvsapfgp001	172.17.37.184
+u0bvsapfgp002	172.17.37.183
+u0bvsapgep001	172.20.85.233
+u0bvsapgep002	172.20.85.234
+u0bvsapgip001	172.20.87.73
+u0bvsapgip002	172.20.87.74
+u0bvsapgyp001	172.17.37.159
+u0bvsapgyp002	172.17.37.156
+u0bvsaprp1p01	172.20.85.71
+u0bvsaprp1p02	172.20.85.72
+u0bvsapscp001	172.17.37.134
+u0bvsapscp002	172.17.37.13
+u0bvsapsep001	172.20.87.34
+u0bvsapsep002	172.20.87.35
+
+979  scp rclone-v1.67.0-linux-amd64.zip m546924@u0bvbasep001:/home/m546924/
+  980  scp rclone-v1.67.0-linux-amd64.zip m546924@u0bardtpoc001:/home/m546924/
+  981  ls
+  982  cd
+  983  hostname; date
+  984  rclone --version
+  985  ls
+  986  unzip rclone-v1.67.0-linux-amd64.zip
+  987  ls
+  988  cd rclone-v1.67.0-linux-amd64/
+  989  ls
+  990  cp rclone /usr/bin/
+  991  ls -lrth /usr/bin/rclone
+  992  mkdir -p /usr/local/share/man/man1
+  993  cp rclone.1 /usr/local/share/man/man1/
+  994  mandb
+  995  rclone config
+  996  cd
+  997  rclone --version
+  998  hostname; date
+  999  rclone --version
+
+Server Host Name	Server Type	Environment	OS version	Target version
+u0brimsapd01	Application	DEV 	RHEL 8.2	RHEL 8.8
+u0bvrimsapd02	Application	DEV	RHEL 8.2	RHEL 8.8
+u0brimsdbd01	Database	DEV	RHEL 8.2	RHEL 8.8
+u0bvrimsdbd02	Database	DEV	RHEL 8.6	RHEL 8.8
+u0brimsapt001	Application	TEST	RHEL 8.2	RHEL 8.8
+u0brimsapt002	Application	TEST	RHEL 8.2	RHEL 8.8
+u0bvrimsapt03	Application	TEST	RHEL 8.2	RHEL 8.8
+u0brimsdbt001	Database	TEST	RHEL 8.2	RHEL 8.8
+u0bvrimsdbt02	Database	TEST	RHEL 8.2	RHEL 8.8
+u0brimsolt001	Solr	TEST	RHEL 8.2	RHEL 8.8
+u0brimslbt001	sFTP	TEST	RHEL 8.2	RHEL 8.8
+u0brimsapp01	Application	PROD	RHEL 8.2	RHEL 8.8
+u0brimsapp02	Application	PROD	RHEL 8.2	RHEL 8.8
+u0bvrimsapp03	Application	PROD	RHEL 8.2	RHEL 8.8
+u0bvrimdbp001	Database	PROD	RHEL 8.2	RHEL 8.8
+u0bvrimdbp002	Database	PROD	RHEL 8.2	RHEL 8.8
+u0brimsolp01	Solr	PROD	RHEL 8.2	RHEL 8.8
+u0brimslbp01	sFTP 	PROD	RHEL 8.2	RHEL 8.8
+
+Viatris-SNOW-Automation-Ports-TCP	Viatris-SNOW-Automation-Ports-UDP
+ssh	22
+5985	5985
+5986	5986
+https	443
+
+Infra Auto Prod Mid Servers:-
+W0BVSNMIDP001 - 172.17.37.60
+W0BVSNMIDP002 - 172.17.37.67
+
+DB_VLAN-ID	IP Subnet
+152	172.17.38.0/24
+153	172.17.39.0/24
+1551	172.17.60.0/24
+1552	172.17.75.0/24
+1556	172.17.80.0/24
+1557	172.17.81.0/24
+1558	172.17.82.0/24
+22	172.20.22.0/24
+36	172.20.36.0/24
+37	172.20.37.0/24
+300	172.20.45.0/24
+
+Hi All,
+  I am pleased to inform that we have successfully completed the segregation of Dell Open Manage Essentials (OME) into regional instances. This initiative was undertaken to enhance operational efficiency by reducing network bandwidth consumption and minimizing the time required for firmware upgrades.
+Below are the Dell OME instances created for each region:
+OME instance Name	Region
+u0baomeinfp001	North America
+u23aomeinfp001	APAC
+u6oaomeinfp001	INDIA
+ub5aomeinfp001	EMEA
+uezaomeinfp001	CHINA
+
+Hi @Hari Prasad Jangam/@Joshva S,
+
+Please follow the below steps during the QM activity.
+
+1.	After OS update, we need to check whether the /etc/pam.d/common-{account,auth,password,session} files has below content or not.
+
+# cat common-account | grep -v "#"
+account required        pam_unix.so     try_first_pass
+account required        pam_tally2.so
+
+# cat common-auth | grep -v "#"
+auth    required        pam_env.so
+auth    optional        pam_gnome_keyring.so    only_if=gdm,gdm-password,lxdm,lightdm,mdm,sddm
+auth    required        pam_unix.so     try_first_pass
+auth    required        pam_tally2.so   deny=5 even_deny_root unlock_time=1800 root_unlock_time=1800
+
+# cat common-password | grep -v "#"
+password        requisite       pam_cracklib.so retry=3 difok=5 minlen=8 dcredit=-1 ucredit=-1 lcredit=-1 ocredit=-1 maxrepeat=2
+password        required        pam_pwhistory.so        remember=20
+password        optional        pam_gnome_keyring.so    use_authtok
+password        required        pam_unix.so     use_authtok nullok shadow try_first_pass
+
+# cat common-session | grep -v "#"
+session optional        pam_systemd.so
+session required        pam_limits.so
+session required        pam_unix.so     try_first_pass
+session optional        pam_umask.so
+session optional        pam_gnome_keyring.so    auto_start only_if=gdm,gdm-password,lxdm,lightdm,mdm,sddm
+session optional        pam_env.so
+
+2.	If any parameters were missed or not as per standard, we need to update /etc/pam.d/common-{account,auth,password,session}-pc files with above content.
+
+3.	Check whether /etc/pam.d/common-{account,auth,password,session} files have symbolic links or not.
+
+# ls -al common-*
+
+4.	If the files have symbolic links, Remove the symbolic links.
+
+# rm common-{account,auth,password,session}
+
+5.	After removing the symbolic links, Copy the content from /etc/pam.d/common-{account,auth,password,session}-pc files to /etc/pam.d/common-{account,auth,password,session} files
+
+# cp common-account-pc common-account
+# cp common-auth-pc common-auth
+# cp common-password-pc common-password
+# cp common-session-pc common-session
+
+6.	Check whether both the files are individual or not.
+
+# ls -al common-*
+
+1. Inform DBA team and Application team to stop the services
+2. Login to the u0bvmdmdbp003 server with user credentials and switch to root user
+3. Check the current value of the transparent hugepages
+      # cat /sys/kernel/mm/transparent_hugepage/enabled
+4. Take backup of /boot/grub2/grubenv
+     # cp -rp /boot/grub2/grubenv /tmp/grubenv_bkp_'date +'%d%m%Y'`
+5. Update the /boot/grub2/grubenv file by appending the line "transparent_hugepage=never" at the end of the Linux kernelopts line
+     # vi /boot/grub2/grubenv
+        append in  kernelopts line at the end     "transparent_hugepage=never"
+6. Reboot the server for changes to take effect
+     # reboot
+7. Check the updated value of transparent hugepages after reboot
+     # cat /sys/kernel/mm/transparent_hugepage/enabled
+     # grep AnonHugePages: /proc/meminfo 
+     # grep nr_anon_transparent_hugepages /proc/vmstat
+8. Follow similar steps for the remaining servers u0bvidqdbd003, u0bvidqdbp003, u0bvidqdbt003, u0bvpwcdbd003, u0bvpwcdbp003, u0bvpwcdbt003, u0bvstgdbd003, u0bvstgdbp003, u0bvstgdbt003, u0bvmdmdbt003, u0bvmdmdbd003
+
+887  2025-06-06 03:53:05 cat /sys/kernel/mm/transparent_hugepage/enabled
+  888  2025-06-06 03:53:23 cat /proc/meminfo | grep -i huge
+  889  2025-06-06 03:56:09 yast2
+  890  2025-06-06 03:57:36 cd /sys/kernel/mm/transparent_hugepage
+  891  2025-06-06 03:57:37 ll
+  892  2025-06-06 03:57:49 cat defrag
+  893  2025-06-06 03:58:03 cat enabled
+  894  2025-06-06 03:58:24 echo never > /sys/kernel/mm/transparent_hugepage/enabled
+  895  2025-06-06 03:58:27 cat enabled
+  896  2025-06-06 03:58:31 cat defrag
+  897  2025-06-06 03:58:49 cat /proc/meminfo | grep -i huge
+  898  2025-06-06 04:04:16 echo never > /sys/kernel/mm/transparent_hugepage/defrag
+  899  2025-06-06 04:04:22 cat defrag
+  900  2025-06-06 04:04:35 cat /proc/meminfo | grep -i huge
+  901  2025-06-06 04:06:41 grep nr_anon_transparent_hugepages /proc/vmstat
+  902  2025-06-06 04:24:29 cat /proc/meminfo | grep -i huge
+  903  2025-06-06 04:37:52 cd
+  904  2025-06-06 04:38:04 cd /var/log/
+  905  2025-06-06 04:38:08 ls -lrt messages*
+  906  2025-06-06 04:40:15 cat messages | grep -i huge
+  907  2025-06-06 04:42:32 exit
+  908  2025-06-06 04:43:01 cat messages | grep -i huge
+  909  2025-06-06 04:43:06 cd /var/log
+  910  2025-06-06 04:43:09 cat messages | grep -i huge
+  911  2025-06-06 04:43:16 cat messages | grep -i madvise
+  912  2025-06-06 05:41:06 history
+
+To : svsagar.cc@gmail.com
+ 
+Hi Vinay
+ 
+Hope you are doing well.
+ 
+Please help me to get a return for the attached form-16. Please let me know if any further information is required.
+ 
+ 
+1) PAN NO: 
+2) Password : -
+3) Date of Birth: 
+4) Postal Address: 
+5) BANK ACCOUNT NO:
+6) IFSC :
+7) AADHAR NUMBER:
+8) Form16 - Attached with this mail
+9) Contact Number: 
+10) Current Company Name:
+ 
+Form-16 Password :
+ 
+if any investment mention ""
+=========================================================================================
+FC Details
+
+=========
+
+U78C0.001.DBJ8944-P2-C5  PCI-E capable, Rev 1 slot with 8x lanes  fcs2 fcs3
+ 
+ 
+Name	:	0BPS103--SN10437CP
+
+Site Code	:	0B
+
+Country	:	United States
+
+City	:	Ashburn
+
+Location Name	:	Global Data Center
+
+Type	:	Physical
+
+Type Category	:	Rack
+
+Manufacturer	:	IBM
+
+Model	:	IBM P770
+
+Serial Number	:	10437CP
+
+Rack	:	114
+
+RU	:	16
+
+Asset #	:	744
+ 
+ 
+Switch Details
+
+============
+
+fcs2	10000000C9A577CC	U78C0.001.DBJ8944-P2-C5-T1	u0bps103-vio1	Active	Up	s0bsandir002	fc10/15
+ 
+Serial number: JPG23170038 
+
+ 
+RITM4855391
+ 
+SAN Device: s0bsandir002
+Port: fc10/15
+Serial Number: JPG23170038
+
+1) Login to the server with user credentials and switch to root user
+2) Take the backup of configuration files that will be modified during implementation
+      # cp /etc/default/grub /etc/default/grub.$(date +%F)
+      # cp /etc/fstab /etc/fstab.$(date +%F)
+3) Update the configuration files
+      # vi /etc/default/grub
+              GRUB_CMDLINE_LINUX="crashkernel=768M resume=/dev/mapper/rootvg-swap rd.lvm.lv=rootvg/root rd.lvm.lv=rootvg/swap rd.lvm.lv=rootvg/usr rhgb quiet transparent_hugepage=never"
+4) Rebuild the grub configuration file
+      # grub2-mkconfig -o /boot/grub2/grub.cfg 
+5) Reboot the server
+      # reboot
+6) Validate the status of the THP
+    # cat /sys/kernel/mm/transparent_hugepage/enabled
+
+
+cd /etc/security/
+ls
+ll
+vi pwhistory.conf
+vi faillock.conf
+vi pwquality.conf
+cat pwhistory.conf | grep -v ^#;cat faillock.conf | grep -v ^#;cat pwquality.conf | grep -v ^#
+
+Hostname	IP Address	DataCenter
+u0baomeinfp001	172.17.37.14	0B-GDC
+ub5aomeinfp001	10.250.133.11	B5-FRANKFURT
+A6yvomeinfp001	10.248.55.88	6Y-GBS-HYDERABAD
+u6oaomeinfp001	10.232.45.10	6O-IDC
+u23aomeinfp001	10.1.16.135	23-BRISBANE
+uezaomeinfp001	10.200.7.10	EZ-SHG
+
+w0bvc001
+0bvcsa002
+wb5vc001
+w6evc001
+wvevc001
+23-sa40210
+22-sa40010
+w07vc001
+ezvcsa001
+3nvcenter1
+ 
+0bvcsa001
+07vcsa001
+b5vcsa001
+6ovcsa001
+6ovcsa002
+6ovcsa003
+ 
+w07vc001-srm
+w0bvc001-srm
+23-sa40180-srm
+22-sa40020-srm
+22-sa40020-vsc
+23-sa40180-vsc
+ 
+JUMP servers
+W0bjumpt001
+w0bvjumpt001
+W6ejumpt001
+w6evjumpt001
+wb5jumpt001
+wb5vjumpt001
+Wezvjumpt001
+
+
+Subscription Name
+Red Hat Enterprise Linux for Virtual Datacenters, Premium
+Red Hat Enterprise Linux Server, Premium (Physical or Virtual Nodes)
+Red Hat Enterprise Linux for Virtual Datacenters for SAP Solutions, Premium
+Resilient Storage for Unlimited Guests
+Red Hat Enterprise Linux for SAP Applications for Virtual Datacenters, Premium
+
+
+Access Name	Account Type (sadm / mid)
+Linux & AIX server	MID
+Windows Jump server	SADM
+Dell OEM	MID
+HPE OEM	Local account
+Dell iDRAC	SADM
+Cisco CIMC	SADM
+Splunk tool	MID
+Cisco Blade server	SADM
+vCenter	SADM
+HMC	MID
+MTC	MID
+CyberArk	MID
+Solarwinds tool	SADM
+
+cp -pr /etc/fstab /etc/fstab.`date +%F`
+vi /etc/fstab
+yum update
+uptime
+hostnamectl
+uptime
+reboot
+history | less
+hostnamectl
+yum clean all
+yum update
+cd /etc/yum.repos.d/
+ls
+rm rhel7_built..repo
+yum clean all
+yum repolist
+subscription-manager release --show
+yum update
+hostnamectl
+cat /etc/redhat-release
+yum clean all
+yum repolist all
+systemctl status BESAgent
+hostnamectl
+df -h
+reboot
+passwd
+uptime
+df -h
+ls /
+du -sh /usr/
+subscription-manager repos --enable rhel-7-server-extras-rpms
+yum install leapp cockpit-leapp
+systemctl enabel cockpit.service
+systemctl enable cockpit.service
+systemctl start cockpit.service
+cp -pr /etc/pam.d/password-auth /etc/pam.d/password-auth.`date +%F`
+cp -pr /etc/pam.d/system-auth /etc/pam.d/system-auth.`date +%F`
+vi /etc/pam.d/password-auth
+vi /etc/pam.d/system-auth
+leapp preupgrade
+subscription-manager list
+cd /etc/leapp/files/
+ls
+cp /home/m546924/leapp-data14.tar .
+ls
+tar -xvf leapp-data14.tar
+ls
+leapp preupgrade
+cp -pr /etc/ssh/sshd_config /etc/ssh/sshd_config.`date +%F`
+vi /etc/ssh/sshd_config
+lsmod | grep -i floppy
+lsmod | grep -i pata
+modprobe -r floppy
+modprobe -r pata_acpi
+lsmod | grep -i pata
+lsmod | grep -i floppy
+leapp answer --section remove_pam_pkcs11_module_check.confirm=True
+leapp preupgrade
+rpm -qa | grep iowatcher
+yum remove iowatcher
+leapp upgrade
+reboot
+hostnamectl
+yum downgrade redhat-release
+hostnamectl
+yum downgrade redhat-release
+hostnamectl
+yum downgrade redhat-release
+hostnamectl
+yum update
+hostnamectl
+yum downgrade redhat-release
+hostnamectl
+cat /etc/redhat-release
+yum downgrade redhat-release
+cat /etc/redhat-release
+hostnamectl
+df -h
+chronyc sources
+ip addr
+vi /etc/chrony.conf
+vi /etc/chrony.conf
+vi /etc/chrony.conf
+systemctl restart chronyd.service
+systemctl status chronyd.service
+chronyc sources
+cat /etc/selinux/config
+cat /etc/resolv.conf
+systemctl status sendmail.service
+grep ds /etc/mail/sendmail.cf
+[5:24 PM] Jaya Narasimha Reddy
+    cat /etc/mail/sendmail.cf | grep -i DShub
+less /etc/ssh/sshd_config
+cat /etc/audit/rules.d/audit.rules
+vmware-uninstall-tools.pl -d
+yum install open-vm-tools
+systemctl restart vmtoolsd.service
+systemctl status vmtoolsd.service
+reboot
+history
+
+
+Before stop cluster
+==========================================
+crm resource unmanage SAP_HDB_ATQ_clone
+crm maintenance on--crm configure property maintenance-mode=true
+crm cluster stop on second node first then second node
+
+
+before starting cluster
+=============================================
+crm maintenance off--crm configure property maintenance-mode=false
+crm resource manage SAP_HDB_ATQ_clone
+
+start cluster (it will start manually )
+
+u0bphdbatq001:~ # su - atqadm
+u0bphdbatq001:HDB:atqadm /usr/sap/ATQ/HDB00 54> cdpy
+u0bphdbatq001:HDB:atqadm /usr/sap/ATQ/HDB00/exe/python_support 55> python systemReplicationStatus.py
+|Database  |Host          |Port  |Service Name |Volume ID |Site ID |Site Name |Secondary     |Secondary |Secondary |Secondary |Secondary     |Replication |Replication |Replication    |Secondary    |
+|          |              |      |             |          |        |          |Host          |Port      |Site ID   |Site Name |Active Status |Mode        |Status      |Status Details |Fully Synced |
+|--------- |------------- |----- |------------ |--------- |------- |--------- |------------- |--------- |--------- |--------- |------------- |----------- |----------- |-------------- |------------ |
+|SYSTEMDB  |u0bphdbatq001 |30001 |nameserver   |        1 |      1 |SITEA     |u0bphdbatq002 |    30001 |        2 |SITEB     |YES           |SYNCMEM     |ACTIVE      |               |        True |
+|TGQ       |u0bphdbatq001 |30052 |xsengine     |        2 |      1 |SITEA     |u0bphdbatq002 |    30052 |        2 |SITEB     |YES           |SYNCMEM     |ACTIVE      |               |        True |
+|ATQ       |u0bphdbatq001 |30007 |xsengine     |        2 |      1 |SITEA     |u0bphdbatq002 |    30007 |        2 |SITEB     |YES           |SYNCMEM     |ACTIVE      |               |        True |
+|COCKPITDB |u0bphdbatq001 |30040 |indexserver  |        2 |      1 |SITEA     |u0bphdbatq002 |    30040 |        2 |SITEB     |YES           |SYNCMEM     |ACTIVE      |               |        True |
+|GTQ       |u0bphdbatq001 |30046 |indexserver  |        2 |      1 |SITEA     |u0bphdbatq002 |    30046 |        2 |SITEB     |YES           |SYNCMEM     |ACTIVE      |               |        True |
+|TGQ       |u0bphdbatq001 |30049 |indexserver  |        3 |      1 |SITEA     |u0bphdbatq002 |    30049 |        2 |SITEB     |YES           |SYNCMEM     |ACTIVE      |               |        True |
+|ATQ       |u0bphdbatq001 |30003 |indexserver  |        3 |      1 |SITEA     |u0bphdbatq002 |    30003 |        2 |SITEB     |YES           |SYNCMEM     |ACTIVE      |               |        True |
+
+status system replication site "2": ACTIVE
+overall system replication status: ACTIVE
+
+Local System Replication State
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+mode: PRIMARY
+site id: 1
+site name: SITEA
+u0bphdbatq001:HDB:atqadm /usr/sap/ATQ/HDB00/exe/python_support 56> sapcontrol -nr 00 -function GetProcessList
+
+04.09.2026 23:51:35
+GetProcessList
+OK
+name, description, dispstatus, textstatus, starttime, elapsedtime, pid
+hdbdaemon, HDB Daemon, GREEN, Running, 2026 08 28 04:05:06, 187:46:29, 53844
+hdbcompileserver, HDB Compileserver, GREEN, Running, 2026 08 28 04:05:17, 187:46:18, 54271
+hdbdiserver, HDB Deployment Infrastructure Server-ATQ, GREEN, Running, 2026 08 28 04:07:28, 187:44:07, 63755
+hdbdiserver, HDB Deployment Infrastructure Server-COCKPITDB, GREEN, Running, 2026 08 28 04:07:28, 187:44:07, 63758
+hdbindexserver, HDB Indexserver-ATQ, GREEN, Running, 2026 08 28 04:05:18, 187:46:17, 54360
+h
+u0bphdbatq001:~ # crm_mon -A1
+Cluster Summary:
+  * Stack: corosync (Pacemaker is running)
+  * Current DC: u0bphdbatq001 (version 2.1.10+20260618.4bca25e3c1-150700.3.6.1-2.1.10+20260618.4bca25e3c1) - partition with quorum
+  * Last updated: Fri Sep  4 23:51:56 2026 on u0bphdbatq001
+  * Last change:  Thu Sep  3 05:18:34 2026 by root via root on u0bphdbatq001
+  * 2 nodes configured
+  * 10 resource instances configured
+
+              *** Resource management is DISABLED ***
+  The cluster will not attempt to start, stop or recover services
+
+Node List:
+  * Online: [ u0bphdbatq001 u0bphdbatq002 ]
+
+Active Resources:
+  * stonith-sbd (stonith:external/sbd):  Started u0bphdbatq001 (maintenance)
+  * Clone Set: Topology_ATQ_HDB00_clone [Topology_ATQ_HDB00] (maintenance):
+    * Topology_ATQ_HDB00        (ocf::suse:SAPHanaTopology):     Started u0bphdbatq001 (maintenance)
+    * Topology_ATQ_HDB00        (ocf::suse:SAPHanaTopology):     Started u0bphdbatq002 (maintenance)
+  * Clone Set: SAP_HDB_ATQ_clone [SAP_HDB_ATQ] (promotable, maintenance):
+    * SAP_HDB_ATQ       (ocf::suse:SAPHana):     Master u0bphdbatq001 (maintenance)
+    * SAP_HDB_ATQ       (ocf::suse:SAPHana):     Slave u0bphdbatq002 (maintenance)
+  * VIP_ATQ_HDB00       (ocf::heartbeat:IPaddr2):        Started u0bphdbatq001 (maintenance)
+  * Clone Set: c-HDBATQCLST_FAILOVER_ALERT [HDBATQCLST_FAILOVER_ALERT] (maintenance):
+    * HDBATQCLST_FAILOVER_ALERT (ocf::heartbeat:MailTo):         Started u0bphdbatq001 (maintenance)
+    * HDBATQCLST_FAILOVER_ALERT (ocf::heartbeat:MailTo):         Started u0bphdbatq002 (maintenance)
+  * STONITH_IPMI_ATQ01  (stonith:external/ipmi):         Started u0bphdbatq002 (maintenance)
+  * STONITH_IPMI_ATQ02  (stonith:external/ipmi):         Started u0bphdbatq001 (maintenance)
+
+Node Attributes:
+  * Node: u0bphdbatq001:
+    * hana_atq_clone_state              : PROMOTED
+    * hana_atq_op_mode                  : logreplay
+    * hana_atq_remoteHost               : u0bphdbatq002
+    * hana_atq_roles                    : 4:P:master1:master:worker:master
+    * hana_atq_site                     : SITEA
+    * hana_atq_srah                     : -
+    * hana_atq_srmode                   : syncmem
+    * hana_atq_sync_state               : PRIM
+    * hana_atq_version                  : 2.00.079.09
+    * hana_atq_vhost                    : u0bphdbatq001
+    * lpa_atq_lpt                       : 1788414493
+    * master-SAP_HDB_ATQ                : 150
+  * Node: u0bphdbatq002:
+    * hana_atq_clone_state              : DEMOTED
+    * hana_atq_op_mode                  : logreplay
+    * hana_atq_remoteHost               : u0bphdbatq001
+    * hana_atq_roles                    : 4:S:master1:master:worker:master
+    * hana_atq_site                     : SITEB
+    * hana_atq_srah                     : -
+    * hana_atq_srmode                   : syncmem
+    * hana_atq_sync_state               : SOK
+    * hana_atq_version                  : 2.00.079.09
+    * hana_atq_vhost                    : u0bphdbatq002
+    * lpa_atq_lpt                       : 30
+    * master-SAP_HDB_ATQ                : 100
+u0bphdbatq001:~ # crm_mon -r1
+Cluster Summary:
+  * Stack: corosync (Pacemaker is running)
+  * Current DC: u0bphdbatq001 (version 2.1.10+20260618.4bca25e3c1-150700.3.6.1-2.1.10+20260618.4bca25e3c1) - partition with quorum
+  * Last updated: Fri Sep  4 23:52:04 2026 on u0bphdbatq001
+  * Last change:  Thu Sep  3 05:18:34 2026 by root via root on u0bphdbatq001
+  * 2 nodes configured
+  * 10 resource instances configured
+
+              *** Resource management is DISABLED ***
+  The cluster will not attempt to start, stop or recover services
+
+Node List:
+  * Online: [ u0bphdbatq001 u0bphdbatq002 ]
+
+Full List of Resources:
+  * stonith-sbd (stonith:external/sbd):  Started u0bphdbatq001 (maintenance)
+  * Clone Set: Topology_ATQ_HDB00_clone [Topology_ATQ_HDB00] (maintenance):
+    * Topology_ATQ_HDB00        (ocf::suse:SAPHanaTopology):     Started u0bphdbatq001 (maintenance)
+    * Topology_ATQ_HDB00        (ocf::suse:SAPHanaTopology):     Started u0bphdbatq002 (maintenance)
+  * Clone Set: SAP_HDB_ATQ_clone [SAP_HDB_ATQ] (promotable, maintenance):
+    * SAP_HDB_ATQ       (ocf::suse:SAPHana):     Master u0bphdbatq001 (maintenance)
+    * SAP_HDB_ATQ       (ocf::suse:SAPHana):     Slave u0bphdbatq002 (maintenance)
+  * VIP_ATQ_HDB00       (ocf::heartbeat:IPaddr2):        Started u0bphdbatq001 (maintenance)
+  * Clone Set: c-HDBATQCLST_FAILOVER_ALERT [HDBATQCLST_FAILOVER_ALERT] (maintenance):
+    * HDBATQCLST_FAILOVER_ALERT (ocf::heartbeat:MailTo):         Started u0bphdbatq001 (maintenance)
+    * HDBATQCLST_FAILOVER_ALERT (ocf::heartbeat:MailTo):         Started u0bphdbatq002 (maintenance)
+  * STONITH_IPMI_ATQ01  (stonith:external/ipmi):         Started u0bphdbatq002 (maintenance)
+  * STONITH_IPMI_ATQ02  (stonith:external/ipmi):         Started u0bphdbatq001 (maintenance)
+u0bphdbatq001:~ #
+
+
+ crm resource manage SAP_HDB_ATQ_clone
+ 
+ SAP_HDB_ATQ_clone
+
+
+arted /dev/mapper/mpathr mklabel gpt mkpart primary 0% 100% print quit
+parted /dev/mapper/mpathu mklabel gpt mkpart primary 0% 100% print quit
+parted /dev/mapper/mpatht mklabel gpt mkpart primary 0% 100% print quit
+parted /dev/mapper/mpaths mklabel gpt mkpart primary 0% 100% print quit
+parted /dev/mapper/mpathv mklabel gpt mkpart primary 0% 100% print quit
+parted /dev/mapper/mpathw mklabel gpt mkpart primary 0% 100% print quit
+parted /dev/mapper/mpathx mklabel gpt mkpart primary 0% 100% print quit
+parted /dev/mapper/mpathy mklabel gpt mkpart primary 0% 100% print quit
+
+echo 1 > /sys/block/sdbq/device/delete
+echo 1 > /sys/block/sdby/device/delete
+echo 1 > /sys/block/sdcg/device/delete
+echo 1 > /sys/block/sdco/device/delete
+
+
+multipath -f mpathr
+
+sdbq
+sdby
+sdcg
+sdco
+
+
+sdby
+sdbq
+sdco
+sdcg
+
+lsblk -ds | head -1; lsblk -ds | grep 
+
+lsblk -ds | head -1; lsblk -ds | grep mpathr 
+lsblk -ds | head -1; lsblk -ds | grep mpathu 
+lsblk -ds | head -1; lsblk -ds | grep mpatht 
+lsblk -ds | head -1; lsblk -ds | grep mpaths 
+lsblk -ds | head -1; lsblk -ds | grep mpathv 
+lsblk -ds | head -1; lsblk -ds | grep mpathw
+lsblk -ds | head -1; lsblk -ds | grep mpathx 
+lsblk -ds | head -1; lsblk -ds | grep mpathy 

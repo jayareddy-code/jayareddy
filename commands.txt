@@ -1,0 +1,4034 @@
+/usr/admin/siva/mpath_validation_script_V4.sh > /usr/admin/arun/hana_activity/before/`hostname`_fc_details
+/usr/admin/siva/mpath_validation_script_V4.sh > /usr/admin/arun/hana_activity/after/`hostname`_fc_details
+
+for i in `cat disk_names.txt`; do echo 1 > /sys/block/$i/device/delete; done
+
+abrt-install-ccpp-hook is-installed; echo $?;--installed or not
+sudo /usr/admin/EMC/inq.aix64_51 	sudo /usr/admin/EMC/inq.aix64_51 -wwn
+/usr/admin/santosh/b4_activity/u0bnim001_b4_activity_29102022.txt
+supportconfig
+QSXzse@123
+subscription-manager attach --pool=2c9280817671500f01768feaf2611d63
+cfdisk
+echo 10 > /proc/sys/fs/nfs/nfs_mountpoint_timeout
+for i in `lsuser -a ALL `;do echo "========================================" ; lsuser $i ; echo ; done
+snap -gbLktfc
+rpm -qai --last| grep -i 2022| grep -E 'Jan|Feb|Mar|Apr|May|Jun'
+usermod -aG zensar m562779;echo "gpasswd -d m562779 zensar" | at now +3 days
+multpath 
+========================
+mpathconf --enable
+systemctl restart multipathd.service
+systemctl enable multipathd.service
+multipath -v2
+multipath -ll
+cp /boot/initramfs-$(uname -r).img /boot/initramfs-$(uname -r).old
+dracut -f -v
+=========================================================================
+#export DISPLAY=localhost:10.0
+du -sg *|sort -rn |head
+m529838@u0bahmcp001:~> ls -l /var/hsc/profiles/10826CP
+total 12728
+-rw-rw-r-- 1 ccfw ccfw 1300480 Feb 18  2021 0BPS101--SN10826CP_190221
+-rw-rw-r-- 1 ccfw ccfw 1300480 May 19 08:10 0BPS101--SN10826CP_Backup
+-rw-rw-r-- 1 ccfw ccfw 1300480 Feb 17  2021 0BPS101_bkp_17feb21
+-rw-rw-r-- 1 ccfw ccfw 1300480 Jan  1  2021 1398086635_01012021_941_BKUP_4
+-rw-rw-r-- 1 ccfw ccfw 1300480 Feb  1 00:00 1599477838_01112021_950_BKUP_3
+-rw-rw-r-- 1 ccfw ccfw 1300480 Feb 17  2021 17-Feb-21
+-rw-rw-r-- 1 ccfw ccfw 1300480 Apr  1 00:00 794564378_01042022_950_BKUP_1
+-rw-rw-r-- 1 ccfw ccfw 1300480 May  1 00:00 794564378_01042022_950_BKUP_2
+-rw-rw-r-- 1 ccfw ccfw 1300480 Apr 15  2021 Beforeupgrade20210415
+drwxrwxr-x 2 root ccfw    4096 May 19 08:10 PSS
+-rw-rw-r-- 1 ccfw ccfw 1300480 Mar 13 03:20 backupFile
+drwxrwxr-x 2 ccfw ccfw    4096 May 19 08:10 directory
+m529838@u0bahmcp001:~> scp //var/hsc/profiles/10826CP/0BPS101--SN10826CP_Backup m529838@u0bnim001:/home/m529838
+The authenticity of host 'u0bnim001 (172.20.40.23)' can't be established.
+ECDSA key fingerprint is SHA256:pciLcVJXFHxdwKMCVjqA3o92AXTtMUzVzWxS2q42C5c.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Failed to add the host to the list of known hosts (/home/m529838/.ssh/known_hosts).
+m529838@u0bnim001's password:
+0BPS101--SN10826CP_Backup                                                                                                            100% 1270KB  29.3MB/s   00:00
+m529838@u0bahmcp001:~>
+
+[hscpe@myhmc ~] $ pedbg -c -q 4
+=======================================================================================================================
+scp -rp * gyqadm@u0bvsapgyq001:/sapbasis/LRS_backup/u0blrsp001_bkp/var_lrs
+u0bpnbume05
+ls -lS
+pcs config backup /usr/admin/franklin/OS_cluster_backup/ness_backup_19Mar22---cluster backup
+pcs alert recipient remove smtp_alert-recipient-2--stop cluster alerts
+tar -cvzf $( hostname -s )-hamon.tar.gz /var/log/ha-resourcemon/*
+tar -czvf /tmp/corosync.tar.gz /var/log/cluster/corosync*
+===================================================================
+1)comment the crontab for NFS script
+#59 * * * * /bin/sh /opt/scripts/NFS_DISCONNECTION_IDENTIFIER.sh > /dev/null 2>&1
+2)comment old line add new lines on NFS script (path location /opt/scripts/NFS_DISCONNECTION_IDENTIFIER.sh)
+EGREP=`which egrep`--Add
+#$MOUNT|$GREP nfs|$GREP ":"|$GREP -v ".snapshot"|$AWK '{print $3}' >/etc/nfsstate/current--old
+$MOUNT|$GREP nfs|$GREP ":"|$EGREP -v ".snapshot|tmp"|$AWK '{print $3}' >/etc/nfsstate/current--new
+3)nullify the missed file under /etc/nfsstate
+# /etc/nfsstate/
+#>missed
+5)Delete the notaccessible under /etc/nfsstate
+#/etc/nfsstate/
+#rm -r notaccessible 
+6)uncomment the crontab 
+59 * * * * /bin/sh /opt/scripts/NFS_DISCONNECTION_IDENTIFIER.sh > /dev/null 2>&1
+7)After uncomment check again any missed filesystem under /etc/nfsstate
+#cat /etc/nfsstate/missed
+8)if there nullify again
+9)check notaccessible  created or not again after remove
+#ls -ld /etc/nfsstate/notaccessible 
+========================================================================================================================
+Change from $MOUNT|$GREP nfs|$GREP ":"|$AWK '{print $3}' to $MOUNT|$GREP nfs|$GREP ":"|$GREP -v ".snapshot"|$AWK '{print $3}'
+iotop -o
+ps -lA | egrep '^. D|^F'
+02. SSH to iDRAC IP and connect using username and password.
+03. Type command  rcadmin .
+04. Then type command  racadm racreset soft  (It may take up to a minute for the iDRAC to come back online again).
+
+05. Now re login to iDRAC and launch the KVM console.
+pcs config backup /usr/admin/franklin/OS_cluster_backup/sapSID_backup_12FEB22
+[root@ua1sapsm5p001 ~]# cat /etc/sysconfig/ntpd
+# Drop root to id 'ntp:ntp' by default.
+OPTIONS="-u ntp:ntp -p /var/run/ntpd.pid -g"   ---- -L
+CHG0096327--correction 
+//n0bnnas001/docutech/Submissions /DOCUTECH_DEV cifs    username=edmtest,password=7cdb4edmt,uid=2001,gid=d2users        0 0
+ps -lA | egrep '^. D|^F' |wc -l
+lvcreate -L 5G -n apps_lv sapvg
+mkfs.xfs /dev/sapvg/apps_lv
+mkdir -p /apps
+mount -t xfs /dev/sapvg/apps_lv /apps
+RITM3298944--Yulin
+RITM3249237
+awk -F"," '{for(i=1;i<=NF;i++){print $i}}' test
+u0bphdbatq002:~ # echo "gpasswd -d m539204 zensar" | at now +3 days (uezvfitwebp01)
+warning: commands will be executed using /bin/sh
+job 1 at Sun Nov 21 02:35:00 2021
+u0bphdbatq002:~ # atq
+1 Sun Nov 21 02:35:00 2021 a root
+u0bphdbatq002:~ # at -c 1 (id of job) | grep zensar
+gpasswd -d m539204 zensar
+u0bphdbatq002:~ # logout
+m546924@u0bphdbatq002:~>
+bzip2 -d  filename
+last -f wtmp
+chkconfig redcloak off
+cat /var/log/secure | grep svc_zen
+tail -f  /var/log/secure
+ip route del 172.20.36.13 via 172.20.5.4 dev net1
+route add -net 172.20.36.13 netmask 255.255.255.255 gw 172.20.5.4
+(/opt/scripts/NFS_DISCONNECTION_IDENTIFIER.sh)
+$MOUNT|$GREP nfs|$GREP ":"|$AWK '{print $3}'>/etc/nfsstate/current   Old
+$MOUNT|$GREP nfs|$GREP ":"|$AWK '{print $3}'|$GREP -v '/tmp/'>/etc/nfsstate/current -- New
+oslevel -s | awk -F- '{printf "AIX %.1f - Technology Level %d - Service Pack %d\n",$1/1000,$2,$3}'
+grep "avg-cpu" -A 1 proc_mon_06-Oct-2021.logdig hub.myl.com MX
+echo 10 > /proc/sys/fs/nfs/nfs_mountpoint_timeout
+sshd -T
+find . -mtime +5 -exec ls -la {} \;|less
+find . -mtime +5 -exec rm -rf {} \;
+find /var/opt/BESClient/__BESData/actionsite/Fixlet* -mtime +30 -print
+find /var/opt/BESClient/__BESData/actionsite/Fixlet* -mtime +30 -exec rm -f {} \;
+df -BG /seeburger/repo
+u0bd2indxp001
+for HOST in `ls /sys/class/fc_host`; do  echo $HOST; echo "1" > /sys/class/fc_host/$HOST/issue_lip; done
+cat /etc/security/user | head -n 243 | tail -n 1
+rpm -qai |grep 2021 -A 12 -B 5
+ps -effw |grep -i defunc
+svmon -G -O unit=MB
+svmon -o summary=basic,unit=auto
+u0bhanabwp001:~ # ps -lA |egrep '^. D|^F'
+F S   UID   PID  PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+0 D  1000  9294  9293  0  80   0 -  9755 nfs_wa ?        00:00:00 hdbsql
+1 D     0 11076     2  1  80   0 -     0 rpc_wa ?        00:01:42 fec0::192:168:2
+4 D  1000 14076 14071  0  80   0 -  2827 nfs_wa ?        00:00:00 sh
+0 D  1000 14689 14688  0  80   0 -  3307 nfs_wa pts/3    00:00:00 sh
+0 D  1000 15671 15670  0  80   0 -  3307 nfs_wa pts/4    00:00:00 sh
+0 D     0 15799     1 10  80   0 - 37945 sleep_ ?        00:05:42 bpbkar
+4 D  1000 17319 17315  0  80   0 -  2827 nfs_wa ?        00:00:00 sh
+0 D  1000 20529 20528  0  80   0 -  3307 nfs_wa pts/7    00:00:00 sh
+1 D  1000 20554  6393  0  80   0 -  3476 nfs_wa pts/0    00:00:00 sh
+0 D  1000 21724 21723  0  80   0 -  3307 nfs_wa pts/9    00:00:00 sh
+0 D  1000 22702 22689  0  80   0 - 133815 -     ?        00:00:07 hdb.sapGHP_HDB0
+u0bhanabwp001:~ #
+ps -eo s,user,cmd | grep ^[RD] | sort | uniq -c | sort -nbr | head -10
+cp -pr /etc/fstab /etc/fstab.`date +%F`
+
+vgs -o+devices netbackupvg
+lsblk -ds | head -1; lsblk -ds | grep sdp1
+du -sh * --exclude=netbackup
+https://happiestminds.udemy.com/organization/home/
+http://public.dhe.ibm.com/software/server/hmc/fixes/
+RITM2342288
+RITM2485327--bed
+As per Request below DPT account has been created and password has been shared via Viatris FTA
+Recipient Name: JayaNarasimha Reddy
+DPT account: M529838d---Viatris@123
+AD group:AG-SRV-DPTBastionHost
+
+RITM2378172--tem
+=======================
+Added m529838_sadm to AG-W0BTEM001-PRIV group
+
+If you have additional questions, please visit VITA to access helpful tips and contact details Please visit their page on VITA at Help >> IT Service Center
+
+Regards,
+Access Management Team
+
+root@u0bsap201 /var/adm/cron> cat log | grep "/dba/admin/common/kshell/rmanbackup SEP GOLD-ORA-0B-GRP3 weekly arch"
+CHG0077886
+i-92d45540
+updhmc -t disk -f /home/m539701/MH01881_x86.iso -r -c
+ps -lA | grep '^. Z' | awk {'print $4'} | xargs kill -9
+tcpdump -nn -v -i eth0 -s 1500 -c 1 'ether[20:2] == 0x2000'
+rsync -avl --progress /Storage/* /Storage1/ >> /tmp/rsync.txt &
+mount -v nfs n0bvfapps001:/n0bvfapps001_sas_xfer /sas/xfer
+RE: INC1566440 || Unable to login
+u0bsap165--RITM1663307,RITM1659711---INC1844348
+CHG0079679--huge pages
+cat test | tr "\n" ","
+cat /var/log/proc_mon
+a6BRg?E#jWN!--svc_unix
+a6BRg?E#jWN!
+unix svc_unixadm/My1@n#Un!x@dM1n
+for aix svc_unxA/a6BRg?E#jWN!
+failerlock --user  m545547 --reset
+faillock --user m529838 --reset
+faillock --user m520911 --reset
+faillock --user svc_unix --reset
+echo 10 > /proc/sys/fs/nfs/nfs_mountpoint_timeout
+u0bvwho001
+172.20.40.80--max-sap15
+172.20.40.97-max-sap15
+userdRITM2144198
+SUSEConnect --status
+9705379453--suresh kumar reddy
+find /usr/admin -newermt "yesterday" -ls
+find /usr/admin -type f -ctime -1 -ls
+narasiadm---VFR$vfr4@123
+CHG0073522
+MKO)mko0
+reffer change---CHG0073280
+My1@n#Un!x@dM1n
+svc_unixadm
+ JayaNarasimha.Reddy@Viatris.com 
+sudo /usr/bin/rootsh /bin/su - root
+RITM2151841 
+pip list --format=columns | grep -i xmlsec
+CHG0076391
+echo "svc_unix:vpvRZstZHS9eA" | chpasswd -ec
+
+[root@u0bvsasp001 ~]# id oracle
+uid=1002(oracle) gid=141(oinstall) groups=141(oinstall),100(users)
+[root@u0bvsasp001 ~]#
+
+
+1.	Monitoring script not updated in crontab
+Entry Exists
+2.	/usr/admin file system not mounted: Is this mandatory, will raise RITM to storage and let you know
+3.	Send mail not configured and not updated hub IP s : This is SUSE, I see postfix already exists on the server, sendmail will conflict, should I remove postfix and install sendmail ?
+4.	2 entry s only updated in /etc/resolv.conf file: Was not aware should have more entry
+5.	Redhat OS support subscription ( subscription  name /account /pool id)    ----not updated in sheet: This is SUSE Linux
+6.	Physical connectivity details not updated in sheet: Updated
+7.	WWPN detail   -missed in sheet: Updated
+8.	Server RACK Details   --missed: Updated
+9.	Vendor details not updated: Updated
+
+CHG0073280
+CHG0073522
+CHG0073524
+CHG0073527
+CHG0073699
+
+CHG0073994
+
+
+m536811
+Sykam@123
+Ganesh@123
+Mylan@123
+Reclaim LUNs for DEV AIX(GXP=NO)servers | RITM1969359
+/usr/admin/aix/scripts/pmax_mig
+/usr/admin/aix/scripts/b4_activity.ksh
+Hi Team,
+Netbackup taking VAPI backup using quiesced snapshots. From ESXI version 4 onwards, VMware introduced quiesced snapshot feature. A quiesced snapshot simply gets the VM quiet so that a better snapshot can be performed. A quiesced snapshot doesn't shut down or reboot the guest. VMware Tools is a critical component of a quiesced snapshot with the Sync driver. The Sync driver is installed with VMware Tools.  
+So where ever backup failure happens due to snapshot issue, first check VMware tool availability, if it was outdated, raise a noimpact change and install it, if it is not running, start the VMware tools in OS . I have started vmware tool in  u0bsap222 . Let check backup status and resolve the issue. Refer below KB for more about VMware tools
+https://kb.vmware.com/s/article/340
+
+To check the VMware tools status by
+# /etc/vmware-tools/services.sh status
+To start the VMware tools by
+# /etc/vmware-tools/services.sh start
+
+RITM1962580 
+====================== 
+Hi, according to the knowledge article, user must be a part of the following Citrix group to be able to map the O drive: Citrix-PoC-xMing-Pub 
+However, every time you send us one of these RITM/Tasks, the user is not a part of this AD group. We cannot add this group, only AccessManagement can. I see there is also always a task assigned to AccessMangement called "RTCL|Unix SAS Access Request - Add AD Groups & Unix Attributes", yet they do not add the AD group mentioned at all. 
+Can you make sure user is part of said AD group before we are assigned the task in this case and the foreseeable future so we are then able to complete the procedure? Or amend the procedure if it is incorrect (you are the knowledge owner). Thanks. 
+Knowledge reference: https://mylan.service-now.com/kb_view.do?sysparm_article=KB0000961
+
+KPX28VOLUM.hdr
+If the change is not implemented, DBA users won't be able to access server, it will impact on  activities as per application. This change will not have any impact on the business. "zen_ora"  group will make entry  in /etc/sudoers file on all listed servers mentioned in RITM1904594.
+This change is for creating the wheels group named "zen_ora"  and  make entry "zen_ora"  in /etc/sudoers file on below listed servers, change request is required to login DBA users on servers to support DBA application activities on CIs which are added in change, and will going to implement this change without downtime. implementing this change there is no end user impact  and find the below detail regarding this change request. 
+
+
+Request: creation of wheels group named zen_ora on Shadow server
+Server Name	Environment
+max-sap68	        Shadow
+
+Environment: Shadow  
+Downtime: no downtime 
+duration of activity:30 min 
+Teams involved : Unix Team 
+RITM : RITM1904594
+
+Implementer: Vennapusa Ganesh
+Reviewer: Shaik Imran Ali 
+Technical Approve: Franklin KabilaDHas
+
+systemctl stop chronyd
+systemctl status chronyd
+systemctl start chronyd
+systemctl status ntpd 
+
+systemctl start chronyd.service
+
+any one fine
+
+chronyc sources --chronyd
+cat /etc/chrony.conf
+##MYLAN NTP Config
+server ntp1.myl.com
+server ntp2.myl.com
+
+server ntp1.myl.com iburst
+server ntp2.myl.com iburst
+
+cat /etc/ntp.conf 
+
+
+/var/log/proc_mon/proc_mon_19-May-2020.log--monitoring script (cpu,memroy)
+
+/usr/lib/udev/scsi_id -u -g -d /dev/sdo--lun id 
+======================================================================
+sar -d    --disk
+sar -r    --memory
+sar -u -s 09:00:00 -e 11:00:00 -f /var/log/sa/sa19
+sar -r 1 -s 09:00:00 -e 11:00:00 -f /var/log/sa/sa19
+sar -S -f /var/log/sa/sa19
+sar -S -s 09:00:00 -e 11:00:00 -f /var/log/sa/sa19
+hostname;date
+sar -d -p -f /var/log/sa/sa19 -s 09:00:00 -e 011:00:00
+clear
+sar -d -p -f /var/log/sa/sa19 -s 09:30:00 -e 11:30:00 >/tmp/diskinfo
+ 
+==============================================================================
+
+[root@u0bsappop001 mdmbi]# /etc/init.d/rpcbind status
+rpcbind dead but pid file exists
+[root@u0bsappop001 mdmbi]# /etc/init.d/rpcbind restart
+Stopping rpcbind:                                          [FAILED]
+Starting rpcbind:                                          [  OK  ]
+[root@u0bsappop001 mdmbi]# /etc/init.d/rpcbind restart
+Stopping rpcbind:                                          [  OK  ]
+Starting rpcbind:                                          [  OK  ]
+
+systemctl daemon-reload
+systemctl start rpcbind
+
+service rpcbind start
+service nfs-common start
+
+systemctl start rpc-statd 
+
+service xivms start
+
+lsuser -a account_locked ALL |grep -i m545421
+
+for i in `lspv | awk '{print $1}'`; do echo $i   :` odmget -qattribute=unique_id CuAt $i |grep -i value`; done 
+odmget -qattribute=unique_id CuAt 
+
+CHG0056822
+u0bsap181_DR_Test 
+ulimit -S -s 4194302
+
+RE: NPIV Configuration 
+lsvg -o |lsvg -li
+check the free memory in server---svmon -G -O unit=GB
+chfn sapxineq -f interfacecommunicationowergiridharusersapPIteam--changing user decription---leaf4u&me 
+rack,chasis
+
+VAPI Backup 
+===========================================================
+iscsiadm -m discovery -t st -p 10.243.108.184 ===========> Discover the storage primary IP which is provided by the Storage Team.
+
+iscsiadm --mode node --targetname iqn.1992-04.com.emc:cx.ckm00185001749.a0 -p 172.25.246.244  -l  ===========> Configure the storage IP's in server end
+iscsiadm --mode node --targetname iqn.1992-04.com.emc:cx.ckm00185001749.a1 -p 172.25.246.245  -l	 ===========> Configure the storage IP's in server end
+iscsiadm --mode node --targetname iqn.1992-04.com.emc:cx.ckm00185001749.b0 -p 10.243.108.186 -l  ===========> Configure the storage IP's in server end
+iscsiadm --mode node --targetname iqn.1992-04.com.emc:cx.ckm00185001749.b1 -p 10.243.108.187 -l  ===========> Configure the storage IP's in server end
+==================================================================
+
+u01dom006	172.20.39.33	AIX 6.1 6100-07-07-1316	PROD	DominoAdminServerProd	1	MAILREC2/AMER/MYLAN	Completed
+u0bdom003	172.20.40.52	AIX 6.1 6100-07-07-1316	PROD	DominoAdminServerProd	3	LNHUB1/MGW/MYLAN	Pending 
+max-dom01	172.20.40.108	AIX 6.1 6100-05-02-1034	PROD	DominoAdminServerProd	2	GBLADM/AMER/MYLAN	Pending 
+u0bdom005	172.20.40.50	AIX 6.1 6100-07-07-1316	PROD	DominoAdminServerProd	5	AMERMAIL1/AMER/MYLAN	Pending 
+u07dom002	172.20.57.6	AIX 6.1 6100-05-02-1034	PROD	DominoAdminServerProd	4	LNHUB2/MGW/MYLAN	Pending 
+
+
+CHG0064310
+
+echo "test mail"|mailx -s "testmail" Alisha.Kapoor@mylan.in
+echo "test mail"|mailx -s "testmail" JayaNarasimha.Reddy@viatris.com
+
+odmget -qattribute=unique_id CuAt |egrep 'name|value'---imp
+odmget -qattribute=unique_id CuAt |egrep 'name|value',
+odmget -qattribute=unique_id CuAt|grep -ip emc |egrep 'name|value'--only EMC after mirror
+odmget -qattribute=unique_id CuAt |egrep 'name|value'---per 5.3 version
+odmget  q attribute=unique_id and name=hdiskX  CuAt
+/usr/admin/aix/scripts/mead/lpar-mead.ksh
+for i in `lspv | awk '{print $1}'`; do echo $i   :` odmget -qattribute=unique_id CuAt $i |grep -i value`; done
+odmget -qattribute=unique_id CuAt|grep -ip emc |egrep 'value'
+
+RITM1843262
+===================================================================================
+Hi Raghavendra,
+
+Please run the below command on server.
+
+/opt/documentum/xPlore/java64/1.7.0_72/bin/jstack -l 2114 <Java process Id>
+================================================================================
+https://www.bolly2tolly.net/  
+RITM1660561
+#!/usr/bin/ksh
+TOTAL=0
+for ff in $(lspv | awk '{ print $1 }')
+do
+size=$(bootinfo -s $ff)
+((TOTAL=TOTAL+size))
+done
+echo $TOTAL 
+lspv
+for i in `lspv | awk '{print $1}'`; do echo $i   :` bootinfo -s  $i`; done;lspv
+odmget -qattribute=unique_id CuAt |egrep 'name|value'
+/usr/sbin/rsct/bin/rmcdomainstatus -s ctrmc
+lspath -l hdisk6 -F connection:parent:path_status:status*
+#/usr/sbin/rsct/bin/rmcdomainstatus -s ctrmc --dlpar
+root@u0bsap188 /> /usr/sbin/rsct/bin/rmcdomainstatus -s ctrmc
+
+Management Domain Status: Management Control Points
+  I A  0xc43b98da60146ebf  0001  172.20.26.74
+#iscsiadm --mode node IQN --storage IQN
+server IQN
+===================================================================
+[root@u6epnbume03 iscsi]# cat /etc/iscsi/initiatorname.iscsi
+InitiatorName=iqn.1994-05.com.redhat:682595dffe51
+[root@u6epnbume03 iscsi]#
+========================================================================
+svmon -G -O unit=GB
+[root@u95hanapoca01 ~]# cat /etc/exports
+/sapmnt/SES u0brestdbs001(rw,sync,no_root_squash) 
+find . -name 'Fixlet*' -mtime +60 -exec ls -ltr {} \; 
+find . -name 'Fixlet*' -mtime +60 -exec rm -rf {} \;  
+# lsattr -El ent23 |grep -i largesend
+largesend       1                                                    Enable Hardware Transmit TCP Resegmentation                                        True
+# lsattr -El ent23 |grep -i qos_mode
+qos_mode        disabled    
+
+useradd -u 5865 -g 100 -G zensar -c "Manjunatha N" -d /home/m546924 -s /bin/bash -m m546924; echo 'm546924:$1$A2vRqwGM$y9aa2QTZMlI3nBjT3hh54.' |chpasswd -e ; chage -M 90 m546924
+useradd -u 5731 -g 100 -G 4108 -c "Franklin Kabiladhas" -d /home/m538054 -s /bin/bash m538054;
+echo "m538054:QJUXJEwwJ8I9k" |/usr/sbin/chpasswd -e myl2019;chage -d 0 m538054 
+
+no -a |grep -i tcp_sendspace;no -a |grep -i tcp_recvspace;no -a |grep -i rfc1323
+entstat -d ent23 |grep -i speed;entstat -d ent23 | grep -i Jumbo*;entstat -d ent23 | grep -i Promiscuous*
+================================================================================
+cd /var/opt/BESClient/__BESData/actionsite
+
+find . -name 'Fixlet*' -mtime +60 -exec ls -ltr {} \;
+
+find . -name '010147*' -mtime +720 -exec ls -ltr {} \;
+
+find . -name 'Fixlet*' -mtime +60 -exec rm -rf {} \; 
+find . -name 'Fixlet*' -mtime +30 -exec rm -rf {} \; 
+
+find . -name Fixlet* -mtime +0 -exec rm -f {} \;
+=================================================================================
+xfs_growfs <lvname>
+
+for i in `lspv | awk '{print $1}'`; do echo $i   :` bootinfo -s  $i`; done
+odmget -qattribute=unique_id CuAt |grep -i val
+echo "cvai" |kdb
+lspv
+
+iscsiadm --mode node 
+iscsiadm -m session --rescan
+New iscsi file system
+=======================
+cp /etc/multipath.conf /etc/multipath.conf_11102019
+mv multipath.conf /etc/multipath.conf--another server
+systemctl restart multipathd.service
+systemctl status multipathd.service
+systemctl restart iscsid.service
+iscsiadm -m discovery -t st -p <storage ip>    --- then we will get iqn no
+iscsiadm --mode node --targetname <iqn no> -p <storage ip> -l   --- both iqn and ip to select
+multipath -ll   ---- check lun visiblility
+systemctl restart multipathd.service
+fdisk /dev/mapper/mpatha
+n,p, 3 enters, t,8e,p,w
+systemctl restart multipathd.service
+pvcreate /dev/mapper/mpatha1
+vgcreate storagevg /dev/mapper/mpatha1
+lvcreate -L +1000G -n storalv storagevg 
+
+https://myl.sharepoint.com/:w:/r/sites/GlobalUnix/_layouts/15/Doc.aspx?sourcedoc=%7b3B7AF418-2E29-4BE6-8516-6A39508955A3%7d&file=Template.doc&action=default&mobileredirect=true&cid=ff3c7aab-ebce-46aa-aa62-a28d8df57070
+
+567     sysdumpdev -Ps /dev/sysdumpnull
+568     sysdumpdev -Pp /dev/sysdumpnull
+
+mklv  y data_lv1  t jfs2 sesdvg 1GB
+crfs  v jfs2  d data_lv1  m /oracle/data1   A yes
+
+mklv  y data_lv2  t jfs2 sesdvg 1GB
+crfs  v jfs2  d data_lv2  m /oracle/data2   A yes
+
+mklv  y software_lv  t jfs2 upgsumvg 20 
+crfs  v jfs2  d software_lv  m /oracle/software   A yes
+after reboot
+
+sysdumpdev -Pp /dev/hd6
+
+CHG0055687 
+
+/etc/iscsi/initiatorname.iscsi ---iscsi number
+
+
+never expire---chage -I -1 -m 0 -M 99999 -E -1 testuser
+
+*                soft    nofile          65536
+*                hard    nofile          65536
+
+infadm           hard    memlock         unlimited
+infadm           soft    memlock         unlimited
+
+infadm           soft    nproc           4096
+infadm           hard    nproc           4096
+
+/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el6_10.x86_64/jre/lib/security--jave security
+[root@server-1]# yum install java-1.8.0-openjdk-devel
+
+Java Location: /usr/lib/jvm/jre-1.8.0/lib
+
+https://www.youtubez.com/ 
+w0bhosting001
+
+IP: e0bhanabwt001 (test server)   Production server
+
+root    SAPhana10!
+
+mgmstrv01    Cisco login : user_name and password
+
+Console   -->   cisco login  --> Select server   -->   Console  (We cannot able to see the hostname through serial number)
+
+
+Chasses logins   -- Admin --> Tech support files  --> UCICM logs we have to select.  
+
+u0btwisedbd001  
+
+n0bnnas002:/vol/oracle_admin_test/oracle_admin_test    864.50    124.16    740.34   15% /dba/admin
+VFR$vfr4
+
+/dba/admin/qmsmp/report/log
+first run fcinfo hba-port
+then  fcinfo remote-port -s -p 2100001b320e43cd 
+these two commands you have to use
+
+fcinfo remote-port -sl -p 210000e08b86ef0b|grep -i devic
+
+disk pool status
+===================================
+cd /usr/openv/netbackup/bin/admincmd then
+./nbdevquery -listdv -stype PureDisk -U
+
+/usr/openv/netbackup/bin/admincmd/nbdevconfig -changestate -stype PureDisk -dp ua5nbp002_msdp_pool -state UP 
+
+tape drive library(INC1057893)
+====================
+cd /usr/openv/volmgr/bin
+./tpconfig -l
+./scan
+
+cat u0bps307-vio1.out |awk '{print $1"      "$6}'
+
+[?08-?May-?19 11:25 PM]  Maheshwara Reddy:  
+https://www.secure.ecurep.ibm.com/app/upload/ 
+ 
+service iptables status
+service iptables stop--ahould be not stop state for firewall rules
+chkconfig iptables --list
+chkconfig iptables off--off state only
+
+http://www.unixmantra.com/2013/04/configure-ntp-on-aix.html 
+
+/sys/class/fc_host/host12---wwpn
+w6evc001--U6EVLCP001
+
+sendfile -f /dump/HMClogs.u0bhmc0010508H03.zip -h ecurep.ibm.com -d /toibm/aix/ -n 29358.HMClogs.zip -u anonymous --passwd jayanarasimha.reddy@mylan.com
+
+sendfile -f /dump/HMClogs.hmc.zip -h ecurep.ibm.com -d /toibm/hw -n 29358.082.000-HMClogs.hmc.zip -u anonymous --passwd ftp
+
+sendfile -f /dump/HMClogs.u0bhmc0010508H03.zip -h u0bnim001 -d /usr/admin/santosh/snap/ -n u0bhmc001.HMClogs.u0bhmc0010508H03.zip -u x106773 --passwd XSW@3edc
+
+sendfile -f /dump/HMClogs.u0bhmc0010508H03.zip -h ftps.ecurep.ibm.com -d /toibm/hw/ -n HMClogs.u0bhmc0010508H03.zip -u hscpe --passwd "T!nbPtH10" ftp
+
+sendfile -f /dump/HMClogs.u0bhmc0010509H44.zip -h testcase.boulder.ibm.com -d /toibm/hw -u anonymous -n 29358.082.000.HMClogs.u0bhmc0010509H44.zip -s
+
+
+new
+iscsiadm --mode node --targetname iqn.1992-08.com.netapp:sn.70d77eef40c911e5886f00a0988366f4:vs.3 -p 172.25.42.15 -l
+  921  iscsiadm --mode node --targetname iqn.1992-08.com.netapp:sn.2193b2d941f611e79aac00a098aa2ade:vs.4 -p 172.25.246.219 -l
+
+23-sa40210--lims 3nvcenter1--japan
+
+hscpe@u0bhmc001:/dump/HMCLogs.u0bhmc0010509H15.zip .".  
+
+sendfile -f /dump/HMCLogs.u0bhmc0010509H15.zip -h testcase.boulder.ibm.com -d /toibm/hw -u haheshwara.reddy@mylan.com -n 29358.082.000.HMCLogs.u0bhmc0010509H15.zip -s
+
+Provide your IBM ID password when prompted.
+
+Or if you don't have an IBM ID set up or don't know the password, use anonymous FTPS instead:
+
+sendfile -f /dump/HMCLogs.u0bhmc0010509H15.zip -h testcase.boulder.ibm.com -d /toibm/hw -u anonymous -n 29358.082.000.HMCLogs.u0bhmc0010509H15.zip -s
+
+Provide your email address when prompted for a password.
+
+
+export/drmksysb/max-sap11-10april2019-mksysb   --mksysb location 
+max-sap11-10april2019-mksysb   -  mksysb name
+max-sap11-10april2019-spot   ---------spot name  
+ 
+
+
+A	ALPHA	N	NOVEMBER
+B	BRAVO	O	OSCAR
+C	CHARLIE	P	PAPA
+D	DELTA	Q	QUEBEC
+E	ECHO	R	ROMEO
+F	FOXTROT	S	SIERRA
+G	GOLF	T	TANGO
+H	HOTEL	U	UNIFORM
+I	INDIA	V	VICTOR
+J	JULIET	W	WHISKY
+K	KILO	X	X-RAY
+L	LIMA	Y	YANKEE
+M	MIKE	Z	ZULU
+
+ ls -lrth
+
+[root@u6emedia008 bin]# ./tpconfig -l
+Device Robot Drive       Robot                    Drive                Device                             Second
+Type     Num Index  Type DrNum Status  Comment    Name                 Path                               Device Path
+robot     20    -    TLD    -       -  -          -                    /dev/sg4
+  drive    -    0 hcart2    1      UP  -          IBM.ULT3580-HH5.000  /dev/nst0
+robot     21    -    TLD    -       -  -          -                    /dev/sg7
+  drive    -    1 hcart2    1      UP  -          IBM.ULT3580-HH5.001  /dev/nst2
+drive      -    2 hcart2    -      UP  -          IBM.ULT3580-HH6.002  /dev/nst1
+drive      -    3 hcart2    -    DOWN  -          IBM.ULT3580-HH6.003  MISSING_PATH:/dev/nst3:109700097
+[root@u6emedia008 bin]# pwd
+/usr/openv/volmgr/bin
+[root@u6emedia008 bin]#
+
+
+yum update --disablerepo="*" --enablerepo="RHEL6.10"
+yum --releasever=7.7 update
+yum update --disablerepo="*" --enablerepo="rhel-6-server-rpms"
+cd /usr/admin/CONFIG/
+grep yum scripts_build
+
+mount -o loop /yum_repo_share/Rhel6.10/rhel-server-6.10-x86_64-dvd.iso /mnt
+
+mount -o loop /dev/cdrom /mnt
+mount --o /dev/sr0 /mnt
+ 
+/tmp/ibmsupt/client_collect --in aix vio servers checking
+
+vscsi#.state
+
+nmon -F /usr/admin/nmon/Linux/reports/"$(uname -n).nmon" -T -c  576 -s 300--nmon in linux--nmon setting 
+
+mknod asmdisk01 c 20 152
+ 
+
+/usr/admin/aix/scripts/mead/lpar-mead.ksh
+
+root@u0bsiedb012 /> ls -l /dev/hdisk12
+brw-------    1 root     system       17, 15 Feb 27 2016  /dev/hdisk12
+root@u0bsiedb012 /> ls -l /dev |grep "17, 15"
+crw-rw----    1 grid     asmadmin     17, 15 Mar  6 07:19 asm_disk1
+brw-------    1 root     system       17, 15 Feb 27 2016  hdisk12
+crw-------    1 root     system       17, 15 Feb 27 2016  rhdisk12
+
+pam_tally2 --user=oracle --reset
+Login           Failures Latest failure     From
+oracle             35    08/07/18 02:18:47  6z-dbadt02.myl.com
+[root@u0btwisedbe002 ~]# pam_tally2 --user=m526496 --reset
+
+/usr/sbin/pam_tally2 --user=fcpadm --reset
+
+tar -zcvf logwatch.1rmZa9F4-10jan2019.tar.gz logwatch.1rmZa9F4
+
+chdev -l en0 -a alias4=172.20.40.97,255.255.248.0 
+
+openssl x509 -in ca-bundle.crt  -text -noout
+
+w0bhosting001 
+myl\m529966_sadm
+ 
+u0btwisedbp001
+
+chage -d 0 m533489
+
+useradd -g root -d /home/m532034 -s /usr/bin/ksh -m m532034 
+
+passwd m532034--create user in hp-ux
+  
+/opt/iexpress/sudo/etc/sudoers 
+ 
+svmon -Pt15 | perl -e 'while(<>){print if($.==2||$&&&!$s++);$.=0 if(/^-+$/)}'
+
+ipcs -am
+
+
+ua1sapp50001:~ # usermod -G sapsys,zensar p50adm
+usermod: `sapsys' is primary group name.
+ua1sapp50001:~ # id p50adm
+uid=3673(p50adm) gid=241(sapsys) groups=4108(zensar),241(sapsys)
+ua1sapp50001:~ #
+
+id -nG p50adm
+
+vgchange -ay VolGroup00
+chvg -g vgname
+
+ls -l /dev/disk/by-id--asm disk
+
+
+
+ps -eo pid,vsz,args | sort -nrk 2| head -20--memory 
+ps -eo pid,pcpu,args |sort -nrk 2| head -20--cpu
+
+lspv -l pvname
+
+Displaying top CPU_consuming processes:
+#ps aux | head -1; ps aux | sort -rn +2 | head -10
+
+ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head
+
+Displaying top 10 memory-consuming processes:
+#ps aux | head -1; ps aux | sort -rn +3 | head
+
+
+service syslog status
+service syslog restart
+service sshd status
+
+extendlv hd6 5
+M@g0kt$p
+
+for i in `cat /etc/passwd|cut -d: -f1`; do echo $i; chage -l $i |grep "Account expires"; done
+passwd -S m529838
+ for i in `cat /etc/passwd|cut -d: -f1`; do echo $i; passwd -S $i; done
+
+u0bhanabwp002:~ # showmount -e 172.20.27.133
+Export list for 172.20.27.133:
+/ (everyone)
+
+#vmtune parameters
+/usr/samples/kernel/vmtune -p 5 -P 10 -t 10 -s 1 -R 8 -f 480 -F 512
+/usr/samples/kernel/vmtune -b 200 -B 800 
+
+Display processes with the highest CPU utilization:
+#ps -eo pid,pcpu,args | sort +1n
+
+To find the threadid (tid) of a known process that is using CPU:
+#ps -mp <WLS_PID> -o THREAD 
+
+Display processes with the highest memory usage:
+#ps -ef pid,vsz,args | sort +1n
+
+
+useradd -u 5516 -g 100 -G 4108 -c "jayanarasimha.reddy@viatris.com" -d /home/m529838 -s /bin/bash -m m529838
+
+useradd -u 6113 -g 100 -G 4108 -c "AshokKumar.RK@viatris.com" -d /home/m559981 -s /bin/bash -m m559981
+
+useradd -u 5865 -g 100 -G zensar -c "Manjunatha N" -d /home/m546924 -s /bin/bash -m m546924; echo 'm546924:$6$JsZDFIHs0y4gBrqH$478G2R9RJ35SP.OElukZupxhF6cvR/HD8l4iIEZ5scmGQhIIXBtIbph9f.JxePcDj20sC.vTZxNceFd3Za5IH1' |chpasswd -e ; chage -M 90 m546924
+
+useradd -u "5516" -d "/home/m529838" -c "jayanarasimha.reddy@viatris.com" -m m529838
+
+useradd -u "5668" -d "/home/m535915" -c "Vishal Rajdhar Patil" -m m535915
+
+useradd -u 5668 -g 100 -G 4108 -c "Vishal Rajdhar Patil" -d /home/m535915 -s /bin/bash m535915
+
+useradd -u 5847 -g  241 -G 241 -c "sapposftp" -d /home/sapposftp -s /bin/bash sapposftp
+
+useradd -u 5912 -g 100  -c " SAS demo user" -d /home/sasdemo -s /bin/bash sasdemo
+
+useradd -u 1002 -g 141 -c "Oracle Database Administrator" -d /home/oracle -s /bin/bash oracle
+
+useradd -u 5833 -g 100 -G 4108 -c "Arun R" -d /home/m545421 -s /bin/bash -m m545421
+
+useradd -u 5888 -g 100 -G 4108 -c "Gopi N" -d /home/m546991 -s /bin/bash m546991
+
+useradd -u 5865 -g 100 -G 4108 -c "Manjunatha N" -d /home/m546924 -s /bin/bash m546924
+
+useradd -u 5883 -g 100 -G 4108 -c "Srinath C R" -d /home/m547110 -s /bin/bash m547110
+
+useradd -u 5731 -g 100 -G 4108 -c "Franklin Kabiladhas" -d /home/m538054 -s /bin/bash m538054
+
+useradd -u 5867 -g 100 -G 4108 -c "Anand Yadav" -d /home/m546793 -s /bin/bash m546793
+
+useradd -u 5909 -g 100 -G 4108 -c "svc_automation" -d /home/svc_atmn -s /bin/bash svc_atmn
+
+
+useradd -u 5909 -g 100 -G 4108 -c "svc_automation" -d /home/svc_atmn -s /bin/bash svc_atmn
+
+useradd -u 5857 -g 100  -c "Sravan Kumar Revuri" -d /home/m546613 -s /bin/bash m546613
+mkuser id=5857  pgrp=staff groups=staff,system home=/home/m546613  shell=/usr/bin/ksh gecos="Sravan Kumar Revuri"  m546613
+mkuser id=5846  pgrp=staff groups=staff,system,zensar  home=/home/m546467 shell=/usr/bin/ksh gecos="Dinesh kumar S" m546467
+
+useradd -u 5639  -g 5639 -c "MyIRS Argus Application user" -d /home/svc_iristwadm -s /bin/bash svc_iristwadm
+
+useradd -u 5674 -g 100 -c "Alanna Murphy" -d /home/m536131 -s /bin/bash m536131
+
+useradd -u 5905 -g 100 -c "Rajasekhar Reddy Rela" -d /home/m548303 -s /bin/bash m548303
+
+
+useradd -u 5653 -g 4293  -c "Pankaj Chhabria" -d /home/m535781 -s /bin/bash m535781
+
+mkuser -attr id=5584 pgrp=staff groups=staff,system gecos="Karthik N" -d /home/m533449 m533449
+svc_unix:!:5556:100:service now account:/home/svc_unix:/bin/ksh
+
+mkuser id=5556 pgrp=usr groups=usr home=/home/svc_unix shell=/usr/bin/ksh gecos="service now account" svc_unix
+
+mkuser id=5516 pgrp=staff groups=staff,system,zensar home=/home/m529838 shell=/usr/bin/ksh gecos="Jayanarasimha Reddy" m529838
+mkuser id=5846 pgrp=staff groups=staff,system,zensar  home=/home/m546467 shell=/usr/bin/ksh gecos="Dinesh kumar S" m546467
+
+mkuser id=5516 pgrp=staff groups=bio,bioman,biostat,clinical home=/home/m536096 shell=/usr/bin/ksh gecos="Si Gao" m536096
+mkuser id=5835 pgrp=staff groups=clinical home=/home/m513217 shell=/usr/bin/ksh gecos="Hanumantharao Mundra" m513217
+mkuser id=5516 pgrp=staff groups=clinical home=/home/m108960 shell=/usr/bin/ksh gecos="Jan van der Stam" m108960
+
+mkuser id=5516 pgrp=staff groups=staff,system,zensar home=/home/m529838 shell=/usr/bin/ksh gecos="jayanarasimha Reddy" m529838
+useradd -u 5746 -g 100 -c "Sumant Kumar Panda" -d /home/m538621 -s /bin/bash m538621;echo "m538621:QJUXJEwwJ8I9k" |/usr/sbin/chpasswd -e myl2019;chage -d 0 m538621 
+
+mkuser id=5883  pgrp=staff groups=staff,system,zensar home=/home/m547110 shell=/usr/bin/ksh gecos="Srinath C R" m547110
+
+mkuser id=5909  pgrp=staff groups=staff,system,zensar home=/home/svc_atmn  shell=/usr/bin/ksh gecos="svc_automation" svc_atmn
+
+mkuser id=5731  pgrp=staff groups=staff,system,zensar home=/home/m538054  shell=/usr/bin/ksh gecos="Franklin Kabiladhas"  m538054
+
+mkuser id=5883  pgrp=staff groups=staff,system,zensar home=/home/m547110  shell=/usr/bin/ksh gecos="Srinath C R"  m547110
+
+mkuser id=5731  pgrp=staff groups=staff,system home=/home/m538054  shell=/usr/bin/ksh gecos="Franklin Kabiladhas"  m538054
+
+
+mkuser id='5966' pgrp='staff' groups='staff,system,zensar' admgroups='staff' shell='/usr/bin/ksh' gecos='Lovebin Raja' m550197
+
+mkuser id='5970' pgrp='staff' groups='staff,system,zensar' admgroups='staff' shell='/usr/bin/ksh' gecos='HariPrasad.Jangam' m551371
+
+
+
+
+
+
+
+
+ User NAME                                           m529838
+  User ID                                            [5516]                                                                                                          #
+  ADMINISTRATIVE USER?                                true                                                                                                          +
+  Primary GROUP                                      [staff]                                                                                                        +
+  Group SET                                          [staff,system,zensar]                                                                                          +
+  ADMINISTRATIVE GROUPS                              [staff]                                                                                                        +
+  ROLES                                              []                                                                                                             +
+  Another user can SU TO USER?                        true                                                                                                          +
+  SU GROUPS                                          [ALL]                                                                                                          +
+  HOME directory                                     [/home/m529838]
+  Initial PROGRAM                                    [/usr/bin/ksh]
+  User INFORMATION                                   [JayaNarasimha Reddy]
+  EXPIRATION date (MMDDhhmmyy)                       [0]
+
+
+
+
+m531170 - 5543
+
+rcSuSEfirewall2 stop 
+
+mount -a nfs -o vers=3 n0bvsvm007:/n0bvfdb003_oracle_agent_test/msx-emp02 /oracle_agent--solaris
+n0bvsvm007:/n0bvfdb003_oracle_agent_prod/msx-emp01 - /oracle_agent nfs nfsvers=3 - yes rw,rsize=32768,wsize=32768,hard
+
+n0bnnas001:/vol/usr_admin/usr_admin   3062.40   1738.01   1324.39   57% /usr/admin
+
+mount n0bvsdb003:/usr_admin/usr_admin /usr/admin
+cd /usr/admin/aix/scripts/user/
+
+
+
+migratepv hdisk16 hdisk62 hdisk64
+
+
+
+migratepv hdisk18 hdisk64 hdisk66
+migratepv hdisk28 hdisk52
+migratepv hdisk34 hdisk75
+
+
+
+migratepv hdisk42 hdisk71 hdisk55
+migratepv hdisk32 hdisk74
+
+/opt/documentum/dctmctl stop
+/opt/documentum/dctmctl start
+/opt/documentum/dctmctl status
+
+lspv|grep -i <pvid>        --> To get the disk name
+lsmap -all|grep -p <disk name>   --> To get the VTD name
+
+lsdev -dev <VTD name> -field parent   --> We can get the vhost name
+
+
+
+for i in `lspv |grep -i non |awk '{print $1}'`; do echo $i   :`rmdev -Rdl $i`;done---in server
+
+vio side
+====================
+for i in `cat max-sap82-pvid `; do lspv |grep $i; done
+vi u01sap116-disk-vio2
+for i in `cat max-sap82-vio-disk `; do echo $i; lsmpio -ql $i |egrep 'Product|Volume'; done
+lspv |grep hdisk1194
+clear
+for i in `cat max-sap82-vio-disk  `; do lsmpio -ql $i |grep Volume; done
+for i in `cat max-sap82-vio-disk `; do echo $i; /usr/ios/cli/ioscli lsmap -vadapter vhost27 |grep -ip $i |egrep 'VTD|Backing'; done
+for i in `cat max-sap82-vio-disk `; do /usr/ios/cli/ioscli lsmap -vadapter vhost27|grep -ip $i |grep -i VTD; done
+vi u01sap116-VTD
+cat u01sap116-VTD |wc -l
+cat u01sap116-disk-vio2 |wc -l
+cat u01sap116-disk-vio2 |wc -l
+for i in `cat u01sap116-disk-vio2 `; do echo $i; /usr/ios/cli/ioscli lsmap -vadapter vhost32 |grep -ip $i |egrep 'VTD|Backing'; done
+lspv |grep hdisk1194
+clear
+for i in `cat max-sap82-vtd `; do echo $i; /usr/ios/cli/ioscli rmdev -dev $i; done
+for i in `cat max-sap82-vio-disk` ; do echo $i; rmdev -Rdl $i; done
+
+
+
+#vi u0bsap165-pvid
+for i in `cat u0bsap165-pvid `; do lspv |grep $i; done
+
+# vi u0bsap165-vio-disk
+for i in `cat u0bsap165-vio-disk `; do echo $i; lsmpio -ql $i |egrep 'Product|Volume'; done
+
+# vi max-sap21-vio2-disk
+for i in `cat max-sap21-vio2-disk `; do echo $i; /usr/ios/cli/ioscli lsmap -vadapter vhost21 |grep -ip $i |egrep 'VTD|Backing'; done
+
+# max-sap21-vio2-disk
+for i in `cat u0bsap165-vio-disk `; do /usr/ios/cli/ioscli lsmap -vadapter vhost7 |grep -ip $i |grep -i VTD; done
+
+#vi max-sap21-VTD
+for i in `cat u0bsap165-VTD `; do echo $i; /usr/ios/cli/ioscli rmdev -dev $i; done
+
+# vi max-sap21-disk-vio1
+for i in `cat u0bsap165-vio-disk`; do echo $i; rmdev -Rdl $i; done
+
+#max-sap21-old-disk
+for i in `lspv |grep -i non |awk '{print $1}'`; do echo $i   :`rmdev -Rdl $i`;done
+
+cd /sap/interfaces/eurydice/script
+java EuryDicePrice >> /sap/interfaces/eurydice/france/out/EuryDicePrice.txt
+echo " API called at " `date` "and the output file size is " `ls -l /sap/interfaces/eurydice/france/out/EuryDicePrice.txt |awk '{print $5}'` >> /sap/interfaces/eurydice/france/log/EuryDicePrice.log
+
+ls -l /sap/interfaces/eurydice/france/out/EuryDicePrice.txt |awk '{print $5}'
+
+prtconf |grep Machine;hostname;date;echo "cvai"|kdb|grep vscs;oslevel -s
+
+CHG0042897
+
+u0bargust200
+u0bargust200
+
+mount -t nfs 172.20.27.135:/n0bvsshare001_migexport/migexport /migexport
+
+U0bsagp005
+
+for i in `lspv | awk '{print $1}'` 
+do
+bootinfo -s $i
+done|awk '{sum+=$1}END{print (sum/1024)}' 
+
+maxsp304 
+maxsp305--101
+
+CHG0043548--CMDB
+Sep@2018
+
+
+dmidecode -s system-serial-number 
+ 
+[
+C240-FCH1933V1Y4 /chassis # power
+Usage: power <on|off|cycle|hard-reset|shutdown>
+C240-FCH1933V1Y4 /chassis # hard-reset
+                            ^
+% invalid command detected at '^' marker.
+C240-FCH1933V1Y4 /chassis # power hard-reset
+This operation will change the server's power state.
+Do you want to continue?[y|N]y
+C240-FCH1933V1Y4 /chassis # 
+
+RITM1278041
+ 
+
+
+CHG0044024
+
+CHG0044037--argus102
+
+CHG0043497--refference CMDB
+
+m526823 ALL=(ALL) NOPASSWD: systemctl stop serviced, systemctl stop docker, systemctl restart nfs, systemctl stop nfs, systemctl start nfs, systemctl start docker, systemctl start serviced, systemctl status serviced, stemctl status docker, systemctl status nfs 
+
+m526823 ALL=systemctl stop serviced, systemctl stop docker, systemctl restart nfs, systemctl stop nfs, systemctl start nfs, systemctl start docker, systemctl start serviced, /bin/systemctl status serviced, /bin/stemctl status docker, /bin/systemctl status nfs
+
+mount -v nfs n0bvshana001:/HDBERPBACKUP  /HDBERPBACKUP
+
+m526823 ALL=/bin/systemctl status serviced, /bin/stemctl status docker, /bin/systemctl status nfs
+
+INC0828991
+
+
+
+CHG0044224 
+
+1)identify new disk
+#dmesg|grep -i attached
+
+2)using parted creat the partition.
+parted /dev/sdm
+parted>mklabel gpt mkpart primary 0% 100%
+parted>print
+
+3)check the size of the created partiton
+lsblk -io KNAME,TYPE,SIZE,MODEL
+
+4)update the udev rules and create the asm disks.
+#get scsi id of the disk
+/sbin/scsi_id -u -g -d /dev/sdm
+/usr/lib/udev/scsi_id -g -u -d /dev/sdx
+
+#update the asmdevices file
+/etc/udev/rules.d/99-oracle-asmdevices.rules
+
+#reload udev rules
+udevadm control --reload-rules
+udevadm trigger --action=change --type=devices
+
+udevadm info --query=all --path=/block/nvme1n1p1 | grep WWN
+
+ACTION=="add|change", ENV{ID_WWN}=="eui.3fac3f0c6e8e1d2a000c2962fc1f39b5", SYMLINK+="asmdisk40_udev_p1", GROUP="asmadmin", OWNER="grid", MODE="0660"
+for i in `cat nvme_disks.txt`; do udevadm info --query=all --path=/block/$i | grep WWN; done
+
+
+PTASK0002363
+PTASK0002368
+PTASK0002307
+
+mount -v nfs n0bvsapps003:/n0bvfshare004_opt_documentum_data_4_5_new /opt/documentum/data
+
+GLOBAL-IT-APP-DOCUMENTUM
+
+
+
+ 
+RITM1307286
+ 
+PTASK0002392
+PTASK0002393
+
+
+cat /opt/documentum/dba/log/docet.log
+
+ cat dctmctl_start.log |tail
+
+lsof /opt/documentum/data
+
+/opt/documentum/dctmctl status
+su - dmadmin
+
+
+1)identify new disk
+#dmesg|grep -i attached
+
+2)using parted creat the partition.
+parted /dev/sdm
+parted>mklabel gpt mkpart primary 0% 100%
+parted>print
+quit	
+
+3)check the size of the created partiton
+lsblk -io KNAME,TYPE,SIZE,MODEL
+
+4)update the udev rules and create the asm disks.
+#get scsi id of the disk
+/sbin/scsi_id -u -g -d /dev/sdXX
+/usr/lib/udev/scsi_id -g -u -d 
+
+#update the asmdevices file
+/etc/udev/rules.d/99-oracle-asmdevices.rules
+
+#reload udev rules
+udevadm control --reload-rules
+udevadm trigger --action=change --type=devices
+
+ls -lrt /dev/asmdisk10_udev_p1 /dev/asmdisk11_udev_p1
+
+
+mount -t cifs -o username=svc_taleocon-admin,password=RNjymm95Ih8Qik8@w //172.20.27.26/w0boptosmdp002/ /test
+
+
+cifsmount merfis006inf.domasta.fr:/appmigration /mnt -U appmigration -P June.2019
+
+usermod -a -G zensar grid;usermod -a -G zensar oracle
+
+
+gpasswd -d grid zensar
+
+mstsc
+
+lina m507698
+ 
+
+ m104553 
+ 
+m507698 id=4694 pgrp=bio groups=bio,usr,bioman,biodata,biostat,clinical,random
+m104553 id=4917 pgrp=staff groups=staff,usr,bio,bioman,biostat,clinical
+
+
+W0bvc001 (VCenter) -139
+w07vc001 (DR VCenter)-9
+23-sa40210 (VCenter)-19
+22-sa40010 (DR VCenter)- 2
+3nVCenter1(VCenter)- 4
+3nvmosa2 (DR VCenter)- 1
+w6vvc001 (VCenter) - 8
+W6evc001 (VCenter )   34
+mpmvcenter  (Meda VCenter) - 8
+
+
+sapmsGEP            3601/tcp     # SAP System Gateway Security Port
+
+IMM console login
+admin   
+T!tin2sQ
+
+
+455     ping 172.20.23.23 -o en5 -c 1
+456     ping 172.20.23.23 -o en5 -c 1 -S
+457     netstat -nr
+458     ping 172.20.23.1
+459     ping 172.20.23.1 -o en5 -c 1
+460     ping 172.20.23.1 -o en5
+461     ping 172.20.23.1
+462     ping 172.20.23.2
+463     ping 172.20.23.23
+464     ping 172.20.23.23 -C 1
+465     ping 172.20.23.23 -c 2
+466     man ping
+467     ping 172.20.23.23 - en5
+468     ping 172.20.23.23 -o en5
+469     ping 172.20.23.23 -I en5
+470     man ping
+471     ping 172.20.23.1 -o en5 -c 1 -s 1400
+472     ping 172.20.23.24
+473     ping 172.20.23.24 -c 1
+474     ping 172.20.23.24 -I en5
+475     arp -a
+476     ping 172.20.23.56
+477     ping 172.20.23.23 -o en5 -c 1
+478     ping -s 172.20.23.23 -o en5 -c 1
+479     ping -s 172.20.23.23
+480     ping -I en5 -c 100 -qA 172.20.23.23
+481     ifconfig -a
+482     ifconfig -a
+483     netstat -rn
+484     nslookup 172.20.23.23
+485     nslookup 172.20.40.22
+486     lsdev -Cc adapter
+487     ping -I 172.20.23.23
+488     ping -i 172.20.23.23
+
+
+[root@u0bsap190 ~]# dmidecode -s system-manufacturer
+VMware, Inc.
+[root@u0bsap190 ~]# dmidecode | grep Product
+        Product Name: VMware Virtual Platform
+        Product Name: 440BX Desktop Reference Platform
+[root@u0bsap190 ~]#
+
+
+[root@u0blabracp001 ~]# dmidecode -s system-manufacturer
+Cisco Systems Inc
+[root@u0blabracp001 ~]# dmidecode | grep Product
+        Product Name: UCSB-B200-M3
+        Product Name: UCSB-B200-M3
+[root@u0blabracp001 ~]#
+
+dmidecode -s system-serial-number
+
+lspci -nnn|grep -i scsi --raid controller
+
+
+/opt/grid/product/11.2.0/bin/crsctl stop crs
+
+/opt/grid/product/11.2.0/bin/crsctl start crs
+
+CHG0044593
+
+netstat -lntup |grep -i 1556
+
+tcpdump -i eth0| grep ncube-lm
+tcpdump -i en0|grep -i ncube-lm
+
+
+
+usr/admin/aix/scripts/b4_activity.ksh
+cp -p /etc/filesystems /etc/filesystems_`hostname`_`date +'%d%m%Y'`;
+df -gt /usr/sap/RP1archive
+cd /usr/sap/RP1archive
+ls -ltr |wc -l
+df -gt /usr/sap/trans
+cd /usr/sap/trans
+ls -ltr |wc -l
+cat /etc/filesystems |grep -ip /usr/sap/RP1archive
+cat /etc/filesystems |grep -ip /usr/sap/trans
+
+/usr/admin/aix/scripts/b4_activity.ksh
+cp -p /etc/filesystems /etc/filesystems_`hostname`_`date +'%d%m%Y'`;
+df -gt /usr/sap/trans
+cd /usr/sap/trans
+ls -ltr |wc -l
+cat /etc/filesystems |grep -ip /usr/sap/trans
+df -gt
+
+df -gt |grep -i /vol/usr_sap_rp1archive/
+lsof /usr/sap/RP1archive;fuser /usr/sap/RP1archive
+/usr/sbin/rmnfsmnt -f '/usr/sap/RP1archive' '-B'
+cat /etc/filesystems |grep -ip /usr/sap/RP1archive 
+df -tg |grep -i /usr/sap/RP1archive
+
+
+df -gt |grep -i /vol/usr_sap_trans/;lsof /usr/sap/trans;fuser /usr/sap/trans;/usr/sbin/rmnfsmnt -f '/usr/sap/trans' '-B';cat /etc/filesystems |grep -ip /usr/sap/trans;df -tg |grep -i /usr/sap/trans
+
+/usr/sbin/mknfsmnt -f /oracle_flashback -d /n0bvsapps001_tracewise_u0btwisedbp001_001 -h  n0bvsapps001 -t rw  -A -B;chfs -a options=bg,hard,intr,sec=sys /oracle_flashback;chfs -a type=nfs /oracle_flashback 
+
+/usr/sbin/mknfsmnt -f /usr/sap/RP1archive -d /usr_sap_rp1archive/usr_sap_rp1archive -h n0bvsapps001 -t rw  -A -B;chfs -a options=bg,hard,intr,sec=sys /usr/sap/RP1archive;chfs -a type=nfs /usr/sap/RP1archive
+
+cat /etc/filesystems |grep -ip /usr/sap/RP1archive
+df -tg |grep -i /usr/sap/RP1archive
+cd /usr/sap/RP1archive
+ls -ltr |wc -l 
+df -tg /usr/sap/RP1archive;hostname;date 
+
+cat /etc/filesystems |grep -ip /usr/sap/RP1archive
+
+cat /etc/filesystems |grep -ip /usr/sap/RP1archive
+df -tg |grep -i /usr/sap/RP1archive
+cd /usr/sap/trans
+ls -ltr |wc -l
+df -tg /usr/sap/RP1archive;hostname;date
+
+
+/usr/sbin/rmnfsmnt -f '/usr/sap/RP1archive' '-B'
+
+#lvcreate -L +<size>  -n </dev/mapper/datavg-datalv > <datavgname>
+#lvcreate -L 500G -n orasapdata5lv oraclevg
+#mkfs.ext4 /dev/oraclevg/orasapdata5lv
+# mount -t ext4 /dev/oraclevg/orasapdata5lv /oracle/ATP/sapdata5
+
+
+lvextend -L +1G /dev/mapper/netbackupvg-usr_netbackup -r
+
+
+echo "- - -">> /sys/class/iscsi_host/host3/scan
+echo "- - -">> /sys/class/scsi_host/host0/scan
+echo "- - -">> /sys/class/scsi_host/host1/scan
+echo "- - -">> /sys/class/scsi_host/host2/scan
+echo "- - -">> /sys/class/scsi_host/host3/scan
+echo "- - -">> /sys/class/scsi_host/hos43/scan
+echo "- - -">> /sys/class/scsi_host/host4/scan
+
+
+rpm -qa | grep targetcli ===========> To check the fileset for ISCSI configuration
+
+systemctl start multipathd ===========> To start the multipath service
+systemctl status multipathd ===========> To check the status of multipath service
+
+systemctl start iscsid ===========> To start the iscsi service
+systemctl status iscsid ===========> To check the status of iscsi service
+
+mv /etc/multipath.conf /etc/multipath.conf_17122019 ===========> Take the backup of old multipath.conf file
+cp /tmp/multipath.conf /etc/ ===========> Copy from uclpnbuma01 server.
+chmod 600 /etc/multipath.conf ===========> Change the permissions
+chown root:root /etc/multipath.conf ===========> Change the ownership
+
+iscsiadm -m discovery -t st -p 10.243.108.184 ===========> Discover the storage primary IP which is provided by the Storage Team.
+
+iscsiadm --mode node --targetname iqn.1992-04.com.emc:cx.ckm00185001749.a0 -p 10.243.108.184 -l  ===========> Configure the storage IP's in server end
+iscsiadm --mode node --targetname iqn.1992-04.com.emc:cx.ckm00185001749.a1 -p 10.243.108.182 -l	 ===========> Configure the storage IP's in server end
+iscsiadm --mode node --targetname iqn.1992-04.com.emc:cx.ckm00185001749.b0 -p 10.243.108.186 -l  ===========> Configure the storage IP's in server end
+iscsiadm --mode node --targetname iqn.1992-04.com.emc:cx.ckm00185001749.b1 -p 10.243.108.187 -l  ===========> Configure the storage IP's in server end
+
+systemctl restart multipathd.service 
+
+fdisk -l 
+multipath -ll 
+
+parted /dev/mapper/mpathx
+
+mklabel gpt mkpart primary 2048 100%
+
+
+
+netstat -aan|grep 22
+
+
+u0bseebisd01
+u0bseebapp001
+traceroute 162.220.106.180
+Permissions and Ownership of following files on iqs.iq2020.com
+~user_id/.ssh
+~user_id/.ssh/authorized_keys
+
+
+AIX Servers:
+
+Step1: cp -p /etc/filesystems /etc/filesystems_`hostname`_`date +'%d%m%Y'`;/usr/admin/aix/scripts/b4_activity.ksh
+Step2: cat /etc/filesystems |grep -ip /usr/sap/trans ;ls -ltr /usr/sap/trans |wc -l;df -tg |wc -l
+Step3:/usr/sbin/rmnfsmnt -f '/usr/admin' '-B' 
+Step4:cat /etc/filesystems |grep -ip /usr/sap/trans 
+Step5: df -tg |grep -i /usr/sap/trans
+
+Note: After STorage Activty complte we have to run below commands.
+
+Step6:/usr/sbin/mknfsmnt -f /usr/admin -d /usr_admin/usr_admin -h n0bvsdb003 -t rw  -A -B;chfs -a options=bg,hard,intr,sec=sys /usr/sap/trans;chfs -a type=nfs /usr/sap/trans
+Step7:cat /etc/filesystems |grep -ip /usr/sap/trans
+step8:df -tg |grep -i /usr/sap/trans
+step9:cd /usr/sap/trans
+step10:ls -ltr |wc -l
+step11:df -tg /usr/sap/trans;hostname;date
+mknfsmnt -f <mountpoint> -d <share name> -h <vserver> -I -A
+chdev -l en2 -a alias4=172.20.39.141,255.255.255.0
+chdev -l en2 -a alias4=172.20.39.139,255.255.255.0
+chdev -l en2 -a alias4=172.20.39.147,255.255.255.0
+chdev -l en3 -a alias4=169.254.60.193,255.255.0.0
+==================================================
+====================================================================================================================================================
+Linux:
+
+Linux Servers:
+Before activity
+===============================================================================================================
+Step1: cp -p /etc/fstab /etc/fstab_`hostname`_`date +'%d%m%Y'`;/usr/admin/linux/scripts/b4_activity_redhat_linux.sh
+Step2: cat /etc/fstab |grep -i /usr/sap/trans ;ls -ltr /usr/sap/trans |wc -l;df -Th |wc -l
+Step3:lsof /usr/sap/trans;fuser /usr/sap/trans
+Step4:umount /usr/sap/trans
+Step5: df -Th |grep -i /usr/sap/trans
+
+Note: After STorage Activty complte we have to run below commands.
+
+Step6:mount -o vers=3,hard,rw,bg,intr,sec=sys n0bnnas001:/vol/usr_admin/usr_admin /usr/admin
+Step7:vi /etc/fstab
+
+n0bvsapps003:/SAP_Trans_ua1sapsm1001 /usr/sap/trans nfs nfsvers=3 0 0
+
+step8:df -Th |grep -i /usr/sap/trans
+step9:cd /usr/sap/trans
+step10:ls -ltr |wc -l
+step11:df -Th /usr/sap/trans;hostname;date
+
+mount -o vers=3,hard,rw,bg,intr,sec=sys n0bvsdb001:/ora_share000/ora_share000 /oracle/share000 
+echo "n0bvsdb001:/ora_share000/ora_share000 /oracle/share000 nfs nfsvers=3 0 0" >> /etc/fstab
+
+
+[?20-?Feb-?19 2:36 PM]  Nitesh Kumar:  
+GBLADM
+
+Stop domino services.
+
+Take the backup of /notes/data/names.nsf to another FS (/tmp) not in /notes/data or /notes/prog 
+
+Go to /notes/prog/lotus/notes/85030/ibmpow
+
+Load fixup -F J /notes/data/names.nsf (After completion of this, run load compact i.e. next command)
+Load compact -B /notes/data/names.nsf (After completion of this, run load udall i.e. next command)
+Load updall -R /notes/data/names.nsf (After completion of this Rename and delete mention below nsf)
+
+Rename /notes/data/log.nsf as /notes/data/log_23022019.nsf
+
+Start domino Services. 
+this is the activity detail which need to perform
+ 
+
+1063  lsof /var |grep -i dele
+ 1064  cd /proc/31004
+ 1065  ls -al
+ 1066  du -sg *
+ 1067  du -sh *
+ 1068  cd fd
+ 1069  ls -al
+ 1070  >1
+ 1071  df -h /var;hostname;date
+ 1072  history
+
+root@u0bionixncm002 /]# lsof /var |grep -i dele
+lsof: WARNING: can't stat() nfs file system /mnt/voyencebackup
+      Output information may be incomplete.
+cupsd      5848    root    3u   REG  253,3        1232  983053 /var/log/cups/error_log.1 (deleted)
+cat       30994    root    3r   REG  253,3 11238936576  974851 /var/log/messages-07032019 (deleted)
+perl      31004    root    1w   REG  253,3  6661066752  835673 /var/cache/logwatch/logwatch.4I9NCeKW/messages (deleted)
+
+cd /proc/31004
+
+cd fd
+>1
+
+root@max-sap11 /dev> ls -li |grep -we hdisk4 -we ipldevice
+16433 brw-------    2 root     system       17,  4 Apr 10 12:11 hdisk4
+16433 brw-------    2 root     system       17,  4 Apr 10 12:11 ipldevice
+root@max-sap11 /dev> ls -li |grep -w ^16433
+16433 brw-------    2 root     system       17,  4 Apr 10 12:11 hdisk4
+16433 brw-------    2 root     system       17,  4 Apr 10 12:11 ipldevice
+
+
+0301-168 bosboot: The current boot logical volume, /dev/, does not exist on /dev/hdisk0.
+
+Solution:
+
+lsvg -p rootvg - hdisk0
+
+lslv -m hd5 - hdisk0 on PV1 1st partition
+
+savebase -v - successful
+
+will remove/recreate hd5
+
+rmlv hd5
+
+# mklv -y hd5 -t boot -a e rootvg 1 hdisk0
+
+cd /dev
+
+rm ipldevice
+
+ln /dev/rhdisk0 /dev/ipldevice
+
+bosboot -ad /dev/ipldevice - same error
+
+bootinfo -B hdisk0 - 1
+
+# ln /dev/rhd5 /dev/ipl_blv
+
+cd /dev - same maj/min numbers
+
+bosboot -ad /dev/ipldevice - works!
+
+alt_disk_install was able to proceed now
+
+
+CHG0049575
+
+yum install java-1.8.0-openjdk.x86_64          
+yun install java-1.8.0-openjdk-debuginfo.x86_64
+yum install java-1.8.0-openjdk-devel.x86_64    
+yum install java-1.8.0-openjdk-headless.x86_64 
+
+
+[root@ua1sapp32001 m526494]# rpm -ivh compat-sap-c++-4.8.2-19.el6.x86_64.rpm
+Preparing...                ########################################### [100%]
+        package compat-sap-c++-4.8.2-19.el6.x86_64 is already installed
+[root@ua1sapp32001 m526494]# rpm -qa compat-sap-c++-4.8.2-19.el6.x86_64.rpm
+[root@ua1sapp32001 m526494]# rpm -ql compat-sap-c++-4.8.2-19.el6.x86_64.rpm
+package compat-sap-c++-4.8.2-19.el6.x86_64.rpm is not installed
+[root@ua1sapp32001 m526494]#
+
+
+54  cd /usr/openv/netbackup/bin/admincmd
+  655  ./nbdevquery -listdv -stype PureDisk -U
+  656  ./nbdevconfig -changests -storage_server u6bmedia002 -stype PureDisk -state RESET
+  657  ./nbdevconfig -changests -storage_server u6bmedia002 -stype PureDisk -state UP
+  658  ./nbdevquery -listdv -stype PureDisk -U
+  659  cd /var/log
+  660  cat messages
+  661  cd /usr/openv/netbackup/bin/admincmd
+  662  ./nbdevquery -listdv -stype PureDisk -U
+  663  dmesg | grep -i "attached "
+  664  ls /dev/disk/by-path/
+  665  multipath -ll
+  666  iscsiadm -m node
+  667  multipath -ll
+  668  lsblk
+  669  iscsiadm -m node -R
+  670  clear
+  671  iscsiadm --mode node --targetname iqn.1992-08.com.netapp:sn.727a7a17350511e7bf4e00a098c562ad:vs.5 --portal 172.25.23.100 --login
+  672  cat /etc/tgt/targets.conf
+  673  lsblk
+  674  iscsiadm -m node
+  675  tgt-admin --show
+  676  iscsiadm -m session
+  677  cat /var/lib/iscsi/nodes
+  678  iscsiadm -m discovery -t st -p 172.25.23.100 -o new
+  679  ifconfig -a
+  680  history
+  681  clear
+  682  cat /etc/iscsi/initiatorname.iscsi
+  683  ls -ltr /etc/iscsi/initiatorname.iscsi
+  684  cat /etc/iscsi/initiatorname.iscsi
+  685  cat /etc/initiatorname.iscsi
+  686  cd /etc/initiatorname.iscsi
+  687  clear
+  688  cat /etc/iscsi/initiatorname.iscsi
+  689  ping 172.25.23.100
+  690  cat /etc/hosts|grep -i 172.25.23.100
+  691  cat /etc/hosts
+  692  ping 172.25.23.101
+  693  cd cd iscsi
+  694  man iscsiadm
+  695  iscsiadm --mode discoverydb --type sendtargets --portal 172.25.23.100 --discover
+  696  ifconfig -a
+  697  clear
+  698  traceroute 172.25.23.100
+  699  man iscsiadm
+  700  cd /var/lib/iscsi/send_targets
+  701  ls -ltr
+  702  cd 192.168.1.1,3260
+  703  ls -ltr
+  704  cat st_config
+  705  cd ..
+  706  cd 172.25.23.100,3260
+  707  ls -ltr
+  708  cat st_config
+  709  man iscsiadm
+  710  history
+  711  clear
+  712  cd /sys/class
+  713  ll
+  714  cd fc_host
+  715  ls -ltr
+  716  cat host11
+  717  more host12
+  718  more host11
+  719  cd host11
+  720  ls -ltr
+  721  cat node_name
+  722  cd ..
+  723  cd host12
+  724  cat -r--r--r-- 1 root root 4096 May  1 16:49 port_name
+  725  cat port_name
+  726  pvcreate /dev/mapper/mpathi1
+  727  pvs
+  728  partprobe /dev/mapper/mpathi
+  729  lspci|grep -i fib
+  730  df -h
+  731  echo "1" > /sys/class/fc_host/host11/issue_lip
+  732  echo "- - -" > /sys/class/scsi_host/host11/scan
+  733  echo "1" > /sys/class/fc_host/host12/issue_lip
+  734  echo "- - -" > /sys/class/scsi_host/host12/scan
+  735  multipath -ll
+  736  iscsiadm -m discovery -t st -p 172.25.20.14
+  737  iscsiadm -m discovery -t st -p 172.25.20.17
+  738  iscsiadm --mode node --targetname iqn.1992-08.com.netapp:sn.1e79b5693f6f11e5925900a09882e47d:vs.3 -p 172.25.20.14 -l -R
+  739  iscsiadm --mode node --targetname iqn.1992-08.com.netapp:sn.1e79b5693f6f11e5925900a09882e47d:vs.3 -p 172.25.20.17 -l -R
+  740  multipath -ll
+  741  fdisk -l /dev/mapper/mpathi
+  742  fdisk /dev/mapper/mpathi
+  743  pvcreate /dev/mapper/mpathi1
+  744  partprobe /dev/mapper/mpathi
+  745  history
+
+
+um install java-1.8.0-openjdk.x86_64          
+yun install java-1.8.0-openjdk-debuginfo.x86_64
+yum install java-1.8.0-openjdk-devel.x86_64    
+yum install java-1.8.0-openjdk-headless.x86_64 
+
+for i in `cat decommluns`
+do
+lspv |grep -w $i
+done
+
+for i in `cat pvnames`
+do
+echo $i
+lsmpio -ql $i |grep -e Volume -e Host
+done
+
+for i in `cat pvnames`
+do
+echo $i
+lsmap -all |grep -wp $i |grep VTD
+done
+
+for i in `vtdnames`
+do
+rmdev -dev $i
+done
+
+
+300     cp -p /etc/filesystems /etc/filesystems_`hostname`_`date +'%d%m%Y'`;/usr/admin/aix/scripts/b4_activity.ksh
+301     cat /etc/filesystems |grep -ip /oracle/DATAPUMP ;ls -ltr /oracle/DATAPUMP |wc -l;df -tg |wc -l
+302     /usr/sbin/rmnfsmnt -f '/oracle/DATAPUMP' '-B'
+303     cat /etc/filesystems |grep -ip /oracle/DATAPUMP
+304     df -tg |grep -i /oracle/DATAPUMP
+305     /usr/sbin/mknfsmnt -f /oracle/DATAPUMP -d /n0bvfdb004_DBA_DATAPUMP -h n0bvsdb001 -t rw  -A -B;chfs -a options=bg,hard,intr,sec=sys /oracle/DATAPUMP;chfs -a type=nfs /oracle/DATAPUMP
+306     df -tg |grep -i /oracle/DATAPUMP
+307     df -gt
+308     cp -p /etc/filesystems /etc/filesystems_`hostname`_`date +'%d%m%Y'`;/usr/admin/aix/scripts/b4_activity.ksh
+309     cat /etc/filesystems |grep -ip /oracle/share000;ls -ltr /oracle/share000 |wc -l;df -tg |wc -l
+310     /usr/sbin/rmnfsmnt -f '/oracle/share000' '-B'
+311     df -tg |grep -i /oracle/share000
+312     clear
+313     df -gt
+314     cp -p /etc/filesystems /etc/filesystems_new_`hostname`_`date +'%d%m%Y'`;/usr/admin/aix/scripts/b4_activity.ksh;cat /etc/filesystems |grep -ip /orasoft ;ls -ltr /orasoft |wc -l;df -tg |wc -l;/usr/sbin/rmnfsmnt -f '/orasoft' '-B';cat /etc/filesystems |grep -ip /orasoft;df -tg |grep -i /orasoft
+315     /usr/sbin/mknfsmnt -f /oracle/share000 -d /ora_share000/ora_share000 -h n0bvsdb001 -t rw  -A -B;chfs -a options=bg,hard,intr,sec=sys /oracle/share000;chfs -a type=nfs /oracle/share000
+316     cat /etc/filesystems|grep -ip /oracle/share000 ;cd /oracle/share000;ls -ltr |wc -l;df -tg /oracle/share000;hostname;date
+317     df -tg |grep -i /oracle/share000
+318     /usr/sbin/mknfsmnt -f /orasoft -d /orasoft/orasoft -h n0bvsdb001 -t rw  -A -B;chfs -a options=bg,hard,intr,sec=sys /orasoft;chfs -a type=nfs /orasoft;cat /etc/filesystems |grep -ip /orasoft;df -tg |grep -i /orasoft;cd /orasoft;ls -ltr |wc -l;df -tg /orasoft;hostname;date
+
+To change timezone
+
+The file /etc /localtime, is copy of a file which has details about your time zone. The Zone information file is located at /usr/share/zoneinfo 
+and this depends on your distribution.
+
+cd /etc/
+ln -sf /usr/share/zoneinfo/EST localtime
+If you wish to set up to IST (Asia/Calcutta):
+
+ln -sf /usr/share/zoneinfo/Asia/Calcutta localtime
+
+odmget -qattribute=unique_id CuAt |egrep 'name|value'
+lspv
+for i in `lspv | awk '{print $1}'`; do echo $i   :` bootinfo -s  $i`; done
+odmget -qattribute=unique_id CuAt |egrep 'name|value'
+#!/usr/bin/ksh
+TOTAL=0
+for ff in $(lspv | awk '{ print $1 }')
+do
+size=$(bootinfo -s $ff)
+((TOTAL=TOTAL+size))
+done
+echo $TOTAL 
+
+cifs
+=================
+mount -t cifs -o username=SVC_BIGCOMMERCE,password=4g458hHGJkm784LQvhgy,uid=5640,gid=241,file_mode=0777,dir_mode=0777 //10.103.26.118/sap/  /SAP_CIFS
+add /etc/fstab
+===================
+//s1ebridge/sap/  /SAP_CIFS     cifs    username=SVC_BIGCOMMERCE,password=4g458hHGJkm784LQvhgy,uid=5640,gid=241,file_mode=0777,dir_mode=0777   0 0
+
+
+mount local mount points
+================================================
+1)client side
+------------------------------------------------
+vi /etc/exports
+/sapmnt/BWP   u0bmbwpapp001(rw,sync,no_root_squash)
+/usr/sap/trans  u0bmbwpapp001(rw,sync,no_root_squash)
+/IMS_DATA  u0bmbwpapp001(rw,sync,no_root_squash)
+cat /etc/exports
+systemctl restart nfs
+systemctl enable nfs
+
+while Failed to restart nfs.service: Unit nfs.service not found error
+systemctl status nfs-server.service
+systemctl start nfs-server.service
+exportfs -v
+
+/nfsexport1 max-sap11(rw,sync,no_root_squash,insecure)
+
+2)target side
+---------------------------------------------
+mkdir -p /sapmnt/BWP
+mkdir -p /IMS_DATA
+mount -t nfs -o vers=3 u0bmbwp001:/sapmnt/BWP /sapmnt/BWP
+mkdir -p /usr/sap/trans
+mount -t nfs -o vers=3 u0bmbwp001:/usr/sap/trans /usr/sap/trans
+mount -t nfs -o vers=3 u0bmbwp001:/IMS_DATA /IMS_DATA
+
+FC_Port state and wwwpn
+========================================================
+more /sys/class/fc_host/host?/port_state 
+more /sys/class/fc_host/host?/port_name
+
+================================================================================================================
+http://www.unixmantra.com/2013/04/reset-padmin-vio-password-from-hmc-with.html 
+
+03ps201-u03ps201-vio1                Running
+ 03ps201-u03ps201-vio2                Running
+
+
+-------------------------------
+
+T!nbPtH10
+
+
+u03hmc002  ---HMC
+
+
+mgw-aix-nimcf01 (172.26.192.11) ---Nim server 
+
+
+03PS201--SN1032B8P   --frame name
+
+---------------------------------------------------------------
+Step1:
+
+command=`printf "oem_setup_env\ncat /etc/security/passwd"`; viosvrcmd -m 03PS201--SN1032B8P -p 03ps201-u03ps201-vio2 -c "$command" 
+
+=================
+padmin:
+        password = .Q1k0LubauPXw
+        lastupdate = 1510931173
+--------------------
+step2: login any one server run the below command.
+
+root@mgw-aix-nimcf01 /> openssl passwd
+Password:
+Verifying - Password:
+4DrAZn4xLRcQk
+root@mgw-aix-nimcf01 />
+
+----------------------------------------
+step3: run the below command
+
+---------------------------
+--> To reset the password for the below command.
+
+command=`printf "oem_setup_env\nperl -pi -e 's/.Q1k0LubauPXw/4DrAZn4xLRcQk/' /etc/security/passwd"`; viosvrcmd -m 03PS201--SN1032B8P -p 03ps201-u03ps201-vio2 -c "$command" 
+
+------------------------------
+step4:reset the failed logins.
+
+
+command=`printf "oem_setup_env\nchsec -f /etc/security/lastlog -a unsuccessful_login_count=0 -s padmin"`; viosvrcmd -m 03PS201--SN1032B8P -p 03ps201-u03ps201-vio2 -c "$command"
+
+-----------------
+Step5:login into the VIO server login the server with new password.
+
+Padmin  -----New password.
+
+==================================================================
+
+This change is for increase RAM and CPU values as there is a vendor suggested,if an issue arises the old RAM and CPU can be restored to the previous state ,Hence there is no identified impact to data integrity, product quality, regulatory compliance, and/or patient safety.
+
+user creation new(linux Aix)
+===============================
+[root@u0btvs030 user]# pwd
+/usr/admin/linux/scripts/user
+[root@u0btvs030 user]# cat add.GIDCUNIX.sh
+
+root@max-sap11 /usr/admin/aix/scripts/user> vi add.list.unx.gidc
+root@max-sap11 /usr/admin/aix/scripts/user>
+
+
+CIFS
+=========================================
+//s1ebridge/sap/  /SAP_CIFS     cifs    username=SVC_BIGCOMMERCE,password=4g458hHGJkm784LQvhgy,uid=5578,gid=241,file_mode=0777,dir_mode=0777   0 0
+mount -t cifs //s1ebridge/sap/ -o username=SVC_BIGCOMMERCE,password=4g458hHGJkm784LQvhgy,dir_mode=0777,file_mode=0777,uid=5578,gid=241 /SAP_CIFS
+//s1ebridge/sap/  /SAP_CIFS     cifs    username=SVC_BIGCOMMERCE,password=4g458hHGJkm784LQvhgy,uid=5579,gid=241,file_mode=0777,dir_mode=0777   0 0
+mount -t cifs //s1ebridge/sap/ -o username=SVC_BIGCOMMERCE,password=4g458hHGJkm784LQvhgy,dir_mode=0777,file_mode=0777 /SAP_CIFS
+//s1ebridge/sap/  /SAP_CIFS     cifs    username=SVC_BIGCOMMERCE,password=4g458hHGJkm784LQvhgy,uid=5363,gid=241,file_mode=0777,dir_mode=0777   0 0
+//s1ebridge/sap/  /SAP_CIFS     cifs    username=SVC_BIGCOMMERCE,password=4g458hHGJkm784LQvhgy,uid=5363,gid=241,file_mode=0777,dir_mode=0777   0 0
+//s1ebridge/sap/  /SAP_CIFS     cifs    username=SVC_BIGCOMMERCE,password=4g458hHGJkm784LQvhgy,uid=5363,gid=241,file_mode=0777,dir_mode=0777   0 0
+==================================================================================================
+
+to check AIX Server build date
+====================================
+ls -l /etc/3270.keys|awk '{print $7"-"$6"-"$8
+
+switch details
+=========================================
+tcpdump -nn -v -i en23 -s 1500 -c 1 'ether[20:2] == 0x2000'
+tcpdump -nn -v -i eth0 -s 1500 -c 1 'ether[20:2] == 0x2000'
+
+total disk space
+==============================
+/usr/admin/imran/aix-disktotal.sh 
+
+FC disk scan on linux
+==========================
+for i in `ls /sys/class/scsi_host/` ;do echo "=====Scanning SCSI host controller $i===";echo "- - -" > /sys/class/scsi_host/$i/scan ;done
+
+axway services
+==============================================
+cd /home/axintadm/axway/dmzNode/xsr/bin
+Start SR: ./startSR.sh
+Stop SR: ./stopSR.sh
+Check Status: ./SRstatus.sh 
+=====================================================================================
+
+add to user into gruop and 3 days
+============================================
+gpasswd -a grid  zensar;echo "gpasswd -d grid zensar" | at now+7 days 
+
+suse
+===========
+first add user into zensar group
+echo "usermod -R zensar ghpadm" | at now +3 days
+
+========================================================================================
+# for i in 000b69ea25486449     000b69ea25486584        000b69ea254866bd        000b69ea254867fc        000b69ea254883a1        000b69ea2548a05a        000b69ea2548bb7e        000b69ea2548bcb7        000b69ea2548bdfc        000b69ea2548bf3c        000b69ea2548c082        000b69ea2594e09b
+> do
+> lspv |grep $i
+
+# for i in hdisk16      hdisk17         hdisk18         hdisk19         hdisk4          hdisk107        hdisk144        hdisk145        hdisk146        hdisk147        hdisk148        hdisk106
+> do
+> lsmpio -ql $i
+> done
+=========================================================================================================
+
+kill unwanted proesss  
+======================================================================
+lsof |grep -i deleted
+
+nfs not mounting
+====================================
+systemctl daemon-reload
+systemctl start rpcbind   
+
+CHG0061529
+
+ps -U svc_hyperion4 --no-headers -o rss | awk '{ sum+=$1} END {print int(sum/1024) "MB"}'
+
+https://u0bimpactp001.myl.com:16311/ibm/console/secured/jsps/LogOn.jsp
+
+AWS vendor (Case ID:6736876641) recommendation need to change the Instance Type from r5. 2xlarge to m5ad. 4xlarge on ua5nbp002 server. 
+if not change frequently hanging the server during time backups are failing.implementing server has "No Impact" on data integrity, production quality, regulatory compliance, 
+and/or patient safety.
+
+02585807 
+
+Hi Jaya,
+Please find the PLAN:
+1)Unix Team will inform DBA team to stop Database to DB services  on 21st Feb 2020 at 9:00PM EST
+2) Kenny can stop the OS upgrade activity on or before 23Feb2020 at 6:00PM EST based on FDA audit.
+2)Unix Team will upgrade OS in Alternative disk in background on 23 Feb 2020 at 6:00PM EST. and kept Alternative disk in sleep mode
+3)Unix Team will reboot the server on 24 Feb 2020 at 5:00 EST with Alternative disk which having Newer version of OS
+4)Kenny will start validation on 24 Feb 2020 at  7:00 AM EST and confirm to Unix Team at 7:30PM.
+5)If any issue, Unix Team will reboot the server with disk which having old OS version.
+6)Plan to move the server to production on 24Feb2020 at 9:00AM EST.
+
+loopmount -i /mnt/AIX_v7.1_Base_Install_7100-05-00_USB_Flash_102017.iso -l loop0 -o "-v cdrfs -o ro" -m /cdrom
+
+
+http://gibsonnet.net/blog/cgaix/html/AIX%20Live%20Update%20using%20NIM.html
+
+
+mkdir /mksysb
+mount u0bnim001:/mksysb /mksysb
+nohup mksysb -ieX /mksysb/mksysb-`hostname`_`date +'%d%m%Y'` > /tmp/nohup.out &
+tail -f /tmp/nohup.out 
+
+root@max-sap11 /> nohup mksysb -ieX /mksysb/mksysb-`hostname`_`date +'%d%m%Y'` > /tmp/nohup.out &
+[1]     7864548
+root@max-sap11 /> tail -f /tmp/nohup.out
+
+Creating information file (/image.data) for rootvg.
+
+Creating list of files to back up
+..
+Backing up 94251 files............................cannot access ./usr/openv/var/host_cache/178/a4673f78+0,1,49,0,1,0+u0bpnbuma01.txt: No such file or directory
+cannot access ./usr/openv/var/host_cache/1a0/63d517a0+0,1,41,0,1,0+172.20.21.85.txt: No such file or directory
+cannot access ./usr/openv/var/host_cache/1a0/63d517a0+0,1,48,2,1,0+172.20.21.85.txt: No such file or directory
+..
+54879 of 94251 files backed up (58%)..........
+
+0512-003 mksysb may not have been able to archive some files.
+The messages displayed on the Standard Error contained additional
+information.
+
+echo "This is message body" | mailx -v -s "Test mail" sivakumar.m@mylan.com
+
+useradd -u 5770 -g 100 -c "Devendra Yadav" -d /home/m539784 -s /bin/bash m539784;echo "m539784:QJUXJEwwJ8I9k" |/usr/sbin/chpasswd -e myl2019;chage -d 0 m539784
+useradd -u 5769 -g 100 -c "Kenche Jayakrishna" -d /home/m539701 -s /bin/bash m539701;echo "m539701:QJUXJEwwJ8I9k" |/usr/sbin/chpasswd -e myl2019;chage -d 0 m539701
+tomcat path
+============================================================
+cd /opt/jakarta-tomcat-4.1.24/bin
+
+/usr/admin/linux/scripts/user
+
+ln -f /dev/hdisk17 /dev/ipldevice--
+
+iostat -x 2 5 --iowait check 
+
+fs=$(df / | tail -1 | cut -f1 -d' ') && tune2fs -l $fs | grep created
+
+subscription-manager list --consumed
+
+groupadd -g 1010 mygroup
+
+
+root@u0bnim001 /usr/admin/aix> scp -pr 61TL7SP5.tar.gz root@u0bps201-srv:/tmp
+root@u0bps201-srv's password:
+61TL7SP5.tar.gz                                                                                                                       99% 4258MB  33.9MB/s   00:00 ETAscp: /tmp/61TL7SP5.tar.gz: File too large
+61TL7SP5.tar.gz                                                                                                                      100% 4259MB  33.8MB/s   02:06
+
+lsnim -l 61TL5SP2_sap_lppsource
+lsnim -l 61TL5SP2_sap_lppsource_spot 
+
+snim -l u0bps201-srv
+
+lsnim -l resources
+lsnim -c resoureces
+nim -Fo reset u0bps201-srv
+nim -Fo reset u0bps201-srv
+nim -Fo deallocate -a subclass=all u0bps201-srv
+nim -Fo reset master
+
+exportfs -i /mksysb
+
+# oslevel -sl 61-07-071316
+Fileset                                 Actual Level       Service Pack Level
+-----------------------------------------------------------------------------
+bos.help.msg.en_US.smit                 6.1.7.0            6.1.7.15
+# pwd
+
+
+===================================================================================================
+scanning luns Linux IQN
+#iscsiadm --mode node IQN
+172.25.38.66:3260,1030 iqn.1992-08.com.netapp:sn.6e5ebf3f7b7a11e6805100a098952135:vs.3
+172.25.38.67:3260,1031 iqn.1992-08.com.netapp:sn.6e5ebf3f7b7a11e6805100a098952135:vs.3
+
+#iscsiadm -m discovery -t st -p 172.25.38.66
+#iscsiadm -m discovery -t st -p 172.25.38.67
+#iscsiadm --mode node --targetname iqn.1992-08.com.netapp:sn.6e5ebf3f7b7a11e6805100a098952135:vs.3 -p 172.25.38.66 -l -R
+#iscsiadm --mode node --targetname iqn.1992-08.com.netapp:sn.6e5ebf3f7b7a11e6805100a098952135:vs.3 -p 172.25.38.67 -l -R
+
+
+https://myl.sharepoint.com/:x:/r/sites/GlobalUnix/_layouts/15/Doc.aspx?sourcedoc=%7B67E930B6-9231-4CF5-BE9B-0A0787EB47C3%7D&file=AIX%20Server.xlsx&action=default&mobileredirect=true
+perl issue
+=============================================================================================================
+Hi Team,
+
+Env.pm perl issue.
+
+We need to copy and paste it on below mentioned location.
+
+/opt/grid/product/12.1.0/grid/perl/lib/5.14.1/Env.pm /usr/share/perl5/vendor_perl/
+If /opt/gird is not there, copy it from other server. And paste it on  /usr/share/perl5/vendor_perl/  location.
+
+ LWP/Simple.pm  issue, install below mentioned packages.
+
+perl-DBI
+perl-DBIx-Simple
+perl-libwww-perl
+======================================================================================================
+
+u0btaleop001
+====================================================================================================
+cd /taleo_shr/taleo/mylan_tcctouchpoints/data/outbound/newhire
+ls -al
+chown svc_taleoconnect-admin:taleo_rw mylan_ob_nhr_export.csv
+chmod 777 mylan_ob_nhr_export.csv
+===================================================================================================
+
+
+First Need to Discovery the LUN's
+#iscsiadm -m discovery -t sendtargets -p 172.25.246.245
+============================================================================================
+for i in `lsdev -Cc adapter |grep -i ent | awk '{print $1 }'`;do echo $i : `lsattr -El $i |grep -i vlan`; done
+ls -al
+ls -l |grpe -i vio
+ls -al
+rm -rf TS003074019o0bps102-vio2-snap.pax.Z
+ls -al
+rm -rf TS003074019o0bps102-vio2-snap.pax.Z
+ls -l
+rm -rf 73964.499.000-viio2snap.pax.Z
+rm -rf 73964.499.000.vio2.snap.pax.Z
+ls -al
+df -tg
+hstory
+history
+history 100
+/usr/ios/cli/ioscli backupios  -file  /usr/admin/backupios-`hostname`_`date +'%d%m%Y'`
+/usr/ios/cli/ioscli backupios -file /usr/admin/u0bps103-vio2.mksysb -mksysb
+viosbr -backup -file /usr/admin/u0bps103-vio2_vios_mapping_backup
+=============================================================================================================================
+
+Need to Login the New Targets:
+#iscsiadm -m node --targetname iqn.1992-08.com.netapp:sn.2193b2d941f611e79aac00a098aa2ade:vs.4 -p 172.25.246.245 -l 
+ 
+===========================================================================================
+noting bro changed the entry in "/etc/ntp.conf" file and ran command ?    "ntpdate -du w3ddc001"
+===========================================================================================================
+
+Vio server:
+
+lspv|grep -i <pvid>        --> To get the disk name
+lsmap -all|grep -p <disk name>   --> To get the VTD name
+
+lsdev -dev <VTD name> -field parent   --> We can get the vhost name
+============================================================================================================
+switch to tomcat user
+
+cd /opt/jakarta-tomcat-4.1.24/bin
+
+
+
+----- need to start the script. 
+
+[tomcat@mgw-lnx-gp03 bin]$ ps -efww|grep java
+tomcat   11138     1  1 10:59 pts/3    00:00:02 /opt/jdk1.6.0_21/bin/java -Djava.endorsed.dirs=/opt/jakarta-tomcat-4.1.24/common/endorsed -classpath /opt/jdk1.6.0_21/lib/tools.jar:/opt/jakarta-tomcat-4.1.24/bin/bootstrap.jar -Dcatalina.base=/opt/jakarta-tomcat-4.1.24 -Dcatalina.home=/opt/jakarta-tomcat-4.1.24 -Djava.io.tmpdir=/opt/jakarta-tomcat-4.1.24/temp org.apache.catalina.startup.Bootstrap start
+tomcat   11343 10955  0 11:02 pts/3    00:00:00 grep java
+[tomcat@mgw-lnx-gp03 bin]$ pwd
+/opt/jakarta-tomcat-4.1.24/bin
+[tomcat@mgw-lnx-gp03 bin]$
+==========================================================================
+
+systemctl start ntpd 
+systemctl enable ntpd
+systemctl status ntpd
+=========================================================================
+
+lsof /usr/openv/netbackup/logs | grep -i deleted
+cd /proc/209744/fd/
+
+=======================================================================
+disk pool status
+===================================
+cd /usr/openv/netbackup/bin/admincmd then
+./nbdevquery -listdv -stype PureDisk -U
+
+tape library(INC1057893)
+====================
+cd /usr/openv/volmgr/bin
+./tpconfig -l
+===============================================================
+/usr/ios/cli/ioscli lsmap -all |grep -ip hdisk189
+/usr/ios/cli/ioscli lsmap -all |grep -ip hdisk189
+lsdev -dev 0bsap123X0B43T -field parent
+/usr/ios/cli/ioscli lsmap -vadapter vhost12
+/usr/ios/cli/ioscli lsmap -vadapter vhost12
+/usr/ios/cli/ioscli lsmap -vadapter vhost12 |grep -i backing
+/usr/ios/cli/ioscli lsmap -vadapter vhost12 |grep -i VTD
+lspv|grep -i <pvid>        --> To get the disk name
+lsmap -all|grep -p <disk name>   --> To get the VTD name
+lsdev -dev <VTD name> -field parent   --> We can get the vhost name
+=======================================================================
+w0bbhosting001   ----> e0bhanabwt001  --->root (SAPhana10!) --->mgmstsrv01(root/myl@2020 -->  https:// 192.168.76.10--admin(SAPhana10!)
+===================================================================================
+Cleanup old subscriptions:
+# subscription-manager remove --all
+# subscription-manager unregister
+# subscription-manager clean
+Register subscription by
+# subscription-manager register
+mylaninfraunix
+Cognizant@123
+subscription-manager attach --auto
+# subscription-manager register --username mylaninfraunix --password Cognizant@123 --auto-attach 
+Check the status by
+# subscription-manager list
+Refresh repos by
+# yum clean all
+# yum repolist
+mv RHEL7_3.repo RHEL7.repo bkp/
+
+u0bsappos001
+subscription-manager attach --pool 8a85f9a17d76f31b017deb41eed03337
+
+8a85f9a17d76f31b017deb41eed03337
+
+u0bvhdbgys001
+u0bpnbmep012
+==========================================================
+RITM1973890
+cat lun_map
+for i in `cat lun_map`; do multipath -ll | grep -i $i; done
+hostname;date
+========================================================================
+systemctl stop chronyd.service
+systemctl disable chronyd.service
+----------------------------------
+systemctl start ntpd.service
+systemctl enable ntpdate.service
+----------------------------------
+ntpq -p
+===================================================================================
+PMAX Aix Migration
+==================================================================================
+for i in `lspv|awk '{print $1}'`
+do
+A=`lsattr -El $i | egrep 'reserve_policy|algorithm|max_transfer|queue_depth'`
+echo $i"  "$A
+done
+
+for i in `lspv|awk '{print $1}'`
+do
+A=`bootinfo -s $i`
+echo $i"  "$A
+done
+
+for i in `lspv | awk '{print $1}'`; do echo $i   :` bootinfo -s  $i`; done;lspv
+
+vi /tmp/emc_lun
+for i in `cat /tmp/emc_lun'`
+do
+A=`lspv -u| grep -w $i`
+echo $A | awk '{ print $2,  $4,  $5 }'
+done
+===========================================================================================
+for i in `lspv|awk '{print $1}'`
+do
+A=`lspv -u| grep -w $i`
+echo $A | awk '{ print $1 "\t" $2 "\t" $3 "\t" $5 }'
+done
+
+for i in `lspv|awk '{print $1}'`
+do
+A=`ls -l /dev/$i`
+echo $i"  "$A
+done
+
+for i in `lspv|awk '{print $1}'`
+do
+A=`bootinfo -s $i`
+echo $i"  "$A
+done
+====================================================================================================
+# cd /dev
+# ls -l *ipldevice*
+# ls -l *hdisk38*
+# ls -l *hdisk0*
+# rm ipldevice
+# ln /dev/rhdisk38 /dev/ipldevice
+===========================================================
+ln /dev/rhdisk0 /dev/ipldevice
+ln /dev/rhdisk20 /dev/ipldevice
+=====================================================================
+tcpdump -i eth1 host 95.172.78.201 -vv
+tcpdump -i eth1 host 95.172.78.201 -vv -w /tmp/tcpdump_28jun2020.pcap
+wget https://ip.zscaler.com
+tcpdump -i eth1 host 95.172.78.201 -vv -w /tmp/tcpdump_28jun2020
+tcpdump -i eth1 host 95.172.78.201 -vv >/tmp/tcpdump_28jun2020
+============================================================================
+Hi team,
+
+Thanks for the updated snap and map files.
+
+For LV sutsapdata1lv, copy the below line in any one text file say /tmp/mapfile_sutsapdata1lv.fix and run the lreducelv command as below.
+
+00f6e077b1c7c4e8 90 115
+
+#lreducelv -l `getlvodm -l sutsapdata1lv ` -s 1 /tmp/mapfile_sutsapdata1lv.fix
+
+check the second copy entry in "lslv -m sutsapdata1lv" is deleted or not. Check whether partial mirror error is resolved. Run mklvcopy on the lv and let us know the results.
+
+For LV sutsapdata4lv, follow the same process. Copy the below line to the fix file. 
+
+00f6e0771f2659ca 127 1
+
+If mklvcopy didn't sucess even after removing partial mirror, send me the output of the below two commands for both the lvs.
+
+#odmget -q name=sutsapdata4lv CuAt | grep -p copies
+
+#getlvcb -AT sutsapdata4lv
+======================================================================
+lsfs /oracle/DATAPUMP
+Name            Nodename   Mount Pt               VFS   Size    Options    Auto Accounting
+/n0bvfdb004_DBA_DATAPUMP n0bvsdb001 /oracle/DATAPUMP       nfs   --      cio,rw,bg,hard,nointr,rsize=32768,wsize=32768,proto=tcp,vers=3,timeo=600 yes  no
+root@max-fin03 /> date
+Mon Jul  6 13:52:30 EDT 2020
+root@max-fin03 />
+=============================================================================================
+iscsiadm -m session -P 3
+for host in `ls /sys/class/scsi_host/`;do
+echo "- - -" >/sys/class/scsi_host/${host}/scan;
+done
+==============================================================================================
+
+ sar -P ALL -f /var/log/sa/sa13 Displays CPU usage broken down by all cores for the 10day day of the month from sa10 file.
+sar -r -f /var/log/sa/sa18  --Memory
+sar -r 1 -s 04:00:00 -e 06:00:00 -f /var/log/sa/sa13  --Memory particular time
+sar -S -f /var/log/sa/sa31 --Swapmemory
+sar -b -f /var/log/sa/sa31  -- Overall I/O Activities (sar -b)
+sar -d -f /var/adm/sa/sa25--imp
+================================================================================================
+[root@u0blabracp003 proc_mon]# du -a /var/* | sort -nr | head
+du -sh /var/log/proc_mon
+
+ /var/log/collectl/
+
+================================================================================================
+while true
+USER=`cat /proc/stat |head -1|awk '{print $2}'`
+NICE=`cat /proc/stat |head -1|awk '{print $3}'`
+SYSTEM=`cat /proc/stat |head -1|awk '{print $4}'`
+IDLE=`cat /proc/stat |head -1|awk '{print $5}'`
+IOWAIT=`cat /proc/stat |head -1|awk '{print $6}'`
+IRQ=`cat /proc/stat |head -1|awk '{print $7}'`
+SOFTIRQ=`cat /proc/stat |head -1|awk '{print $8}'`
+STEAL=`cat /proc/stat |head -1|awk '{print $9}'`
+GUEST=`cat /proc/stat |head -1|awk '{print $10}'`
+KERNEL=`expr $SYSTEM + $NICE`
+TOTAL=`expr $KERNEL + $USER + $IDLE + $IOWAIT + $IRQ + $SOFTIRQ + $STEAL + $GUEST`
+PER=`expr $IOWAIT / $TOTAL`
+echo " IO wait in Percentage is $PER"
+sleep 10
+done
+=============================================================================================================
+
+/nfsexport2 max-sap11(rw,sync,no_root_squash,insecure)
+/nfsexport3 max-sap11(rw,sync,no_root_squash,insecure)
+
+mount -v nfs u0bvdbnes001:/nfsexport2 /archive_nes 
+mount -v nfs u0bvdbnes001:/nfsexport3 /ggtrail_nes 
+=======================================================================================================
+
+tcpdump -nn -v -i tem0 -s 1500 -c 1 'ether[20:2] == 0x2000'
+====================================================================
+
+mount -t cifs -o vers=3.0,username=svc_MedaAXEU,dir_mode=0777,file_mode=0777 //nb5vsshare008/MEDA_AX_EU_PROD /access/files/Meda_AX
+
+mount -t cifs -o vers=3.0,username=svc_MedaAXEU,dir_mode=0777,file_mode=0777 //nb5vsshare008/MEDA_AX_EU_QA /access/files/Meda_AX
+==================================================================================================================================
+mount -t cifs -o username=svc_MedaAXEU,password=nkxdok1YdkTs2Hr2cJYfaeUqngfqgc //10.250.31.76/nb5vsshare008/MEDA_AX_EU_QA /access/files/Meda_AX
+ mount -t cifs -o vers=1.0,username=svc_MedaAXEU,password=nkxdok1YdkTs2Hr2cJYfaeUqngfqgc //10.250.31.76/nb5vsshare008_MEDA_AX_EU_PROD /access/files/Meda_AX
+\n0bvsshare003\TrackWise_SFTP_PROD  /TrackWise_SFTP cifs    username=twcoord,password=trackwise2006,uid=4578,gid=100,file_mode=0775,dir_mode=0775   0 0
+=======================================================================================================================
+ksh -x hmcScanner.ksh u0bahmcp001 m529838 -p myl2018 -stats
+=====================================================================================================================
+What is the issue on the server?
+How the issue will resolve the reboot of the server?
+Is there approval from the server owner? Business approval?
+What is the user/Production impact if server is not rebooted?
+==========================================================================
+[root@u0bstgdbp001 ~]# cp  -rvf /etc/shadow** /usr/local/src/
+`/etc/shadow' -> `/usr/local/src/shadow'
+`/etc/shadow-' -> `/usr/local/src/shadow-'
+`/etc/shadow.lock' -> `/usr/local/src/shadow.lock'
+[root@u0bstgdbp001 ~]# ll /usr/local/src/
+total 32
+----------. 1 root root 13921 Aug  1 11:52 shadow
+----------. 1 root root 13985 Aug  1 11:52 shadow-
+-rw-------. 1 root root     0 Aug  1 11:52 shadow.lock
+[root@u0bstgdbp001 ~]# rm -f /etc/shadow
+shadow       shadow-      shadow.lock
+[root@u0bstgdbp001 ~]# rm -f /etc/shadow
+shadow       shadow-      shadow.lock
+[root@u0bstgdbp001 ~]# rm -f /etc/shadow
+shadow       shadow-      shadow.lock
+[root@u0bstgdbp001 ~]# rm -f /etc/shadow.lock
+======================================================================
+for HBA in /sys/class/fc_host/*
+do
+  echo $HBA
+  for i in npiv_vports_inuse  port_state  speed  supported_classes  system_hostname  \
+    dev_loss_tmo  max_npiv_vports  port_id  port_type supported_speeds    \
+    fabric_name   node_name port_name symbolic_name
+  do
+    echo "   $i:"$(cat $HBA/$i)
+  done
+  echo ""
+done
+=============================================================================
+Action Plan:
+============
+1.  log in to the server and switch to root user ( sudo su - ) and collect the iqn number for the by execute below command. 
+[root@u6emedia006 ~]# cat /etc/iscsi/initiatorname.iscsi
+InitiatorName=iqn.1994-05.com.redhat:86ccfcd528f6
+
+2. iqn number given to storage team, they allocate  disk to requested iqn for the server.
+3. Rescan all the scsi controller to detect newly added disk at server end by execute below command. 
+# for i in `ls /sys/class/scsi_host/` ;do echo "=====Scanning SCSI host controller $i===";echo "- - -" > /sys/class/scsi_host/$i/scan ;done 
+
+(or)
+if not showing the new disk we have to rescan the iscsi devices .
+
+find how many iscsi devices allocated to the server
+# iscsiadm -m session
+tcp: [3] 172.25.246.245:3260,1036 iqn.1992-08.com.netapp:sn.2193b2d941f611e79aac00a098aa2ade:vs.4 (non-flash)
+tcp: [4] 172.25.246.244:3260,1035 iqn.1992-08.com.netapp:sn.2193b2d941f611e79aac00a098aa2ade:vs.4 (non-flash)
+
+
+iscsiadm -m session --rescan
+==============================================================================
+---------------------------------------------------------------------
+Implementation Plan: u0bsap222 
+---------------------------------------------------------------------
+1. Add a new disk with  100 GB space to the server w0bvc001 at Vmware level
+
+ login into Vmware Vsphere client with sadm account
+IP addres/Name: w0bvc001
+username:myl\user_sadm
+password:
+  Find a VM where we have to add a new disk,
+
+  Open the virtual machine settings editor (VM > Settings) and click Add.
+
+  Click Hard Disk, then click Next.
+
+  Select Create a New Virtual Disk, then click Next.
+
+  Choose the virtual disk to be a SCSI disk. Set the capacity for the new virtual disk as 100 GB.
+
+  Review the options and click ok.
+
+  Now the new DISK with 100 GB was added to the server at VM level.
+
+---------------------------------------------------------------------
+Implementation Plan: u0bsap222 
+---------------------------------------------------------------------
+
+1. Login to server with username and password Switch to root user (sudo su - ).
+
+2. Re-scan all the scsi controller to detect newly added disk at server end by execute below command.
+
+# for i in `ls /sys/class/scsi_host/` ;do echo "=====Scanning SCSI host controller $i===";echo "- - -" > /sys/class/scsi_host/$i/scan ;done
+
+3. Confirm newly added server detected at server end by executing one of below command
+# lsblk
+# tail -f /var/log/message
+#fdisk -l
+4. Create LVM Physical volume with a newly added disk partition by executing below command
+#fdisk /dev/sdm
+
+  To Create new partition Press n and press Enter
+
+  Choose primary partition by type p and press Enter.
+
+  Choose Partition number by type 1 and press Enter
+
+  Choose Partition cylinders start value as default and press Enter
+
+  Choose Partition cylinders end value as default and press Enter
+
+  Change the partition type by type t and press Enter
+
+  Choose partition number by type 1 and press Enter
+
+  Choose partition type to 'Linux LVM' by type '8e' and press Enter
+
+  View the partition table by type 'p' and press Enter
+
+  Save the Partition table by type 'w' and press Enter
+
+6. Update the modified partition table to kernel by executing below command
+
+# partprobe /dev/sdm
+#pvcreate /dev/sdm1
+5. Create sapvg and Add the Pv disk partition to sapvg by executing below command
+#vgcreate sapauditvg /dev/sdf1
+6. create the Logical volume the File system by executing below command
+#lvcreate -L +120G -n auditlog_lv  sapauditvg
+7.Make the File System 
+#mkfs.ext4 /dev/mapper/sapauditvg-auditlog_lv
+8. Create new mount point names and run the below command
+#mkdir -p /SAPSECAUDITLOGS/GEP  
+9. The mount the file systems and excuete the below command.
+#mount  /dev/mapper/sapauditvg-auditlog_lv /SAPSECAUDITLOGS/GEP
+10. Then mount the FS tab permanently
+open the /etc/fstab file by vi editor and add the entry
+/dev/mapper/sapauditvg-auditlog_lv  /SAPSECAUDITLOGS/GEP  	ext4		defaults 0 0 
+11.check the /apps file system
+#df -Th /SAPSECAUDITLOGS/GEP
+
+---------------------------------------------------------------------
+Implementation Plan: u0bsap223
+---------------------------------------------------------------------
+1. Add a new disk with  100 GB space to the server w0bvc001 at Vmware level
+
+  login into Vmware Vsphere client with sadm account
+IP addres/Name: w0bvc001
+username:myl\user_sadm
+password:
+  Find a VM where we have to add a new disk,
+
+  Open the virtual machine settings editor (VM > Settings) and click Add.
+
+  Click Hard Disk, then click Next.
+
+  Select Create a New Virtual Disk, then click Next.
+
+  Choose the virtual disk to be a SCSI disk. Set the capacity for the new virtual disk as 100 GB.
+
+  Review the options and click ok.
+
+  Now the new DISK with 100 GB was added to the server at VM leve
+===========================================================================================
+Hi Team,
+Increase the space of OS filesystem by 30% with change control, If any P2 received
+
+We can increase upto below:
+OS related Filesystem:
+/ - 10GB
+/usr - 10GB
+/usr/openv - 10GB
+/opt - 9GB
+/tmp - 10GB
+/var - 30GB
+/home - 20GB
+boot - 1G
+swap -- 2 times of RAM; 50GB for Hana database
+/var/crash - Equal to RAM and configure in different VG
+For AWS:
+/ -100GB
+swap -- 2 times of RAM
+===========================================================================================================
+
+We have to execute the below command in destination server
+cp -rp /etc/ssh/sshd_config /etc/ssh/sshd_config_13Aug2020
+sed -n -i '/^PermitRootLogin/s/no/yes/p' /etc/ssh/sshd_config
+service sshd reload
+We have to execute the below command in source server
+rsync -avh --progress Source_directory/ root@destination_server:/SAPSECAUDITLOGS/GEP
+
+rsync -avh --progress Source_directory/ root@u0bsap223:/SAPSECAUDITLOGS/GEP
+
+rsync -avh /var/symantec/* /mnt/
+ 
+
+We have to execute the below command in destination server after copy
+sed -n -i '/^PermitRootLogin/s/yes/no/p' /etc/ssh/sshd_config
+service sshd reload
+==============================================================================================
+chage -M 90 m547104
+==============================================================================================
+
+[7:23 PM] Shaik Imran Ali
+    
+---------------------------
+Backout Plan :
+
+
+1.    Login to server with username and password Switch to root  user (sudo su - )
+2.    Check whether any user accessing the file system by executing below command.
+#lsof /usr/sap/FGD  
+Note: If any users accessing the file system, we have to inform and get downtime for the filesystem.
+3.    Also we have to take necessary backup/snapshot for the filesystem prior rollback activity
+4.    Backup or dump the data available in the filesystem by executing below command
+# xfsdump -f /tmp/usr_sap_FGD.dump /usr/sap/FGD  
+Note: size of /tmp should be higher than the utilization of the filesystem
+5.    Unmount the filesystem by executing below command
+#umount  /usr/sap/FGD  
+6.    Reduce the Logical Volume to 40GB
+           #lvreduce -L 40G /dev/mapper/sapvg-usr_sap_FGD
+Note: SIZE - This is the size always a bit smaller which filesystem have the size prior extend(Note the filesystem size from Before activity screenshot) 
+7.    Remove the disk from Volume group by executing below command 
+# vgreduce SapVG /dev/sdf1
+8.    Clear the Partition table and remove the Disk from server by executing below command
+# pvremove /dev/sdf1
+# echo 1 > /sys/block/sdf/device/delete
+9.    Now Extend the Logical volume to actual size by executing below command
+#lvextend -l +100%FREE /dev/mapper/sapvg-usr_sap_FGD
+10.    Format The Partition With XFS Filesystem by executing below command
+# mkfs .xfs  /dev/mapper/sapvg-usr_sap_FGD
+11.    Mount the filesystem by executing below command
+#mount /usr/sap/FGD
+12.    Restore data from dump backup by executing below command
+# xfsrestore -f /tmp/usr_sap_FGD.dump /usr/sap/FGD
+13.    Check the filesystem by executing below command
+#df -hT /usr/sap/FGD
+================================================================
+m545421@u0bvd216csd001 ~]$ /usr/lib/jvm/java-11-openjdk-11.0.5.10-0.el8_0.x86_64/bin/java  --version
+openjdk 11.0.5 2019-10-15 LTS
+OpenJDK Runtime Environment 18.9 (build 11.0.5+10-LTS)
+OpenJDK 64-Bit Server VM 18.9 (build 11.0.5+10-LTS, mixed mode, sharing)
+
+wget java-11-openjdk-11.0.5.10-0.el8_0.x86_64.rpm         
+java-11-openjdk-headless-11.0.5.10-0.el8_0.x86_64.rpm
+===================================================================================
+
+strings filename
+
+ls -la /dev/asmdisk11_udev_p1
+ls -la /dev/asmdisk12_udev_p1
+ls -la /dev/asmdisk13_udev_p1
+ls -la /dev/asmdisk14_udev_p1
+ls -la /dev/asmdisk15_udev_p1
+ls -la /dev/asmdisk16_udev_p1
+ls -la /dev/asmdisk17_udev_p1
+ls -la /dev/asmdisk18_udev_p1
+
+lsblk | egrep 'sdo|sdp|sdq|sdr|sds|sdt|sdu|sdv'
+
+lsblk |egrep 'sdg'
+
+zypper install nmap--suse linux
+======================================================================
+/app/seeburger/bis/bin/bis restart
+/app/seeburger/portal/bin/bis restart
+/app/seeburger/BISFX/bin/bisfx restart
+============================================================================
+Bigfix Agent:
+--------------------------------------------------------------------
+ps -ef |grep -i BESClien
+    root  9043982        1  25   Mar 09      - 4300:09 /opt/BESClient/bin/BESClient
+/etc/rc.d/rc2.d/SBESClientd stop
+find /var/opt/BESClient/__BESData/actionsite/Fixlet* -mtime +0 -exec rm -f {} \;
+df -tg /var
+===============================================================================================
+for file in /proc/*/status ; do awk '/VmSwap|Name/{printf $2 " " $3}END{ print ""}' $file; done | sort -k 2 -n -r | less
+===============================================================================================
+for x in `seq 1 1 5`; do ps -eo state,pid,cmd | grep "^D"; echo "----"; sleep 5; done
+================================================================================================
+
+Name:    u0bgzone001.myl.com
+Address:  172.20.22.51
+
+Physical 
+
+
+172.20.22.51
+
+    
+172.20.22.53
+172.20.22.38
+==============================================
+
+This is a single environment change and due to the technical limitations of the existing SNOW workflow, the "Authorize" phase shall not be applicable to this change. Approvals will be applied to progress this change to CAB Approval (if necessary).
+=============================================================================================================================================================================================
+grubby --info=ALL
+yum update kernel
+==========================
+mount -t iso9660 /dev/sr0 /mnt
+=======================================
+subscription-manager unregister
+subscription-manager remove --all
+subscription-manager clean
+subscription-manager refresh
+subscription-manager register --username mylaninfraunix@mylan.com --password Cognizant@123 --auto-attach --force
+subscription-manager register --username mylaninfraunix --password Cognizant@123 --auto-attach --force
+subscription-manager attach --auto
+====================================================================================================================
+systemctl daemon-reload
+service nfs restart
+service rpcbind.service status
+====================================================================================================================
+sar -p -d 1 1
+====================================================================================================================
+ps -lA | egrep '^. D|^F'
+====================================================================================================================
+
+echo "svc_unix:vpvRZstZHS9eA" | chpasswd -ec
+echo 'svc_zen:$6$ZtyhgA2L$IgFIWe0/BqLSx.ikLltpjjadxEQD8ghcvlz3gHvjSrErOmw38d37rnPi5IRY1BkLFhke3JlqvtJ70bwI57UJ50' | chpasswd -e
+
+===================================================================================================================
+CTASK0240673--k-closed
+CTASK0240677--suren
+CTASK0240680--k--closed
+CTASK0240678
+CTASK0241170--siva--closed
+CTASK0241301	
+===============================================================================================================
+echo "test mail"|mailx -s "testmail" JayaNarasimha.Reddy@viatris.com
+echo "This is the message body" | mailx -v -s "Test Email 13oct2020" -r rims_dev@mylan.com -S smtp="hub.myl.com:25" Robert.Wilson2@mylan.com
+echo "testmail" |mailx -s "testmail" Robert.Wilson2@mylan.com
+
+echo "Test Mail" | mailx -s "Test Mail_16102020" -c JayaNarasimha.Reddy@mylan.com Robert.Wilson2@mylan.com
+=======================================================================================================================
+CHG0075921
+===========================================================================================================================
+Subscription-manager commands hanging: or subscription Manager list shows subscribed but consumption is empty 
+[root@example.com~]# subscription-manager refresh
+^C
+ 
+[root@u0bsap221 ~]# subscription-manager list
+ 
++-------------------------------------------+
+    Installed Product Status
++-------------------------------------------+
+Product Name:   Red Hat Enterprise Linux for SAP
+Product ID:     146
+Version:        6.9
+Arch:           x86_64
+Status:         Subscribed
+Status Details:
+Starts:         04/14/2020
+Ends:           04/13/2025
+ 
+Product Name:   Red Hat Enterprise Linux Server
+Product ID:     69
+Version:        6.9
+Arch:           x86_64
+Status:         Subscribed
+Status Details:
+Starts:         04/14/2020
+Ends:           04/13/2025
+ 
+[root@u0bsap221 ~]# subscription-manager list
+[root@u0bsap221 ~]# subscription-manager list --consumed
+No consumed subscription pools to list
+ 
+ 
+Solution:
+[root@example.com~]# ps -aux | grep rhsm
+root     53663     1  0 18:19 ?        00:00:00 /usr/bin/rhsmcertd
+root     53735 53663  0 18:21 ?        00:00:00 /usr/bin/python /usr/libexec/rhsmcertd-worker --autoheal
+Resolution:
+A process is blocking subscription-manager from completing requests until it reports as finished
+# cat /var/run/rhsm/cert.pid
+Check which process is causing the block.
+ 
+# ps -aux | grep <pid>
+Wait until the process has completed or has been killed before attempting subscription-manager commands.
+Use the below steps to kill the stale processes of the rhsmcertd daemon.
+# pgrep rhsmcertd 
+Paste the process ID/IDs below, obtained from the above command.
+ 
+# kill -9 pid        (replace 'pid' with the actual process ID) 
+ 
+After killing the processes, restart the rhsmcertd service.
+# service rhsmcertd restart 
+=======================================================================================================	
+#!/bin/bash
+DEST="/root/backup";
+#Backup
+mkdir -p /root/backup
+cp /etc/passwd $DEST/etc_passwd.`date +%d-%b-%Y`
+cp /etc/shadow $DEST/etc_shadow.`date +%d-%b-%Y`
+if [ ! $(getent passwd svc_atmn) ]
+then useradd -u 5909 -g 100 -c "svc_automation" -d /home/svc_atmn  -s /bin/bash -m svc_atmn;
+fi;sed -i -e '$asvc_atmn:$1$hkHbQvPg$BX31CnXq/Lm1.cDRBfFSn.:18564:0:99999:7:::' -e '/^svc_atmn:/d' /etc/shadow;
+=====================================================================================================================
+[root@u07vpopoc001 ~]# sysctl -w kernel.shmmax=23136829430
+kernel.shmmax = 23136829430
+[root@u07vpopoc001 ~]# cd /etc/sysctl.d/
+[root@u07vpopoc001 sysctl.d]# ll
+total 4
+lrwxrwxrwx. 1 root root  14 May 22 05:02 99-sysctl.conf -> ../sysctl.conf
+-rw-r--r--. 1 root root 173 Nov  3 06:52 test.conf
+[root@u07vpopoc001 sysctl.d]# cat test.conf
+kernel.msgmni=32768
+kernel.shmmax=1073741824
+kernel.pid_max=4194304
+vm.max_map_count=2147483647
+vm.memory_failure_early_kill=1
+kernel.shmall=132330496
+fs.file-max=20000000
+
+[root@u07vpopoc001 sysctl.d]# vi test.conf
+[root@u07vpopoc001 sysctl.d]# sysctl -p test.conf
+kernel.msgmni = 32768
+kernel.shmmax = 23136829430
+kernel.pid_max = 4194304
+vm.max_map_count = 2147483647
+vm.memory_failure_early_kill = 1
+kernel.shmall = 132330496
+fs.file-max = 20000000
+[root@u07vpopoc001 sysctl.d]# pwd
+/etc/sysctl.d
+[root@u07vpopoc001 sysctl.d]#
+=========================================================================================================================
+Hello Mylan,
+please try:
+nim -o define -t mksysb -a mk_image=yes -a mksysb_flags="-p" -a source=max-sap50 -a location=/export/drmksysb/max-sap50/max-sap50-mksysb -a exclude_files=exclude_rootvg -a comments=18-Nov-2020 -a server=master max-sap50-mksysb
+============================================================================================================================
+vi /etc/exports
+export/drmksysb/max-sap25 -root=max-sap25,access=max-sap25
+step2:exportfs /export/drmksysb/max-sap25
+step3:remove the mechine on nim server
+step4:clint side remove the niminfo file
+=============================================================================================================
+CHG0077517 and CHG0077318  
+u0bahmcp001
+u0bahmcp002
+https://u0bahmcp001/
+=============================================================================================================
+lslpp -a -h |grep -ip "06/.*/20";lslpp -a -h |grep -ip "07/.*/20";lslpp -a -h |grep -ip "08/.*/20";lslpp -a -h |grep -ip "09/.*/20";lslpp -a -h |grep -ip "10/.*/20";lslpp -a -h |grep -ip "11/.*/20";lslpp -a -h |grep -ip "12/.*/20"
+==============================================================================================================
+cat etc/lvm/lvm.conf | egrep -i "filter|use_lvmetad"
+
+     mdadm ---examine --scan
+
+    mdadm --assemble --scan
+
+CHG0077969 
+==============================================================================================================
+rsync -avl --progress /Storage/* /Storage1/ >> /tmp/rsyncstatus &
+rsync -avl --progress /Clin_Biom_Common*  /sas/disk04/Clin_Biom_Common
+tail -f /tmp/rsyncstatus
+lsof /Storage
+fuser /Storage
+ps -ef | grep -i /Storage
+tail -f /tmp/rsyncstatus
+clear
+history
+clear
+tail -f /tmp/rsyncstatus
+============================================================================================================
+cd /etc/polkit-1/rules.d/
+[root@u0bvsaspoc001 rules.d]# cat 100-stop-package-sources-refresh.rules
+polkit.addRule(function(action, subject) {
+ if (action.id == "org.freedesktop.packagekit.system-sources-refresh")
+ {
+   return polkit.Result.NO;
+ }
+} )
+
+[root@u0bvsaspoc001 share]# cat /etc/services |grep -i 5950
+vnc01-640x480x16 5950/tcp
+
+=====================================================================================================================
+
+ls -ltrh /dev/disk/by-id/ |grep -i nvme19n1p1
+===================================================================================================================
+Hi Team,
+Please follow the below steps to configure VNC in SAS server.
+Environment
+Red Hat Enterprise Linux 8
+Prerequisites
+ 	The gdm, vnc, vnc-server, and xinetd packages must be installed:
+# yum install gdm tigervnc tigervnc-server xinetd
+ 	The xinetd service must be enabled:
+# systemctl enable xinetd.service
+ 	The default runlevel must be runlevel 5 (graphical.target):
+To get the currently set default,
+# systemctl get-default
+If needed, you can change the default runlevel by
+# systemctl set-default graphical.target
+Setup
+ 	Set up GDM to enable XDMCP. 
+edit the /etc/gdm/custom.conf file enable xdmcp:
+[xdmcp]
+Enable=true
+ 	Create the /etc/xinetd.d/xvncserver file with following content:
+ 
+service vnc01-1024x768x24
+{
+        disable = no
+        protocol = tcp
+        socket_type = stream
+        wait = no
+        user = nobody
+        server = /usr/bin/Xvnc
+        server_args = -inetd -query localhost -once -geometry 1024x768 -depth 24 securitytypes=none
+}
+In the server_args section, the -query localhost option makes each Xvnc instance query localhost for an xdmcp session.
+The -depth <depth> option specifies the pixel depth (in bits) of the VNC desktop to be created. Possible values are 8, 15, 16 and 24. Anything else is likely to cause strange behavior in applications.
+WARNING: On RHEL 7 or 8 with GNOME, always set the pixel depth to 24-bit. Otherwise, you might experience graphical artifacts and other odd rendering behavior.
+ 
+ 	Edit the /etc/services file to define the services.
+# VNC xinetd GDM base
+Vnc01-1024x768x24 5901/tcp
+ 	To ensure that the configuration changes take effect, reboot the system.
+ 
+Now clients will be able to access the GDM login window and login to any system account.
+ 
+ 
+Known Issue:
+ 
+ 
+You can create a file /etc/polkit-1/rules.d/100-stop-package-sources-refresh.rules with the following content :
+ 
+polkit.addRule(function(action, subject) {
+if (action.id == "org.freedesktop.packagekit.system-sources-refresh")
+{
+   return polkit.Result.NO;
+}
+} )
+======================================================================================================================
+CHG0077517 and CHG0077318
+RITM2166084
+RITM2170414
+===================================================================================================================
+nim -F -o define -t mksysb -a server=master -a source=u01dom006 -a mk_image=yes -a location=/export/drmksysb/u01dom006/u01dom006-mksysb-02122020 -a exclude_files=exclude_rootvg -a comments=02-Dec-2020 u01dom006-mksysb-02122020
+
+10.254.240.8
+10.254.240.3
+10.254.240.5
+10.254.240.4
+10.254.240.10
+DHCP - 10.254.240.1 
+
+DHCP -
+
+10.254.240.1
+172.26.201.22
+172.26.201.22
+00:1A:64:95:49:8C MGW-CF-301-DR-SW01 Eth104
+00:1A:64:95:49:8C	MGW-CF-301-DR-SW01	Eth104/1/7
+001a.6495.498c 
+
+001a.6495.498c
+
+10.254.240.8 MAC 
+
+10.254.240.8 MAC 
+.5cf3.fc2e.a05b MGW-CF-301-DR-SW01 Eth104/1/
+5cf3.fc2e.a05b	MGW-CF-301-DR-SW01	Eth104/1/1
+5cf3.fc2e.a05a	MGW-CF-402-DR-SW01	Eth104/1/1
+5cf3.fc2e.a0d6	MGW-CF-301-DR-SW01	Eth104/1/2
+5cf3.fc2e.a0d7	MGW-CF-402-DR-SW01	Eth104/1/2
+5cf3.fc2e.a080	MGW-CF-301-DR-SW01	Eth104/1/3
+5cf3.fc2e.a081	MGW-CF-402-DR-SW01	Eth104/1/3
+5cf3.fc2e.9fb2	MGW-CF-301-DR-SW01	Eth104/1/4
+ 5cf3.fc2e.9fb3	MGW-CF-402-DR-SW01	Eth104/1/4
+e41f.136f.1b3c	MGW-CF-301-DR-SW01	Eth104/1/10
+e41f.136f.1b3d	MGW-CF-402-DR-SW01	Eth104/1/10
+10.254.240.1 --> 10.254.240.8 by Ravi Kiran Bhaskaran
+
+10.254.240.1 --> 10.254.240.8
+
+10.254.240.10
+
+==================================================================================================================================
+   
+GDC:
+--------
+Source :
+------------
+u0bhmc001
+u0bhmc002
+Destination:
+----------------
+u0bahmcp001
+u0bahmcp002
+
+Collins Ferry-DR :
+================
+
+Source :
+------------
+u07hmc001        Production (Collins Ferry-DR )                 
+u07hmc002        Production (Collins Ferry-DR )  
+
+ Destination:
+----------------               
+u07ahmcp001   Production   
+u07ahmcp002   Production 
+===============================================================================================
+lsblk -ds | head -1; lsblk -ds |grep -i  /usr/sap/PH7
+lsblk -ds |head -n 1;lsblk -ds |grep sdo
+lsblk -ds | head -1; lsblk -ds |grep -i  /sapmnt/PH7
+lsblk -ds | head -1; lsblk -ds |grep -i  /sapdb3
+lsblk -ds | head -1; lsblk -ds |grep -i  /sapdb4
+lsblk -ds | head -1; lsblk -ds |grep -i  /sapdb5
+lsblk -ds | head -1; lsblk -ds |grep -i  /sapdb6
+lsblk -ds | head -1; lsblk -ds |grep -i  /sapdb7
+lsblk -ds | head -1; lsblk -ds |grep -i  /sapdb8
+lsblk -ds | head -1; lsblk -ds |grep -i  /sapdb9
+
+lsblk -ds | head -1; lsblk -ds |grep -i  /usr/sap/P02
+lsblk -ds | head -1; lsblk -ds |grep -i  /sapmnt/P02
+lsblk -ds | head -1; lsblk -ds |grep -i  /sapdb2
+lsblk -ds | head -1; lsblk -ds |grep -i  /sapdb3
+lsblk -ds | head -1; lsblk -ds |grep -i  /sapdb4
+lsblk -ds | head -1; lsblk -ds |grep -i  /export
+lsblk | egrep 'xvdf|xvdg|xvdh|xvdi|xvdj|xvdk|xvdl|xvdm|xvdn'
+================================================================
+mklv -y linuxpoclv -t jfs2 rootvg pp's_count (80)
+mkvdev -vdev linuxpoclv -vadapter vhostXX -dev linuxpoc_rootvg
+===========================================================================
+Hi Team,
+Do simple calculation,
+Total possible allocation of disk space for any server is 10% of available. 
+What is requirement size?
+In this year how much disk space was increased on this server in organic growth?
+Then How much space we can allocate ?
+If requirement is more than 10% inform requestor 
+=====================================================================================
+for x in `seq 1 1 5`; do ps -eo state,pid,cmd | grep "^D"; echo "----"; sleep 5; done
+[1:48 PM] Kenche Jayakrishna
+    
+cd /var/log/sa
+sar -u -f /var/log/sa/sa10 - CPU
+sar -r -f /var/log/sa/sa10 - Memory
+sar -S -f /var/log/sa/sa10 - Swap
+sar -b -f /var/log/sa/sa10 - I/O
+=======================================================================================
+rd.break
+mount -o remount,ro /sysroot
+chroot /sysroot
+passwd
+
+    exit
+
+    logout
+==========================================
+Since it is not an organic growth we could not able to process your request.  As per the organic growth we can able to provide only 10% from the current disk size. 
+Please confirm can we proceed from the 10% of space addition. 
+==================================================================
+/tmp/man_sosreport.sh
+=======================================================
+ ls -ltr |awk '{ print $8"  "$9 }' |grep -w 2020
+ ls -ltr |awk '{ print $8"  "$9 }' |grep -w 2018
+ ls -ltr |awk '{ print $8"  "$9 }' |grep -w 2017
+ ls -ltr |awk '{ print $8"  "$9 }' |grep -w 2019
+ ls -ltr |awk '{ print $8"  "$9 }' |grep -w 2019
+ ls -ltr |awk '{ print $8"  "$9 }' |grep -w 2020 |wc -l
+ ls -ltr |awk '{ print $6"  "$7"  "$8"  "$9 }' |grep -w 2020 |wc -l
+ ls -ltr |awk '{ print $6"  "$7"  "$8"  "$9 }' |grep -w 2020
+===============================================================
+find /opt/documentum/dba/log/0001474e/dmadmin -mtime +220 -exec ls -l {} \; >> /tmp/files_list
+find /opt/documentum/dba/log/0001474e/dmadmin -mtime +220 -exec rm -f {} \;
+===================================================================================
+
+     cat test | tr "\n" ","
+====================================================
+package-cleanup --oldkernels --count=2
+=====================================================================
+lspath
+lsdev -Cc disk
+lsdev -Cc disk|grep "EMC Symmetrix FCP MPIO VRAID"|wc -l
+lsdev -Cc disk|grep "MPIO Other FC SCSI Disk Drive"|wc -l
+for i in `lsdev -Cc disk |grep "EMC Symmetrix FCP MPIO VRAID"|awk '{print $1}'`
+do
+rmdev -dl $i
+done
+lsdev -Cc disk
+lslpp -l|grep -i emc
+installp -u EMC.Symmetrix.fcp.MPIO.rte
+installp -u EMC.Symmetrix.aix.rte
+cfgmgr
+lsdev -Cc disk
+
+=====================================================
+root@max-sap11 /usr/admin/franklin> cat auto_path_cleanup.ksh
+case `uname` in
+AIX)
+for i in `lspath |grep -i failed|awk '{print $2}'`
+do
+echo $i
+j=`lspath -l $i|grep -i failed|uniq|awk '{print $3}'`
+rmpath -dl $i -p $j
+done
+cfgmgr
+;;
+*)
+;;
+esac
+root@max-sap11 /usr/admin/franklin>
+================================================================
+Hi Rahul,
+Below are the findings:
+1.	The server u0bsas001 was 343days uptime.
+2.	Storage was migrated from XIV to powermax in the month of June 2020(CHG0065103).
+3.	Post the change  CHG0065103 , the sever suppose to use EMC multipath software to connect with EMC storage. But it was using Native multipath to connect with EMC storage. 
+4.	During SAN director migration, 50% of paths are moved to new san director and start using EMC multipath software. And 50% of lun paths are using Native multipath software. It creates duplicate Hdisk in servers and its volumes group
+5.	Due to that there is a stale PPs created in the Volume group.(stale PP is Copies of data become out of sync. with the primary copy within Volume group)
+6.	We have restarted the server and the server was start using EMC multipath. And the issue got resolved. 
+
+Recommendations: Yearly maintenance window to perform maintenance activity and do health check for the server.
+
+Root cause: 
+During storage migration form one venor(XIV-IBM) to another vendor(PowerMAX- DELL), Need to Make sure respective vendor s multipath software is used by server. 
+===========================================================================================================================================
+cat /opt/monitoring/scripts/multipath_validation.sh
+chpath -s disabled -l hdiskxx -p fscsi1
+lspath
+chpath -s enabled -l hdiskxx -p fscsi1
+lspath
+====================================================
+5. Set the OS version to be upgraded
+     # subscription-manager release --show
+subscription-manager release --list
+     # subscription-manager release --set=7.8
+     # subscription-manager release --show
+6. Upgrade the operating system to 7.8 version
+     # yum update
+7. Restart the servers once the update is completed
+     # reboot
+8.  Login to the server u0bmypvad001 with user credentials and switch to root user
+9. Unset the OS version to be upgraded
+     # subscription-manager release --unset
+
+subscription-manager release --list
+================================================================
+u0btvs028(172.20.25.117)
+w0btvs001.myl.com (172.20.31.53)
+W0BVSMMIDAPD001.myl.com (172.20.33.4)
+
+rm -rf /etc/localtime
+ln -s /usr/share/zoneinfo/CET /etc/localtime
+
+============================================
+ps axl | awk '$10 ~ /D/'
+===================================================
+Mylan Inc
+Code:0b
+Mylan Laboratories Ltd.,
+Suburban Court
+781 Chestnut Ridge Rd.
+Morgantown
+=================================================
+scope snmp
+scope cimc
+scope network
+trap
+
+Login to CIMC via SSH and run below commands.
+
+# scope snmp
+# show detail
+
+=========================
+nmcli connection modify ens192 +ipv4.addresses "172.20.33.114/22"
+TYPE=Ethernet
+BOOTPROTO=static
+NAME=ens192:0
+DEVICE=ens192:0
+ONBOOT=yes
+IPADDR=172.20.33.114
+NETMASK=255.255.252.0
+
+TYPE=Ethernet
+#PROXY_METHOD=none
+#BROWSER_ONLY=no
+BOOTPROTO=static
+#DEFROUTE=yes
+#IPV4_FAILURE_FATAL=no
+#IPV6INIT=yes
+#IPV6_AUTOCONF=yes
+##IPV6_DEFROUTE=yes
+#IPV6_FAILURE_FATAL=no##IPV6_ADDR_GEN_MODE=stable-privacy
+NAME=ens192:0
+#UUID=33940274-242e-471d-b414-04d1daa61029
+DEVICE=ens192:0
+ONBOOT=yes
+IPADDR=172.20.34.42
+NETMASK=255.255.252.0
+=====================================================================
+du -max /home|sort -nr|head
+=====================================================================
+subscription-manager repos --enable=rhel-8-for-x86_64-sap-netweaver-rpms
+================================================================
+lsblk -l |grep -we 8:160 -we 8:144 -we 8:128
+===============================================================
+glibc.i686
+
+glibc.i686                                                                2.28-127.el8_3.2                                             rhel-8-for-x86_64-baseos-rpms
+
+glibc-2.28-127.el8.x86_64 
+
+glibc-2.28-127.el8_3.2.i686
+===============================================================================
+cat /etc/redhat-release |sendmail -Abm -i -t -v -d0.12 -d8.20 -d60.5 franklin.kabiladhas@viatris.com
+cat /etc/mail/relay-domain
+cat /etc/mail/access
+grep "relay_hosts_only" /etc/mail/*
+cd /etc/mail/
+ls -la
+cat access.db
+strings access.db
+cat domaintable
+strings domaintable.db
+strings virtusertable.db
+cat virtusertable
+ls -la
+less submit.cf
+cat mailertable
+=========================================================================================
+vi server_list
+for i in `cat server_list`; do echo "============================= $i ================================"; sshpass -p 'My1@n#Un!x@dM1n' ssh -o StrictHostKeyChecking=no svc_unixadm@$i "id svc_unixadm"; done
+===========================================================================================
+C220-FCH1811V2Y3 /snmp # scope trap-destinations 3
+C220-FCH1811V2Y3 /snmp/trap-destinations # show detail
+Trap Destination 3:
+    Enabled: yes
+    SNMP version: 2
+    Trap type: trap
+    SNMP user: unknown
+    Trap Address(IPv4/IPv6/FQDN): 10.250.31.81
+    Trap Port: 162
+    Delete Trap: no
+C220-FCH1811V2Y3 /snmp/trap-destinations # set trap-addr 0.0.0.0
+C220-FCH1811V2Y3 /snmp/trap-destinations *# set enabled no
+C220-FCH1811V2Y3 /snmp/trap-destinations *# commit
+Settings are being applied ... allow a few minutes for the process to complete
+C220-FCH1811V2Y3 /snmp/trap-destinations # show details
+                                                ^
+% invalid command detected at '^' marker.
+C220-FCH1811V2Y3 /snmp/trap-destinations #
+C220-FCH1811V2Y3 /snmp/trap-destinations #
+C220-FCH1811V2Y3 /snmp/trap-destinations #
+C220-FCH1811V2Y3 /snmp/trap-destinations #
+C220-FCH1811V2Y3 /snmp/trap-destinations #
+C220-FCH1811V2Y3 /snmp/trap-destinations #
+C220-FCH1811V2Y3 /snmp/trap-destinations #
+C220-FCH1811V2Y3 /snmp/trap-destinations # show detail
+Trap Destination 3:
+    Enabled: no
+    SNMP version: 2
+    Trap type: trap
+    SNMP user: unknown
+    Trap Address(IPv4/IPv6/FQDN): 0.0.0.0
+    Trap Port: 162
+    Delete Trap: no
+
+C220-FCH1811V37K /snmp # set community-str vqiwa21
+C220-FCH1811V37K /snmp *# set trap-community-str vqiwa21
+C220-FCH1811V37K /snmp *# commit
+C220-FCH1811V37K /snmp # show detail
+=========================================================================================================================
+find / -name ATT67604.dtprofile -type f -print
+==========================================================================================================================
+for x in `seq 1 1 5`; do ps -eo state,pid,cmd | grep "^D"; echo "----"; sleep 5; done
+lsblk | grep -we 8:80 -we 8:96 -we 8:128 -we 8:144 -we 8:176 -we 8:160 -we 8:112 -we 65:48 -we 65:32 -we 65:64 -we 65:80 -we 65:96 -we 65:112
+===========================================================================================================================
+for file in /proc/*/status ; do awk '/VmSwap|Name/{printf $2 " " $3}END{ print ""}' $file; done | sort -k 2 -n -r | more
+
+du -sh * --exclude=grid --exclude=oracle
+du -sh * --exclude=share --exclude=data1 --exclude=data2 --exclude=data3 | sort -rh | head -n 10
+================================================================================================================================
+ mksysconn -o auto
+ mksysconn -o auto
+ mksysconn -o auto
+ lssysconn -r all
+=====================================================================================================
+loopmoint -i ./H91614221_01AL730_159_159.iso -l loop0 -o "-v cdrfs -o ro" -m /mnt
+loopmount -i ./H91614221_01AL730_159_159.iso -l loop0 -o "-v cdrfs -o ro" -m /mnt
+loopmount -i ./H81751004_01AL730_157_035.iso -l loop2 -o "-v cdrfs -o ro" -m /cdrom
+loopmount -i ./H81731648_01AM730_146_035.iso -l loop1 -o "-v cdrfs -o ro" -m /cdrom
+loopmount -i ./H81731648_01AM730_146_035.iso -l loop2 -o "-v cdrfs -o ro" -m /cdrom
+wget https://delivery04.dhe.ibm.com/hsb/iso/H81751004_01AL730_157_035.iso
+wget https://delivery04.dhe.ibm.com/hsb/iso/H81751004_01AL730_157_035.iso --no-check-certificate
+440     wget https://delivery04-mul.dhe.ibm.com/sdfdl/v2/hsb/isoprotected/Xa.2/Xb.jusyLTSp44S04mBtb2_Dm_cDIjdERkZFsdUATGjxwu-qhJk/Xc.isoprotected/H81731648_01AM730_146
+_035.iso/Xd./Xf.Lpr./Xg.11200423/Xi.habanero/XY.habanero/XZ.ghwrJQ0Fl6bowvazBpzpiy9be_Rj6woB/H81731648_01AM730_146_035.iso
+441     wget https://delivery04-mul.dhe.ibm.com/sdfdl/v2/hsb/isoprotected/Xa.2/Xb.jusyLTSp44S04mBtb2_Dm_cDIjdERkZFsdUATGjxwu-qhJk/Xc.isoprotected/H81731648_01AM730_146
+_035.iso/Xd./Xf.Lpr./Xg.11200423/Xi.habanero/XY.habanero/XZ.ghwrJQ0Fl6bowvazBpzpiy9be_Rj6woB/H81731648_01AM730_146_035.iso --no-check-certificate
+==========================================================================================
+/usr/sbin/rsct/bin/rmcctrl -z 
+/usr/sbin/rsct/bin/rmcctrl -A
+/usr/sbin/rsct/bin/rmcctrl -p
+/usr/sbin/rsct/install/bin/recfgct
+/usr/sbin/rsct/bin/rmcctrl -p
+=========================================
+vi /etc/default/grub
+
+GRUB_TIMEOUT=5
+GRUB_DISTRIBUTOR="$(sed 's, release .*$,,g' /etc/system-release)"
+GRUB_DEFAULT=saved
+GRUB_DISABLE_SUBMENU=true
+GRUB_TERMINAL_OUTPUT="console"
+GRUB_CMDLINE_LINUX="crashkernel=auto rd.lvm.lv=rootvg/root rd.lvm.lv=rootvg/swap rd.lvm.lv=rootvg/usr rhgb quiet transparent_hugepage=never"
+GRUB_DISABLE_RECOVERY="true"
+---------------------------------------
+Run below command
+---------------------
+grub2-mkconfig -o /boot/grub2/grub.cfg
+==================================================
+entstat -d ent23 | grep "VLAN Tag IDs"
+entstat -all ent23  | grep "VLAN Tag IDs"
+entstat -d entxx |grep vlan
+======================================================
+lssyscfg -r sys -F name
+lssyscfg -r lpar -m 0BPS104--SN101435R -F name,lpar_id
+lshwres -m 0BPS104--SN101435R -r virtualio --rsubtype scsi
+lshwres -m 0BPS104--SN101435R -r virtualio --rsubtype scsi --filter "lpar_names=0bps104_u0bargusd042"
+lshwres -r virtualio --rsubtype fc -m 0BPS101--SN10826CP  --level lpar | grep u0bdcm003
+chhwres -r virtualio -m 0BPS101--SN10826CP -o r --id 9 --rsubtype fc -s 322
+chhwres -m 0BPS104--SN101435R -r virtualio -o r -s 221 --id 23
+chhwres -m 0BPS104--SN101435R -r virtualio -o r -s 220 --id 23
+lshwres -m 0BPS104--SN101435R -r virtualio --rsubtype fc --level lpar --filter "lpar_names=0bps104_u0bargusd042"
+chhwres -r virtualio -m 0BPS101--SN10826CP -o r --id 18 --rsubtype fc -s 222
+c. Capture virtual (lshwres) mapping data
+
+$ lshwres -r virtualio -m <source_managed_system_name> --rsubtype scsi --level lpar
+$ lshwres -r virtualio -m <source_managed_system_name> --rsubtype fc --level lpar
+$ lshwres -r virtualio -m <source_ managed_system_name> --rsubtype eth --level lpar
+# lshwres -r mempool -m <source_managed_system_name>
+# lshwres -r mempool -m <source_managed_system_name> --rsubtype pgdev
+
+chhwres -r virtualio -m 0BPS104--SN101435R -o r --id 23 --rsubtype fc -s 360
+lshwres -m 0BPS104--SN101435R -r virtualio --rsubtype scsi --filter "lpar_names=0bps104-u0brestdbs002"
+
+chhwres -m 0BPS104--SN101435R -r virtualio -o r -s 210 --id 18
+======================================================
+mailq
+tail /var/log/maillog
+====================================================
+/usr/sbin/drmgr -a -c slot -s U9117.MMB.101435R-V23-C293 -d 0
+=====================================================
+7.	Migrate the data from old PV to new PV
+	# pvmove --atomic /dev/sda4 /dev/mapper/mpathwx
+8.	Check the current status of the migration
+	# lvs -a -o+devices
+======================================================
+/etc/nfsstate/
+==================================================
+rpm -qi basesystem
+==========================================================
+umount -l /mnt/sysimage/usr
+mkdir /mnt/usr
+ mount -t ext4 or xfs /dev/mapper/rootvg-usrlv /mnt/usr
+ rsync -aHAXv /mnt/usr/* /mnt/sysimge/usr/
+vi /mnt/sysimage/etc/fstab
+then comment it in fstab
+then remove option
+then reset the server
+subscription-manager repos --enable rhel-7-server-extras-rpms
+yum clean all
+yum repolist
+yum install leapp cockpit-leapp
+
+============================================
+subscription-manager repos --enable=rhel-6-server-extras-rpms
+subscription-manager repos --enable=rhel-6-server-optional-rpms
+
+
+yum install preupgrade-assistant  preupgrade-assistant-ui  preupgrade-assistant-el6toel7 redhat-upgrade-tool 
+preupg -u http://u5emedia001:8099/submit/ -r /root/preupgrade-results/preupg_results-210614085616.tar.gz
+http://u5emedia001:8099
+echo c > /proc/sysrq-trigger
+========================================================================================
+Steps:
+Keep the Both cluster Nodes in to service now MM(30Mins)
+Login as root in any one of the node run below:
+pcs config backup /usr/admin/franklin/OS_cluster_backup/saphdbgiqclt_backup_21jul21
+pcs property set stonith-enabled=false
+pcs property show stonith-enabled
+Login Vcenter and migrate the Cluster VM to other host mentioned in the excel
+
+Post VM Migration:
+pcs property set stonith-enabled=true
+pcs property show stonith-enabled
+
+======================================================
+/usr/openv/netbackup/bin/bpps -x
+/opt/VRTSpbx/bin/vxpbx_exchanged stop
+/usr/openv/netbackup/bin/bp.kill_all
+/opt/VRTSpbx/bin/vxpbx_exchanged start
+/usr/openv/netbackup/bin/bp.start_all
+/usr/openv/netbackup/bin/bpps -x
+
+
+======================================================
+nim -F -o define -t mksysb -a server=master -a source=max-aut03 -a mk_image=yes -a location=/export/drmksysb/max-aut03/max-aut03-mksysb-LPAR-Migration -a exclude_files=exclude_rootvg -a comments=06-Jul-2021 max-aut03-mksysb-LPAR-Migration
+======================================================
+ctmagt          soft    data            unlimited
+ctmagt          hard    data            unlimited
+ctmagt          soft    stack           8192
+ctmagt          hard    stack           8192
+ctmagt          soft    core            unlimited
+ctmagt          hard    core            unlimited
+ctmagt          hard    nofile          4096
+ctmagt          soft    nofile          4096
+ctmagt          hard    msgqueue        unlimited
+ctmagt          soft    msgqueue        unlimited
+ctmagt          hard    nproc           4096
+ctmagt          soft    nproc           4096
+=====================================================
+gzip -c maillog > maillog_24july2021.gz
+=====================================================
+entstat -all ent23 | grep -e "  Priority" -e "Virtual Adapter" -e "  State:" -e "High Availability Mode"
+entstat -d ent23 |grep State
+entstat -d ent23 |grep Real
+=====================================================
+rpm -qai --last | grep 2021
+lslpp -a -h |grep -ip "01/.*/21";lslpp -a -h |grep -ip "02/.*/21";lslpp -a -h |grep -ip "03/.*/21";lslpp -a -h |grep -ip "04/.*/21";lslpp -a -h |grep -ip "05/.*/21";lslpp -a -h |grep -ip "06/.*/21"
+=====================================================
+rm /etc/niminfo
+niminit -a name=u0bps103-vio2 -a master=u0bnim001 -a connect=nimsh
+========================================================
+vmkfstools -J getuuid /vmfs/volumes/datastore_name/vm_name/file_name.vmdk
+=================================================================
+modprobe dm_multipath
+898 mpathconf --enable --with_multipathd y
+899 mpathconf --enable --find_multipaths y --user_friendly_names y
+900 systemctl start multipathd.service
+901 multipath -r
+902 multipath -ll
+===================================================================
+# lsattr -El sys0 -a max_logname
+max_logname 9 Maximum login name length at boot time True
+#getconf LOGIN_NAME_MAX
+9
+To change it to 15 Characters
+# chdev -lsys0 -a max_logname=15
+sys0 changed
+==================================================================
+cat /opt/scripts/seeburger/start_all_services.sh
+systemctl restart seeburger.service
+cat /opt/scripts/seeburger/stop_all_services.sh
+df -Th
+/app/seeburger/bis/bin/bis status
+sh /opt/scripts/seeburger/stop_all_services.sh
+sh /opt/scripts/seeburger/start_all_services.sh
+vi /opt/scripts/seeburger/start_all_services.sh
+cat /opt/scripts/seeburger/start_all_services.sh
+/app/seeburger/bis/bin/bis status
+/app/seeburger/portal/bin/bis status
+/app/seeburger/BISFX/bin/bisfx status
+/app/seeburger/sse/sse-control/run.sh status
+/app/seeburger/sse/relay/sse/run.sh status
+/app/seeburger/BISFXGateway/bin/service.sh status
+
+/app/seeburger/bis/bin/bis status
+/app/seeburger/portal/bin/bis status
+/app/seeburger/BISFX/bin/bisfx status
+/app/seeburger/sse/sse-control/run.sh status
+/app/seeburger/sse/relay/sse/run.sh status
+/app/seeburger/BISFXGateway/bin/service.sh status
+===================================================
+cd /var/log/sa
+sar -p -d -f sa05 | egrep "xvda|sapdb"
+======================================================
+C220-FCH1809V29Y# scope cimc
+C220-FCH1809V29Y /cimc # scope tech-support
+C220-FCH1809V29Y /cimc/tech-support # set remote-ip 172.26.3.34
+C220-FCH1809V29Y /cimc/tech-support *# set remote-protocol sftp
+C220-FCH1809V29Y /cimc/tech-support *# set remote-path /tmp/techsupport.tar.gz
+C220-FCH1809V29Y /cimc/tech-support *# set remote-username m529838
+C220-FCH1809V29Y /cimc/tech-support *# set remote-password
+Please enter remote-password:
+Please confirm remote-password:
+C220-FCH1809V29Y /cimc/tech-support *# show detail
+Tech Support:
+    Server Address: 0.0.0.0
+    Path('default' for auto-naming): default.tar.gz
+    Protocol: tftp
+    Username:
+    Password: ******
+    Progress(%): 100
+    Status: COMPLETED
+C220-FCH1809V29Y /cimc/tech-support *# commit
+C220-FCH1809V29Y /cimc/tech-support # start
+Server (RSA) key fingerprint is 2b:e6:e4:91:d0:3e:d5:79:17:16:a4:24:a4:55:fb:06
+Do you wish to continue? [y/N]y
+Tech Support upload started.
+C220-FCH1809V29Y /cimc/tech-support # show detail
+Tech Support:
+    Server Address: 172.26.3.34
+    Path('default' for auto-naming): /tmp/techsupport.tar.gz
+    Protocol: sftp
+    Username: m529838
+    Password: ******
+    Progress(%): 0
+    Status: COLLECTING
+C220-FCH1809V29Y /cimc/tech-support #
+=====================================
+getent shadow mid
+getent passwd mid
+==============================
+find . -mtime +5 -print0|less
+find . -mtime +5 -exec ls -la {} \;|less
+find . -mtime +5 -exec ls -la {} \;
+find . -mtime +5 -exec rm -rf {} \;
+find . -mtime +5 -exec ls -la {} \;
+find ./temp/ -mtime +5 -exec ls -la {} \;
+find . -mtime +5 -exec ls -la {} \;
+find . -mtime +5 -exec rm -rf {} \;
+========================================
+pcs cluster stop --all
+pcs cluster sync
+pcs cluster start --all
+pcs cluster sync
+========================================
+swapoff -v /dev/rootvg/swaplv
+lvresize -L 2G /dev/rootvg/swaplv
+mkswap /dev/rootvg/swaplv
+swapon -v /dev/rootvg/swaplv
+===============================================
+[root@u6hmedia001 ~]# iscsiadm -m session
+iscsiadm: No active sessions.
+[root@u6hmedia001 ~]# iscsiadm -m session --rescan
+iscsiadm: No session found.
+[root@u6hmedia001 ~]# iscsiadm -m node IQN
+172.25.232.103:3260,1035 iqn.1992-08.com.netapp:sn.3495a59fff5e11e6975100a098aaa0de:vs.5
+172.25.232.104:3260,1036 iqn.1992-08.com.netapp:sn.3495a59fff5e11e6975100a098aaa0de:vs.5
+172.25.30.245:3260,1028 iqn.1992-08.com.netapp:sn.457ae47d50da11e5858400a0988311e9:vs.3
+172.25.30.246:3260,1029 iqn.1992-08.com.netapp:sn.457ae47d50da11e5858400a0988311e9:vs.3
+172.25.30.246:3260,1030 iqn.1992-08.com.netapp:sn.457ae47d50da11e5858400a0988311e9:vs.3
+[root@u6hmedia001 ~]# iscsiadm --mode discovery --type sendtargets -p 172.25.232.103
+172.25.232.103:3260,1035 iqn.1992-08.com.netapp:sn.3495a59fff5e11e6975100a098aaa0de:vs.5
+172.25.232.104:3260,1036 iqn.1992-08.com.netapp:sn.3495a59fff5e11e6975100a098aaa0de:vs.5
+[root@u6hmedia001 ~]# iscsiadm --mode discovery --type sendtargets -p 172.25.30.245
+172.25.30.245:3260,1028 iqn.1992-08.com.netapp:sn.457ae47d50da11e5858400a0988311e9:vs.3
+172.25.30.246:3260,1030 iqn.1992-08.com.netapp:sn.457ae47d50da11e5858400a0988311e9:vs.3
+[root@u6hmedia001 ~]# iscsiadm -m session
+iscsiadm: No active sessions.
+[root@u6hmedia001 ~]# iscsiadm --mode node --targetname iqn.1992-08.com.netapp:sn.3495a59fff5e11e6975100a098aaa0de:vs.5 -p 172.25.232.103 --login
+Logging in to [iface: default, target: iqn.1992-08.com.netapp:sn.3495a59fff5e11e6975100a098aaa0de:vs.5, portal: 172.25.232.103,3260]
+Login to [iface: default, target: iqn.1992-08.com.netapp:sn.3495a59fff5e11e6975100a098aaa0de:vs.5, portal: 172.25.232.103,3260] successful.
+[root@u6hmedia001 ~]# iscsiadm --mode node --targetname iqn.1992-08.com.netapp:sn.3495a59fff5e11e6975100a098aaa0de:vs.5 -p 172.25.232.104 --login
+Logging in to [iface: default, target: iqn.1992-08.com.netapp:sn.3495a59fff5e11e6975100a098aaa0de:vs.5, portal: 172.25.232.104,3260]
+Login to [iface: default, target: iqn.1992-08.com.netapp:sn.3495a59fff5e11e6975100a098aaa0de:vs.5, portal: 172.25.232.104,3260] successful.
+[root@u6hmedia001 ~]# iscsiadm --mode node --targetname iqn.1992-08.com.netapp:sn.457ae47d50da11e5858400a0988311e9:vs.3 -p 172.25.30.245 --login
+Logging in to [iface: default, target: iqn.1992-08.com.netapp:sn.457ae47d50da11e5858400a0988311e9:vs.3, portal: 172.25.30.245,3260]
+Login to [iface: default, target: iqn.1992-08.com.netapp:sn.457ae47d50da11e5858400a0988311e9:vs.3, portal: 172.25.30.245,3260] successful.
+[root@u6hmedia001 ~]# iscsiadm --mode node --targetname iqn.1992-08.com.netapp:sn.457ae47d50da11e5858400a0988311e9:vs.3 -p 172.25.30.246 --login
+Logging in to [iface: default, target: iqn.1992-08.com.netapp:sn.457ae47d50da11e5858400a0988311e9:vs.3, portal: 172.25.30.246,3260]
+Logging in to [iface: default, target: iqn.1992-08.com.netapp:sn.457ae47d50da11e5858400a0988311e9:vs.3, portal: 172.25.30.246,3260]
+Login to [iface: default, target: iqn.1992-08.com.netapp:sn.457ae47d50da11e5858400a0988311e9:vs.3, portal: 172.25.30.246,3260] successful.
+iscsiadm: Could not login to [iface: default, target: iqn.1992-08.com.netapp:sn.457ae47d50da11e5858400a0988311e9:vs.3, portal: 172.25.30.246,3260].
+iscsiadm: initiator reported error (15 - session exists)
+iscsiadm: Could not log into all portals
+[root@u6hmedia001 ~]# iscsiadm -m session
+tcp: [1] 172.25.232.103:3260,1035 iqn.1992-08.com.netapp:sn.3495a59fff5e11e6975100a098aaa0de:vs.5 (non-flash)
+tcp: [2] 172.25.232.104:3260,1036 iqn.1992-08.com.netapp:sn.3495a59fff5e11e6975100a098aaa0de:vs.5 (non-flash)
+tcp: [3] 172.25.30.245:3260,1028 iqn.1992-08.com.netapp:sn.457ae47d50da11e5858400a0988311e9:vs.3 (non-flash)
+tcp: [4] 172.25.30.246:3260,1030 iqn.1992-08.com.netapp:sn.457ae47d50da11e5858400a0988311e9:vs.3 (non-flash)
+
+iscsiadm -m node --targetname iqn.1992-08.com.netapp:sn.2193b2d941f611e79aac00a098aa2ade:vs.4 -p 172.25.246.245 --logout
+iscsiadm -m node --targetname iqn.1992-08.com.netapp:sn.2193b2d941f611e79aac00a098aa2ade:vs.4 -p 172.25.246.244 --logout
+=============================================================================================================================================
+cat /proc/sys/fs/file-max
+echo 3123456 > /proc/sys/fs/file-max
+================================================
+systemctl status pcsd
+pcs cluster start --all
+pcs status
+pcs constraint order start VIP_GIQ then VG_SCS01
+pcs constraint order start
+pcs constraint colocation add VG_SCS01 with VIP_GIQ
+pcs cluster sync
+crm_mon
+pcs config show
+pcs constraint show --full
+pcs cluster stop --all
+pcs cluster sync
+pcs cluster start --all
+pcs cluster sync
+pcs resource move ASCS_SEP u0bvsapsep001
+pcs cluster stop (node name )
+pcs node standby u0bvhdbgip002
+pcs node unstandby u0bvhdbgip001--move resouce one node to another node
+pcs resource cleanup
+pcs resource start FENCE_SEQ
+
+pcs resource clear ASCS_FGQ--set contraint-- while resouece move manually
+pcs property set maintenance-mode=false
+
+crm status
+crm configure property maintenance-mode=true
+
+# pcs alert recipient remove smtp_alert-recipient
+# pcs alert recipient remove smtp_alert-recipient-1
+# pcs alert
+
+==================================
+u0bfioris001
+RITM3289483
+==============================
+firmware
+lspci | grep -i fibre
+lspci -v -s 13:00.0
+modinfo qla2xxx
+================================
+mkdir /root/backup/network
+cp * /root/backup/network/
+nmcli connection modify ens192 +ipv4.addresses "172.17.37.129/24,172.17.37.45/24"
+nmcli connection reload ens192
+nmcli connection up ens192
+
+nmcli connection modify ens192 +ipv4.addresses "172.17.36.132/24,172.17.36.51/24"
+
+nmcli connection modify ens192 +ipv4.addresses "172.17.36.13/24,172.17.36.52/24"
+======================================================================================
+mail -s 'Check D-Penamine 01-FEB-2022' -e manjunatha.n@viatris.com < test_d-pen_check.txt
+mail -s 'Check D-Penamine 01-FEB-2022' -e manjunatha.n@viatris.com < cat`test_d-pen_check.txt`
+mail -s 'Check D-Penamine 01-FEB-2022' -e manjunatha.n@viatris.com < cat `test_d-pen_check.txt`
+mail -s 'Check D-Penamine 01-FEB-2022' -e manjunatha.n@viatris.com < cat test_d-pen_check.txt
+==============================================================================================
+iscsiadm -m session
+iscsiadm -m discovery -t sendtargets -p 172.25.246.206
+iscsiadm --mode node -t iqn.1992-08.com.netapp:sn.521457a6cd4411e59f1e00a098772c50:vs.5 -p 172.25.246.206 --login
+iscsiadm --mode node --targetname iqn.1992-08.com.netapp:sn.521457a6cd4411e59f1e00a098772c50:vs.5 -p 172.25.246.206 --login
+iscsiadm --mode node --targetname iqn.1992-08.com.netapp:sn.521457a6cd4411e59f1e00a098772c50:vs.5 -p 172.25.246.199 --login
+iscsiadm -m session
+==============================================================================================
+Issue Fix Update:
+
+1.	We have randomly picked 3 servers (max-sap86, max-fin04, u0bsap186) and modified the NFS_DISCONNECTION_IDENTIFIER.sh script as per below suggestion. 
+
+$MOUNT|$GREP nfs|$GREP ":"|$AWK '{print $3}'|$GREP -v '/tmp/'>/etc/nfsstate/current--update one
+$MOUNT|$GREP nfs|$GREP ":"|$AWK '{print $3}'|$GREP -v '/tmp/'>/etc/nfsstate/current
+
+2.	Triggered mksysb backup manually and /tmp/.mnt* mount point is created on servers.
+
+root@max-sap86 /> df -gt
+u0bnim001:/export/drmksysb/max-sap86   1853.50   1521.46    332.04   83% /tmp/17629390.mnt0
+root@max-fin04 /> df -gt
+u0bnim001:/export/drmksysb/max-fin04   1853.50   1523.71    329.79   83% /tmp/48824386.mnt0 
+root@max-fin04 /> df -gt
+u0bnim001:/export/drmksysb/u0bsap186   1853.50   1526.55    326.95   83% /tmp/15794340.mnt0
+
+3.	Disconnection alerts are not triggered in SNOW.
+
+Hi Jaya
+
+On Saturday we have received 34 Alerts for the NFS unmount .
+
+Please let me know whether it was  triggered automatically or manually ?  If it was triggered automatically validate why we received only for 35 servers. 
+
+Fix for the issue :
+
+1)	Login to any one server and modify the nfs disconnection script  for the below lines (/opt/scripts/NFS_DISCONNECTION_IDENTIFIER.sh)
+$MOUNT|$GREP nfs|$GREP ":"|$AWK '{print $3}'>/etc/nfsstate/current   Old
+$MOUNT|$GREP nfs|$GREP ":"|$AWK '{print $3}'|$GREP -v '/tmp/'>/etc/nfsstate/current -- New
+2)	Trigger the mksysb manually on the server and check whether /tmp/.mnt* filesystem creating or not. 
+3)	If yes check whether nfs disconnection alerts has been triggered or not 
+4)	If no check in any other servers and validate the /tmp/.mnt* and the incidents.
+
+=====================================================================================================
+1)comment the crontab for NFS script
+#59 * * * * /bin/sh /opt/scripts/NFS_DISCONNECTION_IDENTIFIER.sh > /dev/null 2>&1
+2)comment old line add below line
+#$MOUNT|$GREP nfs|$GREP ":"|$GREP -v ".snapshot"|$AWK '{print $3}' >/etc/nfsstate/current--old
+$MOUNT|$GREP nfs|$GREP ":"|$EGREP -v ".snapshot|tmp"|$AWK '{print $3}' >/etc/nfsstate/current--new
+3)nullify the missed file under
+ /etc/nfsstate/missed
+5)Delete the notaccessible 
+/etc/nfsstate/notaccessible 
+6)uncomment the crontab 
+59 * * * * /bin/sh /opt/scripts/NFS_DISCONNECTION_IDENTIFIER.sh > /dev/null 2>&1
+===========================================================================================================
+bsp extended-configuration connection-local-port-range
+bsp address-filter details
+bsp fences restart
+bsp remote-execution restart fence01
+bsp remote-execution restart relay01
+==========================================================================================================
+INC2340450	max-fin02	max-fin02-NFS File system /tmp/51380308.mnt0 is missing or unmounted-EMAIL-NFS
+1)comment the crontab for NFS script
+#59 * * * * /bin/sh /opt/scripts/NFS_DISCONNECTION_IDENTIFIER.sh > /dev/null 2>&1
+2)comment old line add new lines on NFS script (path location /opt/scripts/NFS_DISCONNECTION_IDENTIFIER.sh)
+EGREP=`which egrep`--Add
+#$MOUNT|$GREP nfs|$GREP ":"|$GREP -v ".snapshot"|$AWK '{print $3}' >/etc/nfsstate/current--old
+$MOUNT|$GREP nfs|$GREP ":"|$EGREP -v ".snapshot|tmp"|$AWK '{print $3}' >/etc/nfsstate/current--new
+3)nullify the missed file under /etc/nfsstate
+# /etc/nfsstate/
+#>missed
+5)Delete the notaccessible under /etc/nfsstate
+#/etc/nfsstate/
+#rm -r notaccessible 
+6)uncomment the crontab 
+59 * * * * /bin/sh /opt/scripts/NFS_DISCONNECTION_IDENTIFIER.sh > /dev/null 2>&1
+7)After uncomment check again any missed filesystem under /etc/nfsstate
+#cat /etc/nfsstate/missed
+8)if there nullify again
+9)check notaccessible  created or not again after remove
+#ls -ld /etc/nfsstate/notaccessible 
+=====================================================================================
+THIS IS A SINGLE ENVIRONMENT CHANGE
+
+This change is to create the file system " /oracle/edmmad11/s00011" on u0bdcm003
+
+Server : u0bdcm003
+Location:  Morgantown
+Environment:  Dev
+Application Name: 
+File system: /oracle/edmmad11/s00011
+File system size :  1TB
+
+
+Downtime: NO, Create the file system does not require downtime 
+Was this performed in Dev/test?:  NO, this requirement is specific to DEV environment
+Application (or infrastructure) Impacted ? NO, There is no application impact 
+Will there be any impact to end users ? NO,  There is no end user impact for extending the file system
+Teams involved : Unix Team / Storage Team
+
+Technical Reviewer: Arun R
+Implementer : Jayanarasimha Redddy 
+
+
+Change plan:
+-----------------
+1. Login to server with username and password Switch to root user (sudo su - )
+2.Check the free space availability on VG where need to create filesystem
+#lsvg oraedmdvg |grep -i FREE
+3.if space not avialable ask to storage team to add sapce 
+4.provide the WWWPNs to storage team to add space
+#lscfg -vpl fcs* |grep -i network
+5.Once storage team provied the lun,scan the disks on server
+#cfgmgr
+6. once disk added into server create PVID 
+##/usr/admin/aix/scripts/addpvid.ksh -f DiskN(starting Number) -l DiskN (end disk number)
+7.Change the disk attribute for the disks
+#/usr/admin/aix/scripts/disk_attr_change.ksh
+8.Check disks paths and Attirbutes 
+#lspath -l hdiskXXXX
+#lsattr -El hdiskXXXX
+9 . Add new disks to VG
+#extendvg oraedmdvg hdiskXX
+10.Create the data file system
+10.a.Create a lv with 2 pps
+#mklv  y oras00011lv  t jfs2 oraedmdvg 2
+10.b. Create mount point 
+mkdir -p /oracle/edmmad11/s00011
+10.c. Create the filesystem
+#crfs  v jfs2  d oras00011lv  m /oracle/edmmad11/s00011  A yes
+10.d.Once filesytem created increase space as for request
+11.check the file system created or not
+#df -tg /oracle/edmmad11/s00011
+
+
+Backout plan
+------------------------------------------------
+1.unmount the  File system
+#umount /oracle/edmmad11/s00011 
+2.remove the FS
+#rmfs /oracle/edmmad11/s00011 
+3.remove disk from VG
+#reducevg oraedmdvg  hdiskXXX
+4. remove the disk from OS
+#rmdev -Rdl hdiskXXX
+5.Inform to Storage Team to Reclaim the Disks
+
+
+Test Plan
+----------------------------------------------
+1. Login to server with username and password Switch to root user (sudo su - )
+2. Check  the file system created or not 
+# df -hT /oracle/edmmad11/s00011 
+
+Change Plan
+----------------------------------------------
+1. Login to server with username and password Switch to root user (sudo su - )
+2. Ask to Storage Team Add New disk
+3. Scan the disks
+4. Confirm newly added disk at server end 
+5. Once we identify the newly added disk, Create the new filesystem
+6. Extend the oraedmdvg  
+7. Create New filesystem
+8. Now check the filesystem created or not
+===============================================================
+lsof /usr/sap/GYQ/SUM
+vi /etc/fstab
+umount /usr/sap/GYQ/SUM
+vgchange -an gyqsumvg
+lvremove /dev/mapper/gyqsumvg-gyqsumlv
+vgremove gyqsumvg
+pvs
+pvremove /dev/sdp1
+echo 1 >/sys/block/sdp/device/delete
+pvs
+lsblk
+
+lsof /hana/data/HDB/mnt00003
+vi /etc/fstab
+remove entry
+umount /hana/data/HDB/mnt00003
+ then remove lv rgt 
+lvchange -an hanavg-datalv
+lvremove /dev/mapper/hanavg-hanavg--datalv
+
+
+0B_0BUSAPPRD001_063_000DB-PMAX8K002] u0bvsapgyp001/u0bvsapgyp001_5.vmdk
+u0bsap194
+===================
+0B_0BHADRS005_0374_0343-PMAX8K001] u0bsap194/u0bsap194_17.vmdk
+
+0B_0BHADRS005_0374_0343-PMAX8K001] u0bsap194/u0bsap194_19.vmdk
+=============================================
+tar -cvzf $( hostname -s )-hamon.tar.gz /var/log/ha-resourcemon/*
+================================================
+pip3 search paramiko
+
+====================================================================
+7. Modify the grub configuration file
+       # vi /etc/default/grub
+	 GRUB_CMDLINE_LINUX_DEFAULT="splash=verbose resume=/dev/rootvg/swaplv mitigations=auto mce=ignore_ce nomodeset numa_balancing=disable 
+          transparent_hugepage=never intel_idle.max_cstate=1 processor.max_cstate=1 numa=off quiet showopts rw 
+======================================================================
+yum install python3
+python3 -m pip install --upgrade pip
+pip3 install paramiko
+==============================================================================
+[root@u0bpnbmep015 ~]# cat /sys/module/lpfc/parameters/lpfc_max_luns
+65535
+luns visibility
+[1] Please change lpfc_max_luns to 65535 in /etc/modprobe.d/lpfc.conf
+
+
+    # vi  /etc/modprobe.d/lpfc.conf
+    options lpfc lpfc_max_luns=65535
+
+
+[2] Then rebuild your initramfs.
+
+#  cp /boot/initramfs-$(uname -r).img /boot/initramfs-$(uname -r).bak.$(date +%m-%d-%H%M%S).img
+# dracut -f -v
+[3] Reboot and let us know the status.
+
+Please follow the below article for more information.
+
+Red Hat Enterprise Linux reports lun<nnn> has a LUN larger than allowed by the host adapter
+https://urldefense.com/v3/__https://access.redhat.com/solutions/26017__;!!MBaoSxY!9IP6OgiL1Cqbb_9cbl4AXRfsandezDt9kuboEcMhG6guliR5d_sL9vmG1N-yoX5r1yph8-iqODnwvnS9xcOk$
+
+=============================================================================
+rpm -qai --last| grep -i 2021| grep -E 'Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec'
+rpm -qai --last| grep -i 2022| grep -E 'Jan|Feb|Mar'
+================================================================================
+zoneadm -z mgw-unx-rcs1 boot -- -m verbose
+zlogin -C mgw-unx-rcs1
+===================================================================================
+for i in `ls /sys/class/scsi_host/` ;do echo "=====Scanning SCSI host controller $i===";echo "- - -" > /sys/class/scsi_host/$i/scan ;done
+===========================================================
+find . -type f -name '*08Jun2022.txt' |wc -l
+find . -type f -name '*08Jun2022.txt' -exec cp {} /usr/admin/dinesh/DNS/ \;
+for i in `ls /usr/admin/dinesh/DNS/` ;do echo "$i" ;grep ^nameserver /usr/admin/dinesh/DNS/$i;done
+======================================================================
+Following is the information:
+Common Name = uezvfitst001.myl.com
+Organization = Mylan, Inc
+Organizational Unit = IT Department
+Locality = Canonsburg
+State = Pennsylvania
+Country = US
+======================================================================================
+Hi Team,
+
+RITM3553257   is fine , share it with the requestor. 
+
+RITM3553701  Need below correction for AIX Servers. 
+
+Use below commands in AIX servers to   Lists installed software products. 
+
+# lslpp -a -h -c | grep -i -E "/22: "    
+# rpm -qai --last| grep -i -E  2021|2022 
+
+
+FYI : AIX server s use  DD/MM/YY  date format to list the data.  So following command will not get correct information $ lslpp -a -h| grep -i 2022| grep -E 'Jan|Feb|Mar|Apr|May|Jun'
+==============================================================================================================================================
+
+grep -v "zZzZ" -H /sys/class/fc_host/host*/*_name
+
+ lspci | grep -i fibre
+ grep -v "zZzZ" -H /sys/class/fc_host/host*/*_name
+ lspci | grep -i fibre
+ lspci -vvv -s 18:00.0
+ modinfo qla2xxx
+==============================================================================
+[root@uezvmdmp001 uezvmdmp001_new]# cat uezvmdmp001_cert.cnf
+[req]
+distinguished_name = req_distinguished_name
+req_extensions = req_ext
+prompt = no
+
+[req_distinguished_name]
+C   = US
+ST  = Pennsylvania
+L   = Canonsburg
+O   = Mylan, Inc
+OU  = IT Department
+CN  = uezvmdmp001.myl.com
+
+[req_ext]
+subjectAltName = @alt_names
+[alt_names]
+DNS.1   = uezvmdmp001.myl.com
+DNS.2   = hkmdm.myl.com
+
+
+[root@uezvmdmp001 uezvmdmp001_new]#
+==========================================================================================
+echo "Example Message" | mail -s 'Test'$'\nX-Priority: 1' jayanarasimha.reddy@viatris.com
+echo "Example Message" | mail -s 'Test'$'\nX-Priority: 1' surenthira.kumarr@viatris.com
+
+==========================================================================================
+subscription-manager release
+
+subscription-manager release --unset
+
+==========================================================================================
+ yum install java-17-*
+ rpm -qa java
+ rpm -qa java*
+ rpm -qa java-17-*
+ hostname; date
+ rpm -qa java-17-*
+ java -version
+ alternatives --config java
+ history
+ watch w
+ java -version
+ rpm -qa |grep -i openjdk
+ history
+===========================================================================================
+cd /usr/openv/volmgr/bin--Tape
+./tpconfig -l
+===============================
+[12:04 AM] Dinesh Kumar S
+cat sudo.log
+
+[12:04 AM] Dinesh Kumar S
+/var/log/sudo.log
+==============================================================================================
+Steps: followed:
+1.	Enable MM
+2.	Checked mailq
+3.	Stopped sendmail
+4.	Stopped Cluster 
+5.	Started cluster
+6.	Checked mailq
+7.	Started sendmail
+==================================================================================================
+
+----------------------------------- Disabling the THP and enabling the huge pages------------------------------------
+
+Disable Transparent Huge Pages:
+--------------------------------
+Check the current status of Transparent Huge Pages.
+
+# cat /sys/kernel/mm/transparent_hugepage/enabled
+[always] madvise never
+
+To disable Transparent Huge Pages, you have to edit GRUB boot menu. For this purpose, edit the GRUB configuration file in vim text editor.
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+# vi /etc/default/grub
+
+Locate GRUB_CMDLINE_LINUX and append "transparent_hugepage=never" at the end of that line.
+
+GRUB_CMDLINE_LINUX="resume=/dev/mapper/cl-swap rd.lvm.lv=cl/root rd.lvm.lv=cl/swap rhgb quiet transparent_hugepage=never"
+
+Generate new GRUB boot menu based on customized configuration file.
+
+# grub2-mkconfig -o /boot/grub2/grub.cfg
+Generating grub configuration file ...
+done
+
+ 
+Restart Linux operating system to apply new settings.(Reboot will done later , Don't do at this moment)
+
+# reboot 
+
+After restart, check the status of THP again.
+
+# cat /sys/kernel/mm/transparent_hugepage/enabled
+always madvise [never]
+
+------------------------------------- Huge pages setting------------
+Recommended setting: vm.nr_hugepages = 184322
+
+$ sudo sysctl -w vm.nr_hugepages=184322
+
+To ensure that the change stays persistent across future reboots, we will also need to add this configuration to the /etc/sysctl.conf file.
+
+Open the /etc/sysctl.conf file with root permissions and add the line to it manually.
+
+vm.nr_hugepages = 184322
+
+# reboot (Reboot will done later , Don't do at this moment)
+===============================================================================================================================
+Session :1
+## Command to capture TCP Dump from u0bvsapgip001
+cd /var/crash
+tcpdump -w u0bvsapgip001_28Aug22.pcap -i ens192
+
+
+
+Session :2
+## After starting the TCPDUMP run below command 8 time and take the screenshost
+
+
+
+date ; telnet 204.128.5.118 7010
+
+
+
+### After 8 Trails stop the TCP dump
+
+tracepath -n 204.128.5.118 -p 7010
+
+========================================================================================
+yum list --showduplicates libstdc++.i686
+rpm -qa | grep -i  libstdc++.i686*
+rpm -qa | grep -i  libstdc++.*
+yum install libstdc++.
+yum install libstdc++.*
+rpm -qa | grep -i libstdc++-
+yum install libstdc++-*
+yum list --showduplicates libstdc++.i686
+history
+
+=============================================================
+Remove /storage filesytem
+==================================
+multipath -ll |grep ^mpath
+df -h /Storage/
+umount /Storage
+cp /etc/fstab /etc/fstab.$(date +%F)
+vi /etc/fstab
+multipath -ll
+pvs
+vgs
+vgchange -an storagevg
+lvchange -an /dev/mapper/storagevg-storagelv---sometimes
+lvremove /dev/storagevg/storagelv
+vgremove storagevg
+pvs
+
+pvremove /dev/mapper/mpatha /dev/mapper/mpathb /dev/mapper/mpathc /dev/mapper/mpathd /dev/mapper/mpathe /dev/mapper/mpathf /dev/mapper/mpathg /dev/mapper/mpathh 
+/dev/mapper/mpathi /dev/mapper/mpathj /dev/mapper/mpathk /dev/mapper/mpathl /dev/mapper/mpathm /dev/mapper/mpathn /dev/mapper/mpatho /dev/mapper/mpathp /dev/mapper/mpathq /dev/mapper/mpathr /dev/mapper/mpaths
+ /dev/mapper/mpatht
+ pvs
+ vgs
+ multipath -f mpatha
+ multipath -f mpathb
+ multipath -f mpathc
+ multipath -f mpathd
+ multipath -f mpathe
+ multipath -f mpathf
+ multipath -f mpathg
+ multipath -f mpathh
+ multipath -f mpathi
+ multipath -f mpathj
+ multipath -f mpathk
+ multipath -f mpathl
+ multipath -f mpathm
+ multipath -f mpathn
+ multipath -f mpatho
+ multipath -f mpathp
+ multipath -f mpathq
+ multipath -f mpathr
+ multipath -f mpaths
+ multipath -f mpatht
+ multipath -ll
+ lsblk
+ cd ~m546924
+ ls
+ vi device_names--need to update device names here
+sdc
+sdd
+sde
+sdf
+sdg
+sdh
+sdi
+sdj
+ wc -l device_names
+ for i in `cat device_names`; do echo 1 > /sys/block/$i/device/delete; done
+ lsblk
+ multipath -ll
+ dmidecode -t 1
+
+if iscsi there
+
+iscsiadm -m session
+iscsiadm -m node --targetname iqn.1992-08.com.netapp:sn.fb7c5a1b86f711ebbce5d039ea213d99:vs.3 -p 10.248.23.122 --logout
+iscsiadm -m node --targetname iqn.1992-08.com.netapp:sn.fb7c5a1b86f711ebbce5d039ea213d99:vs.3 -p 10.248.23.121 --logout
+cat /etc/iscsi/initiatorname.iscsi
+==========================================================================================================
+nmcli status
+nmcli device status
+nmcli connection show
+cat ifcfg-ens192
+ip addr
+vi ifcfg-ens224
+ll
+cat ifcfg-ens224
+vi ifcfg-ens256
+cat ifcfg-ens256
+ip addr
+nmcli connection up ens224
+ls
+nmcli connection reload
+ip addr
+route -n
+vi route-ens192
+cat route-ens192
+route -n
+nmcli connection reload
+route -n
+ip route add 172.17.37.194/32 via 172.17.66.1 dev 
+ip route add 172.17.37.195/32 via 172.17.66.1 dev 
+route -n
+cd
+hostname; date
+ip addr
+route -n
+ip addr
+route -n
+cat /etc/sysconfig/network-scripts/route-ens192
+===========================================================================================================
+grep nofile /etc/security/limits.conf | grep -v ^#
+grep "kernel.sem" /etc/sysctl.conf
+[root@u8jmedia001 ~]# grep nofile /etc/security/limits.conf | grep -v ^#
+root             hard    nofile         8096
+root             soft    nofile         63535
+[root@u8jmedia001 ~]# grep "kernel.sem" /etc/sysctl.conf
+kernel.sem = 300 307200 32 1024
+[root@u8jmedia001 ~]#
+==========================================================
+sh server_data.txt | tee -a `hostname`_Server_Info_Details_`date +%d%b%Y`.txt
+/usr/admin/ashok/inq.aix64_51 -wwn >> mgw-unx-nbu1_Server_Info_Details_28Nov2022.txt
+/usr/admin/ashok/inq.aix64_51 -sym_wwn >> mgw-unx-nbu1_Server_Info_Details_28Nov2022.txt
+/usr/admin/ashok/inq.aix64_51 -sw_wwn  >> mgw-unx-nbu1_Server_Info_Details_28Nov2022.txt
+cd /tmp/ibmsupt
+cd lvm
+cat lvm.snap
+===================================================================
+dd if=/dev/sda1 of=/os_backup/sda1_boot-efi_imgbkp_19Nov2022.img status=progress
+dd if=/dev/sda2 of=/os_backup/sda2_boot_imgbkp_19Nov2022.img status=progress
+dd if=/dev/sda3 of=/os_backup/sda3_rootlvm_imgbkp_19Nov2022.img status=progress
+=========================================================================
+u0baglhdmzp01
+DNZ vCenter
+w0bjumpt001
+https://0bvcsa001.myl.com
+============================================================
+u07phdbmtpf01:~ # mount |grep boot
+/dev/mapper/mpathb-part1 on /boot type xfs (rw,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota)
+/dev/mapper/mpathb-part2 on /boot/efi type vfat (rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,error
+s=remount-ro)
+mount | grep boot
+ls /boot/efi
+ls /boot
+umount /boot/efi
+umount /boot
+mount | grep boot
+mount /dev/mapper/mpathb-part1 /boot
+mount /dev/mapper/mpathb-part2 /boot/efi
+ls /boot/efi/
+ls /boot/
+mkinitrd
+======================================================
+rpm -qa postfix
+vi /etc/postfix/main.cf
+grep relayhost /etc/postfix/main.cf
+systemctl start postfix.service
+systemctl enable postfix.service
+systemctl status postfix.service
+mailq
+
+chronyc makestep--to sync time
+
+dnf config-manager --save --setopt exclude=''
+dnf remove leapp-deps-el9 leapp-repository-deps-el9
+rm -rf /var/log/leapp /root/tmp_leapp_py3 /var/lib/leapp
+ls -l /boot/vmlinuz-*rescue* /boot/initramfs-*rescue*
+rm /boot/vmlinuz-*rescue* /boot/initramfs-*rescue*
+yum list installed kernel
+dnf reinstall kernel-core-$(uname -r)
+ls -l /boot/vmlinuz-*rescue* /boot/initramfs-*rescue*
+lsinitrd /boot/initramfs-*rescue*.img | grep -qm1 "$(uname -r)/kernel/" && echo "OK" || echo "FAIL"
+
+findmnt
+
+parted /dev/mapper/mpathbdn mklabel gpt mkpart primary 2048 100% print quit
+parted /dev/mapper/mpathbdm mklabel gpt mkpart primary 2048 100% print quit
+parted /dev/mapper/mpathbdl mklabel gpt mkpart primary 2048 100% print quit
+parted /dev/mapper/mpathbdo mklabel gpt mkpart primary 2048 100% print quit
+parted /dev/mapper/mpathbdq mklabel gpt mkpart primary 2048 100% print quit
+parted /dev/mapper/mpathbdp mklabel gpt mkpart primary 2048 100% print quit
+parted /dev/mapper/mpathbdr mklabel gpt mkpart primary 2048 100% print quit
+parted /dev/mapper/mpathbds mklabel gpt mkpart primary 2048 100% print quit
+parted /dev/mapper/mpathbdt mklabel gpt mkpart primary 2048 100% print quit
+parted /dev/mapper/mpathbdu mklabel gpt mkpart primary 2048 100% print quit
+
+
+nim -F -o define -t mksysb -a server=master -a source=maxsp233 -a mk_image=yes -a location=/export/drmksysb/maxsp233/maxsp233-mksysb1 -a exclude_files=exclude_rootvg -a comments=08-Jul-2026 maxsp233-mksysb1
+
+
+with Mpath Name 
+
+multipath -ll | awk '/^mpath/{luns++;if(lun){sources=0;for(h in host)sources++;print lun,"Total Paths:",path,"Failed:",failed,"Sources:",sources}lun=$1;path=0;failed=0;delete host} /^[[:space:]]*(\||`)[-+ ]*[0-9]+:[0-9]+:[0-9]+:[0-9]+[[:space:]]+/{path++;split($1,a,":");host[a[1]]=1;if($0~/failed|faulty|offline|shaky/)failed++} END{sources=0;for(h in host)sources++;if(lun)print lun,"Total Paths:",path,"Failed:",failed,"Sources:",sources;print "Total LUNs:",luns}'
+ 
+with lun id 
+ 
+multipath -ll | awk '/^(mpath[0-9]+|[0-9a-fA-F]{20,})[[:space:]]+dm-[0-9]+/{if(lun){sources=0;for(h in host)sources++;print lun,"Total Paths:",path,"Failed:",failed,"Sources:",sources}lun=$1;path=0;failed=0;delete host;lun_count++} /^[[:space:]]*(\||`)[-+ ]*[0-9]+:[0-9]+:[0-9]+:[0-9]+[[:space:]]+/{path++;split($1,a,":");host[a[1]]=1;if($0~/failed|faulty|offline|shaky/)failed++} END{sources=0;for(h in host)sources++;if(lun)print lun,"Total Paths:",path,"Failed:",failed,"Sources:",sources;print "Total LUNs:",lun_count}'
+
+
+multipath -ll | awk '/^asmdisk/{luns++;if(lun){sources=0;for(h in host)sources++;print lun,"Total Paths:",path,"Failed:",failed,"Sources:",sources}lun=$1;path=0;failed=0;delete host} /^[[:space:]]*(\||`)[-+ ]*[0-9]+:[0-9]+:[0-9]+:[0-9]+[[:space:]]+/{path++;split($1,a,":");host[a[1]]=1;if($0~/failed|faulty|offline|shaky/)failed++} END{sources=0;for(h in host)sources++;if(lun)print lun,"Total Paths:",path,"Failed:",failed,"Sources:",sources;print "Total LUNs:",luns}'
+
+ 

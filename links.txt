@@ -1,0 +1,2099 @@
+https://happiestminds.udemy.com/organization/home/--HM
+
+https://w0bpatchtest001:8083/webreports?page=ExploreComputers#collapseState=&reportInfo=&filterManager=&chartSection=&wr_computerTable=77222729987005e0f9df2a77ffb90318567c30b0--Test BigBix
+
+https://bigfixreport.myl.com:8083/--BigFix
+
+https://smileshrms.darwinbox.com/ms/time/545798/attendance
+https://smilesmiles.happiestminds.com/ui/myRequest.jsp
+https://smiles.happiestminds.com/login?back_url=https%3A%2F%2Fsmiles.happiestminds.com%2Ftimesheet_calendars
+https://teams.microsoft.com/v2/--HM Teams
+ https://smileshrms.darwinbox.com- Try from this link--PEP
+
+https://itsi-mylansplunk.splunkcloud.com/en-US/app/itsi/viatris_unix_adhoc_reports?form.Time.earliest=-60m%40m&form.Time.latest=now&form.field2=cpu&form.span=5m&form.type=%2F&form.process=%2Fbin%2Fsh%20%2Fopt%2Fsplunkforwarder%2Fetc%2Fapps%2FSplunk_TA_nix_Prod%2Fbin%2Fps_metric.sh&form.disk=*&form.server=u0bvdbseqq001--Splunk New
+https://m.fhpl.net/NetworkHospital/InsurerSpecificHospitals_New--Health 
+
+net user m685458 /do
+
+openshift
+===================
+Username : Your MID (m539191) m is in small letter
+Password : Viatris@2025
+
+https://www.youtube.com/watch?v=uBsilb4cuaI&t=328s
+https://learn.microsoft.com/en-us/azure/azure-local/?view=azloc-2507--azure link
+https://mylan.service-now.com/cmdb_ci_list.do?sysparm_clear_stack=true&sysparm_query=&sysparm_first_row=1&sysparm_view=RPTd7352a7e1bb36744e154315bcd4bcbb9--configuration
+https://mylan.service-now.com/sys_user_token_network_list.do?sysparm_query=u_usernameSTARTSWITHm529838&sysparm_first_row=1&sysparm_view=&sysparm_choice_query_raw=&sysparm_list_header_search=true--UID
+
+https://itsi-mylansplunk.splunkcloud.com/en-US/app/search/viatris__unix_dashboard?form.server_token=u0bvsapgld001--spunk CPU
+
+https://software.cisco.com/download/home/283612685--cisco servers			
+https://smileshrms.darwinbox.com/attendance--smiles
+NTP Srvers
+=====================
+gidc-ntpops
+T!m@6ours
+https://documentation.avaya.com/bundle/InstallingASP130_r5.1/page/Configuring_SNMP_v2c_alerts_using_iDRAC9.html
+@emea_tamservices_cer@dell.com 
+https://myl.sharepoint.com/teams/ITCompliance476/Shared%20Documents/Forms/AllItems.aspx?FolderCTID=0x012000FD35E2325E45B74998EA246F7BEE0A08&id=%2Fteams%2FITCompliance476%2FShared%20Documents%2FIT%20Change%20Advisory%20Board%2FPre%2DCAB%20and%20CAB%20Notifications&viewid=3ee44414%2D0c09%2D4967%2Dacaf%2D08073c358209--NEW CAB
+cat /etc/pam.d/common-account
+cat /etc/pam.d/common-auth
+cat /etc/pam.d/common-password
+cat /etc/pam.d/common-session
+
+https://myl.sharepoint.com/teams/SAPDBProjects/Shared%20Documents/Forms/AllItems.aspx?fromShare=true&ga=1&id=%2Fteams%2FSAPDBProjects%2FShared%20Documents%2FGeneral%2FSAP%20Basis%20%2D%2FQuarterly%20Maintenance%2FQuarterly%20%2D%202023&viewid=f18f0ddb%2D740e%2D4b45%2D99fa%2D8cb05d928cb1--SAP QM
+
+https://myl.sharepoint.com/teams/SAPDBProjects/Shared%20Documents/Forms/AllItems.aspx?fromShare=true&ga=1&id=%2Fteams%2FSAPDBProjects%2FShared%20Documents%2FGeneral%2FSAP%20Basis%20%2D%2FQuarterly%20Maintenance%2FQuarterly%20%2D%202023&viewid=f18f0ddb%2D740e%2D4b45%2D99fa%2D8cb05d928cb1
+https://techdirect.dell.com/Portal/ActiveServiceRequests.aspx--Dell direct
+https://myl.sharepoint.com/sites/GlobalUnix/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FGlobalUnix%2FShared%20Documents%2F2024%2FUnix%5FURL%2FUnix%5FTeam%5FInternal%5Fnew%2Ehtml&parent=%2Fsites%2FGlobalUnix%2FShared%20Documents%2F2024%2FUnix%5FURL--New link for UNIX Internal Bookmark Manager
+
+https://techdirect.dell.com/Portal/ActiveServiceRequests.aspx--Dell 
+
+https://myl.sharepoint.com/teams/ITCompliance476/Shared%20Documents/Forms/AllItems.aspx?FolderCTID=0x012000FD35E2325E45B74998EA246F7BEE0A08&id=%2Fteams%2FITCompliance476%2FShared%20Documents%2FIT%20Change%20Advisory%20Board%2FPre%2DCAB%20and%20CAB%20Notifications&viewid=3ee44414%2D0c09%2D4967%2Dacaf%2D08073c358209&OR=Teams%2DHL&CT=1731400112990&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI0OS8yNDEwMDMyNDkxNiIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D--CAB
+
+https://itsi-mylansplunk.splunkcloud.com/en-US/app/search/viatris_unix_adhoc_reports?form.Time.earliest=-60m%40m&form.Time.latest=now&form.field2=cpu&form.span=5m&form.type=%2F&form.process=%2Fbin%2Fsh%20%2Fopt%2Fsplunkforwarder%2Fetc%2Fapps%2FSplunk_TA_nix_Prod%2Fbin%2Fps_metric.sh&form.disk=*&form.server=u0bvsphfp002
+
+\\W0BVSNMIDP001\flow_logs--Automation logs
+
+https://itsi-mylansplunk.splunkcloud.com/en-US/app/itsi/viatris_unix_adhoc_reports
+
+https://access.redhat.com/solutions/1320153--THP
+
+https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html-single/considerations_in_adopting_rhel_8/index#removed-packages_changes-to-packages--removed
+
+https://www.golinuxcloud.com/boot-in-single-user-mode-rhel-centos-8-linux/--single or resue mode
+https://itsi-mylansplunk.splunkcloud.com/en-US/app/itsi/viatris_unix_adhoc_reports--splunk
+https://itsi-mylansplunk.splunkcloud.com/en-US/app/search/viatris__unix_dashboard?form.server_token=*--spunk
+| mstats latest("df_metric.UsePct") as "FileSystemUtilization" where (index="via_nix_prod_metrics" OR index="via_nix_nonprod_metrics") sourcetype="df_metric" MountedOn=/  host IN(u07plabdgt001,u07vempdbt001,u0balcdbd001,u0balcdbt001,u0blab021) span=15m  by host   
+| eval FileSystemUtilization = round(FileSystemUtilization,2)
+| timechart latest(FileSystemUtilization) as "FileSystem Utilization" span=5m By host
+https://itsi-mylansplunk.splunkcloud.com/en-US/app/search/viatris_unix_adhoc_reports?form.Time.earliest=-60m%40m&form.Time.latest=now&form.field2=cpu&form.type=%2F&form.process=%2Fbin%2Fsh%20%2Fopt%2Fsplunkforwarder%2Fetc%2Fapps%2FSplunk_TA_nix_Prod%2Fbin%2Fps_metric.sh--CPU spulnk
+https://myl.sharepoint.com/:u:/r/sites/GlobalUnix/Shared Documents/2024/Unix_URL/Unix_Team_Internal_URL.aspx?csf=1&web=1&e=SMCtDN--All
+https://www.dell.com/support/incidents-online/us/en/04/srsearch --DELL
+https://hrms.happiestminds.com/symfony/web/index.php/hm/pepHome--PEP
+https://w0btem001.myl.com:8083/--BigFix
+https://www.freecodecamp.org/news/subnet-cheat-sheet-24-subnet-mask-30-26-27-29-and-other-ip-address-cidr-network-references/--subnet mask
+/etc/NetworkManager/system-connections
+
+https://itsi-mylansplunk.splunkcloud.com/en-US/app/itsi/viatris__unix_dashboard--Slunk
+
+https://www.dell.com/support/kbdoc/en-in/000202557/kb-how-to-take-physical-disk-offline-using-idrac-racadm?lang=en--physical
+
+https://tdm.dell.com/file-upload--Dell upload
+RITM4751139 --Solar
+http://swinds/--Solar
+RITM4753177--second solar
+ps -lA | egrep '^. D|^F'--defunct
+
+for pid in $(ps -lA | egrep '^. D|^F' | awk '{print $4}') ; do kill -9 $pid; done
+RITM4494471--MTC
+ifconfig -a | grep "inet" | awk "{print \$2}"
+https://explore.skillbuilder.aws/learn
+https://mylan.service-now.com/cmdb_ci_list.do?sysparm_clear_stack=true&sysparm_query=&sysparm_first_row=1&sysparm_view=RPTd7352a7e1bb36744e154315bcd4bcbb9--CMDB server list
+/opt/CrowdStrike/falconctl -s --cid=6AC22763E0294249A7E1C8ACEA734837-DE
+/usr/local/qualys/cloud-agent/bin/qualys-cloud-agent.sh CustomerId=10be877a-0233-5061-8014-373a38ad4a38 ActivationId=2e1aea15-018b-4a98-bb37-7f8b9bda18a1
+ZSExswZAQ@123
+ZSExsw@123
+
+[root@ub5vmfgappp04 ~]# /opt/CrowdStrike/falconctl -g --cid
+cid="6ac22763e0294249a7e1c8acea734837".
+
+HP iLO Amplifier Pack	UNIX_MON	Hp3@12E4	https://u6zvhpchamp001
+
+Tiger#92!
+
+fta.viatris.com
+https://www.dell.com/support/home/en-in/product-support/servicetag/0-dk9WRjJncFAzV2pxT1g1MWpJVUVnUT090/drivers--new dell
+PRB0006456
+node contant : hostname 
+Description contant  sys/chassis-2/blade-5  need to change chassis and blade value has per inventory or servers
+yum install xorg-x11-*
+https://community.hpe.com/t5/operating-system-hp-ux/creating-new-file-system/td-p/3853703--HP filesytem creation 
+curl -v  https://cdn.redhat.com --cacert /etc/rhsm/ca/redhat-uep.pem
+curl --interface ens224 -v -k -I https://subscription.rhsm.redhat.com/subscription/
+https://zenoss.myl.com/zport/acl_users/cookieAuthHelper/login_form?came_from=https%3A//zenoss.myl.com/zport/dmd/%3Fsubmitted%3Dtrue
+Aruba@123
+gpasswd -d svc_hyp112 users
+gpasswd -d users svc_hyp112
+usermod -G oinstall
+usermod -G oinstall svc_hyp112
+gpasswd -d svc_hyp112 users
+gpasswd -d users svc_hyp112
+cat /etc/group |grep -i users
+gpasswd -d svc_hyp112 users
+usermod -aG oinstall svc_hyp112
+usermod -ag oinstall svc_hyp112
+usermod -g oinstall svc_hyp112
+http://w0bivtdbp001/AccessBadgeProd/Login.aspx--ID
+0bvcsa001.myl.com
+6ovcsa002.myl.com
+19841--canara passcode
+202212--canara
+CHG0129155--reclaim ASM disks
+/etc/sysconfig/network
+RITM3787661 --work visit
+YJMnji@123
+u07vrhel7poc
+HP
+=============================================
+https://viatris.privilegecloud.cyberark.com/--CyberArk
+https://support.hpe.com/hpesc/public/home/signin
+GIDC.wintel_RUN@viatris.com
+Vi@tri$@2023
+
+http://w0bctxstore001/Citrix/MylanWeb/--SADM reset
+ 
+https://mystore1.myl.com/Citrix/mylanWeb/--SADM
+
+RITM3844870
+u0baglhdmzp01
+DNZ vCenter
+w0bjumpt001
+https://0bvcsa001.myl.com
+ZAQzaq@123
+7416566889--Vamsi
+RITM3820389--solaries loghost4 and sr1
+RITM3819980
+to login mgw-unx-loghost4
+172.26.254.8--console ip
+id: admin
+password: T1tin2sQ
+pcs config backup /usr/admin/franklin/OS_cluster_backup/atq_backup_27oct22
+ButchiReddy.Inaganti@viatris.com/GIDC.L2Support_ModelN@viatris.com--max-fin11,u01fin032 
+Global-IT-APP-CustomDotNetApplications--Atendence
+Umesh Dudi Purushotham
+Dell Servers information
+==========================================
+https://vmdomea001.myl.com/core/console/console.html#/login?from=%2F
+
+a6yvomeinfp001.myl.com
+
+https://a6yvomeinfp001.myl.com/core/console/console.html#/login?from=%2F
+https://10.248.55.88/core/console/console.html#/login?from=%2F
+Unix_Mon  /  D3ll@12E4 
+
+cisco
+================
+mylaninfraunix@viatris.com
+Cognizant@123
+https://mycase.cloudapps.cisco.com/case
+https://www.cisco.com/c/en_in/support/index.html
+Cisco Support and Downloads - Documentation, Tools, Cases
+Access Cisco technical support to find all Cisco product documentation, software downloads, case help, tools, resources, and more.
+ 
+
+w0bvjumpt001;w6evjumpt001;wb5vjumpt001
+https://techdirect.dell.com/Portal/TechnicalSupport.aspx--Dell
+https://techdirect.dell.com/Portal/TechnicalSupport.aspx--Direct Dell
+https://support.hpe.com/hpesc/public/home/signin
+GIDC.wintel_RUN@viatris.com--HP
+Vi@tri$@2023
+RE: Cyberark Linux testing 
+
+https://www.dell.com/support/kbdoc/en-in/000170532/how-to-create-linux-grabs--egrub
+https://www.cisco.com/c/en/us/support/docs/servers-unified-computing/ucs-infrastructure-ucs-manager-software/211587-Visual-Guide-to-collect-UCS-Tech-Support.html--UCS Tech logs
+https://support.oracle.com/portal/--oracle
+/opt/SUNWexplo/bin/explorer -w default,localzones,smfextended
+https://support.oracle.com/portal/
+INC2192047
+https://ssltools.digicert.com/checker/views/csrGenerate.jsp--CSR
+a. Common Name = ua1vmspop001.myl.com
+b. Organization = Mylan Inc 
+c. Organizational Unit = IT Department 
+d. Locality = Canonsburg 
+e. State = Pennsylvania 
+f. Country = US
+
+2Drnot2d
+MNBVCXZLKJHGFDS@123
+Water@12345678
+https://mylan.service-now.com/table/u_unix_user_management_list.do--UID
+u0bseebapp001
+Dell Toll Free Number : 18004252069, 18004252067
+Dell Whatsapp Support:+919108883355
+RITM2525868--splunk---wa0bh003
+JayaNarasimha.Reddy@aws.com
+AWSMYL\JayaNarasimha.Reddy
+
+https://myl.sharepoint.com/teams/ITCompliance476/SitePages/IT-CAB.aspx--CAB
+Password: Viatris@123Viatris@123
+
+How To Create PKCS #12 For Your Application (Simple Guide) (pavelsklenar.com)--certificate
+/mnt/Network/Cisco/VIC/RHEL/RHEL7.6
+/mnt/Storage/Cisco/VIC/RHEL/RHEL7.6
+https://vrops/ui/login.action
+RE: Tape library zoning to u0bnbu001 - TASK0057312  (RITM2193223)
+p1335529
+
+kite--shares
+==========
+UC0575
+YJMnji@123
+72534803
+
+Sukanya--1985
+narasiadm--BGT%bgt5!#$
+
+chatgpt: VFR$vfr4!@#$--new
+
+Water@12345678
+
+svc_ocpadm /  sKy9@FoX$5
+
+0001-800-456-3355--Dell US
+
+bbbbb
+874895410
+YJMnji@123
+RE: RITM2439513 : Please extend the validity of the server "u07vpopoc001" for another 3 months and extend the file system by 10 GB
+UAN--101149506978--Secur#@#1Pass
+https://unifiedportal-mem.epfindia.gov.in/memberinterface/
+https://unifiedportal-mem.epfindia.gov.in/memberinterface/
+2Drnot2d2958!
+https://www.incometax.gov.in/iec/foportal--link pan to adhaar
+https://access.redhat.com/solutions/68996--sosreport manually
+
+https://software.cisco.com/download/home/286281345/type/283850974/release/3.0(3a)
+https://software.cisco.com/download/home/286281345/type/283850974/release/3.0(4r)
+
+ttps://access.redhat.com/downloads/content/69/ver=/rhel---7/7.9/x86_64/product-software
+
+CHG0084693--vio upgrade
+CHG0084639--firmware
+CHG0084625
+https://www.dell.com/support/home/en-in--dell
+
+https://mylan.okta.com/app/UserHome--okta
+CHG0062708
+
+fb-----alamuru.narasimha--ZAQ!za1!@#$
+u01sap121
+
+HDFC
+Customer ID: 72534803
+50100188774960
+
+
+GIDC Operation TEAM - Planned Activity Tracker
+ https://myl.sharepoint.com/teams/TeamMemberTravelDATA/Lists/Planned%20Activity%20Tracker/AllItems.aspx?ovuser=b7dcea4e%2Dd150%2D4ba1%2D8b2a%2Dc8b27a75525c%2CJayaNarasimha%2EReddy%40viatris%2Ecom&OR=Teams%2DHL&CT=1740575105327&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI0OS8yNTAxMzEwNjAxMyIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D--ops
+
+narasiadm--YJMnji@123--XSWxsw@123--ZAQ!zaq1!@#$
+jayanarasimhareddyalamuru@gmail.com--XSW@xsw2!@#$
+https://linuxgurublog.wordpress.com/2017/09/14/how-to-recover-deleted-lvm-partitions/
+https://www.thegeekdiary.com/centos-rhel-how-to-restore-recover-a-delete-volume-group-on-lvm/
+
+https://documentation.suse.com/sbp/all/html/SLES4SAP-hana-sr-guide-PerfOpt-12/index.html
+
+https://10.240.128.28/kvm.jnlp?cimcAddr=10.240.128.28&tkn1=admin&tkn2=T!tin2sQ
+https://172.20.8.90/kvm.jnlp?cimcAddr=172.20.8.90&tkn1=admin&tkn2=T!tin2sQ
+https://10.200.100.63/kvm.jnlp?cimcAddr=172.26.3.125&tkn1=admin&tkn2=T!tin2sQ
+route add -net 172.16.0.0 netmask 255.240.0.0 gw 172.26.3.21
+10.240.128.28 --u77media001-imm
+10.240.161.24--u84media001-imm 
+https://access.redhat.com/solutions/5187461
+
+https://ucshcltool.cloudapps.cisco.com/public/---ucs download
+
+https://10.240.29.24/kvm.jnlp?cimcAddr=172.26.3.125&tkn1=admin&tkn2=T!tin2sQ
+
+https://docs.openshift.com/container-platform/4.14/installing/installing_platform_agnostic/installing-platform-agnostic.html--openshift
+
+https://mycase.cloudapps.cisco.com/case
+https://mycase.cloudapps.cisco.com/698725612/summary
+ login : mylaninfraunix@viatris.com  for cisco D 
+Password : Cognizant@123
+VFR$vfr4!@#$
+
+vCOPS
+Login - BigFix Web Reports  
+Privacy error (myl.com)
+
+USERID
+PASSW0RD
+
+GLOBAL-IT-APP-Smart Automation
+
+    GLOBAL-IT-APP-Smart Automation
+
+u0bseebisQ001	1	 	Admin Server -1	/app/seeburger/bis/bin/bis [start|stop|restart]
+ 	                     2	 	Portal / Message Tracking-2	/app/seeburger/portal/bin/bis [start|stop|restart]
+ 
+ 	                     3	 	BIS FX -3	/app/seeburger/bisfx/bin/bisfx [start|stop|restart]
+ 	                     4	 	Proxy Control -4	/app/seeburger/sse/sse-control/run.sh [start|stop|restart]
+ 	                     5	 	Proxy Relay-5	/app/seeburger/sse/relay/sse/run.sh [start|stop|restart][status]
+ 	                     6	 	BISFX Gateway	/app/seeburger/BISFXGateway/bin/service.sh[start|stop|restart]
+ 
+
+
+http://public.dhe.ibm.com/software/server/hmc/fixes/
+ SAP AWS Migration - Shutdown Request
+INC1566440 || Unable to login
+https://www.ibm.com/support/pages/aix-toolbox-linux-applications-overview
+
+https://www.dell.com/support/kbdoc/en-in/000177052/how-to-find-dell-management-information-base-mib-files---MIB file
+CHG0081946
+maxsp261
+/usr/admin/franklin/auto_path_cleanup.ksh
+rmpath -dl hdisk5 -p fscsi1
+IRN# 20182334 || Need support from CISCO Engineer to check SNMP configuration and configure SNMP  on Physical server thru SSH
+MJU&mju7@123
+port 162
+MJU&mju7
+Welcome@321--new 
+citrix---!QAZ1qaz@123
+TS004726274
+RITM2138328
+my university---ZAQ!zaq1@123
+RITM2066020
+Cognizant@123
+=======================
+CHG0073466 -- closed
+CHG0073471 -- QA approval pending
+CHG0073472 --closed
+RE: Need support During the Firmware Upgrade Activity | 26 Sep 2020 6 AM EST to 6 PM EST 
+CHG0074383
+CHG0053632
+===========================
+RITM2092011--jump server access
+firmware
+
+wb5jumpt001
+http://mgw-lnx-sanadm1-imm.myl.com/
+USERID/PASSW0RD
+
+NA-IT-EUS-TechnicianSupport-Morgantown
+
+https://www.ibm.com/support/pages/using-kdb-determine-which-process-using-port
+
+myl\m545421_sadm   
+1A2r3u4n!
+RITM4497838
+https://myl.sharepoint.com/teams/ITCompliance476/SitePages/IT-Change-Advisory-Board.aspx--CAB upload Document
+https://mylan.okta.com/home/amazon_aws/0oa3wzwirt22JDZ5C357/272--old aamazon
+https://mylan.okta.com/login/login.htm?fromURI=%2Fapp%2FUserHome--new amazon
+
+https://zenoss.myl.com/zport/acl_users/cookieAuthHelper/login_form?came_from=https%3A//zenoss.myl.com/zport/dmd/---zenoss
+MKO)mko0
+https://www.secure.ecurep.ibm.com/app/upload
+storage for 2 servers, one is done another pending
+CHG0073466 
+nela ummadi
+ ovirt
+oracle linux virtual
+RITM2058830
+REQ2144307 
+
+CHG0072133
+CHG0071844 
+CHG0073279
+
+svc_unixadm
+My1@n#Un!x@dM1n
+
+Dell
+=============================
+GIDC.wintel_RUN@mylan.com
+My!aN@2024
+https://techdirect.dell.com/Portal/TechnicalSupport.aspx
+Login or Register | Dell US
+ 
+ID: GIDC.wintel_RUN@viatris.com
+Password: My!aN@2021
+https://www.dell.com/support/incidents-online/en-US/contactus/servicetag/VlY0M0xLRE9pSGl1dkEveWY1bHlhZz090?lwp=rt
+1-866-516-3115
+https://techdirect.dell.com/Portal/ServiceRequest.aspx
+
+
+
+
+
+https://www.aws.training/
+https://infrastructure.aws/
+https://aws.amazon.com/s3/pricing/
+https://calculator.aws/#/
+https://www.youtube.com/watch?v=uj7Ting6Ckk
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/memory-optimized-instances.html
+https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html
+https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Subnets.html
+https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/RegionsAndAZs.html
+https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Subnets.html#VPC_Sizing
+https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Subnets.html#VPC_Sizing -Please refer , this was shared earlier 
+http://checkip.amazonaws.com/
+https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Subnets.html
+https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html
+https://aws.amazon.com/premiumsupport/knowledge-center/ec2-windows-replace-lost-key-pair/
+http://checkip.amazonaws.com/
+https://docs.aws.amazon.com/AmazonS3/latest/gsg/S3-gsg-CommonUseScenarios.html
+https://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html
+https://aws.amazon.com/s3/storage-classes/
+https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Subnets.html#VPC_Sizing
+https://aws.amazon.com/compliance/shared-responsibility-model/
+https://docs.aws.amazon.com/general/latest/gr/root-vs-iam.html
+https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.ReadWriteCapacityMode.html
+Three . https://aws.amazon.com/elasticloadbalancing/?nc=sn&loc=1
+https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_BestPractices.html
+https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-sticky-sessions.html
+
+
+https://zenoss.myl.com/zport/acl_users/cookieAuthHelper/login_form?came_from=https%3A//zenoss.myl.com/zport/dmd/---zenoss
+
+RE: 20168983|| Mylan || Firmware compatibility | Backup Servers
+
+https://web.microsoftstream.com/video/ca777944-3dd9-4546-b5e0-f84964505bbd
+
+Hi Team,
+Find the link for server reboot post checklist template. Post the server reboot, Performer need to validate the server based on check list and share it to L3 to review.  L3 need to review the document and store it to centralized location in monthly view
+
+Central location: https://myl.sharepoint.com/sites/GlobalUnix/Shared%20Documents/Forms/AllItems.aspx?RootFolder=%2Fsites%2FGlobalUnix%2FShared%20Documents%2FTracker%2FServer%20reboot%20request&FolderCTID=0x012000CEB9AD79ED4C1A48B70E2DB4EEF8CF0E
+
+Check List: https://myl.sharepoint.com/:x:/r/sites/GlobalUnix/_layouts/15/Doc.aspx?sourcedoc=%7B2B731049-3884-43A5-B372-7CB014B84FF8%7D&file=Server%20reboot%20Post%20checklist.xlsx&action=default&mobileredirect=true
+
+http://labs.hol.vmware.com/HOL/catalogs/catalog/1212
+
+https://happiestminds.udemy.com/course/aws-certified-solutions-architect-associate-saa-c02/learn/lecture/13528034#overview---udemy
+
+20:00:00:25:b5:01:00:df 20:00:00:25:b5:01:1a:9f   20:00:00:25:b5:01:00:df 20:00:00:25:b5:01:1b:df
+20:00:00:25:b5:01:00:ef 20:00:00:25:b5:01:1a:6f  20:00:00:25:b5:01:00:ef 20:00:00:25:b5:01:1b:ef
+20:00:00:25:b5:02:00:7f 20:00:00:25:b5:02:1a:bf   20:00:00:25:b5:02:00:7f 20:00:00:25:b5:02:1b:7f
+20:00:00:25:b5:02:00:4f 20:00:00:25:b5:02:1a:cf  20:00:00:25:b5:02:00:4f 20:00:00:25:b5:02:1b:4f
+20:00:00:25:b5:01:00:ff 20:00:00:25:b5:01:1a:8f   20:00:00:25:b5:01:00:ff 20:00:00:25:b5:01:1b:ff
+20:00:00:25:b5:f1:20:20 20:00:00:25:b5:f1:2a:20  20:00:00:25:b5:f1:20:20 20:00:00:25:b5:f1:2b:20
+20:00:00:25:b5:f1:20:21 20:00:00:25:b5:f1:2a:21  20:00:00:25:b5:f1:20:21 20:00:00:25:b5:f1:2b:21
+https://configmax.vmware.com/guest?vmwareproduct=vSphere&release=vSphere%207.0&categories=1-0---imp
+https://my.vmware.com/web/vmware/login?mid=34859&eid=CVMWR000038524573
+
+NPIV----https://myl.sharepoint.com/:x:/r/sites/GlobalUnix/_layouts/15/Doc.aspx?sourcedoc=%7B8C02B0DF-3B24-40C8-89DB-7A0C2207028F%7D&file=NPIV%20Migration%20(XIV%20to%20PowerMax).xlsx&action=default&mobileredirect=true 
+
+Email:MYLANINFRAVMWARE@MYLAN.COM
+
+SAP Webdispacher physical NIC connection change - SAP PO and Web dispatcher availability
+
+Password:G!dc@1234
+
+0008001005869
+080 4044 0000 india
+
+m536811_sadm
+QSXzse@123
+
+https://ucshcltool.cloudapps.cisco.com/public/
+
+https://access.redhat.com/solutions/4717561
+
+RITM1962580
+======================
+Hi, according to the knowledge article, user must be a part of the following Citrix group to be able to map the O drive: Citrix-PoC-xMing-Pub 
+However, every time you send us one of these RITM/Tasks, the user is not a part of this AD group. We cannot add this group, only AccessManagement can. I see there is also always a task assigned to AccessMangement called "RTCL|Unix SAS Access Request - Add AD Groups & Unix Attributes", yet they do not add the AD group mentioned at all. 
+Can you make sure user is part of said AD group before we are assigned the task in this case and the foreseeable future so we are then able to complete the procedure? Or amend the procedure if it is incorrect (you are the knowledge owner). Thanks. 
+Knowledge reference: https://mylan.service-now.com/kb_view.do?sysparm_article=KB0000961
+
+https://www.dell.com/support/article/en-in/sln305793/how-to-reset-the-internal-dell-remote-access-controller-idrac-on-a-poweredge-server?lang=en--dell power on link
+https://access.redhat.com/solutions/68996
+
+https://zenoss.myl.com/zport/acl_users/cookieAuthHelper/login_form?came_from=https%3A//zenoss.myl.com/zport/dmd/Devices/Server/SSH/AIX/devices/max-sap11.myl.com/devicedetail%3Fsubmitted%3Dtrue#deviceDetailNav:device_administration
+maxsp236
+https://stss.mylan.com/adfs/ls/idpinitiatedsignon.aspx?LogintoRP=urn:amazon:webservices--aws
+https://stss.mylan.com/adfs/ls/idpinitiatedsignon.aspx?LogintoRP=urn:amazon:webservices
+https://mylan.okta.com/login/login.htm?fromURI=%2Fhome%2Famazon_aws%2F0oa3wzwirt22JDZ5C357%2F272--AWS new
+http://w0bctxstore001/Citrix/MylanWeb/---sadm
+https://www.dell.com/ Username : GIDC.wintel_RUN@viatris.com Password : My!aN@2021--Dell
+
+CTASK--https://mylan.service-now.com/nav_to.do?uri=%2Fchange_task_list.do%3Fsysparm_fixed_query%3D%26sysparm_query%3Dactive%253Dtrue%255Eassignment_group%253Dea739fcd37450200d657d5a643990e4a%255EstateNOT%2520IN3%252C4%26sysparm_clear_stack%3Dtrue 
+
+w07vc001  
+MYL\m521405_sadm
+W3lcome$321 
+
+https://wb5vc001/
+ucipnbume01
+
+firmware pCKges,AWS server install,7.6 repository,new iscsci give
+
+https://ucshcltool.cloudapps.cisco.com/public/ --download firmware
+Netcool
+=======================================================================
+https://u0bimpactp001.myl.com:16311/ibm/console/ 
+=======================================================================
+https://www.bolly2tolly.net/movie/sye-raa-narasimha-reddy-2019-telugu-hd 
+e0bvm022
+e0bvm023
+e0bvm024
+e0bvm025
+e0bvm033
+e0bvm056
+e0bvm081
+
+w0bvc001
+w6evc001
+wb5vc001
+w6vvc001
+
+
+Criticality of Incidents	Response Time	Resolution Time
+--------------------------------------------------------------------------
+Severity-1	15 Mins	4 Hours
+Severity-2	30 Mins	8 Hours
+Severity-3	4 Hours	48 Hours
+Severity-4	8 Hours	72 Hours
+
+Tripwire scan
+=============
+
+TRIPWIRE  &  Netcool
+=====================
+m533457
+mars@2427**
+
+https://0b-vnemgr1/index.ice?class=index&do= 		----- TRIPWIRE
+https://u0bimpactp001.myl.com:16311/ibm/console/     ----  Netcool 
+
+https://www.cisco.com/c/en_in/support/index.html --cosco new case
+
+https://ucshcltool.cloudapps.cisco.com/public/ --cisco compatability check 
+
+https://pim/PasswordVault/logon.aspx?ReturnUrl=%2fPasswordVault%2fdefault.aspx---password vault
+
+https://performancemanager4.successfactors.com/sf/learning?Treat-As=WEB&bplte_company=mylanP1&_s.crb=1ersjG0ARP4yJCmnM3VsKSzHMSA%3d 
+https://smiles.happiestminds.com/wktime/edit?prev_template=true&user_id=7426
+
+https://performancemanager4.successfactors.com/sf/start?_s.crb=%252fGC24xiiCHRSd9AYNG6%252blsEDiCQ%253d#Shell-home--my university
+
+https://mylan.okta.com/login/login.htm?fromURI=%2Fapp%2Fmylanproduction_myuniversity_1%2Fexkxdrb5mKYUZblQB356%2Fsso%2Fsaml%3FSAMLRequest%3DfZLBbtswDIZfReDdtuLGbirEKdIFRYNuq7u4A9ZLIMtyK1SWXFFekref7aRbdwmgE%252FWT%252FPmR8%252Bt9o8lv6VBZk8EkpECkEbZS5iWDp%252BI2mMH1Yo680XHLlp1%252FNT%252FkeyfRkz7RIDv%252BZNA5wyxHhczwRiLzgm2W376yOKSsddZbYTWQVZ%252BoDPdjs1fvW2RR1Bw0N6F98zwUtol42x5DfVrViUG7bQ6dUaNLf9hOIrl%252F21euTJr7X0%252FPpX68uUjSCNFGgxsgt9YJOXrNoOYaJZD1KoNtcjmp47JMg2lS0WCa8iq4SulFMC1plcrZ7IpPByliJ9cGPTc%252Bg5jGNOg1cVJQyuK0f2GSXD4DyU9T3ShzpHUOQXkUIbsrijzIHzYFkJ8f1HsBnBizsbv7DPd8YY4o3cAIFh88d7tdiJ0QErHmwluHI9eRaT6ZR58b%252FV3t977yepVbrcSBLLW2uy9Oci8z8K6TI9OG%252B%252FNehoiqgnqUsnYYD700HsgmH%252Bo%252FdlyrWkn3b%252FfnvUK0ONn9%252F%252FYWfwA%253D%26RelayState%3D%252Flogin%253Fcompany%253DmylanP1%26SigAlg%3Dhttp%253A%252F%252Fwww.w3.org%252F2000%252F09%252Fxmldsig%2523rsa-sha1%26Signature%3DaMFjXnm6PT6pVm01yzFueja6P%252FA5qp7JDgwbeem6dEPjdypLTsnyO9nvz4sZVLPtV1NWhm67LMjl2ghJiRjETHcMJ4VS3erxKYXSsDU1bB01InqvMe7xeCroWrFBGsytXr8Nxk6VG8VPNJitdzrohea6PPhsMe2CBh%252FlHoWWwDg%253D --universitys
+
+https://mylan.plateau.com/learning/user/deeplink.do?OWASP_CSRFTOKEN=MFAX-KIQJ-J2GN-0RYT-V0H6-QVUZ-WGLJ-K4WJ&linkId=HOME_PAGE&fromSF=Y
+ 
+VFR$vfr4
+
+\\W0BVSNMIDP001\flow_logs--flow
+
+http://w6ednetdbp001/ams/LogOn.aspx --attendence
+https://hr.myl.com/AMS/  
+ 
+https://u15tvs020.myl.com:16311/ibm/console/logon.jsp ---itm
+
+https://myl.sharepoint.com/sites/GlobalUnix/SitePages/Home.aspx ---share drive
+https://u15tvs020.myl.com:16311/ibm/console/login.do?action=secure --itm
+
+https://access.redhat.com/solutions/238533
+
+ 
+********** imm console *********************************
+ User name	:	admin     *******************************
+ Password	:	T!tin2sQ  *******************************
+ ******************************* 
+oracle
+=========================
+Username :mylaninfraunix@mylan.com
+Password : Cognizant@123
+
+---------------------------------------------------------------------
+REDHAT LOGIN CREDENTIALS : Account Information:
+***************************************************************
+ Your login: GIDC.unix_Run@mylan.com         ****************
+ Your email address: GIDC.unix_Run@mylan.com ****************
+************************                     ****************
+ Password: Mylan@2018                        ****************
+************************************************************* 
+
+su - padmin ---T!nbPtH10
+T!tin2sQ
+St33l3rs!
+St33l3rs!
+Viatris@!2#1
+ZAQ!zaq1@123
+
+XSW@xsw2!@#$
+
+sudo yum updateinfo list security updates
+ 
+yum update-minimal --advisory=""
+
+
+Secur3@#1Pass--HM Password--MyL@nSu$E2026
+Tiger#92!
+
+0B, B5, 6O, 21
+
+https://www.sivancrackers.com/home
+
+Ticket SV1413657--VIO
+
+Site: scc.suse.com
+
+user name: mylaninfraunix 
+Password : Cognizant@123
+
+https://scc.suse.com/
+GIDC.unix_Run@viatris.com  / MyL@nSu$E2026
+CDEcde@123
+
+m533457
+Urs0p0l@R
+Blr@2019$$
+Siva@2427 
+
+Vu 139cm (55 inches) Vibe Series 4K QLED Smart Google TV 55VIBE-DV
+
+svc_unixadm---4k9tiEK4eW9FkrJ
+
+VFR$vfr4!@#$--system password
+
+maheshwara.reddyb@happiestminds.com
+
+www.linkedin.com/in/jayanarasimhareddy-alamuru-unixadmin
+
+Indiramma69
+10.118.255.9
+echo "vfcs" |kdb
+crm status
+crm_mon -A1
+su - atpadm
+cdpy
+python systemReplicationStatus.py
+python landscapeHostConfiguration.py
+
+https://aironetworks-my.sharepoint.com/:u:/g/personal/bharath_airowire_com/EY2qp8mugpFKoH3H7vj_j4kB9-xDxe28BQgLDPGN-lsojw?e=56GKdx--download OVF
+
+RITM2246547--UUID
+T!nbPtH10
+RITM5687885--new 
+ZAQ!zaq1!@#$
+Password:dell 
+St33l3rs!                                                   ---vio padmin passwd
+Jaya!@#9538
+ZXCxsw@123#--tax
+NJI(nji9%
+CHG0089904--CI update
+CHG0050004--aix
+CHG0050181
+CHG0078723
+myl@1234
+b5vcsanprd001
+6ovcsanprd001
+0bvcsanprd001
+EZVCSANPRD001
+w6vvc001
+
+Openshift
+==============
+Username : Your MID (m539191) m is in small letter
+Password : Viatris@2025
+
+
+Production vCenter: w0bvc001
+Non-Production vCenter: 0bvcsanprd001
+ Production vCenter: wb5vc001
+Non-Production vCenter: b5vcsanprd001
+Production vCenter: 6ovcsa002
+ Non-Production vCenter: 6ovcsanprd001
+Production vCenter: EZVCSA001
+ Non-Production vCenter: EZVCSANPRD001
+
+
+HPE Support Detials
+=============
+https://support.hpe.com/connect/s/createcase
+Jaya@!9538598--HM
+
+https://support.hpe.com/hpesc/public/home/signin
+ 
+GIDC.wintel_RUN@viatris.com
+ 
+Vi@tri$@2026
+
+
+
+Dell Support Detials
+=============
+User Name : GIDC.wintel_RUN@viatris.com
+Password : My!aN@2025
+My!aN@2021--new 
+
+http://unixadmin.free.fr/?p=393--HBA
+https://www.ibm.com/docs/en/power6?topic=features-exchanging-part-using-hardware-management-console
+
+Username
+mylaninfraunix@viatris.com
+Password
+Cognizant@123
+
+http://www.unixmantra.com/2013/04/hmc-commands.html---hmc commands 
+
+
+********** imm console *********************************
+ User name	:	admin     *******************************
+ Password	:	T!tin2sQ  ******************************* 
+
+cisco user and password:
+================================= NEW
+CISCO login credentials	
+mylaninfraunix@viatris.com
+Cognizant@1234
+
+
+https://software.cisco.com/download/home
+
+root,hpinvent
+serveur0 10.243.19.7
+serveur1 10.243.19.8
+serveur2 10.243.19.9
+  
+User :mylaninfraunix 
+Password :Cognizant@123
+
+download cisco iso image---https://ucshcltool.cloudapps.cisco.com/public/
+
+https://mycase.cloudapps.cisco.com/685926533/attach?fileID=299365647
+
+https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Firmware-Mgmt/3-2/b_UCSM_GUI_Firmware_Management_Guide_3_2/b_UCSM_GUI_Firmware_Management_Guide_3_2_chapter_0101.html
+
+Vendor: Cisco Systems Inc
+Serial No: FCH174179XL
+Model: B440-BASE-M2
+Current Firmware:B440100C-B4402008
+Latest Version :
+File u0bhanabwt01.png has been uploaded to case 685926533
+
+NetApp Storage crediantials
+===========================
+
+GIDC.Storage_Run
+Mylan123! 
+
+ 
+@AM.MS.ServiceDesk <am.ms.servicedesk@dimensiondata.com>; muhammad.pk@dimensiondata.com --dimension and cisco raise call
+ 
+
+
+https://access.redhat.com/articles/3078  
+REDHAT LOGIN CREDENTIALS : Account Information:
+
+ Your login: GIDC.unix_Run@mylan.com 
+ Your email address: GIDC.unix_Run@mylan.com
+ password: Mylan@2018 
+
+HP SERVERS
+user: root
+passwd : hpinvent 
+
+
+ualsapp50001
+ua1sapp50001
+
+lscfg -vpl hdisk* |egrep ""hdisk""
+
+INC0709642
+RITM1173045---storage
+CHG0041129--build
+
+https://passbook.epfindia.gov.in/MemberPassBook/LoginServlet
+
+https://u15tvs020.myl.com:16311/ibm/console/login.do?action=secure---itm
+
+U0BHYPD001
+U0BHYPD002
+U0BHYPD003
+U0BMDMDBD001
+U0BLABDBD001
+
+https://performancemanager4.successfactors.com/sf/learning?Treat-As=WEB&bplte_company=mylanP1&_s.crb=1ersjG0ARP4yJCmnM3VsKSzHMSA%3d 
+[?07-?Oct-?18 1:10 PM]  Shaik Imran Ali:  
+https://mylan.service-now.com/ess/catalog.do?sysparm_document_key=sc_req_item,1c4add184f5393c4f3a0d1411310c701 ---access
+ 
+
+
+useradd -u 5531 -g 100 -c " Harish B " -d /home/m530656  -s /usr/bin/ksh m530656
+
+useradd -u 5432 -g 1 -G 4108 -c " Awadhesh Singh " -d /home/m526514  -s /usr/bin/ksh m526514
+
+
+root@u0bnim001 /usr/admin/aix/scripts/user> cat RITM1193760-user.ksh
+./RITM1193760-user.ksh
+
+
+https://myl.sharepoint.com/sites/GlobalUnix/SitePages/Home.aspx --shrepoint link
+
+mount -t nfs n0bnnas004:/vol/r3migration /r3migration
+mount -t nfs n0bnnas002:/vol/sapbasis/sapbasis /sapbasis
+mount -t nfs n0bvsapps003:/yum_repo_share /yum_repo_share
+
+
+
+	 
+RITM1215375---frre up space on ua1sapp50001
+RITM1215179--increase 20 GB for nfs mount point
+
+2Drnot2d@958!
+
+
+CHG0043217--sap
+RITM1245059--sap
+CHG0043222--dba
+
+u0bionix001---u07ionixncm001--U07IONIX001
+
+8197545305
+
+
+
+
+
+for ff in $(lspv | awk '{ print $1 }') 
+do 
+size=$(bootinfo -s $ff) 
+((TOTAL=TOTAL+size)) 
+done 
+echo $TOTAL 
+
+
+
+for i in $(lspv |awk '{print $1}')
+do
+size=$(bootinfo -s $i)
+((TOTAL=TOTAL+size))
+done
+ 
+
+for i in $(lspv |awk '{print $1}')
+do
+size=$(bootinfo -s $i)
+((TOTAL=TOTAL+size))
+done
+
+
+ 
+for i in $(lspv |awk '{print $1}')^Jdo^Jsize=$(bootinfo -s $i) ((TOTAL=TOTAL+size))
+
+	
+
+CHG0045307
+
+CHG0045306
+CHG0045361
+
+
+
+Add the 10 GB memory on max-sap52 and max-sap53 each server
+
+
+1)Adding disk from VM 
+
+#login to EXI  host and find host where we have to add disk,then assign the disk for that server
+
+2)once disk add to server,login to server and check newly added disk
+
+#fdisk -l
+
+3)once we found new disk do disk partion
+
+#fdisk /dev/newdisk
+
+command click "n"
+
+then click on p as partion
+
+then partion number give "1"
+ 
+then selet type of partion with  "t" option
+
+we have to select hexa code as per request 
+
+example "8e" is used as linux LVM
+
+then save click with "w"
+
+then run partprobe on new partion
+
+#partprobe <newpartion>
+
+
+4)create pv on new disk
+
+#pvcreate <newly added disk>
+
+5)check pv created are not
+
+#pvdisplay
+
+6)then extend vg with new pv
+
+#vgextend <vgname> <pvname>
+
+7)check vg extended or not
+
+#vgs or vgdisplay
+
+8)then extend lv
+
+#lvextend -L +<size> <lvname> 
+
+9)check size of FS which we extended
+
+df -hT <FS name>
+
+
+[root@mgw-lnx-gp01 hist]# pwd
+/opt/IBM/ITM/li6263/lz/hist
+[root@mgw-lnx-gp01 hist]#
+
+Hostname:C240-FCH2037V3KH
+IP Address:172.22.232.40
+MAC Address:00:D7:8F:7E:AF:F4
+
+RITM1328416
+
+RITM1337862--vcenter
+
+
+36000c298203fd51e11c828732b4cf38f
+
+PassW@rd@123
+
+http://u0bpoc001/linux/01012019/ 
+access
+GIDC_capture
+qscwdvefbQ123 
+you can check df command out put for all linux servers 
+handover this to night shift guys to check for filesystem utilization
+they should note any fs more than 80% 
+
+https://apps1.mylan.com/Citrix/MylanWeb/ 
+
+m538781@cuq002391p ~]$ sudo /usr/bin/rootsh /bin/su root
+[sudo] password for m538781:
+[root@cuq002391p m538781]#
+
+u0bhanabwp001 
+w0bbhosting001   ----> e0bhanabwp001  --->root (SAPhana10!) --->mgmstsrv01 -->  https:// 192.168.76.10  cisco login mylaninfraunix  (Cognizant@123) 
+
+                Please fine the below mentioned cuq002391p.abtmyl.com server root passwd details and user password .
+
+Root password - T!nbPtH10
+m526494(Sreehari) - Mylan@123
+m538781(Suren) – Suren@123
+
+
+Using username "m538781".
+Pre-authentication banner message from server:
+|                                   NOTICE
+|                                 ==========
+|
+|            This system contains information which is considered to
+|            be confidential and proprietary.
+|
+| CUQ002391P  [ Linux System ]
+End of banner message from server
+m538781@cuq002391p.abtmyl.com's password:
+Access denied
+m538781@cuq002391p.abtmyl.com's password:
+Last login: Tue Mar 17 20:15:49 2020 from minint-anjng5k.myl.com
+#########################################################################
+                        W A R N I N G !
+#########################################################################
+
+           This system contains information which is considered to
+           be confidential and proprietary.
+
+########################################################################
+[m538781@cuq002391p ~]$ sudo /usr/bin/rootsh /bin/su root
+[sudo] password for m538781:
+[root@cuq002391p m538781]#
+
+172.16.140.101
+
+scp -rp /opt/scripts/monitoring.sh m529966@u0btvs029:/home/m529966
+mkdir /opt/scripts 
+mkdir /var/log/proc_mon/ 
+cp -p /home/m529838/monitoring.sh /opt/scripts/
+crontab -e
+*/3 * * * * /opt/scripts/monitoring.sh >/dev/null 2>&1 
+
+CTASK---https://mylan.service-now.com/nav_to.do?uri=%2Fchange_task_list.do%3Fsysparm_fixed_query%3D%26sysparm_query%3Dactive%253Dtrue%255Eassignment_group%253Dea739fcd37450200d657d5a643990e4a%255EstateNOT%2520IN3%252C4%26sysparm_clear_stack%3Dtrue
+
+we are working 24/7 , we will work on rotation shifts, will work on customer requirement to fulfil there requests.
+
+as BU we won't get training,i will training in private outside and i have trained ITIL process
+
+working on new technology,i have joined here as AIX administrator , now  i am working on LINUX, AWS, VMWare,working on linux build, linux os upgrade, storage migration 
+
+as AIX resource will provide knowledge to others who are not AIX background in to other members who have joined to other technologies.will share technical knowledge to each other.
+=================================================================
+this change is for creating the wheels group named "zen_ora"  and  make entry "zen_ora"  in /etc/sudoers file on below listed servers, change request is required
+to login DBA users on servers to support DBA application activities on CIs which are added in change, and will going to implement this change without downtime. implementing this change there is no end user impact  and find the below detail regarding this change request. 
+
+
+If the change is not implemented, DBA users won't be able to access server, it will impact on  activities as per application. This change will not have any impact on the business. 
+"zen_ora"  group will make entry  in /etc/sudoers file on all listed servers mentioned in RITM1904594. 
+
+https://myl.sharepoint.com/:x:/r/sites/GlobalUnix/_layouts/15/Doc.aspx?sourcedoc=%7B2B731049-3884-43A5-B372-7CB014B84FF8%7D&file=Server%20reboot%20Post%20checklist.xlsx&action=default&mobileredirect=true&cid=2447bb92-6065-45b8-a170-465d786df2b1
+=============================================================================================================================================================
+uname & hostname	uname;hostname
+Uptime	uptime
+System boot	who -b
+Check the kernal version	uname -r
+Filesystems and Usage	df -Th|grep -vi tmpfs
+Filesystems count	df -Th |grep -vi tmpfs|wc -l
+LAN Interfaces Settings (ifconfig) 	/sbin/ifconfig (or) ip addr
+bonding status	cat /proc/net/bonding/bond0 
+/etc/hosts	cat /etc/hosts
+DNS Names server list	cat /etc/resolv.conf
+TIme is syncing are not	ntpq -p  or chronyc sources
+Network Routing	ip route
+Routing Tables	netstat -r
+Physical Volumes	pvs
+Available Logical Volumes	lvs
+Available Volume Groups	vgs
+Cron and At	crontab -l
+Disk Partitions	/sbin/fdisk -l|sed 's/8e \ Unknown/8e \ LVM/g'        (or)   lsblk
+	
+Multipath Configuration details	/sbin/multipath -v2 -d -ll
+grub configuration file 	cat /boot/grub/grub.conf
+Zombie process status	top
+Performance of the server cpu,memory 	sar 2 3 , free -g,iostat
+
+uptime;uname -r;who -b;df -Th|grep -vi tmpfs;df -Th |grep -vi tmpfs|wc -l;ip addr;cat /etc/hosts;cat /etc/resolv.conf;chronyc sources;ntpq -p;ip route;netstat -r;pvs;lvs;vgs;pvdisplay;vgdisplay;lvdisplay;crontab -l;lsblk;cat /boot/grub/grub.conf;top;iostat -x 1 3;
+
+
+ACTION REQUIRED : SmartStop Online Approval Requested (RITM2058830)
+======================================================================================
+Hi Team,
+Before raise any change request validate below:
+1.	Do we have RITM and it have enough approvals.
+2.	Check affected CI’s having upstream and downstream relationship is correct. If not reassign the RITM to requestor to correct it. This need to be done within 8Hours from RITM raised. 
+3.	Sent request to Alwin to raise change.
+4.	Track the change until closure. The time period not more than 2 weeks. 
+
+==============================================================Hi Venkat,
+Please find the plan
+
+1. Disable Net backup services at system startup
+2. Unmount /storage mount point
+2. Install native multipath package
+3. Configure Multipath policy and start multipath services
+4. Validate and modify LVM filter if we required
+5. Rebuild initramfs
+5. Restart the server
+6. Validate the mount points and multipath policy.
+7. Mount the /storage mount point.
+8. Stat the Net backup service
+
+========================================================================================
+Hi Team,
+Before closing transition tasks, please make sure the server was added in inventory, 
+
+
+
+
+
+
+ling sheet was provided if physical server and all our build check list was meet, All Unix account was added, 
+
+=====================================================================================================================
+This change is to Kernel upgrade for Affected CI's  from  3.10.0-957.27.2.el7 to 3.10.0-1127.13.1.el7.
+A snapshot task and a backup task will be completed prior to this activity, in an event that an issue arises the server can be restored snapshort to the previous state. 
+Hence there is Low identified impact to data integrity, product quality, regulatory compliance, and/or patient safety.
+
+=========================================================================================================================================
+[root@u7kmedia001 RHEL6.9]# rpm -ivh kmod-enic-4.0.0.6-802.21.rhel6u9.x86_64.rpm
+error: Failed dependencies:
+        kernel(__netif_napi_add) = 0xb1e5b010 is needed by kmod-enic-4.0.0.6-802.21.rhel6u9.x86_64
+        kernel(__skb_flow_dissect) = 0xb9d28dde is needed by kmod-enic-4.0.0.6-802.21.rhel6u9.x86_64
+        kernel(cpumask_local_spread) = 0xc8a91f5b is needed by kmod-enic-4.0.0.6-802.21.rhel6u9.x86_64
+        kernel(napi_complete_done) = 0x5771028f is needed by kmod-enic-4.0.0.6-802.21.rhel6u9.x86_64
+        kernel(napi_disable) = 0xd3243be0 is needed by kmod-enic-4.0.0.6-802.21.rhel6u9.x86_64
+        kernel(set_ethtool_ops_ext) = 0xc48c4423 is needed by kmod-enic-4.0.0.6-802.21.rhel6u9.x86_64
+[root@u7kmedia001 RHEL6.9]#
+=======================================================================================================
+Redhat
+mylaninfraunix
+Cognizant@123
+
+-------------------------------------
+VMware
+support.vmware.com
+mylaninfravmware@mylan.com
+G!dc@1234
+
+080 4044 0000 india
+-------------------------------------
+AIX
+
+Username : mylaninfraunix@mylan.com
+password : Cognizant@123
+
+-------------------------------------
+
+Oracle
+
+Username :mylaninfraunix@mylan.com
+password : Cognizant@123
+
+-------------------------------------
+
+DELL:
+
+https://www.dell.com/
+
+Username : GIDC.wintel_RUN@viatris.com
+Password : My!aN@2021
+====================================================================
+Plan:
+
+1. Download the Supported VIO version from Fix central
+2. Take the configuration backup and mksysb
+               $ viosbr -backup -file /backupios/`uname -n`/`uname -n`_devicebackup
+               # su - padmin -c "ioscli backupios -file /backupios/`uname -n`/"
+               $lsmap -all
+               $lsmap -all -net
+               $lsmap -all -npiv
+               $cat .profile
+
+3. Break the rootvg mirror and take the clone for quick rollback. If your VIO server with single disk take the mksysb backup.
+               $ unmirrorios hdisk12
+               $ reducevg -rmlv rootvg hdisk12
+               $ alt_root_vg -target hdisk1
+               # bosboot -ad hdisk14
+               # bootlist -m normal -o hdisk14 hdisk1
+3.Remove the all interim fixes and commit the filesets in current version.
+               # emgr -P
+               $ updateios -remove <LABEL>
+4.Mount the packages downloaded NFS filesystem
+               # mount n0bvsshare001:n0bvsshare001_wbtbackupios  /backupios
+5. Update the VIO Server using updateios command and wait until it completed.
+               $ updateios -accept -install -dev /backupios/VIO_2_2_5_10/vio2_2_5_10
+6.Verify the latest VIOs version and check if any missing packages and re-mirror the rootvg
+               1.Check consistency of currently installed filesets
+                              # instfix –i | grep ML
+                              # lppchk –v
+                              $ ioslevel
+               2.Once everything confirmed, re-mirror the rootvg.
+                              $ extendvg rootvg hdisk1
+                              $ mirrorios hdisk1
+                              $ bootlist -mode normal -ls (to view)
+                              $ oem_setup_env (to get root shell)
+                              # bosboot -ad hdisk1 (using root shell)
+                              # bootlist -m normal  hdisk0 hdisk1 (using root shell)
+
+Backout Plan:
+1.Change the bootlist and Reboot the server with older version.
+               #bootlist –m normal hdisk1 hdisk0
+               #bootlist –m normal –o
+               #shutdown –Fr now
+2. Once the server is came up, Re-mirror the rootvg .
+               $ extendvg rootvg hdisk1
+               $ mirrorios hdisk1
+               $ bootlist -mode normal -ls (to view)
+               $ oem_setup_env (to get root shell)
+               # bosboot -ad hdisk1 (using root shell)
+               # bootlist -m normal  hdisk0 hdisk1 (using root shell)
+               
+               
+Verification Step:
+Check the Os version
+$ioslevel
+=========================================================
+Hi Team, 
+
+Many times in near past it is observed that support people are reaching out to VIP users i.e. CxOs, Business unit heads and via email or Teams Chat. This is putting these senior leaders in surprise that what action they need to take as their assistants or executive teams take care of all IT related issues on their behalf. 
+
+
+If there is a senior leader copied on mail which you received please reach out to your supervisor during their available time or operations manager over the call before replying to that email. 
+
+In case you feel that you need to escalate something to next level and that next level or the user itself is a senior leader please do follow the same as above and do not send the mail by yourself. 
+
+============================================================
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/installation_guide/sect-driver-updates-performing-x86
+
+https://www.cisco.com/c/en/us/support/docs/servers-unified-computing/ucs-c-series-rack-servers/214860-installing-red-hat-using-the-embedded-sa.html
+
+==============================================
+HI Team
+
+Please find the DPT Inventory and credantials
+
+DPT Jump Server : DPT-BASTION1
+Username : dptlabs_nt\m545421d
+Password: Welcome@123
+=====================================================================
+
+Hello Unix team,
+
+My name is Tsveti with AIX Software support and I will be the technical owner of your case. 
+
+My colleague  Priyanka verifies the entitlement for your case so please answer if you have an active contract for support services.
+
+From the case description I understand that you would like to restore a NIM mksysb of AIX and VIOS clients. 
+NIM operations aren't supported with LACP / EtherChannel configuration and there is no workaround for that . 
+https://www.ibm.com/docs/en/aix/7.2?topic=teaming-etherchannel-configuration-considerations
+
+Document with NIM mksysb restore steps and the NIM ports that need to be opened on the firewall. 
+https://www.ibm.com/support/pages/mksysb-restore-through-nim
+https://www.ibm.com/support/pages/nim-communication-within-firewall-environment
+=======================================================================================
+
+DPT VCenter : 10.5.18.188
+==========================================
+HP Details
+Email ID	GIDC.wintel_RUN@viatris.com
+Password	Vi@tri$@2021
+TAM	megha.a@hpe.com
+https://support.hpe.com/hpesc/public/home/signin
+=========================================================
+AS400 VIO Logins
+=============
+Host name : VIOS
+10.243.71.100
+IP Adderss: 10.243.71.100
+User: padmin
+Pwd: aixrotta
+========================================================
+
+This change is for Decreasing the CPU and Memory on u0bvsapghp001 server. There is an application impact, and the end-user will not be able to access the application during the time of activity. If any issues arise, we will revert the system to its original state.  There is Low identified impact on data integrity, product quality, regulatory compliance, and/or patient safety.
+=======================================================================
+Hi Team
+
+Kindly follow the below steps for sudo access issues from vulnerability management team.
+
+1.	Add zenvtm group in the server
+# groupadd -g 6080 zenvtm
+
+2.	Add the below contents to zenvtm file
+# vi /etc/sudoers.d/zenvtm
+%zenvtm ALL = (ALL) /usr/bin/yum, /bin/yum, /usr/sbin/subscription-manager list, /sbin/subscription-manager list, /sbin/service * status, /sbin/service redcloak stop, /sbin/service redcloak start, /usr/bin/systemctl status , /usr/bin/rpm, /bin/rpm, /usr/bin/systemctl stop redcloak, /usr/bin/systemctl start redcloak, /usr/bin/systemctl stop besclient, /usr/bin/systemctl start besclient, /sbin/service besclient start, /sbin/service besclient stop
+
+3.	Include zenvtm in sudoers file (append the line at the end of the file)
+# vi /etc/sudoers
+## Read drop-in files from /etc/sudoers.d (the # here does not mean a comment)
+#includedir /etc/sudoers.d
+
+4.	Add / delete the user from the group
+# gpasswd -d m549542 zensar
+# gpasswd -d m560219 zensar
+# gpasswd -a m549542 zenvtm
+# gpasswd -a m560219 zenvtm
+
+ADDRESS
+Company Name :
+Address :
+City :
+State :
+Zip :
+Country : 
+SITE CONTACT
+Contact Person :
+Telephone : 
+Email : 
+1.Do you prefer for parts to be delivered at a particular time or date? 
+2.Is the site Manned or Unmanned? 
+3.Is the site accessible after 5:00 PM? 
+4.Is it OK to leave the part with the security?
+5.If you are entitled for FE do you required FE to install the part?
+6.Is it a Data center?
+
+
+This would indicate that of the latency you are observing it appears to all be culminating outside the confines of the OS. We would recommend following up with your respective transport layer vendors to 
+investigate this issue further if these values concern you. This includes your hardware/storage/fabric vendors. Please share with us their findings and of course if you have any other questions or concerns.
+HI Team
+
+FYI Dell SLA Document. Same has been kept under the SharePoint  
+
+Updated vendor document also kept under the same path 
+
+SharePoint Path : Global Unix - Documents\Vendor
+
+Updated vendor escalation Matrix : Vendor Contact  Escalation Matrix _Unix_2023_V1.1
+
+Updated SOP,WI  and Run Books : Global Unix - Documents\SOPs & Run Book New\Unix_Documents
+
+Site Lead and address details  : Global Unix - Documents\Site Leads and Site address details
+
+Inventory and Site Leads and Site address details - Global Unix - Documents\Inventary\
+
+Hi Siva,
+
+            Earlier the Old kernels versions greater than N-2 were removed manually as part of the cleanup activity or during the boot file system high disk space usage.
+
+            But recently we started following the steps in below KB article to remove/clean the old kernels.
+            
+
+Redhat-    https://access.redhat.com/solutions/1227
+
+SUSE - https://documentation.suse.com/sles/15-SP3/html/SLES-all/cha-tuning-multikernel.html
+
+
+https://kb.vmware.com/s/article/85662
+https://ports.esp.vmware.com/home/vSphere
+https://ports.esp.vmware.com/home/vSphere
+https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.networking.doc/GUID-959E1CFE-2AE4-4A67-B4D4-2D2E13765715.html#GUID-959E1CFE-2AE4-4A67-B4D4-2D2E13765715
+https://kb.vmware.com/s/article/1010398
+
+u0blabracp001 - https://m0bucs001 ---->Chassis3 -->server4
+u0blabracp002 - https://m0bucs001 ---->Chassis2 -->server5
+u0blabracp003 - https://m0bucs001 ---->Chassis3 -->server2
+u0blabdgp001 - https://m0bucs002 ---->Chassis1 -->server5
+u0blabdgt001 - https://m0bucs002 ---->Chassis2 -->server5
+
+ethtool eno12399np0
+ethtool eno12409np1
+teamdctl team0 state
+teamdctl team0 state
+teamdctl team0 state
+teamdctl team0 state
+cd /etc/sysconfig/network-scripts/
+ls
+ip addr
+mkdir /root/backup/network/
+ls /root/backup/network/
+ls
+cp * /root/backup/network/
+ls /root/backup/network/
+teamdctl team0 state
+uptime
+cp /etc/fstab /etc/fstab.$(date +%F)
+vi /etc/fstab
+lsblk
+passwd
+nmcli connection show
+nmcli connection modify team0 team.runner lacp
+nmcli connection modify team0 team.link-watchers "name=ethtool delay-up=2500"
+nmcli connection down team0
+nmcli connection up team0
+
+To enable log rotation and keep only two days' worth of log files in Red Hat Enterprise Linux (RHEL) 8, you can use the logrotate utility and configure the rotation parameters. Follow these steps:
+ 
+Open or create a configuration file for the log rotation. Typically, logrotate configurations are located in /etc/logrotate.conf or in separate files under the /etc/logrotate.d/ directory.
+ 
+bash
+Copy code
+sudo nano /etc/logrotate.d/mylog
+Replace mylog with an appropriate name for your log file.
+ 
+Inside the configuration file, specify the log file or files you want to rotate and configure the rotation parameters. For example:
+ 
+plaintext
+Copy code
+/path/to/your/logfile {
+    rotate 2
+    daily
+    compress
+    missingok
+    notifempty
+}
+rotate 2: Keep only 2 rotated log files.
+daily: Rotate logs daily.
+compress: Compress rotated log files.
+missingok: Do not generate an error if the log file is missing.
+notifempty: Do not rotate the log file if it is empty.
+Adjust the /path/to/your/logfile to the actual path of your log file.
+ 
+Save the file and exit the text editor.
+ 
+You can manually run log rotation to test your configuration:
+ 
+bash
+Copy code
+sudo logrotate -vf /etc/logrotate.d/mylog
+The -v option is for verbose mode, and the -f option forces log rotation.
+ 
+Check if the log rotation is working correctly. Verify that only two days' worth of log files are retained:
+ 
+bash
+Copy code
+ls -lh /path/to/your/logfile*
+The above command should show only two rotated log files.
+ 
+Optionally, you can configure a cron job to run log rotation automatically. The cron job is typically scheduled to run daily. Ensure the cronie package is installed:
+ 
+bash
+Copy code
+sudo dnf install cronie
+Enable and start the cron service:
+ 
+bash
+Copy code
+sudo systemctl enable --now crond
+The logrotate configurations in /etc/cron.daily/ will be executed automatically.
+ 
+Now your log files should be rotated daily, and only two days' worth of log files will be retained. You can adjust the configuration parameters according to your specific requirements.
+
+1) Take the backup of the bond0, and interface files in your home path
+2) Delete the configuration files and shutdown 
+3) Remove the  second interface from vmware end and power on
+nmcli connection show
+nmcli connection add type ethernet con-name ens192 ifname ens192
+nmcli connection mod ens192 ipv4.address 172.25.40.32/24
+nmcli con mod ens192 ipv4.gateway 172.25.40.1
+nmcli con mod ens192 ipv4.method manual
+nmcli con up ens192
+
+nmcli connection modify ens224 -ipv4.routes "0.0.0.0/0 172.20.5.4"
+
+CHG0146185
+nmcli connection modify ens224 -ipv4.routes "0.0.0.0/0 172.20.5.9"
+nmcli connection modify ens256 -ipv4.routes "0.0.0.0/0 172.17.66.1"
+u0bvsawdmzq01
+[root@u0bvsawdmzq01 ~]# ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: ens192: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether 00:50:56:84:df:38 brd ff:ff:ff:ff:ff:ff
+    inet 172.20.8.120/24 brd 172.20.8.255 scope global noprefixroute ens192
+       valid_lft forever preferred_lft forever
+3: ens224: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether 00:50:56:84:a2:84 brd ff:ff:ff:ff:ff:ff
+    inet 172.20.5.60/24 brd 172.20.5.255 scope global noprefixroute ens224
+       valid_lft forever preferred_lft forever
+    inet6 fe80::250:56ff:fe84:a284/64 scope link
+       valid_lft forever preferred_lft forever
+4: ens256: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether 00:50:56:84:66:37 brd ff:ff:ff:ff:ff:ff
+    inet 172.17.66.21/24 brd 172.17.66.255 scope global noprefixroute ens256
+       valid_lft forever preferred_lft forever
+    inet6 fe80::250:56ff:fe84:6637/64 scope link
+       valid_lft forever preferred_lft forever
+[root@u0bvsawdmzq01 ~]# ping u0bvsawdmzq01
+PING u0bvsawdmzq01.myl.com (172.20.8.120) 56(84) bytes of data.
+64 bytes from u0bvsawdmzq01.myl.com (172.20.8.120): icmp_seq=1 ttl=64 time=0.010 ms
+64 bytes from u0bvsawdmzq01.myl.com (172.20.8.120): icmp_seq=2 ttl=64 time=0.010 ms
+
+
+Current entry:
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+0.0.0.0         172.20.8.2      0.0.0.0         UG    100    0        0 ens192
+0.0.0.0         172.20.5.9      0.0.0.0         UG    101    0        0 ens224
+0.0.0.0         172.17.66.1     0.0.0.0         UG    102    0        0 ens256
+172.17.66.0     0.0.0.0         255.255.255.0   U     102    0        0 ens256
+172.20.5.0      0.0.0.0         255.255.255.0   U     101    0        0 ens224
+172.20.8.0      0.0.0.0         255.255.255.0   U     100    0        0 ens192
+
+Expected entry: 
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+0.0.0.0         172.20.8.2      0.0.0.0         UG    100    0        0 ens192
+172.17.66.0     0.0.0.0         255.255.255.0   U     102    0        0 ens256
+172.20.5.0      0.0.0.0         255.255.255.0   U     101    0        0 ens224
+172.20.8.0      0.0.0.0         255.255.255.0   U     100    0        0 ens192
+
+nmcli connection show
+nmcli connection add type ethernet con-name ens224 ifname ens224
+nmcli connection mod ens224 ipv4.address 172.20.8.120/24
+nmcli con mod ens192 ipv4.gateway 172.20.8.2
+nmcli con mod ens192 ipv4.method manual
+nmcli con up ens192
+
+nmcli connection show
+nmcli connection add type ethernet con-name ens192 ifname ens192
+nmcli connection mod ens192 ipv4.address 172.20.8.120/24
+nmcli con mod ens192 ipv4.gateway 172.20.8.2
+nmcli con mod ens192 ipv4.method manual
+nmcli con up ens192
+
+nmcli connection show
+nmcli connection add type ethernet con-name ens256 ifname ens256
+nmcli connection mod ens256 ipv4.address 172.17.66.21/24
+nmcli con mod ens192 ipv4.gateway 172.20.8.2
+nmcli con mod ens192 ipv4.method manual
+nmcli con up ens192
+
+
+nmcli connection show
+nmcli connection add type ethernet con-name enp0s8  ifname enp0s8
+nmcli connection mod ethernet-enp0s8 ipv4.address 192.168.4.26/24
+nmcli con mod enps03 ipv4.gateway 192.168.4.1
+nmcli con mod enps03 ipv4.method manual
+nmcli con up enp0s8
+
+207
+=================================
+u0bsyncgi005
+u0bpnbuma02
+u0bpnbuma01
+
+206
+=================================
+u0bsyncgi004
+
+207
+============================
+FCH2143V1D6--u0bsyncgi004
+FCH2143V1D6--
+WZP24010QQT--u0bpnbuma02
+FCH2143V1D0--u0bsyncgi005
+WZP21510JAK--u0bpnbuma01
+
+labra -
+-sivanthiram
+
+jayakrishna
+
+INC2800551
+
+Server Name	Serial Number	Port Name
+u0bpnbmep012	H9WTMH3	Slot 6 /port 2
+		
+Switch Details		
+Swich Name: s0bsansw002		
+Serial Number: JPG23170038		
+San Port: fc3/20		
+		
+		
+		
+		
+re plug		
+new cable		
+switch side or		
+server side	port repalce	
+
+
+ 
+Vendor Name	Curvature ( ParkPlace ) support@parkplacetech.com
+Products	Hardware AMC
+Case logging	Portal
+Logoin Portal / Format	https://centralpark.parkplacetechnologies.com/
+Login ID	GIDC.wintel_RUN@mylan.com
+Password	G!dc@1234
+Primary Contact	Indraneel Boinpalli | Account Manager  
+
+ M: +91 8520006967 (iboinpalli@parkplacetech.com)
+Secondary  Contact	Akash Thakur (athakur@parkplacetech.com)
+
+Mohammed Atif (matif@parkplacetech.com)
+ 
+ParkPlace Technologies - Central Park
+
+/usr/admin/jay/u0bps103-vio2_mksysb
+
+alt_disk_mksysb -m /mksysb_images/my_mksysb -d hdisk1
+
+BigFix console
+https://w0btem001.myl.com:8083/
+
+https://happiestmindslms.sumtotal.host/
+
+0b--noth america(region)
+b5-
+
+apac--japan,korea, 
+
+emea--b5,3d, 
+
+follow these steps if previously agent was installed 
+
+Step1 :Stop the BigFix client process
+           /etc/init.d/besclient stop
+Step2 :Run the following RPM command to find the installed package name
+               rpm -qa | grep -i BESAgent
+ Step3:Uninstall the installed RPM package returned in step 2
+              rpm -e BESAgent-XXX 
+         Note: XXX is version of BESCLient Ex: rpm -e BESAgent-10.0.7.52.x.x.x
+ Step4 :Manually remove the following directories
+        rm -rf /etc/opt/BESClient  
+        rm -rf /opt/BESClient 
+        rm -rf /tmp/BES 
+        rm -rf /var/opt/BESClient 
+         rm -rf /var/opt/BESCommon
+
+and these are for installation 
+
+Step5 :Copy the corresponding BigFix client package to the Red Hat computer to tmp directory
+Step6:Run following command to know the BESAgent package name and version 
+rpm -qa | grep -i BESAgent
+Step7: Install the RPM by running the command
+   rpm -ivh /tmp/ BESAgent-XXX
+     Note: XXX is version of BESCLient Ex: rpm -e BESAgent-10.0.7.52.x.x.x
+Step8 :Create a "BESClient" Directory under /etc/opt directory and copy the actionsite.afxm file under the /etc/opt/BESClient/
+Step9 :Start the BigFix client by running the command
+  /etc/init.d/besclient start
+
+
+Checking some consequences of xfs_repair safely | Support | SUSE--suse issue
+mount /dev/hanavg/hanaloglv /mnt
+/usr/sbin/xfs_metadump -aowg /dev/hanavg/hanaloglv /os_backup/test/hanalog_xfs_meta
+/usr/sbin/xfs_mdrestore /os_backup/test/hanalog_xfs_meta /os_backup/test/hanalog_workable_xfs_dump
+mount /os_backup/test/hanalog_workable_xfs_dump /mnt
+xfs_repair /os_backup/test/hanalog_workable_xfs_dump
+
+
+488  2023-01-18 05:10:33  cd /var/log
+
+  489  2023-01-18 05:10:42  ls -ll
+
+  490  2023-01-18 05:11:39  ls -lrt
+
+  491  2023-01-18 05:12:43  cd ha-resourcemon
+
+  492  2023-01-18 05:13:54  tar -cvzf /tmp/$(hostname)_ha-resourcemon.tar.gz *
+
+  494  2023-01-18 05:17:41  cd /tmp
+
+  495  2023-01-18 05:20:06  chmod 775 u0bvsapgep002_ha-resourcemon.tar.gz
+
+bash /opt/scripts/pcapLogwatch.sh ens192 8 500 /var/crash/ $(hostname).pcap "" /var/log/messages "xxxx"
+
+Link : https://member.paramounttpa.com/
+
+User Name : HM0004589
+
+Password : SAZTBW
+
+Group Code : HPMT
+
+Vcenters:
+ 
+1. w07vc001.myl.com
+2. w6vvc001   ASIA\Calcutta
+3. w6evc001  ASIA\Calcutta
+4. w0bvc001
+5. 3nvcsa002   decommissioned
+6. 3nvcenter1   ASIA\TOKYO
+7. wb5vc001 (site: 2k,2q)
+8. 23-sa40210   ASIA\Brisbane
+9. 22-sa40010  ASIA\Sydney
+10.ezvcsa001
+11.0bvcsa001
+12.0bvcsa002
+12.6ovcsa001
+13.6ovcsa002.
+14.6ovcsa003
+15.07vcsa001
+
+w0bvc001
+wb5vc001
+w07vc001
+w6vvc001
+w6evc001
+23-sa40210
+3nvcenter1
+22-sa40010
+0bvcsa001
+0bvcsa002
+b5vcsa001
+07vcsa001
+6ovcsa001
+6ovcsa002
+6ovcsa003
+ezvcsa001
+
+ 
+
+w0bvcpoc001
+
+Login credentials:
+User name: svc_unixadm
+Password: will be shared separately
+
+Server 1:
+n6epntpst1p01-imm
+172.25.146.23
+
+Server 2:
+n0rpntpst1p01-imm
+172.16.108.9
+
+gidc-ntpops  / T!m@8our$ / T!m@9our$ / T!m@10our$
+
+svc_unixadm / My!An@adm2o26
+
+admin / T!m@10our$
+
+gidc-ntpops / T!m@8our$
+
+
+admin
+20pme1ucs!
+
+App Control: How To Collect Agent Performance Logs (Linux)
+The below commands should be used, if there are concerns/questions feel free to let us know via the case. 
+
+These commands need to be issued on the endpoint during the performance impact in order to accurately assess the situation. 
+1.	Open Terminal and issue the following commands: 
+2.	cd /opt/bit9/bin
+3.	./b9cli --password GlobalCLIPassword
+4.	./b9cli --resetcounters
+5.	./b9cli --flushlogs
+6.	./b9cli --debuglevel 4
+7.	./b9cli --kerneltrace 4
+8.	./b9cli --nettrace 1
+9.	Collect 5-10 minutes of data during the ongoing performance issues.
+10.	Download the cbp-linux-sys-info script, extract and execute it. Once completed, collect the resulting /tmp/cbp-linux-sys-info.tgz file. 
+o	If the endpoint is in a Medium or High Enforcement Policy the cbp-linux-sys-info.sh script will need to be granted an Approval prior to execution.
+o	If the execution of the script gives you an invalid character output, you may need to clean the sh file by running the command below, then executing the script again: 
+cat cbp-linux-sys-info.sh | col -bf > cbp-linux-sys-info.sh
+11.	Take a snapshot of the running b9daemon process using the gcore command (gcore is included with gdb which you may need to install). 
+gcore 'pidof b9daemon'
+12.	Capture and stop debug logging: 
+13.	sudo ./b9cli --capture /var/tmp/$HOSTNAME-PerformanceLogs.zip
+14.	./b9cli --password GlobalCLIPassword
+15.	./b9cli --debuglevel 0
+16.	./b9cli --kerneltrace 2
+17.	./b9cli --nettrace 0
+18.	Collect the System Logs. 
+sudo tar cvfz /var/tmp/$HOSTNAME-SystemLogs.tgz /var/log
+19.	After collection has completed, temporarily shutdown & unload the Agent, then reproduce with the TOP command: 
+20.	top -c -n 10 -d 5 >> /var/tmp/$HOSTNAME-top_output.txt
+21.	While the Agent is shutdown & unloaded, collect a FAPREDEP capture.
+ the commands “./b9cli –resetcounters”, “./b9cli –flushlogs” will reset the counters.
+
+Hello Naveen / Team. 
+We have received path failures for AIX servers, upon we have checked with vendor. They suspecting because of FC cable loose connectivity, issue was occurred. Please check FC cable connectivity status in server side as well as switch side. If there is any loose connectivity, Please remove the FC cable which is connected to fcs2 port and plug-in again and confirm. We will check the status from our end. If still the fcs2 port is not come to online, need to plug-in the FC cable to another free port i.e. fcs3. If any FC cable issue, Please replace the FC cable with new one. Below is the details for the same.
+FC card Details
+ U78C0.001.DBJ8944-P2-C5  PCI-E capable, Rev 1 slot with 8x lanes  fcs2 fcs3
+
+Below are the RACK details , kindly cross check again from you end
+
+3	0BPS103--SN10437CP	0B	United States	Ashburn	Global Data Center	Physical	Rack	IBM	IBM P770	10437CP	114	16	744
+
+SAN Switch Details
+=========================================================================================================================
+
+fcs2	10000000C9A577CC	U78C0.001.DBJ8944-P2-C5-T1	u0bps103-vio1	Active	Up	s0bsandir002	fc10/15
+
+SAN Switch Serial Number: JPG23170038
+
+# Slot                   Description                              Device(s)
+U78C0.001.DBJ8944-P2-C1  PCI-E capable, Rev 1 slot with 8x lanes  fcs0 fcs1 
+U78C0.001.DBJ8944-P2-C5  PCI-E capable, Rev 1 slot with 8x lanes  fcs2 fcs3 
+
+N6EPNTPST1P01
+
+
+gidc-ntpops
+T!m@6ours
+
+New
+============================
+gidc-ntpops  / T!m@8our$
+
+https://drive.google.com/file/d/1QOyZY0tE-y4phyxBSwlNG5ctcB_3MryY/view?usp=sharing
+https://drive.google.com/file/d/1ZTVhZ3Acrk_EldaH5SWDf9ce76iAkjdz/view?usp=sharing
+
+**SHIPPING ADDRESS***
+Company Name:Mylan Laboratories Limited
+Address:MYLAN LABORATORIES LIMITED-HSF (100%
+EOU), HOSUR STERILE FACILITY, 13A, 14 & CP2,
+SIPCOT IDLC, PHASE-II, KRISHNAGIRI MAIN
+ROAD, HOSUR, KRISHNAGIRI DISTRICT - 635130. TAMIL NADU.
+Country:India
+Serial Number of Bad Part:FDO2331M1HL & FDO2331M3X1
+GSTIN:33AADCM3491M1Z8
+***SITE CONTACT***
+Contact Person:Petchi Muthu Vairavan
+Telephone:9686560633
+E-mail:petchimuthu.vairavan@viatris.com
+
+blob:https://u22pnbmep001-imm/6c554e85-29e7-4768-8f8b-7d2509da05d5#/hardware/processor/CPU.Socket.1
+
+900  2025-01-23 23:28:07 multipath -ll
+  901  2025-01-23 23:28:58 cat /etc/sysconfig/sbd
+  902  2025-01-23 23:29:21 cat /etc/corosync/corosync.conf
+  903  2025-01-23 23:29:40 crm cluster stop
+  904  2025-01-23 23:30:06 crm cluster start
+  905  2025-01-23 23:31:46 vi /etc/fstab
+  906  2025-01-23 23:44:22 reboot
+  907  2025-01-24 01:09:53 cd /etc/ssh/sshd
+  908  2025-01-24 01:09:57 cd /etc/ssh/
+  909  2025-01-24 01:09:58 ll
+  910  2025-01-24 01:10:05 vi ssh_config
+  911  2025-01-24 01:11:40 vi sshd_config
+  912  2025-01-24 01:15:52 systmctl restart sshd
+  913  2025-01-24 01:16:00 systemctl restart sshd
+  914  2025-01-24 02:01:31 df -h
+  915  2025-01-24 01:50:38 crm cluster stop
+  916  2025-01-24 01:52:11 crm cluster start
+  917  2025-01-24 02:03:04 cp /etc/sysconfig/sbd /etc/sysconfig/sbd.bk
+  918  2025-01-24 02:03:13 vi /etc/sysconfig/sbd
+  919  2025-01-24 02:05:02 tail -n 5 /etc/sysconfig/sbd
+  920  2025-01-24 02:06:19 crm resource restart stonith-sbd
+  921  2025-01-24 02:08:25 crm configure show
+  922  2025-01-24 02:09:04 crm resource status stonith-sbd
+  923  2025-01-24 02:10:47 sbd -d stonith-sbd dump
+  924  2025-01-24 02:12:06 crm resource status
+  925  2025-01-24 02:12:20 lsblk
+  926  2025-01-24 02:12:43 sdb -d /dev/sdy list
+  927  2025-01-24 02:12:54 multipath -ll
+  928  2025-01-24 02:13:15 corosync-cfgtool -s
+  929  2025-01-24 02:13:53 sdb -d /dev/disk/by-id/scsi-360000970000120003589533030323731 list
+  930  2025-01-24 02:14:06 which sdb
+  931  2025-01-24 02:14:19 sbd -d /dev/disk/by-id/scsi-360000970000120003589533030323731 list
+  932  2025-01-24 02:14:37 sbd -d /dev/disk/by-id/scsi-360000970000120003589533030323732 list
+  933  2025-01-24 02:14:42 sbd -d /dev/disk/by-id/scsi-360000970000120003589533030323733 list
+  934  2025-01-24 02:15:10 sbd -d /dev/disk/by-id/scsi-360000970000197901040533030314541 list
+  935  2025-01-24 02:16:35 crm configure show
+  936  2025-01-24 02:19:38 sbd -d /dev/disk/by-id/scsi-360000970000197901040533030314542 list
+  937  2025-01-24 02:19:45 sbd -d /dev/disk/by-id/scsi-360000970000197901040533030314543 list
+  938  2025-01-24 02:22:42 crm_resource --resource stonith-sbd --query
+  939  2025-01-24 02:23:01 crm_resource --resource stonith-sbd
+  940  2025-01-24 02:23:12 crm_resource
+  941  2025-01-24 02:23:34 crm configure show stonith-sbd
+  942  2025-01-24 02:25:16 sbd -d /dev/disk/by-id/scsi-360000970000197901040533030314541 list dump
+  943  2025-01-24 02:25:26 sbd -d /dev/disk/by-id/scsi-360000970000197901040533030314541 dump
+  944  2025-01-24 02:27:49 cat /etc/corosync/corosync.conf | less
+  945  2025-01-24 02:31:09 crm_mon
+  946  2025-01-24 02:49:57 shutdown now
+  947  2025-01-24 02:02:37 supportconfig
+  948  2025-01-24 02:08:35 cd /tmp
+  949  2025-01-24 02:08:38 mkdir tmp
+  950  2025-01-24 02:08:40 cd tmp
+  951  2025-01-24 02:08:52 cp -pr /var/log/scc_u0bphdbatq002_250124_0202.txz /tmp/tmp
+  952  2025-01-24 02:08:57 ll
+  953  2025-01-24 02:09:05 chmod 755 /var/log/scc_u0bphdbatq002_250124_0202.txz
+  954  2025-01-24 02:09:48 ll
+  955  2025-01-24 02:09:57 chmod 755 scc_u0bphdbatq002_250124_0202.txz
+  956  2025-01-24 02:10:00 ll
+  957  2025-01-24 03:35:43 crm_mon -A1
+  958  2025-01-24 03:35:45 crm_mon -A
+  959  2025-01-24 03:35:52 crm status
+  960  2025-01-24 03:44:46 cat /etc/sysconfig/sbd
+  961  2025-01-24 03:45:17 corosync-cfgtool -s
+  962  2025-01-24 03:45:52 tail /etc/corosync/corosync.conf
+  963  2025-01-24 03:49:10 cat /root/hacluster/stonith.txt
+  964  2025-01-24 03:50:51 find / -name "stonith*"
+  965  2025-01-24 03:51:11 file /usr/lib/drbd/stonith_admin-fence-peer.sh
+  966  2025-01-24 03:51:14 more /usr/lib/drbd/stonith_admin-fence-peer.sh
+  967  2025-01-24 03:53:12 cd /home/m538054
+  968  2025-01-24 03:53:13 ls
+  969  2025-01-24 03:53:20 cat saphanadb.txt
+  970  2025-01-24 03:53:28 cat saphanatopology.txt
+  971  2025-01-24 03:51:41 crm_diff
+  972  2025-01-24 03:12:24 su - atqadm
+  973  2025-01-24 03:19:56 crm status
+  974  2025-01-24 03:20:06 crm verify
+  975  2025-01-24 03:21:25 multipath -ll
+  976  2025-01-24 03:08:42 crm resource cleanup
+  977  2025-01-24 03:09:28 df -h
+  978  2025-01-24 03:13:03 crm_mon -A1
+  979  2025-01-24 03:13:27 crm node standby u0bphdbatq002
+  980  2025-01-24 03:23:42 crm_mon
+  981  2025-01-24 03:30:59 df -h
+  982  2025-01-24 03:31:45 crm cluster stop
+  983  2025-01-24 03:34:45 crm status
+  984  2025-01-24 03:48:32 crm cluster start
+  985  2025-01-24 03:49:00 crm node online u0bphdbatq002
+  986  2025-01-24 03:52:25 sudo su
+  987  2025-01-24 03:52:32 su - atqadm
+  988  2025-01-24 04:00:07 crm cluster stop
+  989  2025-01-24 04:32:00 crm status
+  990  2025-01-24 04:52:18 vi /etc/fstab
+  991  2025-01-24 04:52:25 mount -av
+  992  2025-01-24 06:55:56 df -h
+  993  2025-01-24 06:56:01 date
+  994  2025-01-24 06:56:36 crm status
+  995  2025-01-24 06:57:13 crm_mon -A1
+  996  2025-01-24 06:57:26 watch crm_mon -A1
+  997  2025-01-24 06:58:17 watch crm_mon -A1 | grep -A 25 "Node Attributes"
+  998  2025-01-24 06:58:40 watch "crm_mon -A1 | grep -A 25 "Node Attributes""
+  999  2025-01-24 06:58:51 watch "crm_mon -A1 | grep -A 25 'Node Attributes'"
+ 1000  2025-01-24 07:04:11 crm_mon -A1
+
+================================
+883  sh /usr/admin/ashok/Unix_Pre_Data_HTML_report_script_v1.1.sh
+  884  cd /etc/sysconfig/network-scripts/
+  885  ls
+  886  mkdir -p /root/backup/network/
+  887  cp -pr * /root/backup/network/
+  888  ls /root/backup/network/
+  889  nmcli connection show
+  890  systemctl start NetworkManager.service
+  891  systemctl status NetworkManager.service
+  892  ls
+  893  ls /etc/sysconfig/network-scripts/
+  894  pwd
+  895  ls
+  896  route -n
+  897  ip addr
+  898  ls
+  899  pwd
+  900  vi network_connection.sh
+  901  chmod u+x network_connection.sh
+  902  ls
+  903  cd /etc/sysconfig/network-scripts/
+  904  ls
+  905  uptime
+  906  rm if*
+  907  ls
+  908  rm init.ipv6-global network-functions network-functions-ipv6
+  909  ls
+  910  cd ~m546924
+  911  ./network_connection.sh
+  912  nmcli connection show
+  913  reboot
+  914  nmcli connection show
+  915  systemctl enable NetworkManager.service
+  916  systemctl start NetworkManager.service
+  917  ip addr
+  918  route -n
+  919  ping 172.25.247.129
+  920  ping 172.25.247.129
+  921  nmcli connection show
+  922  vi network_connection.sh
+  923  ./network_connection.sh
+  924  nmcli connection show
+  925  cd /etc/sysconfig/network-scripts/
+  926  ls
+  927  vi ifcfg-ens224
+  928  ip addr
+  929  vi /etc/fstab
+  930  iscsiadm -m session
+
+15000--sekhar
+10000--ramu
+10000--jaya
+40000--Nagendra
+10000--Nagendra
+220000--bvrk
+50000
+70000
+
+https://happiestminds.udemy.com/organization/home/?lid=l3wdqh6iedop&utm_campaign=230805_Student-UB_EM-Lifecycle_Monthly-Insights&utm_content=udemy_braze.&utm_medium=Email&utm_source=email-adhoc&utm_term= udemy HM
+
+NTP Server
+============
+n0rpntpst1p01-imm
+gidc-ntpops
+T!m@6ours
+
+cd /informatica/scripts
+keytool -keystore /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.432.b06-2.el8.x86_64/jre/lib/security/cacerts -storepass changeit -import -file okta.cert
+keytool -v -list -keystore cacerts>output.txt
+
+u01fin032--completed 
+===========================
+Hi Team
+
+Please follow the below steps for OS and Firmware update activity planned for SAP QM.
+
+Pre-requisite
+----------------
+Download Dell support assists.
+Download SUSE support config.
+Take Server DD backup.
+
+Steps:
+-------
+1) At 6:00 Am
+Install the idrac firmware (files are in /root)
+
+2) After application stop
+zypper update
+dracut -f
+Install Bios (files are in /root)
+reboot
+
+3) Post 1st server reboot
+zypper update
+zypper migration
+dracut -f
+reboot
+
+4) Post 2nd  reboot
+shutdown the server
+push the firmware from DELL OEM
+
+5) Post 3rd server reboot
+Validate the password policy post OS update.
+
+977  wget https://packages.microsoft.com/config/rhel/8/mssql-server-2022.repo -O /etc/yum.repos.d/mssql-server.repo
+  978  update-ca-trust force-enable
+  979  update-ca-trust extract
+  980  yum clean all
+  981  wget https://packages.microsoft.com/config/rhel/8/mssql-server-2022.repo -O /etc/yum.repos.d/mssql-server.repo
+  982  ip
+  983  ip a
+  984  wget https://packages.microsoft.com/config/rhel/8/mssql-server-2022.repo -O /etc/yum.repos.d/mssql-server.repo
+  985  ls -l /etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem
+  986  df -h
+  987  ls /etc/yum.repos.d/
+  988  yum install mssql-server
+  989  yum clean all
+  990  yum repolist
+  991  yum install mssql-server
+  992  history | less
+  993  curl -o /etc/yum.repos.d/mssql-server.repo https://packages.microsoft.com/config/rhel/8/mssql-server-2022.repo
+  994  curl -o /etc/yum.repos.d/mssql-server.repo https://packages.microsoft.com/config/rhel/8/mssql-server-2022.repo --insecure
+  995  yum install mssql-server
+  996  cd /etc/yum.repos.d/
+  997  ls
+  998  cat mssql-server.repo
+  999  vi mssql-server.repo
+ 1000  yum install mssql-server
+ 1001  yum repolist
+ 1002  yum install mssql-server
+ 1003  history
+ 1004   wget https://packages.microsoft.com/config/rhel/8/mssql-server-2022.repo -O /etc/yum.repos.d/mssql-server.repo
+ 1005  wget https://packages.microsoft.com/config/rhel/8/mssql-server-2022.repo -O /etc/yum.repos.d/mssql-server.repo
+
+nix Monitoring	Waiting-Time	Prod	Non-Prod
+Threshold Value	Incident Priority	Threshold Value	Incident Priority
+Filesystem Utilization	15 minutes	>90%	P2	>95%	P3
+>85%	P3	>90%	P4
+CPU Utilization	15 minutes	>95%	P2	>95%	P3
+>90%	P3	>90%	P4
+CPU IOWait	15 minutes	>35%	P3	>40%	P4
+Swap Utilization	15 minutes	>70%	P2	>80%	P3
+>60%	P3	>70%	P4
+
+
+cat /etc/security/limits.conf |grep -w "*" | grep -v "unlimited" |grep -v "#"
+grep -w "*" /etc/security/limits.conf | grep -v "unlimited" | grep -v "^#"
+
+6 bare metel hardware
+ 
+1 bastion
+ 
+1 bootstrap
+ 
+3 master
+ 
+1 worker
+
+find /usr/openv/logs/nbars -mtime +2 -exec rm -v {} \; >> /tmp/cleanup_nbars.log 2>&1
+find /usr/openv/logs/nbatd -mtime +2 -exec rm -v {} \; >> /tmp/cleanup_nbatd.log 2>&1
+find /usr/openv/logs/nbdisco -mtime +2 -exec rm -v {} \; >> /tmp/cleanup_nbdisco.log 2>&1
+find /usr/openv/logs/nbemm -mtime +2 -exec rm -v {} \; >> /tmp/cleanup_nbemm.log 2>&1
+find /usr/openv/logs/nbevtmgr -mtime +2 -exec rm -v {} \; >> /tmp/cleanup_nbevtmgr.log 2>&1
+find /usr/openv/logs/nbjm -mtime +2 -exec rm -v {} \; >> /tmp/cleanup_nbjm.log 2>&1
+find /usr/openv/logs/nbpem -mtime +2 -exec rm -v {} \; >> /tmp/cleanup_nbpem.log 2>&1
+find /usr/openv/logs/nbpxyhelper -mtime +2 -exec rm -v {} \; >> /tmp/cleanup_nbpxyhelper.log 2>&1
+find /usr/openv/logs/nbpxytnl -mtime +2 -exec rm -v {} \; >> /tmp/cleanup_nbpxytnl.log 2>&1
+find /usr/openv/logs/nbrb -mtime +2 -exec rm -v {} \; >> /tmp/cleanup_nbrblog 2>&1
+find /usr/openv/logs/nbsl -mtime +2 -exec rm -v {} \; >> /tmp/cleanup_nbsl.log 2>&1
+
+
+B5, 23, 3D, BG, c6, 22, C1, E1, e6,E3, 3b, E2, 3N, ci, cl, 4c, 5E, 5h, 5r e0, 65, 7g,EM, 86, 8a, 2k, 2q, 66, F2, 5a, 5d, 2j, Ez,E7, 3r, 2a, 2y, 3j, 4u, 56, 54, 62, 77, 7k, 7l, 84,87, 5z, bn, eb, ee, EN, EH : EMEA
+ 
+GDC: 0B, 07, 0N, 2F, 1l, e4,0r, 0S, 1p, e5, 0U, 1k, EL
+ 
+India: 6E, 6O, 6Z, 6B,6X, 6T, 69, 68, 6P, 6J, 6D,6G, 6W, 6h, 6u, 6c, 90,91, 95, 97, 6Y, F1
+ 
+
+Site Address:
+Viatris Pharmaceuticals, LLC
+Road #2, KM 58.2
+BARCELONETA, Puerto Rico, 00617
+ 
+Contacts:
+Wilfredo Morales: 787-613-3940
+Jonathan Perez: 787-846-4300 X.34272 or 09382
+Antonio Garcia: 939-292-2147
+
+
+NAME	         UCS Domain	                  Serial Number
+u07pdbrp1f001	m07ucs003_chassis2_server2	FLM234808GR
+u07plabdgt001	m07ucs003_chassis2_server8	FLM23220039
+u07plabdgp001	m07ucs003_chassis2_server7	FLM23370A48
+u0bpdbrp1n002	m0bucs005_chassis4_server1	FLM23500F0L
+u0bpdbrp1p001	m0bucs004_chassis3_server1	FCH23487760
+u0bplabdgp001	m0bucs004_chassis2_server2	FLM234503M9
+u0bplabracp001	m0bucs005_chassis4_server4	FLM234009H2
+u0bplabracp002	m0bucs004_chassis2_server1	FLM23360251
+u0bplabracp003	m0bucs005_chassis4_server5	FLM2336009F
+u0bplabract001	m0bucs005_chassis4_server6	FLM23350436
+u0bplabract002	m0bucs005_chassis4_server7	FLM233601Q6
+u0bplabract003	m0bucs004_chassis2_server4	FLM233600RH
+
+
+
+ 
