@@ -1,0 +1,1886 @@
+systemctl status pcsd
+pcs cluster start --all
+pcs status
+pcs constraint order start VIP_GIQ then VG_SCS01
+pcs constraint order start
+pcs constraint colocation add VG_SCS01 with VIP_GIQ
+pcs cluster sync
+crm_mon
+pcs config show
+pcs constraint show --full
+pcs cluster stop --all
+pcs cluster sync
+pcs cluster start --all
+pcs cluster sync
+pcs resource move ASCS_SEP u0bvsapsep001
+pcs cluster stop (node name )
+pcs node standby u0bvhdbgip002--move resouce one node to another node
+pcs node unstandby u0bvhdbgip001
+pcs resource cleanup
+pcs resource start FENCE_SEQ
+
+pcs resource clear ASCS_FGQ--set contraint-- while resouece move manually
+pcs property set maintenance-mode=false
+
+crm status
+crm configure property maintenance-mode=true
+
+# pcs alert recipient remove smtp_alert-recipient
+# pcs alert recipient remove smtp_alert-recipient-1
+# pcs alert
+==========================================================
+HANA cluster Servers
+crm_mon -A1
+[root@u0bvhdbgip001 etc]# crm_mon -A1
+Cluster Summary:
+  * Stack: corosync
+  * Current DC: u0bvhdbgip001 (version 2.0.5-9.el8_4.1-ba59be7122) - partition with quorum
+  * Last updated: Sun Nov 19 09:10:59 2023
+  * Last change:  Sun Nov 19 09:10:06 2023 by root via crm_attribute on u0bvhdbgip001
+  * 2 nodes configured
+  * 6 resource instances configured
+
+Node List:
+  * Online: [ u0bvhdbgip001 u0bvhdbgip002 ]
+
+Active Resources:
+  * VIP_HDB_GIP (ocf::heartbeat:IPaddr2):        Started u0bvhdbgip001
+  * Clone Set: TOPOLOGY_HDB_GIP-clone [TOPOLOGY_HDB_GIP]:
+    * Started: [ u0bvhdbgip001 u0bvhdbgip002 ]
+  * Clone Set: SAP_HDB_GIP-clone [SAP_HDB_GIP] (promotable):
+    * Masters: [ u0bvhdbgip001 ]
+    * Slaves: [ u0bvhdbgip002 ]
+  * FENCE_HDB_GIP       (stonith:fence_vmware_rest):     Started u0bvhdbgip002
+
+Node Attributes:
+  * Node: u0bvhdbgip001:
+    * hana_gip_clone_state              : PROMOTED
+    * hana_gip_op_mode                  : logreplay
+    * hana_gip_remoteHost               : u0bvhdbgip002
+    * hana_gip_roles                    : 4:P:master1:master:worker:master
+    * hana_gip_site                     : SITEA
+    * hana_gip_srmode                   : syncmem
+    * hana_gip_sync_state               : PRIM
+    * hana_gip_version                  : 2.00.059.05.1662044871
+    * hana_gip_vhost                    : u0bvhdbgip001
+    * lpa_gip_lpt                       : 1700403006
+    * master-SAP_HDB_GIP                : 150
+  * Node: u0bvhdbgip002:
+    * hana_gip_clone_state              : DEMOTED
+    * hana_gip_op_mode                  : logreplay
+    * hana_gip_remoteHost               : u0bvhdbgip001
+    * hana_gip_roles                    : 4:S:master1:master:worker:master
+    * hana_gip_site                     : SITEB
+    * hana_gip_srmode                   : syncmem
+    * hana_gip_sync_state               : SOK
+    * hana_gip_version                  : 2.00.059.05.1662044871
+    * hana_gip_vhost                    : u0bvhdbgip002
+    * lpa_gip_lpt                       : 30
+    * master-SAP_HDB_GIP                : 100
+[root@u0bvhdbgip001 etc]# su - gypadm
+su: user gypadm does not exist
+[root@u0bvhdbgip001 etc]# su - gipadm
+Last login: Sun Nov 19 09:11:35 EST 2023
+u0bvhdbgip001:HDB:gipadm /usr/sap/GIP/HDB00 51> cdpy
+u0bvhdbgip001:HDB:gipadm /usr/sap/GIP/HDB00/exe/python_support 52> python sys
+systemOverview.py           systemReplicationStatus.py
+u0bvhdbgip001:HDB:gipadm /usr/sap/GIP/HDB00/exe/python_support 52> python system
+systemOverview.py           systemReplicationStatus.py
+u0bvhdbgip001:HDB:gipadm /usr/sap/GIP/HDB00/exe/python_support 52> python systemReplicationStatus.py
+base_classes.py                      hdbadmin.en.mo                       mergeDeltaTable.py                   servicecontrol.py*
+cancelCursor.py                      hdbadmin.ico                         migrate_parameters.py                setParameter.py
+cancellationTestUtils.py             hdbadmin.py                          NetworkTest.py*                      show_pe_datasources.py
+cds/                                 hdbcli/                              newdbcontrol.py                      sqlDataGenerator.py
+ComboBox.dat                         hdb_dr/                              PerfTraceDb.py                       sqlParser.py
+ComboBox.py                          hdb_ha/                              PerfTrace.py                         sqlParserUtils.py
+connectionManager.py                 hdb_ha_dr/                           pe_trace_analyser.py                 sqlTableParser.py
+convertConcatAttributes.py           hdbrecovercheck.py                   PmwExt.py                            sqlTokenizer.py
+convertMDC.py                        hdbTkFix.py                          Pmw.py                               sqlTraceAnalyzer.py
+decoratedDbApiCursor.py              hwcctApi.py*                         python_logging_config.json           systemOverview.py
+delayedRTEDump.py                    hwval_client.py*                     readOnlyDbApiCursor.py               systemReplicationStatus.py
+dropConcatAttributes.py              hwval_master.py*                     RecoverStateChecker.py               TableList.dat
+emergencyInfo.py                     importWorkloadClass.py*              recoverSys.py                        TableList.py
+extract_pe_datasources.py            indexAdmin.py*                       RecoverUtil.py                       TableLocationAccessManager.py
+FilesystemTest.py*                   keyconvertion.py                     relationalCsv.py                     testbase.py
+fixFloatDoubleConcats.py             landscapeHostConfiguration.py        repairTopology.py                    threadSafePool.py
+fullSystemInfoDump.py                LandscapeTest.py*                    SAPControlOperations.py              topoInfo.py
+gdbstkgrp.awk                        listTables.py                        SapRetrievalPath.py                  topoView.py*
+getParameter.py                      loadAllTables.py                     saputil.py                           Tree.py
+getTakeoverRecommendation.py         loadTables.py                        searchGui.py                         uniqueChecker.py
+Hana2PersistenceMigrationHelper.py   memorySizing.py                      ServiceClient.py                     viewPlan.py*
+Hana2PersistenceMigrationHelper.sql  mergeAllDeltaTables.py               servicecontrolinterface.py
+u0bvhdbgip001:HDB:gipadm /usr/sap/GIP/HDB00/exe/python_support 52> python systemReplicationStatus.py
+|Database |Host          |Port  |Service Name |Volume ID |Site ID |Site Name |Secondary     |Secondary |Secondary |Secondary |Secondary     |Replication |Replication |Replication    |
+|         |              |      |             |          |        |          |Host          |Port      |Site ID   |Site Name |Active Status |Mode        |Status      |Status Details |
+|-------- |------------- |----- |------------ |--------- |------- |--------- |------------- |--------- |--------- |--------- |------------- |----------- |----------- |-------------- |
+|SYSTEMDB |u0bvhdbgip001 |30001 |nameserver   |        1 |      1 |SITEA     |u0bvhdbgip002 |    30001 |        2 |SITEB     |YES           |SYNCMEM     |ACTIVE      |               |
+|GIP      |u0bvhdbgip001 |30007 |xsengine     |        3 |      1 |SITEA     |u0bvhdbgip002 |    30007 |        2 |SITEB     |YES           |SYNCMEM     |ACTIVE      |               |
+|GIP      |u0bvhdbgip001 |30003 |indexserver  |        2 |      1 |SITEA     |u0bvhdbgip002 |    30003 |        2 |SITEB     |YES           |SYNCMEM     |ACTIVE      |               |
+|SYSTEMDB |u0bvhdbgip002 |30001 |nameserver   |        1 |      2 |SITEB     |u07vhdbgip001 |    30001 |        3 |SITEC     |YES           |ASYNC       |ACTIVE      |               |
+|GIP      |u0bvhdbgip002 |30007 |xsengine     |        3 |      2 |SITEB     |u07vhdbgip001 |    30007 |        3 |SITEC     |YES           |ASYNC       |ACTIVE      |               |
+|GIP      |u0bvhdbgip002 |30003 |indexserver  |        2 |      2 |SITEB     |u07vhdbgip001 |    30003 |        3 |SITEC     |YES           |ASYNC       |ACTIVE      |               |
+
+status system replication site "2": ACTIVE
+status system replication site "3": ACTIVE
+overall system replication status: ACTIVE
+
+Local System Replication State
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+mode: PRIMARY
+site id: 1
+site name: SITEA
+u0bvhdbgip001:HDB:gipadm /usr/sap/GIP/HDB00/exe/python_support 53> exit
+logout
+[root@u0bvhdbgip001 etc]# su - gipadm
+Last login: Sun Nov 19 09:12:44 EST 2023
+u0bvhdbgip001:HDB:gipadm /usr/sap/GIP/HDB00 51> cdpy
+u0bvhdbgip001:HDB:gipadm /usr/sap/GIP/HDB00/exe/python_support 52> pyt
+python           python3          python3.6        python3.6m       python3.8        python3.8-config python3-config   python-config    python_support
+u0bvhdbgip001:HDB:gipadm /usr/sap/GIP/HDB00/exe/python_support 52> python landscapeHostConfiguration.py
+| Host          | Host   | Host   | Failover | Remove | Storage   | Storage   | Failover | Failover | NameServer | NameServer | IndexServer | IndexServer | Host             | Host             | Worker  | Worker  |
+|               | Active | Status | Status   | Status | Config    | Actual    | Config   | Actual   | Config     | Actual     | Config      | Actual      | Config           | Actual           | Config  | Actual  |
+|               |        |        |          |        | Partition | Partition | Group    | Group    | Role       | Role       | Role        | Role        | Roles            | Roles            | Groups  | Groups  |
+| ------------- | ------ | ------ | -------- | ------ | --------- | --------- | -------- | -------- | ---------- | ---------- | ----------- | ----------- | ---------------- | ---------------- | ------- | ------- |
+| u0bvhdbgip001 | yes    | ok     |          |        |         1 |         1 | default  | default  | master 1   | master     | worker      | master      | worker xs_worker | worker xs_worker | default | default |
+
+overall host status: ok
+u0bvhdbgip001:HDB:gipadm /usr/sap/GIP/HDB00/exe/python_support 53>
+
+
+Steps:
+Keep the Both cluster Nodes in to service now MM(30Mins)
+Login as root in any one of the node run below:
+pcs config backup /usr/admin/franklin/OS_cluster_backup/saphdbgiqclt_backup_21jul21
+pcs config backup /usr/admin/franklin/OS_cluster_backup/ness_backup_03may23
+pcs property set stonith-enabled=false
+pcs property show stonith-enabled
+Login Vcenter and migrate the Cluster VM to other host mentioned in the excel
+
+Post VM Migration:
+pcs property set stonith-enabled=true
+pcs property show stonith-enabled
+=============================
+pcs resource update SEQ_VIP op monitor timeout=120s
+
+
+Enable debug log in cluster nodes -- both the nodes
+
+----------------------------------------------------------------------------------
+
+# cp /etc/sysconfig/pacemaker /etc/sysconfig/pacemaker.$(date +%F)
+
+# vi /etc/sysconfig/pacemaker
+
+    PCMK_debug=stonith-ng
+
+    PCMK_logfile=/var/log/pacemaker/pacemaker.log
+
+# egrep "PCMK_debug|PCMK_logfile" /etc/sysconfig/pacemaker | grep -v ^#
+
+# pcs cluster stop --all
+
+# pcs cluster start --all
+
+
+Configure a stonith device using agent fence_vmware_rest -- only on primary node
+
+------------------------------------------------------------------------------------------------------------------
+
+
+pcs stonith delete FENCE_SEQ
+pcs stonith create FENCE_SEQ fence_vmware_rest pcmk_host_map="u0bvsapseq001:U0Bvsapseq001;u0bvsapseq002:U0Bvsapseq002" ipaddr=w0bvc001 ssl=1 login='myl\svc_osfence' passwd='Nd$h,u\6h.?XPPqv' ssl_insecure=1
+
+ pcs stonith update FENCE_SEQ power_timeout=120 shell_timeout=120 pcmk_monitor_timeout=120s
+
+pcs property set stonith-enabled=true
+
+ pcs property set startup-fencing=true
+ pcs stonith status
+
+pcs stonith fence u0bvsapseq001 -- from node 2
+
+pcs stonith fence u0bvsapseq002 -- from node 1
+
+fence_vmware_rest -a w0bvc001 -l 'myl\svc_osfence' -p 'Nd$h,u\6h.?XPPqv' --ssl-insecure -z -o list | egrep "(u0bvsapfgp001|u0bvsapfgp002)"
+
+pcs stonith level add 1 u0bvsapseq001 kdump
+pcs stonith level add 1 u0bvsapseq002 kdump
+ pcs stonith level add 2 u0bvsapseq001 FENCE_SEQ
+ pcs stonith level add 2 u0bvsapseq002 FENCE_SEQ
+=======================================================================================
+pcs cluster config update totem token=10000
+corosync-cmapctl | grep totem.token
+=============================================================================================================
+cdpy
+python systemReplicationStatus.py
+python landscapeHostConfiguration.py
+HDB info
+hdbnsutil -sr_state
+crm_attribute -N u0bphdbatp001 -n lpa_atp_lpt -v 30
+crm_mon -A1
+sapcontrol -nr 00 -function Start
+sapcontrol -nr 00 -function GetProcessList (check in both the nodes to match the number of process)
+hdbnsutil -sr_register --remoteHost=u0bphdbatp001 --remoteInstance=00 --replicationMode=syncmem --operationMode=logreplay_readaccess --name=SITEB
+
+1. Put the cluster into maintenance mode (crm maintenance on)
+2. Start HANA manually on both nodes and ensure replication is working (As HANA is running and replication is active, then this step must be skipped)
+2.1 Check that processes are the same on both nodes and in status running using GetProcessList function
+2.2 Check landscapeHostConfiguration.py and make sure return code is 4 (Could be checked by echo $?)
+3. Place the HANA master/slave resource in unmanaged mode (crm resource unmanage <resource name>/ crm resource unmanage SAP_HDB_ATP_clone)
+4. Take the cluster out of maintenance mode (crm maintenance off)
+5. Give it a few minutes (~3-5 minutes should be fine)
+6. Put the cluster back into maintenance (crm maintenance on)
+7. Restart the cluster on the primary and the scondary node (crm cluster restart)
+8. Remove cluster from maintenance mode (crm maintenance off)
+9. Cleanup resource failures (crm resource cleanup)
+10. Resource <rsc_SAPHana_***_**** (resource name)> is started on both nodes, and the roles are respectively 4:P for master and 4:S for secondary.
+Only now it is safe to remove the saphana master/slave resource from unmanged mode (crm resource manage <resource name> /  crm resource manage SAP_HDB_ATP_clone)manage SAP_HDB_ATP_clone)
+
+root@u0bvsapgeq001 ~]# pcs resource config VG_ASCS00 |grep Operations
+[root@u0bvsapgeq001 ~]# pcs config show VG_ASCS00 |grep Operations
+   Operations: monitor interval=60s timeout=120s (geqascs_vip-monitor-interval-60s)
+   Operations: methods interval=0s timeout=5s (VG_ASCS00-methods-interval-0s)
+   Operations: monitor interval=60s timeout=120s (FS_ASCS00-monitor-interval-60s)
+   Operations: monitor interval=60s timeout=120s (ASCS_GEQ-monitor-interval-60s)
+  Operations: monitor interval=60s (kdump-monitor-interval-60s)
+  Operations: monitor interval=60 timeout=120 (FENCE_GEQ-monitor-interval-60)
+Operations Defaults:
+[root@u0bvsapgeq001 ~]# pcs resource show VG_ASCS00 |grep Operations
+  Operations: methods interval=0s timeout=5s (VG_ASCS00-methods-interval-0s)
+[root@u0bvsapgeq001 ~]# clear
+[root@u0bvsapgeq001 ~]# hostname
+u0bvsapgeq001
+[root@u0bvsapgeq001 ~]# date
+Mon Sep 11 18:26:25 EDT 2023
+[root@u0bvsapgeq001 ~]# pcs resource show VG_ASCS00 |grep Operations
+  Operations: methods interval=0s timeout=5s (VG_ASCS00-methods-interval-0s)
+
+
+pcs resource config VIP_GIP |grep Operations
+pcs resource config VG_GIP |grep Operations
+pcs resource config FS_GIP |grep Operations
+pcs resource config SCS01_GIP |grep Operations
+pcs stonith config FENCE_GIP |grep Operations
+pcs resource config VG_GIP |grep Operation
+pcs resource config FS_GIP |grep Operations
+pcs resource config VIP_GIP |grep Operations
+pcs resource config VG_GIP |grep Operations
+pcs resource config FS_GIP |grep Operations
+pcs resource config SCS01_GIP |grep Operations
+pcs resource config VIP_GIP |grep Operations
+pcs resource config VG_GIP |grep Operations
+pcs resource config FS_GIP |grep Operations
+pcs resource config SCS01_GIP |grep Operations
+pcs resource update VIP_GIP op monitor interval=60 timeout=120s
+pcs resource update VG_GIP op monitor interval=60 timeout=120s
+pcs resource update FS_GIP op monitor interval=60 timeout=120s
+pcs resource update SCS01_GIP op monitor interval=60 timeout=120s
+pcs resource config VIP_GIP |grep Operations
+pcs resource config VG_GIP |grep Operations
+pcs resource config FS_GIP |grep Operations
+pcs resource config SCS01_GIP |grep Operations
+
+6c location unte second kani third
+only india server or need to include APAC servers
+
+
+pcs config backup /usr/admin/franklin/OS_cluster_backup/$( hostname -s )_backup_`date +%F`
+
+
+
+===============================================================================================================
+Before stop cluster
+==========================================
+crm resource unmanage SAP_HDB_ATQ_clone
+crm maintenance on  --  crm configure property maintenance-mode=true
+crm cluster stop on second node then first node
+
+pcs resource unmanage SAP_HDB_GIQ-clone
+pcs property set maintenance-mode=true
+pcs status
+pcs cluster stop
+pcs status
+pcs cluster stop --all
+
+
+before starting cluster
+=============================================
+crm maintenance off--crm configure property maintenance-mode=false
+crm resource manage SAP_HDB_ATQ_clone
+
+After remove cluster started state
+
+start cluster (it will start manually )
+
+su -atqadm
+
+cdpy
+python systemReplicationStatus.py
+===========================================
+u0bphdbatq001:HDB:atqadm /usr/sap/ATQ/HDB00/exe/python_support 55> python systemReplicationStatus.py
+|Database  |Host          |Port  |Service Name |Volume ID |Site ID |Site Name |Secondary     |Secondary |Secondary |Secondary |Secondary     |Replication |Replication |Replication    |Secondary    |
+|          |              |      |             |          |        |          |Host          |Port      |Site ID   |Site Name |Active Status |Mode        |Status      |Status Details |Fully Synced |
+|--------- |------------- |----- |------------ |--------- |------- |--------- |------------- |--------- |--------- |--------- |------------- |----------- |----------- |-------------- |------------ |
+|SYSTEMDB  |u0bphdbatq001 |30001 |nameserver   |        1 |      1 |SITEA     |u0bphdbatq002 |    30001 |        2 |SITEB     |YES           |SYNCMEM     |ACTIVE      |               |        True |
+|TGQ       |u0bphdbatq001 |30052 |xsengine     |        2 |      1 |SITEA     |u0bphdbatq002 |    30052 |        2 |SITEB     |YES           |SYNCMEM     |ACTIVE      |               |        True |
+|ATQ       |u0bphdbatq001 |30007 |xsengine     |        2 |      1 |SITEA     |u0bphdbatq002 |    30007 |        2 |SITEB     |YES           |SYNCMEM     |ACTIVE      |               |        True |
+|COCKPITDB |u0bphdbatq001 |30040 |indexserver  |        2 |      1 |SITEA     |u0bphdbatq002 |    30040 |        2 |SITEB     |YES           |SYNCMEM     |ACTIVE      |               |        True |
+|GTQ       |u0bphdbatq001 |30046 |indexserver  |        2 |      1 |SITEA     |u0bphdbatq002 |    30046 |        2 |SITEB     |YES           |SYNCMEM     |ACTIVE      |               |        True |
+|TGQ       |u0bphdbatq001 |30049 |indexserver  |        3 |      1 |SITEA     |u0bphdbatq002 |    30049 |        2 |SITEB     |YES           |SYNCMEM     |ACTIVE      |               |        True |
+|ATQ       |u0bphdbatq001 |30003 |indexserver  |        3 |      1 |SITEA     |u0bphdbatq002 |    30003 |        2 |SITEB     |YES           |SYNCMEM     |ACTIVE      |               |        True |
+
+status system replication site "2": ACTIVE
+overall system replication status: ACTIVE
+
+python landscapeHostConfiguration.py
+=======================================================
+u0bphdbatq001:HDB:atqadm /usr/sap/ATQ/HDB00/exe/python_support 55> python landscapeHostConfiguration.py
+| Host          | Host   | Host   | Failover | Remove | Storage   | Storage   | Failover | Failover | NameServer | NameServer | IndexServer | IndexServer | Host             | Host             | Worker  | Worker  |
+|               | Active | Status | Status   | Status | Config    | Actual    | Config   | Actual   | Config     | Actual     | Config      | Actual      | Config           | Actual           | Config  | Actual  |
+|               |        |        |          |        | Partition | Partition | Group    | Group    | Role       | Role       | Role        | Role        | Roles            | Roles            | Groups  | Groups  |
+| ------------- | ------ | ------ | -------- | ------ | --------- | --------- | -------- | -------- | ---------- | ---------- | ----------- | ----------- | ---------------- | ---------------- | ------- | ------- |
+| u0bphdbatq001 | yes    | ok     |          |        |         1 |         1 | default  | default  | master 1   | master     | worker      | master      | worker xs_worker | worker xs_worker | default | default |
+
+overall host status: ok
+
+sapcontrol -nr 00 -function GetProcessList
+=============================================
+u0bphdbatq001:HDB:atqadm /usr/sap/ATQ/HDB00/exe/python_support 56> sapcontrol -nr 00 -function GetProcessList
+
+26.09.2025 05:58:38
+GetProcessList
+OK
+name, description, dispstatus, textstatus, starttime, elapsedtime, pid
+hdbdaemon, HDB Daemon, GREEN, Running, 2025 09 26 05:34:34, 0:24:04, 48097
+hdbcompileserver, HDB Compileserver, GREEN, Running, 2025 09 26 05:34:45, 0:23:53, 48555
+hdbdiserver, HDB Deployment Infrastructure Server-ATQ, GREEN, Running, 2025 09 26 05:36:40, 0:21:58, 55940
+hdbdiserver, HDB Deployment Infrastructure Server-COCKPITDB, GREEN, Running, 2025 09 26 05:36:40, 0:21:58, 55943
+hdbindexserver, HDB Indexserver-ATQ, GREEN, Running, 2025 09 26 05:34:46, 0:23:52, 48637
+hdbindexserver, HDB Indexserver-COCKPITDB, GREEN, Running, 2025 09 26 05:34:46, 0:23:52, 48641
+hdbindexserver, HDB Indexserver-GTQ, GREEN, Running, 2025 09 26 05:34:46, 0:23:52, 48644
+hdbindexserver, HDB Indexserver-TGQ, GREEN, Running, 2025 09 26 05:34:46, 0:23:52, 48649
+hdbnameserver, HDB Nameserver, GREEN, Running, 2025 09 26 05:34:35, 0:24:03, 48125
+hdbpreprocessor, HDB Preprocessor, GREEN, Running, 2025 09 26 05:34:45, 0:23:53, 48558
+hdbwebdispatcher, HDB Web Dispatcher, GREEN, Running, 2025 09 26 05:36:40, 0:21:58, 55946
+hdbxscontroller, HDB XS Controller, GREEN, Running, 2025 09 26 05:36:40, 0:21:58, 55949
+hdbxsengine, HDB XSEngine-ATQ, GREEN, Running, 2025 09 26 05:34:46, 0:23:52, 48655
+hdbxsengine, HDB XSEngine-TGQ, GREEN, Running, 2025 09 26 05:34:46, 0:23:52, 48659
+hdbxsexecagent, HDB XS Execution Agent, GREEN, Running, 2025 09 26 05:36:40, 0:21:58, 55952
+hdbxsuaaserver, HDB XS UAA Server, GREEN, Running, 2025 09 26 05:36:40, 0:21:58, 55955
+
+
+crm_mon -A1
+==================
+u0bphdbatq002:~ # crm_mon -A1
+Cluster Summary:
+  * Stack: corosync (Pacemaker is running)
+  * Current DC: u0bphdbatq001 (version 2.1.7+20231219.0f7f88312-150600.6.6.1-2.1.7+20231219.0f7f88312) - partition with quorum
+  * Last updated: Fri Sep 26 05:56:33 2025 on u0bphdbatq002
+  * Last change:  Fri Sep 26 05:55:59 2025 by root via root on u0bphdbatq001
+  * 2 nodes configured
+  * 10 resource instances configured
+
+Node List:
+  * Online: [ u0bphdbatq001 u0bphdbatq002 ]
+
+Active Resources:
+  * stonith-sbd (stonith:external/sbd):  Started u0bphdbatq001
+  * Clone Set: Topology_ATQ_HDB00_clone [Topology_ATQ_HDB00]:
+    * Started: [ u0bphdbatq001 u0bphdbatq002 ]
+  * Clone Set: SAP_HDB_ATQ_clone [SAP_HDB_ATQ] (promotable):
+    * Masters: [ u0bphdbatq001 ]
+    * Slaves: [ u0bphdbatq002 ]
+  * VIP_ATQ_HDB00       (ocf::heartbeat:IPaddr2):        Started u0bphdbatq001
+  * Clone Set: c-HDBATQCLST_FAILOVER_ALERT [HDBATQCLST_FAILOVER_ALERT]:
+    * Started: [ u0bphdbatq001 u0bphdbatq002 ]
+  * STONITH_IPMI_ATQ01  (stonith:external/ipmi):         Started u0bphdbatq002
+  * STONITH_IPMI_ATQ02  (stonith:external/ipmi):         Started u0bphdbatq001
+
+Node Attributes:
+  * Node: u0bphdbatq001:
+    * hana_atq_clone_state              : PROMOTED
+    * hana_atq_op_mode                  : logreplay
+    * hana_atq_remoteHost               : u0bphdbatq002
+    * hana_atq_roles                    : 4:P:master1:master:worker:master
+    * hana_atq_site                     : SITEA
+    * hana_atq_srah                     : -
+    * hana_atq_srmode                   : syncmem
+    * hana_atq_sync_state               : PRIM
+    * hana_atq_vhost                    : u0bphdbatq001
+    * lpa_atq_lpt                       : 1758880558
+    * master-SAP_HDB_ATQ                : 150
+  * Node: u0bphdbatq002:
+    * hana_atq_clone_state              : DEMOTED
+    * hana_atq_op_mode                  : logreplay
+    * hana_atq_remoteHost               : u0bphdbatq001
+    * hana_atq_roles                    : 4:S:master1:master:worker:master
+    * hana_atq_site                     : SITEB
+    * hana_atq_srah                     : -
+    * hana_atq_srmode                   : syncmem
+    * hana_atq_sync_state               : SOK
+    * hana_atq_vhost                    : u0bphdbatq002
+    * lpa_atq_lpt                       : 30
+    * master-SAP_HDB_ATQ                : 100
+
+pcs property set maintenance-mode=true
+ 
+pcs stonith cleanup
+ 
+pcs resource cleanup
+ 
+pcs stonith history cleanup
+ 
+pcs cluster start --all
+ 
+pcs resource delete VG_FGQ
+ 
+pcs resource defaults resource-stickiness=100
+ 
+pcs resource defaults
+ 
+pcs resource clear ASCS01_ATP
+ 
+pcs stonith update FENCE_ATP pcmk_monitor_timeout=120s power_timeout=120 shell_timeout=120
+ 
+pcs resource update VIP_NES op monitor interval=60 timeout=120
+ 
+pcs stonith update FENCE_SEQ op monitor interval=60 timeout=120
+ 
+pcs stonith update FENCE_SEQ meta failure-timeout=60
+ 
+pcs constraint show --full
+ 
+pcs constraint remove cli-prefer-VIP_NES
+ 
+pcs constraint colocation remove source_resource target_resource
+ 
+pcs cluster config update totem token=10000
+ 
+pcs cluster stop --all
+ 
+pcs cluster destroy --all
+ 
+pcs config backup /usr/admin/franklin/os_cluster_backup/$(uname -n)_backup_$(date +%F)
+ 
+pcs property set stonith-enabled=false
+ 
+pcs stonith disable FENCE_SEP
+ 
+pcs property show stonith-enabled
+ 
+# pcs stonith update <stonith id> pcmk_reboot_action=
+
+# pcs cluster stop --all
+
+# pcs cluster start --all
+ 
+pcs alert recipient remove smtp_alert-recipient-2
+
+pcs alert recipient add smtp_alert value=UnixEmailAlerts@viatris.com
+ 
+pcs property unset maintenance-mode
+
+pcs stonith update FENCE_SEP verbose=1 debug_file="/var/log/fence_sep_debug.log
+ 
+pcs resource unmanage SAP_HDB_GIP-clone
+
+pcs resource meta FENCE_NES failure-timeout=30m
+ 
+
+====================================
+fdisk /dev/sdg
+ 
+pvcreate /dev/sdg1
+ 
+vgcreate ers_clustervg /dev/sdg1
+ 
+lvcreate -l +100%FREE -n ers_clusterlv ers_clustervg
+ 
+mount /dev/mapper/ers_clustervg/ers_clusterlv /usr/sap/ATQ/ERS10
+ 
+ 
+# ERS Cluster Setup Runbook — RES_ERS_ATQ (ENSA2)
+ 
+## Existing Environment
+
+- Cluster: Pacemaker + Corosync
+
+- Nodes:
+
+  - node01 (u0bvsapatq001) – ASCS (primary), preferred host for ASCS
+
+  - node02 (u0bvsapatq002) – ERS (currently standalone), preferred host for ERS
+
+- Existing ASCS resource group `RES_SAP_ATQ`: `VIP_SAP_ATQ` → `VG_ATQ` → `FS_ATQ` → `ASCS01_ATQ`, managed via `systemd:sap_ascs`
+
+- Fencing already in place: `kdump` (stonith:fence_kdump), `FENCE_ATQ` (stonith:fence_vmware_rest)
+
+- ERS will use the same custom systemd method, grouped as `RES_ERS_ATQ`
+
+- Enqueue architecture: **ENSA2**
+ 
+---
+ 
+## Step 1 – Take Cluster Configuration Backup
+
+```
+
+pcs config backup <backup-file>
+
+```
+ 
+## Step 2 – Take OS-Level Backup
+
+Take a DD/image-level backup per your standard OS backup procedure.
+ 
+## Step 3 – Put Cluster into Maintenance Mode (before touching the app)
+
+Do this **before** stopping the application, so Pacemaker doesn't try to
+
+recover ASCS/ERS resources while you're deliberately stopping them:
+
+```
+
+pcs property set maintenance-mode=true
+
+```
+
+Verify:
+
+```
+
+pcs property config
+
+```
+
+Expected: `maintenance-mode: true`
+ 
+## Step 4 – Stop Application
+
+Stop the SAP application per your standard procedure.
+ 
+## Step 5 – Stop Cluster Services
+
+```
+
+pcs cluster stop --all
+
+```
+ 
+## Step 6 – Shut Down Servers and Take VM Snapshots
+
+Shut down both nodes and take VM-level snapshots per your standard procedure.
+ 
+## Step 7 – Power On the Servers
+
+Power both nodes back on and confirm they rejoin normally.
+ 
+---
+ 
+## Step 8 – Verify Cluster Health
+
+```
+
+pcs status
+
+pcs status nodes
+
+pcs constraint config
+
+pcs resource defaults
+
+```
+
+Verify:
+
+- Both nodes are Online
+
+- ASCS resources are healthy
+
+- No failed actions
+ 
+---
+ 
+## Step 9 – Vendor Recommended Pacemaker Defaults
+ 
+Current:
+
+```
+
+default-migration-threshold=0
+
+default-resource-stickiness=1000
+
+resource-stickiness=1000
+
+```
+ 
+Remove deprecated values:
+
+```
+
+pcs resource defaults update default-migration-threshold=
+
+pcs resource defaults update default-resource-stickiness=
+
+```
+ 
+Set recommended values:
+
+```
+
+pcs resource defaults update resource-stickiness=1000
+
+pcs resource defaults update migration-threshold=1
+
+```
+ 
+Verify:
+
+```
+
+pcs resource defaults
+
+```
+
+Expected:
+
+```
+
+resource-stickiness=1000
+
+migration-threshold=1
+
+```
+> **Confirm before executing:** double-check `migration-threshold=1` against
+> your OS vendor's current SAP HA deployment guide. Several current
+> SUSE/Red Hat SAP NetWeaver references specify `migration-threshold=5000`
+> alongside `resource-stickiness=1000`, not `1`. A threshold of `1` means the
+> *first* transient monitor failure bans the resource from that node until
+> manually cleared, with no retry tolerance — confirm this is the intended
+> behavior before treating it as "the" vendor default.
+ 
+---
+ 
+## Step 10 – Confirm Maintenance Mode Still Active
+
+Maintenance mode was already enabled in Step 3. Re-confirm before proceeding:
+
+```
+
+pcs property config
+
+```
+
+Expected: `maintenance-mode: true`
+ 
+---
+ 
+## Step 11 – Verify ERS
+ 
+On u0bvsapatq002:
+
+```
+
+su - atqadm
+
+sapcontrol -nr 10 -function GetProcessList
+
+```
+
+Expected: `enq_replicator GREEN Running`
+ 
+Verify:
+
+```
+
+cat /usr/sap/sapservices
+
+ps -ef | grep sapstartsrv | grep ERS
+
+df -h | grep ERS10
+
+```
+ 
+---
+ 
+## Step 12 – Create ERS Scripts
+
+```
+
+mkdir -p /opt/scripts/PCS_cluster
+
+```
+ 
+### Start Script
+
+`/opt/scripts/PCS_cluster/Start_ERS.sh`
+
+```bash
+
+#!/bin/bash
+ 
+while true
+
+do
+ 
+ERS_STATUS=$(sudo su -c "/usr/sap/ATQ/SYS/exe/run/sapcontrol -nr 10 -function GetProcessList" -s /bin/csh atqadm | grep enq_replicator | awk -F ', ' '{print $4}')
+ 
+if [[ "$ERS_STATUS" == "Running" ]]
+
+then
+
+    echo "$(date): ERS already running"
+
+else
+
+    echo "$(date): Starting ERS"
+ 
+    sudo su -c "/usr/sap/ATQ/SYS/exe/run/sapcontrol -nr 10 -function StartService ATQ" -s /bin/csh atqadm
+ 
+    sleep 20
+ 
+    sudo su -c "/usr/sap/ATQ/SYS/exe/run/sapcontrol -nr 10 -function Start" -s /bin/csh atqadm
+
+fi
+ 
+sleep 30
+ 
+done
+
+```
+ 
+### Stop Script
+
+`/opt/scripts/PCS_cluster/Stop_ERS.sh`
+
+```bash
+
+#!/bin/bash
+ 
+sudo su -c "/usr/sap/ATQ/SYS/exe/run/sapcontrol -nr 10 -function Stop" -s /bin/csh atqadm
+ 
+sleep 20
+ 
+sudo su -c "/usr/sap/ATQ/SYS/exe/run/sapcontrol -nr 10 -function StopService ATQ" -s /bin/csh atqadm
+
+```
+ 
+Permissions:
+
+```
+
+chmod 750 /opt/scripts/PCS_cluster/Start_ERS.sh
+
+chmod 750 /opt/scripts/PCS_cluster/Stop_ERS.sh
+
+```
+ 
+> **Health-check limitation carried over from the ASCS unit:** Pacemaker's
+> `op monitor` on the resulting systemd resource only checks whether the
+> `Start_ERS.sh` loop process is alive — it does not confirm `enq_replicator`
+> is actually `GREEN`/`Running`. If `sapcontrol` starts failing silently
+> inside the loop, the loop keeps running, systemd reports the unit as
+> active, and Pacemaker sees a healthy resource with a dead enqueue
+> replicator underneath. This is consistent with the existing ASCS unit's
+> behavior, but it's the concrete reason `ocf:heartbeat:SAPInstance` is
+> normally preferred — see Open Item 3.
+ 
+---
+ 
+## Step 13 – Create systemd Service
+ 
+Matches the same style/pattern as the existing ASCS unit (explicit SAP
+
+environment variables instead of `sudo su -c ... -s /bin/csh`), with
+
+ERS-specific values.
+ 
+`/etc/systemd/system/sap_ers.service`
+
+```ini
+
+[Unit]
+
+Description=SAP ERS service
+
+After=network.target
+ 
+[Service]
+
+Type=simple
+
+Environment="SAPSYSTEMNAME=ATQ" "HOST=u0bvsapatq002" "HOME=/home/atqadm" "PATH=/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/sap/ATQ/SYS/exe/uc/linuxx86_64:/usr/sap/ATQ/SYS/exe/run:/home/atqadm" "DIR_LIBRARY=/usr/sap/ATQ/SYS/exe/run" "LD_LIBRARY_PATH=/usr/sap/ATQ/SYS/exe/run:/usr/sap/ATQ/SYS/exe/uc/linuxx86_64" "RSEC_SSFS_DATAPATH=/usr/sap/ATQ/SYS/global/security/rsecssfs/data" "RSEC_SSFS_KEYPATH=/usr/sap/ATQ/SYS/global/security/rsecssfs/key"
+
+ExecStart=/bin/bash /opt/scripts/PCS_cluster/Start_ERS.sh
+
+ExecStop=/bin/bash /opt/scripts/PCS_cluster/Stop_ERS.sh
+ 
+[Install]
+
+WantedBy=multi-user.target
+
+```
+> `HOST` is set to `u0bvsapatq002` — the ERS instance's own virtual
+> hostname on node02, distinct from ASCS's `u0bvsapatq001`.
+>
+> This unit intentionally does not use `TimeoutStopSec`/`KillMode` — matching
+> the existing ASCS unit's simpler `Type=simple` style keeps both units
+> consistent. If the ASCS unit works reliably in production without those
+> extra settings, keep ERS the same for consistency; add them back only if
+> you hit slow/hung stops in testing.
+ 
+Reload:
+
+```
+
+systemctl daemon-reload
+
+```
+
+Verify:
+
+```
+
+systemctl status sap_ers
+
+```
+> Do not enable or manually start the service.
+ 
+---
+ 
+## Step 14 – Stop Standalone ERS
+ 
+On u0bvsapatq002:
+
+```
+
+su - atqadm
+
+sapcontrol -nr 10 -function Stop
+
+```
+
+Verify:
+
+```
+
+sapcontrol -nr 10 -function GetProcessList
+
+```
+ 
+---
+ 
+## Step 15 – Create Pacemaker Resources
+ 
+Create each resource individually first (cluster is in maintenance-mode),
+
+then group them — mirroring exactly how `RES_SAP_ATQ` is built.
+ 
+> **Open item:** confirm whether ERS uses its own dedicated VIP and its own
+> VG/filesystem (Open Items 1–2). The blocks below are conditional on that
+> answer.
+ 
+### VIP (only if required by SAP design)
+
+```
+
+pcs resource create VIP_ERS_ATQ ocf:heartbeat:IPaddr2 \
+
+	ip=<ERS_VIP> cidr_netmask=24 \
+
+	op start interval=0s timeout=20s \
+
+	op stop interval=0s timeout=20s \
+
+	op monitor interval=60s timeout=120s
+
+```
+ 
+### Volume Group (if ERS uses its own VG)
+
+```
+
+pcs resource create VG_ERS_ATQ ocf:heartbeat:LVM-activate \
+
+	vgname=<ERS_VG> \
+
+	vg_access_mode=system_id \
+
+	op start interval=0s timeout=90s \
+
+	op stop interval=0s timeout=90s \
+
+	op monitor interval=60s timeout=120s
+
+```
+ 
+### Filesystem (if ERS uses its own filesystem)
+
+```
+
+pcs resource create FS_ERS_ATQ ocf:heartbeat:Filesystem \
+
+	device=/dev/<ERS_VG>/<ERS_LV> \
+
+	directory=/usr/sap/ATQ/ERS10 \
+
+	fstype=xfs \
+
+	op start interval=0s timeout=60s \
+
+	op stop interval=0s timeout=60s \
+
+	op monitor interval=60s timeout=120s
+
+```
+ 
+### ERS systemd resource
+
+```
+
+pcs resource create ERS10_ATQ systemd:sap_ers \
+
+	op start interval=0s timeout=100s \
+
+	op stop interval=0s timeout=100s \
+
+	op monitor interval=60s timeout=120s
+
+```
+ 
+### Group the ERS resources (mirrors RES_SAP_ATQ)
+ 
+**If ERS has a VIP:**
+
+```
+
+pcs resource group add RES_ERS_ATQ VIP_ERS_ATQ VG_ERS_ATQ FS_ERS_ATQ ERS10_ATQ
+
+```
+ 
+**If ERS has no VIP:**
+
+```
+
+pcs resource group add RES_ERS_ATQ VG_ERS_ATQ FS_ERS_ATQ ERS10_ATQ
+
+```
+ 
+> Group membership order sets the internal start order and colocation
+> automatically (the same `INFINITY`/`Mandatory` behavior already seen for
+> `RES_SAP_ATQ`) — no separate `pcs constraint order`/`colocation` commands
+> are needed for the resources *inside* the group.
+ 
+Expected resource listing after this step:
+
+```
+
+* Resource Group: RES_SAP_ATQ:
+
+   * VIP_SAP_ATQ    (ocf::heartbeat:IPaddr2):        Started node01
+
+   * VG_ATQ          (ocf::heartbeat:LVM-activate):   Started node01
+
+   * FS_ATQ          (ocf::heartbeat:Filesystem):     Started node01
+
+   * ASCS01_ATQ      (systemd:sap_ascs):              Started node01
+
+* Resource Group: RES_ERS_ATQ:
+
+   * VIP_ERS_ATQ     (ocf::heartbeat:IPaddr2):        Stopped
+
+   * VG_ERS_ATQ      (ocf::heartbeat:LVM-activate):   Stopped
+
+   * FS_ERS_ATQ      (ocf::heartbeat:Filesystem):     Stopped
+
+   * ERS10_ATQ       (systemd:sap_ers):               Stopped
+
+* kdump             (stonith:fence_kdump):           Started node01
+
+* FENCE_ATQ         (stonith:fence_vmware_rest):     Started node01
+
+```
+
+(ERS group shows Stopped here because the cluster is still in
+
+maintenance-mode — it starts in Step 17.)
+ 
+---
+ 
+## Step 16 – Configure Constraints (Group-Level, ENSA2)
+ 
+Both stacks are resource groups, so the cross-stack constraints are set
+
+**once, at the group level** — `RES_SAP_ATQ` ↔ `RES_ERS_ATQ`. Nothing needs
+
+to be set for the members *inside* each group; that's handled automatically
+
+by group membership (Step 15).
+ 
+### Ordering — ASCS ↔ ERS relationship
+ 
+Not a startup-order gate — its real purpose is: *if the ASCS group ever
+
+lands on the same node as the ERS group, ERS should relocate so it can
+
+re-sync the lock table elsewhere.*
+
+```
+
+pcs constraint order start RES_SAP_ATQ then stop RES_ERS_ATQ kind=Optional symmetrical=false
+
+```
+
+- `kind=Optional` — advisory, only applied if both actions happen to occur together
+
+- `symmetrical=false` — stopping/restarting `RES_SAP_ATQ` will **not** force `RES_ERS_ATQ` to stop
+ 
+### Colocation — ASCS ↔ ERS anti-affinity
+ 
+Soft negative score (not `-INFINITY`, which is an ENSA1-only rule) — lets
+
+the ASCS group fail over onto the ERS group's node in a 2-node cluster when
+
+node01 is down, while still steering the cluster to keep them apart when a
+
+choice exists:
+
+```
+
+pcs constraint colocation add RES_ERS_ATQ with RES_SAP_ATQ -5000
+
+```
+ 
+### Location Preferences
+ 
+Prefer the ASCS group on u0bvsapatq001:
+
+```
+
+pcs constraint location RES_SAP_ATQ prefers u0bvsapatq001=100
+
+```
+ 
+Prefer the ERS group on u0bvsapatq002:
+
+```
+
+pcs constraint location RES_ERS_ATQ prefers u0bvsapatq002=100
+
+```
+ 
+These are preferences, not hard restrictions. If one node fails, Pacemaker
+
+can still relocate resources if needed.
+ 
+> **Removed from this revision:** the earlier draft included
+> `pcs constraint location RES_SAP_ATQ rule score=2000 RES_ERS_ATQ eq 1`.
+> This traces back to a real, documented Red Hat pattern — RHEL for SAP
+> Solutions' "Configuring HA clusters to manage SAP NetWeaver or SAP
+> S/4HANA Application server instances" guide gives the example
+> `pcs constraint location s4h_ascs20 rule score=2000 runs_ers_S4H eq 1`,
+> used to force the ASCS instance to follow the node where ERS is running
+> after a failover. Two things make it wrong for this build:
+> 1. **Architecture mismatch** — Red Hat scopes this rule explicitly to
+>    **ENSA1**: "it must be ensured that the (A)SCS instance moves to the
+>    node where the ERS instance is running when failover is happening."
+>    This environment is **ENSA2**, where ASCS does not need to follow ERS;
+>    the anti-affinity colocation (`-5000`) and the Optional/non-symmetrical
+>    order constraint already in this runbook are the ENSA2-appropriate
+>    equivalents for the same coordination problem.
+> 2. **Attribute mismatch** — even under ENSA1, the rule checks a
+>    purpose-built **node attribute** (`runs_ers_S4H` in Red Hat's example)
+>    that the ERS resource agent sets automatically when ERS is running on
+>    a node — not a resource or group name. The draft substituted the
+>    resource group name `RES_ERS_ATQ` in its place, but nothing in this
+>    cluster sets a node attribute by that name (confirmed via
+>    `crm_mon -A -1`, which shows no Node Attributes section at all), so the
+>    rule would never evaluate true even if it were architecturally
+>    applicable here.
+>
+> Net: correctly scoped to ENSA1 use cases only, and would need a real
+> node-attribute mechanism (not a group-name substitution) to function even
+> there. Dropped from this ENSA2 build.
+ 
+### (Optional, recommended) Split-brain protection
+ 
+For a 2-node ENSA2 cluster, consider enabling `priority-fencing-delay` so
+
+the node currently running ASCS wins any fencing race during a split-brain
+
+event:
+
+```
+
+pcs property set priority-fencing-delay=15s
+
+```
+
+Confirm the exact recommended value and prerequisites (SBD/fencing agent
+
+support, `pcmk_delay_max`, and — for a true 2-node cluster —
+
+`two_node`/`no-quorum-policy` settings) with your OS vendor's current
+
+documentation before enabling, and validate the fencing race behavior in a
+
+test failover first.
+ 
+---
+ 
+## Step 17 – Disable Maintenance Mode
+
+```
+
+pcs property set maintenance-mode=false
+
+```
+
+Pacemaker will start ERS.
+ 
+---
+ 
+## Step 18 – Validation
+
+```
+
+pcs status
+
+pcs constraint config
+
+pcs resource defaults
+
+systemctl status sap_ers
+
+su - atqadm
+
+sapcontrol -nr 10 -function GetProcessList
+
+```
+
+Expected: `enq_replicator  GREEN  Running`
+ 
+---
+ 
+## Step 19 – Failover Test
+ 
+Move ERS (whole group):
+
+```
+
+pcs resource move RES_ERS_ATQ u0bvsapatq001 --wait=60
+
+```
+
+Verify:
+
+```
+
+pcs status
+
+su - atqadm
+
+sapcontrol -nr 10 -function GetProcessList
+
+```
+
+Clear temporary move:
+
+```
+
+pcs resource clear RES_ERS_ATQ
+
+```
+> With the `-5000` colocation score, this move is expected to succeed (ERS
+> can coexist with ASCS on node01 if forced). A hard `-INFINITY` value would
+> have blocked/failed this.
+ 
+Also test the reverse and realistic scenario: stop the ASCS node (or
+
+simulate failure) and confirm ASCS fails over to node02 without being
+
+blocked by ERS running there, and that ERS relocates back to node01 per the
+
+Optional order constraint once node01 is available again.
+ 
+---
+ 
+## Final Expected State
+ 
+### List of Resources
+
+```
+
+* Resource Group: RES_SAP_ATQ:
+
+   * VIP_SAP_ATQ    (ocf::heartbeat:IPaddr2):        Started node01
+
+   * VG_ATQ          (ocf::heartbeat:LVM-activate):   Started node01
+
+   * FS_ATQ          (ocf::heartbeat:Filesystem):     Started node01
+
+   * ASCS01_ATQ      (systemd:sap_ascs):              Started node01
+
+* Resource Group: RES_ERS_ATQ:
+
+   * VIP_ERS_ATQ     (ocf::heartbeat:IPaddr2):        Started node02
+
+   * VG_ERS_ATQ      (ocf::heartbeat:LVM-activate):   Started node02
+
+   * FS_ERS_ATQ      (ocf::heartbeat:Filesystem):     Started node02
+
+   * ERS10_ATQ       (systemd:sap_ers):               Started node02
+
+* kdump             (stonith:fence_kdump):           Started node01
+
+* FENCE_ATQ         (stonith:fence_vmware_rest):     Started node01
+
+```
+ 
+### Location Constraints
+
+```
+
+RES_SAP_ATQ prefers node01 (score:100)
+
+RES_ERS_ATQ prefers node02 (score:100)
+
+```
+ 
+### Colocation Constraints
+
+```
+
+VG_ATQ with VIP_SAP_ATQ (score:INFINITY)          <- auto (group)
+
+FS_ATQ with VG_ATQ (score:INFINITY)               <- auto (group)
+
+ASCS01_ATQ with FS_ATQ (score:INFINITY)           <- auto (group)
+ 
+VG_ERS_ATQ with VIP_ERS_ATQ (score:INFINITY)      <- auto (group)
+
+FS_ERS_ATQ with VG_ERS_ATQ (score:INFINITY)       <- auto (group)
+
+ERS10_ATQ with FS_ERS_ATQ (score:INFINITY)        <- auto (group)
+ 
+RES_ERS_ATQ with RES_SAP_ATQ (score:-5000)        <- Step 16, cross-stack
+
+```
+ 
+### Ordering Constraints
+
+```
+
+start VIP_SAP_ATQ then start VG_ATQ (kind:Mandatory)       <- auto (group)
+
+start VG_ATQ then start FS_ATQ (kind:Mandatory)             <- auto (group)
+
+start FS_ATQ then start ASCS01_ATQ (kind:Mandatory)         <- auto (group)
+ 
+start VIP_ERS_ATQ then start VG_ERS_ATQ (kind:Mandatory)    <- auto (group)
+
+start VG_ERS_ATQ then start FS_ERS_ATQ (kind:Mandatory)     <- auto (group)
+
+start FS_ERS_ATQ then start ERS10_ATQ (kind:Mandatory)      <- auto (group)
+ 
+start RES_SAP_ATQ then stop RES_ERS_ATQ (kind:Optional) (non-symmetrical)  <- Step 16, cross-stack
+
+```
+ 
+### Resource Defaults
+
+```
+
+resource-stickiness=1000
+
+migration-threshold=1
+
+```
+ 
+---
+====================================================
+Phase 0 – Enable Pacemaker Maintenance Mode
+Before starting the ERS filesystem migration and creating new cluster resources:
+Check current status:
+ 
+pcs status
+ 
+Enable maintenance mode:
+ 
+pcs property set maintenance-mode=true
+ 
+Verify:
+ 
+pcs property config | grep maintenance-mode
+ 
+Expected:
+ 
+maintenance-mode: true
+ 
+Vendor Recommended Pacemaker Defaults
+ 
+pcs resource defaults update resource-stickiness=2000
+pcs resource defaults update migration-threshold=1
+ 
+Phase 1 – VMware Storage
+1. Create a new VMware Multi-Writer shared disk
+Configure:
+Multi Writer = Enabled
+SCSI Bus Sharing = Physical
+Present the disk to:
+u0bvsapatq001
+u0bvsapatq002
+Verify on both nodes:
+ 
+lsblk
+ 
+Assume the new disk is:
+ 
+/dev/sdg
+ 
+Phase 2 – Create LVM
+Perform on one node only.
+ 
+Partition the disk
+ 
+fdisk /dev/sdg
+ 
+Create a Linux LVM partition.
+ 
+Refresh partition table:
+ 
+Partprobe
+ 
+Create the Physical Volume:
+ 
+pvcreate /dev/sdg1
+ 
+Create the Volume Group:
+ 
+vgcreate ers_clustervg /dev/sdg1
+ 
+Create the Logical Volume:
+ 
+lvcreate -l 100%FREE -n ers_clusterlv ers_clustervg
+ 
+Verify:
+ 
+pvs
+vgs
+lvs
+ 
+Phase 3 – Create Filesystem
+Create the XFS filesystem:
+ 
+mkfs.xfs /dev/ers_clustervg/ers_clusterlv
+ 
+Verify:
+ 
+blkid /dev/ers_clustervg/ers_clusterlv
+ 
+Phase 4 – Discover VG on Second Node
+On Node2:
+ 
+If the VG was created in Node1, Change the ownership (System ID) of the Volume Group ers_clustervg to u0bvsapatq002.
+ 
+vgchange --systemid u0bvsapatq002 ers_clustervg
+ 
+pvscan
+vgscan
+vgchange -ay ers_clustervg
+lvs
+vgchange -an ers_clustervg
+ 
+Do not leave the VG active. Pacemaker will activate it when needed.
+ 
+Phase 5 – Migrate Existing ERS10 Filesystem to Shared Disk
+ 
+1. Identify current ERS10 filesystem
+On both nodes:
+ 
+df -h /usr/sap/ATQ/ERS10
+mount | grep ERS10
+Example:
+ 
+/dev/mapper/oldvg-erslv  /usr/sap/ATQ/ERS10  xfs
+ 
+2. Stop ERS application
+Before copying data, stop ERS.
+On Node2 (current ERS node):
+ 
+sapcontrol -nr 10 -function Stop
+ 
+Verify:
+ 
+sapcontrol -nr 10 -function GetProcessList
+ 
+3. Create new filesystem on Multi-Writer disk
+Example:
+ 
+mkfs.xfs /dev/ers_clustervg/ers_clusterlv
+ 
+4. Mount new filesystem temporarily
+Create temporary mount point:
+ 
+mkdir -p /usr/sap/ATQ/ERS10_New
+ 
+Mount:
+ 
+mount /dev/ers_clustervg/ers_clusterlv /usr/sap/ATQ/ERS10_New
+ 
+5. Copy existing ERS10 data
+Use rsync:
+ 
+mv /usr/sap/ATQ/ERS10 /usr/sap/ATQ/ERS10_old
+ 
+rsync -aHAXv /usr/sap/ATQ/ERS10_old/* /usr/sap/ATQ/ERS10_New
+ 
+Verify:
+ 
+du -sh /usr/sap/ATQ/ERS10_old
+du -sh /usr/sap/ATQ/ERS10_New
+ 
+6. Preserve Ownership and Permissions
+Verify:
+ 
+ls -ld /usr/sap/ATQ/ERS10_New
+ls -l /usr/sap/ATQ/ERS10_New
+ 
+Expected owner:
+ 
+atqadm:sapsys
+ 
+If required:
+ 
+chown -R atqadm:sapsys /mnt/ers10_new
+ 
+7. Unmount old filesystem
+Stop any services using the filesystem:
+ 
+fuser -vm /usr/sap/ATQ/ERS10
+ 
+Unmount:
+ 
+umount /usr/sap/ATQ/ERS10
+ 
+8. Mount the new shared filesystem at the original location
+Create mount point if required:
+ 
+mkdir -p /usr/sap/ATQ/ERS10
+Mount:
+ 
+mount /dev/ers_clustervg/ers_clusterlv \
+/usr/sap/ATQ/ERS10
+Verify:
+ 
+df -h /usr/sap/ATQ/ERS10
+ 
+9. Remove /etc/fstab entry
+Since Pacemaker will manage the filesystem:
+ 
+Do not keep:
+ 
+/etc/fstab
+ 
+entry for:
+ 
+/usr/sap/ATQ/ERS10
+ 
+10. Validate SAP ERS
+Verify:
+ 
+sapcontrol -nr 10 -function GetProcessList
+ 
+Start ERS manually once:
+ 
+sapcontrol -nr 10 -function StartService ATQ
+sapcontrol -nr 10 -function Start
+ 
+Verify:
+ 
+sapcontrol -nr 10 -function GetProcessList
+ 
+Phase 6 – Validate SAP ERS Installation
+Before integrating ERS with Pacemaker, verify the SAP ERS instance is installed successfully and the SAP control commands respond correctly.
+ 
+su - atqadm
+ 
+/usr/sap/ATQ/SYS/exe/run/sapcontrol -nr 10 -function GetProcessList
+ 
+Confirm:
+ERS process is present.
+Process status is GREEN.
+Process name matches the monitoring logic in the SAP-provided Start script.
+Example:
+ 
+enq_replicator  GREEN Running
+ 
+ 
+Phase 7 – Create ERS Scripts
+Create the directory if required:
+ 
+mkdir -p /opt/scripts/PCS_cluster
+Create:
+/opt/scripts/PCS_cluster/Start_ERS.sh  
+/opt/scripts/PCS_cluster/Stop_ERS.sh  
+ 
+/opt/scripts/PCS_cluster/Start_ERS.sh
+ 
+#!/bin/bash
+ 
+while true
+do
+ 
+ERS_STATUS=$(sudo su -c "/usr/sap/ATQ/SYS/exe/run/sapcontrol -nr 10 -function GetProcessList" -s /bin/csh atqadm | grep enq_replicator | awk -F ', ' '{print $4}')
+ 
+if [[ "$ERS_STATUS" == "Running" ]]
+then
+   echo "$(date): ERS already running"
+else
+   echo "$(date): Starting ERS"
+ 
+   sudo su -c "/usr/sap/ATQ/SYS/exe/run/sapcontrol -nr 10 -function StartService ATQ" -s /bin/csh atqadm
+ 
+   sleep 20
+ 
+   sudo su -c "/usr/sap/ATQ/SYS/exe/run/sapcontrol -nr 10 -function Start" -s /bin/csh atqadm
+fi
+ 
+sleep 30
+ 
+done
+ 
+/opt/scripts/PCS_cluster/Stop_ERS.sh
+ 
+#!/bin/bash
+ 
+sudo su -c "/usr/sap/ATQ/SYS/exe/run/sapcontrol -nr 10 -function Stop" -s /bin/csh atqadm
+ 
+sleep 20
+ 
+sudo su -c "/usr/sap/ATQ/SYS/exe/run/sapcontrol -nr 10 -function StopService ATQ" -s /bin/csh atqadm
+ 
+ 
+Permissions:
+ 
+chmod 750 /opt/scripts/PCS_cluster/Start_ERS.sh
+chmod 750 /opt/scripts/PCS_cluster/Stop_ERS.sh
+ 
+ 
+Phase 8 – Create systemd Service
+Copy the existing service:
+ 
+cp /etc/systemd/system/sap_ascs.service /etc/systemd/system/sap_ers.service
+ 
+In Node1:
+ 
+cat /etc/systemd/system/sap_ers.service
+ 
+[Unit]
+Description=SAP service
+After=network.target
+ 
+[Service]
+Type=simple
+Environment="SAPSYSTEMNAME=ATQ" "HOST=u0bvsapatq001" "HOME=/home/atqadm" "PATH=/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/sap/ATQ/SYS/exe/uc/linuxx86_64:/usr/sap/ATQ/SYS/exe/run:/home/atqadm" "DIR_LIBRARY=/usr/sap/ATQ/SYS/exe/run" "LD_LIBRARY_PATH=/usr/sap/ATQ/SYS/exe/run:/usr/sap/ATQ/SYS/exe/uc/linuxx86_64" "RSEC_SSFS_DATAPATH=/usr/sap/ATQ/SYS/global/security/rsecssfs/data" "RSEC_SSFS_KEYPATH=/usr/sap/ATQ/SYS/global/security/rsecssfs/key"
+ExecStart=/bin/bash /opt/scripts/PCS_cluster/Start_ERS.sh
+ExecStop=/bin/bash /opt/scripts/PCS_cluster/Stop_ERS.sh
+ 
+ 
+[Install]
+WantedBy=multi-user.target
+ 
+ 
+In Node2:
+ 
+cat /etc/systemd/system/sap_ers.service
+ 
+[Unit]
+Description=SAP service
+After=network.target
+ 
+[Service]
+Type=simple
+Environment="SAPSYSTEMNAME=ATQ" "HOST=u0bvsapatq002" "HOME=/home/atqadm" "PATH=/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/sap/ATQ/SYS/exe/uc/linuxx86_64:/usr/sap/ATQ/SYS/exe/run:/home/atqadm" "DIR_LIBRARY=/usr/sap/ATQ/SYS/exe/run" "LD_LIBRARY_PATH=/usr/sap/ATQ/SYS/exe/run:/usr/sap/ATQ/SYS/exe/uc/linuxx86_64" "RSEC_SSFS_DATAPATH=/usr/sap/ATQ/SYS/global/security/rsecssfs/data" "RSEC_SSFS_KEYPATH=/usr/sap/ATQ/SYS/global/security/rsecssfs/key"
+ExecStart=/bin/bash /opt/scripts/PCS_cluster/Start_ERS.sh
+ExecStop=/bin/bash /opt/scripts/PCS_cluster/Stop_ERS.sh
+ 
+ 
+[Install]
+WantedBy=multi-user.target
+ 
+ 
+Reload systemd:
+ 
+systemctl daemon-reload
+ 
+Test:
+ 
+systemctl start sap_ers
+systemctl status sap_ers
+ 
+Phase 9 – Create Pacemaker Resources
+ 
+Virtual IP
+ 
+pcs resource create VIP_ERS_ATQ ocf:heartbeat:IPaddr2 \
+    ip=172.17.36.29 \
+    cidr_netmask=24 \
+    op start timeout=20s \
+    op stop timeout=20s \
+    op monitor interval=60s timeout=120s
+ 
+LVM
+ 
+pcs resource create VG_ERS_ATQ ocf:heartbeat:LVM-activate \
+    vgname=ers_clustervg \
+    vg_access_mode=system_id \
+  activation_mode=exclusive \
+  op start timeout=90s \
+    op stop timeout=90s \
+    op monitor interval=60s timeout=120s
+ 
+Filesystem
+ 
+pcs resource create FS_ERS_ATQ ocf:heartbeat:Filesystem \
+   device=/dev/ers_clustervg/ers_clusterlv \
+    directory=/usr/sap/ATQ/ERS10 \
+    fstype=xfs \
+    op start timeout=60s \
+    op stop timeout=60s \
+    op monitor interval=60s timeout=120s
+ 
+ERS Service
+ 
+pcs resource create ERS10_ATQ systemd:sap_ers \
+    op start timeout=100s \
+    op stop timeout=100s \
+    op monitor interval=60s timeout=120s
+ 
+Phase 10 – Create Resource Group
+ 
+pcs resource group add RES_ERS_ATQ \
+    VIP_ERS_ATQ \
+    VG_ERS_ATQ \
+    FS_ERS_ATQ \
+    ERS10_ATQ
+ 
+Note: No additional ordering or colocation constraints are required within this group.
+ 
+Phase 11 – Configure Location Preferences
+ 
+Prefer ASCS on Node1:
+ 
+pcs constraint location RES_SAP_ATQ prefers u0bvsapatq001=1000
+ 
+Prefer ERS on Node2:
+ 
+pcs constraint location RES_ERS_ATQ prefers u0bvsapatq002=1000
+ 
+Phase 12 – Configure Anti-Colocation
+ 
+Keep ASCS and ERS on different nodes under normal conditions:
+ 
+pcs constraint colocation add RES_ERS_ATQ with RES_SAP_ATQ -5000
+ 
+This is a soft anti-colocation, so both groups can run on the same node if one node fails.
+ 
+Phase 13 – Configure Group Start Order
+ 
+Start ERS before ASCS:
+ 
+pcs constraint order start RES_SAP_ATQ then start RES_ERS_ATQ kind=Optional symmetrical=false
+ 
+pcs constraint order remove order-RES_ERS_ATQ-RES_SAP_ATQ-Optional----pcs constraint order remove RES_ERS_ATQ then RES_SAP_ATQ
+
+[root@u0bvsapatq001 ~]# pcs constraint order
+Ordering Constraints:
+  start VIP_SAP_ATQ then start VG_ATQ (kind:Mandatory)
+  start VG_ATQ then start FS_ATQ (kind:Mandatory)
+  start FS_ATQ then start ASCS01_ATQ (kind:Mandatory)
+  start RES_ERS_ATQ then start RES_SAP_ATQ (kind:Optional)
+  start RES_SAP_ATQ then start RES_ERS_ATQ (kind:Optional)
+[root@u0bvsapatq001 ~]#
+
+ 
+Verify:
+ 
+pcs constraint order
+ 
+Phase 14 – Validation
+ 
+Verify:
+ 
+pcs status
+pcs config
+pcs constraint
+pcs resource group list
+crm_mon -Afr1
+ 
+Verify SAP:
+ 
+sapcontrol -nr 01 -function GetProcessList
+sapcontrol -nr 10 -function GetProcessList
+ 
+Expected steady state:
+Node
+	
+Resources
+
+
+u0bvsapatq001
+	
+RES_SAP_ATQ
+
+
+u0bvsapatq002
+	
+RES_ERS_ATQ
+ 
+Phase 15 – Failover Testing
+ 
+Test 1 – ERS Failover
+ 
+Put Node2 into standby:
+ 
+pcs node standby u0bvsapatq002
+ 
+Expected:
+RES_ERS_ATQ moves from u0bvsapatq002 to u0bvsapatq001.
+ASCS and ERS will temporarily run on the same node.
+Expected state:
+Node
+	
+Resource
+
+
+u0bvsapatq001
+	
+RES_SAP_ATQ + RES_ERS_ATQ
+
+
+u0bvsapatq002
+	
+Standby
+ 
+Restore:
+ 
+pcs node unstandby u0bvsapatq002
+ 
+Expected:
+Node2 becomes available.
+ERS remains on u0bvsapatq001.
+No automatic failback occurs.  
+ 
+Reason:
+ 
+resource-stickiness = 1000
+location preference = 100
+Stickiness has higher priority.
+ 
+Manual move ERS back:
+ 
+pcs resource move RES_ERS_ATQ u0bvsapatq002
+ 
+Verify:
+ 
+pcs status
+ 
+After successful movement:
+ 
+pcs resource clear RES_ERS_ATQ
+ 
+Test 2 – ASCS Failover
+Put Node1 into standby:
+ 
+pcs node standby u0bvsapatq001
+ 
+Expected:
+RES_SAP_ATQ moves to u0bvsapatq002.
+ASCS and ERS run together on Node2.
+ 
+Expected state:
+Node
+	
+Resource
+
+
+u0bvsapatq001
+	
+Standby
+
+
+u0bvsapatq002
+	
+RES_SAP_ATQ + RES_ERS_ATQ
+ 
+Restore Node1:
+ 
+pcs node unstandby u0bvsapatq001
+ 
+Expected:
+Node1 becomes available.
+ASCS remains on Node2.
+No automatic failback occurs.  
+ 
+Reason:
+ 
+resource-stickiness = 1000
+location preference = 100
+ 
+Test 3 – Manual Failback
+Move ASCS back to Node1
+ 
+pcs resource move RES_SAP_ATQ u0bvsapatq001
+ 
+Verify:
+ 
+pcs status
+ 
+Expected:
+Node
+	
+Resource
+
+
+u0bvsapatq001
+	
+RES_SAP_ATQ
+
+
+u0bvsapatq002
+	
+RES_ERS_ATQ
+ 
+After successful movement:
+ 
+pcs resource clear RES_SAP_ATQ
+ 
+This removes the temporary move constraint.
+ 
+Additional Recommended Test 4 – Manual ERS Failback
+ 
+Since ERS also should not automatically fail back, test it separately.
+ 
+Move ERS back:
+ 
+pcs resource move RES_ERS_ATQ u0bvsapatq002
+ 
+Verify:
+ 
+pcs status
+ 
+Then clear:
+ 
+pcs resource clear RES_ERS_ATQ
+
+
+
+
+crm configure show | egrep "meta priority"
+crm configure show | egrep "priority-fencing-delay"
+crm configure show | egrep "resource-stickiness"
+crm configure show | egrep "migration-threshold"
+crm configure show | egrep "pcmk_delay_max"
